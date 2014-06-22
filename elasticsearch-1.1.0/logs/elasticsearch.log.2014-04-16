@@ -1,0 +1,303 @@
+[2014-04-16 16:42:56,229][INFO ][node                     ] [Aurora] version[1.1.0], pid[3905], build[2181e11/2014-03-25T15:59:51Z]
+[2014-04-16 16:42:56,230][INFO ][node                     ] [Aurora] initializing ...
+[2014-04-16 16:42:56,251][INFO ][plugins                  ] [Aurora] loaded [], sites []
+[2014-04-16 16:42:58,676][INFO ][node                     ] [Aurora] initialized
+[2014-04-16 16:42:58,676][INFO ][node                     ] [Aurora] starting ...
+[2014-04-16 16:42:58,797][INFO ][transport                ] [Aurora] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.8.14:9300]}
+[2014-04-16 16:43:01,839][INFO ][cluster.service          ] [Aurora] new_master [Aurora][HeEBO0DCTL-A6YGI8zJ5Fg][MacBook-Pro-de-Quentin.local][inet[/192.168.8.14:9300]], reason: zen-disco-join (elected_as_master)
+[2014-04-16 16:43:01,871][INFO ][discovery                ] [Aurora] elasticsearch/HeEBO0DCTL-A6YGI8zJ5Fg
+[2014-04-16 16:43:01,885][INFO ][http                     ] [Aurora] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.8.14:9200]}
+[2014-04-16 16:43:01,902][INFO ][gateway                  ] [Aurora] recovered [0] indices into cluster_state
+[2014-04-16 16:43:01,903][INFO ][node                     ] [Aurora] started
+[2014-04-16 16:43:20,344][WARN ][discovery.zen.ping.multicast] [Aurora] failed to connect to requesting node [Tyrant][c7KuKPrDQJ-qCcfEwYnPqQ][babel][inet[/192.168.8.40:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Tyrant][inet[/192.168.8.40:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:718)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:647)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:615)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:129)
+	at org.elasticsearch.discovery.zen.ping.multicast.MulticastZenPing$Receiver$1.run(MulticastZenPing.java:447)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: java.net.ConnectException: Connection refused: /192.168.8.40:9300
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:735)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:150)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:318)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2014-04-16 16:43:20,859][WARN ][discovery.zen.ping.multicast] [Aurora] failed to connect to requesting node [Tyrant][c7KuKPrDQJ-qCcfEwYnPqQ][babel][inet[/192.168.8.40:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Tyrant][inet[/192.168.8.40:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:718)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:647)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:615)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:129)
+	at org.elasticsearch.discovery.zen.ping.multicast.MulticastZenPing$Receiver$1.run(MulticastZenPing.java:447)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: java.net.ConnectException: Connection refused: /192.168.8.40:9300
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:735)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:150)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:318)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2014-04-16 16:43:47,297][INFO ][cluster.metadata         ] [Aurora] [index] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-04-16 16:43:47,628][DEBUG][action.index             ] [Aurora] [index][4], node[HeEBO0DCTL-A6YGI8zJ5Fg], [P], s[STARTED]: Failed to execute [index {[index][type][id], source[{data}]}]
+org.elasticsearch.index.mapper.MapperParsingException: failed to parse
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:540)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:462)
+	at org.elasticsearch.index.shard.service.InternalIndexShard.prepareIndex(InternalIndexShard.java:384)
+	at org.elasticsearch.action.index.TransportIndexAction.shardOperationOnPrimary(TransportIndexAction.java:203)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$AsyncShardOperationAction.performOnPrimary(TransportShardReplicationOperationAction.java:556)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$AsyncShardOperationAction$1.run(TransportShardReplicationOperationAction.java:426)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.elasticsearch.common.jackson.core.JsonParseException: Unexpected character ('}' (code 125)): was expecting a colon to separate field name and value
+ at [Source: [B@1e3285c5; line: 1, column: 7]
+	at org.elasticsearch.common.jackson.core.JsonParser._constructError(JsonParser.java:1524)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:557)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:475)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:710)
+	at org.elasticsearch.common.xcontent.json.JsonXContentParser.nextToken(JsonXContentParser.java:50)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:492)
+	... 8 more
+[2014-04-16 16:44:36,718][DEBUG][action.index             ] [Aurora] [index][4], node[HeEBO0DCTL-A6YGI8zJ5Fg], [P], s[STARTED]: Failed to execute [index {[index][type][Wl-a_wXVRketSD-tJiwiCg], source[{data}]}]
+org.elasticsearch.index.mapper.MapperParsingException: failed to parse
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:540)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:462)
+	at org.elasticsearch.index.shard.service.InternalIndexShard.prepareCreate(InternalIndexShard.java:363)
+	at org.elasticsearch.action.index.TransportIndexAction.shardOperationOnPrimary(TransportIndexAction.java:215)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$AsyncShardOperationAction.performOnPrimary(TransportShardReplicationOperationAction.java:556)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$AsyncShardOperationAction$1.run(TransportShardReplicationOperationAction.java:426)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.elasticsearch.common.jackson.core.JsonParseException: Unexpected character ('}' (code 125)): was expecting a colon to separate field name and value
+ at [Source: [B@1627be57; line: 1, column: 7]
+	at org.elasticsearch.common.jackson.core.JsonParser._constructError(JsonParser.java:1524)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:557)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:475)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:710)
+	at org.elasticsearch.common.xcontent.json.JsonXContentParser.nextToken(JsonXContentParser.java:50)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:492)
+	... 8 more
+[2014-04-16 16:45:13,689][WARN ][discovery.zen.ping.multicast] [Aurora] failed to connect to requesting node [Callisto][nV-4zb0QSMCQOy6goaXc6A][bilous-HP-ENVY-15-Notebook-PC][inet[/192.168.8.32:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Callisto][inet[/192.168.8.32:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:718)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:647)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:615)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:129)
+	at org.elasticsearch.discovery.zen.ping.multicast.MulticastZenPing$Receiver$1.run(MulticastZenPing.java:447)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: java.net.ConnectException: Connection refused: /192.168.8.32:9300
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:735)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:150)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:318)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2014-04-16 16:45:14,115][WARN ][discovery.zen.ping.multicast] [Aurora] failed to connect to requesting node [Callisto][nV-4zb0QSMCQOy6goaXc6A][bilous-HP-ENVY-15-Notebook-PC][inet[/192.168.8.32:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Callisto][inet[/192.168.8.32:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:718)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:647)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:615)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:129)
+	at org.elasticsearch.discovery.zen.ping.multicast.MulticastZenPing$Receiver$1.run(MulticastZenPing.java:447)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: java.net.ConnectException: Connection refused: /192.168.8.32:9300
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:735)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:150)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:318)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2014-04-16 16:47:04,917][DEBUG][action.admin.indices.create] [Aurora] [TP_EPSI] failed to create
+org.elasticsearch.indices.InvalidIndexNameException: [TP_EPSI] Invalid index name [TP_EPSI], must be lowercase
+	at org.elasticsearch.cluster.metadata.MetaDataCreateIndexService.validateIndexName(MetaDataCreateIndexService.java:172)
+	at org.elasticsearch.cluster.metadata.MetaDataCreateIndexService.validate(MetaDataCreateIndexService.java:523)
+	at org.elasticsearch.cluster.metadata.MetaDataCreateIndexService.access$100(MetaDataCreateIndexService.java:87)
+	at org.elasticsearch.cluster.metadata.MetaDataCreateIndexService$2.execute(MetaDataCreateIndexService.java:220)
+	at org.elasticsearch.cluster.service.InternalClusterService$UpdateTask.run(InternalClusterService.java:308)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.run(PrioritizedEsThreadPoolExecutor.java:134)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+[2014-04-16 16:47:21,512][DEBUG][action.admin.indices.create] [Aurora] [TP_EPSI] failed to create
+org.elasticsearch.indices.InvalidIndexNameException: [TP_EPSI] Invalid index name [TP_EPSI], must be lowercase
+	at org.elasticsearch.cluster.metadata.MetaDataCreateIndexService.validateIndexName(MetaDataCreateIndexService.java:172)
+	at org.elasticsearch.cluster.metadata.MetaDataCreateIndexService.validate(MetaDataCreateIndexService.java:523)
+	at org.elasticsearch.cluster.metadata.MetaDataCreateIndexService.access$100(MetaDataCreateIndexService.java:87)
+	at org.elasticsearch.cluster.metadata.MetaDataCreateIndexService$2.execute(MetaDataCreateIndexService.java:220)
+	at org.elasticsearch.cluster.service.InternalClusterService$UpdateTask.run(InternalClusterService.java:308)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.run(PrioritizedEsThreadPoolExecutor.java:134)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+[2014-04-16 16:48:13,283][DEBUG][action.admin.indices.create] [Aurora] [tp1EPSI] failed to create
+org.elasticsearch.indices.InvalidIndexNameException: [tp1EPSI] Invalid index name [tp1EPSI], must be lowercase
+	at org.elasticsearch.cluster.metadata.MetaDataCreateIndexService.validateIndexName(MetaDataCreateIndexService.java:172)
+	at org.elasticsearch.cluster.metadata.MetaDataCreateIndexService.validate(MetaDataCreateIndexService.java:523)
+	at org.elasticsearch.cluster.metadata.MetaDataCreateIndexService.access$100(MetaDataCreateIndexService.java:87)
+	at org.elasticsearch.cluster.metadata.MetaDataCreateIndexService$2.execute(MetaDataCreateIndexService.java:220)
+	at org.elasticsearch.cluster.service.InternalClusterService$UpdateTask.run(InternalClusterService.java:308)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.run(PrioritizedEsThreadPoolExecutor.java:134)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+[2014-04-16 16:48:29,356][INFO ][cluster.metadata         ] [Aurora] [tp_epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-04-16 16:48:29,498][INFO ][cluster.metadata         ] [Aurora] [tp_epsi] update_mapping [users] (dynamic)
+[2014-04-16 16:48:37,174][WARN ][discovery.zen.ping.multicast] [Aurora] failed to connect to requesting node [Space Turnip][vhlor0HdTmeXxC8dllLHDA][shahad-VirtualBox][inet[/10.0.2.15:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Space Turnip][inet[/10.0.2.15:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:718)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:647)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:615)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:129)
+	at org.elasticsearch.discovery.zen.ping.multicast.MulticastZenPing$Receiver$1.run(MulticastZenPing.java:447)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: java.net.ConnectException: Connection refused: /10.0.2.15:9300
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:735)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:150)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:318)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2014-04-16 16:48:38,713][WARN ][discovery.zen.ping.multicast] [Aurora] failed to connect to requesting node [Space Turnip][vhlor0HdTmeXxC8dllLHDA][shahad-VirtualBox][inet[/10.0.2.15:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Space Turnip][inet[/10.0.2.15:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:718)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:647)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:615)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:129)
+	at org.elasticsearch.discovery.zen.ping.multicast.MulticastZenPing$Receiver$1.run(MulticastZenPing.java:447)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: java.net.ConnectException: Connection refused: /10.0.2.15:9300
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:735)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:150)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:318)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2014-04-16 16:50:07,082][WARN ][discovery.zen.ping.multicast] [Aurora] failed to connect to requesting node [Sigmar][pqELBe_TR_2IHmkT2UD68A][shahad-VirtualBox][inet[/10.0.2.15:9301]]
+org.elasticsearch.transport.ConnectTransportException: [Sigmar][inet[/10.0.2.15:9301]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:718)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:647)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:615)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:129)
+	at org.elasticsearch.discovery.zen.ping.multicast.MulticastZenPing$Receiver$1.run(MulticastZenPing.java:447)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: java.net.ConnectException: Connection refused: /10.0.2.15:9301
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:735)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:150)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:318)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2014-04-16 16:50:08,618][WARN ][discovery.zen.ping.multicast] [Aurora] failed to connect to requesting node [Sigmar][pqELBe_TR_2IHmkT2UD68A][shahad-VirtualBox][inet[/10.0.2.15:9301]]
+org.elasticsearch.transport.ConnectTransportException: [Sigmar][inet[/10.0.2.15:9301]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:718)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:647)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:615)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:129)
+	at org.elasticsearch.discovery.zen.ping.multicast.MulticastZenPing$Receiver$1.run(MulticastZenPing.java:447)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: java.net.ConnectException: Connection refused: /10.0.2.15:9301
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:735)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:150)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:318)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2014-04-16 16:52:58,667][INFO ][cluster.metadata         ] [Aurora] [tp_epsi] update_mapping [users] (dynamic)
+[2014-04-16 16:52:58,793][WARN ][discovery.zen.ping.multicast] [Aurora] failed to connect to requesting node [Karima Shapandar][u7Vj4FjOSze40vZJOh-ngw][bob-Dell][inet[/192.168.8.7:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Karima Shapandar][inet[/192.168.8.7:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:718)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:647)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:615)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:129)
+	at org.elasticsearch.discovery.zen.ping.multicast.MulticastZenPing$Receiver$1.run(MulticastZenPing.java:447)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: java.net.ConnectException: Connection refused: /192.168.8.7:9300
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:735)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:150)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:318)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2014-04-16 16:52:59,321][WARN ][discovery.zen.ping.multicast] [Aurora] failed to connect to requesting node [Karima Shapandar][u7Vj4FjOSze40vZJOh-ngw][bob-Dell][inet[/192.168.8.7:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Karima Shapandar][inet[/192.168.8.7:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:718)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:647)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:615)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:129)
+	at org.elasticsearch.discovery.zen.ping.multicast.MulticastZenPing$Receiver$1.run(MulticastZenPing.java:447)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: java.net.ConnectException: Connection refused: /192.168.8.7:9300
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:735)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:150)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:318)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2014-04-16 16:59:16,735][INFO ][cluster.metadata         ] [Aurora] [tp_epsi] update_mapping [users] (dynamic)
+[2014-04-16 17:56:41,560][INFO ][node                     ] [Aurora] stopping ...
+[2014-04-16 17:56:41,604][INFO ][node                     ] [Aurora] stopped
+[2014-04-16 17:56:41,604][INFO ][node                     ] [Aurora] closing ...
+[2014-04-16 17:56:41,610][INFO ][node                     ] [Aurora] closed

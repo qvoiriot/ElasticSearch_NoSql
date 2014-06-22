@@ -1,0 +1,563 @@
+[2014-06-15 13:03:49,710][INFO ][node                     ] [Mosha] version[1.1.0], pid[2250], build[2181e11/2014-03-25T15:59:51Z]
+[2014-06-15 13:03:49,711][INFO ][node                     ] [Mosha] initializing ...
+[2014-06-15 13:03:49,736][INFO ][plugins                  ] [Mosha] loaded [], sites []
+[2014-06-15 13:03:52,725][INFO ][node                     ] [Mosha] initialized
+[2014-06-15 13:03:52,726][INFO ][node                     ] [Mosha] starting ...
+[2014-06-15 13:03:52,862][INFO ][transport                ] [Mosha] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.13:9300]}
+[2014-06-15 13:03:55,919][INFO ][cluster.service          ] [Mosha] new_master [Mosha][RlcCRs87SMeO0noyOxpx2Q][mbp-de-quentin.home][inet[/192.168.1.13:9300]], reason: zen-disco-join (elected_as_master)
+[2014-06-15 13:03:55,948][INFO ][discovery                ] [Mosha] elasticsearch/RlcCRs87SMeO0noyOxpx2Q
+[2014-06-15 13:03:55,967][INFO ][http                     ] [Mosha] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.13:9200]}
+[2014-06-15 13:03:56,615][INFO ][gateway                  ] [Mosha] recovered [1] indices into cluster_state
+[2014-06-15 13:03:56,616][INFO ][node                     ] [Mosha] started
+[2014-06-15 13:38:47,244][INFO ][cluster.metadata         ] [Mosha] [epsi] deleting index
+[2014-06-15 13:38:59,918][INFO ][cluster.metadata         ] [Mosha] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-15 13:39:00,058][INFO ][cluster.metadata         ] [Mosha] [epsi] update_mapping [memories] (dynamic)
+[2014-06-15 13:39:15,629][INFO ][cluster.metadata         ] [Mosha] [epsi] deleting index
+[2014-06-15 13:50:20,246][INFO ][cluster.metadata         ] [Mosha] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-15 13:50:20,371][INFO ][cluster.metadata         ] [Mosha] [epsi] update_mapping [memories] (dynamic)
+[2014-06-15 13:50:23,430][INFO ][cluster.metadata         ] [Mosha] [epsi] deleting index
+[2014-06-15 13:50:26,046][INFO ][cluster.metadata         ] [Mosha] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-15 13:50:26,162][INFO ][cluster.metadata         ] [Mosha] [epsi] update_mapping [memories] (dynamic)
+[2014-06-15 13:50:29,222][INFO ][cluster.metadata         ] [Mosha] [epsi] deleting index
+[2014-06-15 13:50:31,333][INFO ][cluster.metadata         ] [Mosha] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-15 13:50:31,444][INFO ][cluster.metadata         ] [Mosha] [epsi] update_mapping [memories] (dynamic)
+[2014-06-15 14:14:34,421][INFO ][cluster.metadata         ] [Mosha] [epsi] deleting index
+[2014-06-15 14:15:55,036][INFO ][cluster.metadata         ] [Mosha] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-15 14:15:55,146][INFO ][cluster.metadata         ] [Mosha] [epsi] update_mapping [memories] (dynamic)
+[2014-06-15 14:17:34,615][INFO ][cluster.metadata         ] [Mosha] [epsi] deleting index
+[2014-06-15 14:23:07,704][INFO ][cluster.metadata         ] [Mosha] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-15 14:23:07,801][INFO ][cluster.metadata         ] [Mosha] [epsi] update_mapping [memories] (dynamic)
+[2014-06-15 14:37:58,388][INFO ][node                     ] [Mosha] stopping ...
+[2014-06-15 14:37:58,422][INFO ][node                     ] [Mosha] stopped
+[2014-06-15 14:37:58,422][INFO ][node                     ] [Mosha] closing ...
+[2014-06-15 14:37:58,430][INFO ][node                     ] [Mosha] closed
+[2014-06-15 17:26:28,742][INFO ][node                     ] [Meggan] version[1.1.0], pid[5489], build[2181e11/2014-03-25T15:59:51Z]
+[2014-06-15 17:26:28,743][INFO ][node                     ] [Meggan] initializing ...
+[2014-06-15 17:26:28,762][INFO ][plugins                  ] [Meggan] loaded [], sites []
+[2014-06-15 17:26:31,133][INFO ][node                     ] [Meggan] initialized
+[2014-06-15 17:26:31,133][INFO ][node                     ] [Meggan] starting ...
+[2014-06-15 17:26:31,239][INFO ][transport                ] [Meggan] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.13:9300]}
+[2014-06-15 17:26:34,283][INFO ][cluster.service          ] [Meggan] new_master [Meggan][UI4O1O-gR4WddsSvElkxfw][mbp-de-quentin.home][inet[/192.168.1.13:9300]], reason: zen-disco-join (elected_as_master)
+[2014-06-15 17:26:34,307][INFO ][discovery                ] [Meggan] elasticsearch/UI4O1O-gR4WddsSvElkxfw
+[2014-06-15 17:26:34,323][INFO ][http                     ] [Meggan] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.13:9200]}
+[2014-06-15 17:26:34,828][INFO ][gateway                  ] [Meggan] recovered [1] indices into cluster_state
+[2014-06-15 17:26:34,830][INFO ][node                     ] [Meggan] started
+[2014-06-15 17:28:13,393][INFO ][cluster.metadata         ] [Meggan] [epsi] deleting index
+[2014-06-15 17:28:14,505][INFO ][cluster.metadata         ] [Meggan] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-15 17:28:14,651][INFO ][cluster.metadata         ] [Meggan] [epsi] update_mapping [memories] (dynamic)
+[2014-06-15 17:28:29,732][INFO ][cluster.metadata         ] [Meggan] [epsi] deleting index
+[2014-06-15 17:28:30,833][INFO ][cluster.metadata         ] [Meggan] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-15 17:28:30,975][INFO ][cluster.metadata         ] [Meggan] [epsi] update_mapping [memories] (dynamic)
+[2014-06-15 17:28:37,600][INFO ][cluster.metadata         ] [Meggan] [epsi] deleting index
+[2014-06-15 17:28:38,580][INFO ][cluster.metadata         ] [Meggan] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-15 17:28:38,710][INFO ][cluster.metadata         ] [Meggan] [epsi] update_mapping [memories] (dynamic)
+[2014-06-15 17:28:42,608][INFO ][cluster.metadata         ] [Meggan] [epsi] deleting index
+[2014-06-15 17:28:43,610][INFO ][cluster.metadata         ] [Meggan] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-15 17:28:43,718][INFO ][cluster.metadata         ] [Meggan] [epsi] update_mapping [memories] (dynamic)
+[2014-06-15 17:28:45,315][INFO ][cluster.metadata         ] [Meggan] [epsi] deleting index
+[2014-06-15 17:28:46,260][INFO ][cluster.metadata         ] [Meggan] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-15 17:28:46,367][INFO ][cluster.metadata         ] [Meggan] [epsi] update_mapping [memories] (dynamic)
+[2014-06-15 17:28:49,677][INFO ][cluster.metadata         ] [Meggan] [epsi] deleting index
+[2014-06-15 17:28:50,625][INFO ][cluster.metadata         ] [Meggan] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-15 17:28:50,723][INFO ][cluster.metadata         ] [Meggan] [epsi] update_mapping [memories] (dynamic)
+[2014-06-15 17:28:52,056][INFO ][cluster.metadata         ] [Meggan] [epsi] deleting index
+[2014-06-15 17:28:53,017][INFO ][cluster.metadata         ] [Meggan] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-15 17:28:53,131][INFO ][cluster.metadata         ] [Meggan] [epsi] update_mapping [memories] (dynamic)
+[2014-06-15 17:28:54,662][INFO ][cluster.metadata         ] [Meggan] [epsi] deleting index
+[2014-06-15 17:28:55,641][INFO ][cluster.metadata         ] [Meggan] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-15 17:28:55,733][INFO ][cluster.metadata         ] [Meggan] [epsi] update_mapping [memories] (dynamic)
+[2014-06-15 17:28:57,931][INFO ][cluster.metadata         ] [Meggan] [epsi] deleting index
+[2014-06-15 17:28:58,880][INFO ][cluster.metadata         ] [Meggan] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-15 17:28:58,966][INFO ][cluster.metadata         ] [Meggan] [epsi] update_mapping [memories] (dynamic)
+[2014-06-15 17:28:59,999][INFO ][cluster.metadata         ] [Meggan] [epsi] deleting index
+[2014-06-15 17:29:00,943][INFO ][cluster.metadata         ] [Meggan] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-15 17:29:01,025][INFO ][cluster.metadata         ] [Meggan] [epsi] update_mapping [memories] (dynamic)
+[2014-06-15 17:30:11,753][INFO ][cluster.metadata         ] [Meggan] [epsi] deleting index
+[2014-06-15 17:30:12,754][INFO ][cluster.metadata         ] [Meggan] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-15 17:30:12,846][INFO ][cluster.metadata         ] [Meggan] [epsi] update_mapping [memories] (dynamic)
+[2014-06-15 17:30:25,645][INFO ][cluster.metadata         ] [Meggan] [epsi] deleting index
+[2014-06-15 17:30:26,735][INFO ][cluster.metadata         ] [Meggan] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-15 17:30:26,812][INFO ][cluster.metadata         ] [Meggan] [epsi] update_mapping [memories] (dynamic)
+[2014-06-15 17:30:55,347][INFO ][cluster.metadata         ] [Meggan] [epsi] deleting index
+[2014-06-15 17:30:56,296][INFO ][cluster.metadata         ] [Meggan] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-15 17:30:56,373][INFO ][cluster.metadata         ] [Meggan] [epsi] update_mapping [memories] (dynamic)
+[2014-06-15 17:32:26,709][INFO ][cluster.metadata         ] [Meggan] [epsi] deleting index
+[2014-06-15 17:32:27,678][INFO ][cluster.metadata         ] [Meggan] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-15 17:32:27,748][INFO ][cluster.metadata         ] [Meggan] [epsi] update_mapping [memories] (dynamic)
+[2014-06-15 17:32:55,809][INFO ][cluster.metadata         ] [Meggan] [epsi] deleting index
+[2014-06-15 17:32:56,773][INFO ][cluster.metadata         ] [Meggan] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-15 17:32:56,849][INFO ][cluster.metadata         ] [Meggan] [epsi] update_mapping [memories] (dynamic)
+[2014-06-15 17:34:55,337][INFO ][cluster.metadata         ] [Meggan] [epsi] deleting index
+[2014-06-15 17:35:45,946][INFO ][node                     ] [Meggan] stopping ...
+[2014-06-15 17:35:45,965][INFO ][node                     ] [Meggan] stopped
+[2014-06-15 17:35:45,965][INFO ][node                     ] [Meggan] closing ...
+[2014-06-15 17:35:45,969][INFO ][node                     ] [Meggan] closed
+[2014-06-15 17:35:48,731][INFO ][node                     ] [Balder] version[1.1.0], pid[5636], build[2181e11/2014-03-25T15:59:51Z]
+[2014-06-15 17:35:48,732][INFO ][node                     ] [Balder] initializing ...
+[2014-06-15 17:35:48,751][INFO ][plugins                  ] [Balder] loaded [], sites []
+[2014-06-15 17:35:51,111][INFO ][node                     ] [Balder] initialized
+[2014-06-15 17:35:51,112][INFO ][node                     ] [Balder] starting ...
+[2014-06-15 17:35:51,233][INFO ][transport                ] [Balder] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.13:9300]}
+[2014-06-15 17:35:54,274][INFO ][cluster.service          ] [Balder] new_master [Balder][Le5cCYHCR625yABYuEvT4g][mbp-de-quentin.home][inet[/192.168.1.13:9300]], reason: zen-disco-join (elected_as_master)
+[2014-06-15 17:35:54,299][INFO ][discovery                ] [Balder] elasticsearch/Le5cCYHCR625yABYuEvT4g
+[2014-06-15 17:35:54,317][INFO ][http                     ] [Balder] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.13:9200]}
+[2014-06-15 17:35:54,330][INFO ][gateway                  ] [Balder] recovered [0] indices into cluster_state
+[2014-06-15 17:35:54,331][INFO ][node                     ] [Balder] started
+[2014-06-15 17:36:04,334][INFO ][cluster.metadata         ] [Balder] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-15 17:36:04,691][INFO ][cluster.metadata         ] [Balder] [epsi] update_mapping [memories] (dynamic)
+[2014-06-15 17:36:09,156][INFO ][cluster.metadata         ] [Balder] [epsi] deleting index
+[2014-06-15 17:36:10,221][INFO ][cluster.metadata         ] [Balder] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-15 17:36:10,363][INFO ][cluster.metadata         ] [Balder] [epsi] update_mapping [memories] (dynamic)
+[2014-06-15 17:37:31,621][INFO ][cluster.metadata         ] [Balder] [epsi] deleting index
+[2014-06-15 17:37:32,667][INFO ][cluster.metadata         ] [Balder] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-15 17:37:32,792][INFO ][cluster.metadata         ] [Balder] [epsi] update_mapping [memories] (dynamic)
+[2014-06-15 17:37:43,855][INFO ][cluster.metadata         ] [Balder] [epsi] deleting index
+[2014-06-15 17:37:45,064][INFO ][cluster.metadata         ] [Balder] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-15 17:37:45,196][INFO ][cluster.metadata         ] [Balder] [epsi] update_mapping [memories] (dynamic)
+[2014-06-15 17:41:14,456][INFO ][cluster.metadata         ] [Balder] [epsi] deleting index
+[2014-06-15 17:41:15,433][INFO ][cluster.metadata         ] [Balder] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-15 17:41:15,540][INFO ][cluster.metadata         ] [Balder] [epsi] update_mapping [memories] (dynamic)
+[2014-06-15 17:41:16,590][INFO ][cluster.metadata         ] [Balder] [epsi] deleting index
+[2014-06-15 17:41:17,572][INFO ][cluster.metadata         ] [Balder] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-15 17:41:17,677][INFO ][cluster.metadata         ] [Balder] [epsi] update_mapping [memories] (dynamic)
+[2014-06-15 17:41:18,778][INFO ][cluster.metadata         ] [Balder] [epsi] deleting index
+[2014-06-15 17:41:19,753][INFO ][cluster.metadata         ] [Balder] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-15 17:41:19,861][INFO ][cluster.metadata         ] [Balder] [epsi] update_mapping [memories] (dynamic)
+[2014-06-15 17:41:25,211][INFO ][cluster.metadata         ] [Balder] [epsi] deleting index
+[2014-06-15 17:41:26,163][INFO ][cluster.metadata         ] [Balder] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-15 17:41:26,272][INFO ][cluster.metadata         ] [Balder] [epsi] update_mapping [memories] (dynamic)
+[2014-06-15 17:42:47,522][INFO ][cluster.metadata         ] [Balder] [epsi] deleting index
+[2014-06-15 17:42:48,493][INFO ][cluster.metadata         ] [Balder] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-15 17:42:48,589][INFO ][cluster.metadata         ] [Balder] [epsi] update_mapping [memories] (dynamic)
+[2014-06-15 17:42:54,071][INFO ][cluster.metadata         ] [Balder] [epsi] deleting index
+[2014-06-15 17:42:55,181][INFO ][cluster.metadata         ] [Balder] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-15 17:42:55,263][INFO ][cluster.metadata         ] [Balder] [epsi] update_mapping [memories] (dynamic)
+[2014-06-15 17:42:56,952][INFO ][cluster.metadata         ] [Balder] [epsi] deleting index
+[2014-06-15 17:42:57,954][INFO ][cluster.metadata         ] [Balder] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-15 17:42:58,038][INFO ][cluster.metadata         ] [Balder] [epsi] update_mapping [memories] (dynamic)
+[2014-06-15 17:43:54,702][INFO ][cluster.metadata         ] [Balder] [epsi] deleting index
+[2014-06-15 17:43:55,700][INFO ][cluster.metadata         ] [Balder] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-15 17:43:55,789][INFO ][cluster.metadata         ] [Balder] [epsi] update_mapping [memories] (dynamic)
+[2014-06-15 17:49:36,604][INFO ][cluster.metadata         ] [Balder] [epsi] deleting index
+[2014-06-15 17:54:23,441][INFO ][cluster.metadata         ] [Balder] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-15 17:54:23,528][INFO ][cluster.metadata         ] [Balder] [epsi] update_mapping [memories] (dynamic)
+[2014-06-15 17:54:31,247][INFO ][cluster.metadata         ] [Balder] [epsi] deleting index
+[2014-06-15 17:54:32,248][INFO ][cluster.metadata         ] [Balder] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-15 17:54:32,343][INFO ][cluster.metadata         ] [Balder] [epsi] update_mapping [memories] (dynamic)
+[2014-06-15 18:17:58,643][INFO ][cluster.metadata         ] [Balder] [epsi] deleting index
+[2014-06-15 18:18:01,377][INFO ][cluster.metadata         ] [Balder] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-15 18:18:01,452][INFO ][cluster.metadata         ] [Balder] [epsi] update_mapping [memories] (dynamic)
+[2014-06-15 18:18:03,855][INFO ][cluster.metadata         ] [Balder] [epsi] deleting index
+[2014-06-15 18:18:06,984][INFO ][cluster.metadata         ] [Balder] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-15 18:18:07,064][INFO ][cluster.metadata         ] [Balder] [epsi] update_mapping [memories] (dynamic)
+[2014-06-15 18:18:09,498][INFO ][cluster.metadata         ] [Balder] [epsi] deleting index
+[2014-06-15 18:18:11,991][INFO ][cluster.metadata         ] [Balder] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-15 18:18:12,067][INFO ][cluster.metadata         ] [Balder] [epsi] update_mapping [memories] (dynamic)
+[2014-06-15 18:18:12,777][INFO ][cluster.metadata         ] [Balder] [epsi] deleting index
+[2014-06-15 18:26:58,006][INFO ][cluster.metadata         ] [Balder] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-15 18:26:58,081][INFO ][cluster.metadata         ] [Balder] [epsi] update_mapping [memories] (dynamic)
+[2014-06-15 18:27:04,061][INFO ][cluster.metadata         ] [Balder] [epsi] deleting index
+[2014-06-15 18:28:12,497][INFO ][cluster.metadata         ] [Balder] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-15 18:28:12,570][INFO ][cluster.metadata         ] [Balder] [epsi] update_mapping [memories] (dynamic)
+[2014-06-15 18:30:58,295][INFO ][cluster.metadata         ] [Balder] [epsi] deleting index
+[2014-06-15 18:31:00,866][INFO ][cluster.metadata         ] [Balder] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-15 18:31:00,940][INFO ][cluster.metadata         ] [Balder] [epsi] update_mapping [memories] (dynamic)
+[2014-06-15 18:31:41,568][INFO ][cluster.metadata         ] [Balder] [epsi] deleting index
+[2014-06-15 18:31:41,904][INFO ][cluster.metadata         ] [Balder] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-15 18:31:41,986][INFO ][cluster.metadata         ] [Balder] [epsi] update_mapping [memories] (dynamic)
+[2014-06-15 18:33:35,199][INFO ][cluster.metadata         ] [Balder] [epsi] deleting index
+[2014-06-15 18:33:43,250][INFO ][cluster.metadata         ] [Balder] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-15 18:33:43,323][INFO ][cluster.metadata         ] [Balder] [epsi] update_mapping [memories] (dynamic)
+[2014-06-15 18:37:20,135][INFO ][cluster.metadata         ] [Balder] [epsi] deleting index
+[2014-06-15 18:37:21,762][INFO ][cluster.metadata         ] [Balder] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-15 18:37:21,831][INFO ][cluster.metadata         ] [Balder] [epsi] update_mapping [memories] (dynamic)
+[2014-06-15 18:40:45,043][INFO ][cluster.metadata         ] [Balder] [epsi] deleting index
+[2014-06-15 18:40:47,030][INFO ][cluster.metadata         ] [Balder] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-15 18:40:47,100][INFO ][cluster.metadata         ] [Balder] [epsi] update_mapping [memories] (dynamic)
+[2014-06-15 18:42:30,525][INFO ][cluster.metadata         ] [Balder] [epsi] deleting index
+[2014-06-15 18:42:44,167][INFO ][cluster.metadata         ] [Balder] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-15 18:42:44,248][INFO ][cluster.metadata         ] [Balder] [epsi] update_mapping [memories] (dynamic)
+[2014-06-15 18:43:16,523][INFO ][cluster.metadata         ] [Balder] [epsi] deleting index
+[2014-06-15 18:43:17,898][INFO ][cluster.metadata         ] [Balder] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-15 18:43:17,979][INFO ][cluster.metadata         ] [Balder] [epsi] update_mapping [memories] (dynamic)
+[2014-06-15 18:44:23,465][INFO ][cluster.metadata         ] [Balder] [epsi] deleting index
+[2014-06-15 18:44:25,123][INFO ][cluster.metadata         ] [Balder] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-15 18:44:25,192][INFO ][cluster.metadata         ] [Balder] [epsi] update_mapping [memories] (dynamic)
+[2014-06-15 18:45:00,183][INFO ][cluster.metadata         ] [Balder] [epsi] deleting index
+[2014-06-15 18:45:03,353][INFO ][cluster.metadata         ] [Balder] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-15 18:45:03,419][INFO ][cluster.metadata         ] [Balder] [epsi] update_mapping [memories] (dynamic)
+[2014-06-15 18:45:09,801][INFO ][cluster.metadata         ] [Balder] [epsi] deleting index
+[2014-06-15 18:45:09,891][INFO ][cluster.metadata         ] [Balder] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-15 18:45:09,959][INFO ][cluster.metadata         ] [Balder] [epsi] update_mapping [memories] (dynamic)
+[2014-06-15 18:45:56,012][INFO ][cluster.metadata         ] [Balder] [epsi] deleting index
+[2014-06-15 18:45:57,354][INFO ][cluster.metadata         ] [Balder] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-15 18:45:57,423][INFO ][cluster.metadata         ] [Balder] [epsi] update_mapping [memories] (dynamic)
+[2014-06-15 18:50:39,329][INFO ][cluster.metadata         ] [Balder] [epsi] deleting index
+[2014-06-15 18:50:41,236][INFO ][cluster.metadata         ] [Balder] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-15 18:50:41,304][INFO ][cluster.metadata         ] [Balder] [epsi] update_mapping [memories] (dynamic)
+[2014-06-15 18:51:11,627][INFO ][cluster.metadata         ] [Balder] [epsi] deleting index
+[2014-06-15 18:51:12,909][INFO ][cluster.metadata         ] [Balder] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-15 18:51:12,976][INFO ][cluster.metadata         ] [Balder] [epsi] update_mapping [memories] (dynamic)
+[2014-06-15 19:10:44,272][INFO ][cluster.metadata         ] [Balder] [epsi] deleting index
+[2014-06-15 19:10:45,724][INFO ][cluster.metadata         ] [Balder] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-15 19:10:45,791][INFO ][cluster.metadata         ] [Balder] [epsi] update_mapping [memories] (dynamic)
+[2014-06-15 19:12:30,961][INFO ][cluster.metadata         ] [Balder] [epsi] deleting index
+[2014-06-15 19:12:32,448][INFO ][cluster.metadata         ] [Balder] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-15 19:12:32,530][INFO ][cluster.metadata         ] [Balder] [epsi] update_mapping [memories] (dynamic)
+[2014-06-15 19:13:41,189][INFO ][cluster.metadata         ] [Balder] [epsi] deleting index
+[2014-06-15 19:13:42,817][INFO ][cluster.metadata         ] [Balder] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-15 19:13:42,885][INFO ][cluster.metadata         ] [Balder] [epsi] update_mapping [memories] (dynamic)
+[2014-06-15 19:14:50,120][INFO ][cluster.metadata         ] [Balder] [epsi] deleting index
+[2014-06-15 19:14:51,348][INFO ][cluster.metadata         ] [Balder] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-15 19:14:51,412][INFO ][cluster.metadata         ] [Balder] [epsi] update_mapping [memories] (dynamic)
+[2014-06-15 19:16:09,125][INFO ][cluster.metadata         ] [Balder] [epsi] deleting index
+[2014-06-15 19:16:10,751][INFO ][cluster.metadata         ] [Balder] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-15 19:16:10,820][INFO ][cluster.metadata         ] [Balder] [epsi] update_mapping [memories] (dynamic)
+[2014-06-15 19:18:01,839][INFO ][cluster.metadata         ] [Balder] [epsi] deleting index
+[2014-06-15 19:18:03,266][INFO ][cluster.metadata         ] [Balder] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-15 19:18:03,328][INFO ][cluster.metadata         ] [Balder] [epsi] update_mapping [memories] (dynamic)
+[2014-06-15 19:18:18,236][INFO ][cluster.metadata         ] [Balder] [epsi] deleting index
+[2014-06-15 19:18:19,457][INFO ][cluster.metadata         ] [Balder] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-15 19:18:19,538][INFO ][cluster.metadata         ] [Balder] [epsi] update_mapping [memories] (dynamic)
+[2014-06-15 19:21:43,162][INFO ][cluster.metadata         ] [Balder] [epsi] deleting index
+[2014-06-15 19:21:44,450][INFO ][cluster.metadata         ] [Balder] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-15 19:21:44,507][INFO ][cluster.metadata         ] [Balder] [epsi] update_mapping [memories] (dynamic)
+[2014-06-15 19:22:03,812][INFO ][cluster.metadata         ] [Balder] [epsi] deleting index
+[2014-06-15 19:22:05,063][INFO ][cluster.metadata         ] [Balder] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-15 19:22:05,130][INFO ][cluster.metadata         ] [Balder] [epsi] update_mapping [memories] (dynamic)
+[2014-06-15 19:23:59,426][DEBUG][action.search.type       ] [Balder] [epsi][4], node[Le5cCYHCR625yABYuEvT4g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@3f5a8b9e] lastShard [true]
+org.elasticsearch.search.SearchParseException: [epsi][4]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"match":"quentin"}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:634)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:507)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:480)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252)
+	at org.elasticsearch.search.action.SearchServiceTransportAction.sendExecuteQuery(SearchServiceTransportAction.java:202)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction.sendExecuteFirstPhase(TransportSearchQueryThenFetchAction.java:80)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:216)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:203)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$2.run(TransportSearchTypeAction.java:186)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [epsi] [_na] query malformed, no field after start_object
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:216)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:330)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:260)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:622)
+	... 11 more
+[2014-06-15 19:23:59,426][DEBUG][action.search.type       ] [Balder] [epsi][1], node[Le5cCYHCR625yABYuEvT4g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@3f5a8b9e] lastShard [true]
+org.elasticsearch.search.SearchParseException: [epsi][1]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"match":"quentin"}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:634)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:507)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:480)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252)
+	at org.elasticsearch.search.action.SearchServiceTransportAction.sendExecuteQuery(SearchServiceTransportAction.java:202)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction.sendExecuteFirstPhase(TransportSearchQueryThenFetchAction.java:80)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:216)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:203)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$2.run(TransportSearchTypeAction.java:186)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [epsi] [_na] query malformed, no field after start_object
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:216)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:330)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:260)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:622)
+	... 11 more
+[2014-06-15 19:23:59,426][DEBUG][action.search.type       ] [Balder] [epsi][0], node[Le5cCYHCR625yABYuEvT4g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@3f5a8b9e] lastShard [true]
+org.elasticsearch.search.SearchParseException: [epsi][0]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"match":"quentin"}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:634)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:507)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:480)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252)
+	at org.elasticsearch.search.action.SearchServiceTransportAction.sendExecuteQuery(SearchServiceTransportAction.java:202)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction.sendExecuteFirstPhase(TransportSearchQueryThenFetchAction.java:80)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:216)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:203)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$2.run(TransportSearchTypeAction.java:186)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [epsi] [_na] query malformed, no field after start_object
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:216)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:330)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:260)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:622)
+	... 11 more
+[2014-06-15 19:23:59,426][DEBUG][action.search.type       ] [Balder] [epsi][2], node[Le5cCYHCR625yABYuEvT4g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@3f5a8b9e] lastShard [true]
+org.elasticsearch.search.SearchParseException: [epsi][2]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"match":"quentin"}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:634)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:507)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:480)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252)
+	at org.elasticsearch.search.action.SearchServiceTransportAction.sendExecuteQuery(SearchServiceTransportAction.java:202)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction.sendExecuteFirstPhase(TransportSearchQueryThenFetchAction.java:80)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:216)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:203)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$2.run(TransportSearchTypeAction.java:186)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [epsi] [_na] query malformed, no field after start_object
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:216)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:330)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:260)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:622)
+	... 11 more
+[2014-06-15 19:23:59,426][DEBUG][action.search.type       ] [Balder] [epsi][3], node[Le5cCYHCR625yABYuEvT4g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@3f5a8b9e]
+org.elasticsearch.search.SearchParseException: [epsi][3]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"match":"quentin"}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:634)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:507)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:480)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252)
+	at org.elasticsearch.search.action.SearchServiceTransportAction.sendExecuteQuery(SearchServiceTransportAction.java:202)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction.sendExecuteFirstPhase(TransportSearchQueryThenFetchAction.java:80)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:216)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:203)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$2.run(TransportSearchTypeAction.java:186)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [epsi] [_na] query malformed, no field after start_object
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:216)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:330)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:260)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:622)
+	... 11 more
+[2014-06-15 19:23:59,434][DEBUG][action.search.type       ] [Balder] All shards failed for phase: [query]
+[2014-06-15 19:24:03,379][INFO ][cluster.metadata         ] [Balder] [epsi] deleting index
+[2014-06-15 19:24:04,821][INFO ][cluster.metadata         ] [Balder] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-15 19:24:04,890][INFO ][cluster.metadata         ] [Balder] [epsi] update_mapping [memories] (dynamic)
+[2014-06-15 19:24:05,271][DEBUG][action.search.type       ] [Balder] [epsi][3], node[Le5cCYHCR625yABYuEvT4g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@7c87b07a] lastShard [true]
+org.elasticsearch.search.SearchParseException: [epsi][3]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"match":"quentin"}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:634)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:507)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:480)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252)
+	at org.elasticsearch.search.action.SearchServiceTransportAction.sendExecuteQuery(SearchServiceTransportAction.java:202)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction.sendExecuteFirstPhase(TransportSearchQueryThenFetchAction.java:80)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:216)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:203)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$2.run(TransportSearchTypeAction.java:186)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [epsi] [_na] query malformed, no field after start_object
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:216)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:330)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:260)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:622)
+	... 11 more
+[2014-06-15 19:24:05,271][DEBUG][action.search.type       ] [Balder] [epsi][0], node[Le5cCYHCR625yABYuEvT4g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@7c87b07a] lastShard [true]
+org.elasticsearch.search.SearchParseException: [epsi][0]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"match":"quentin"}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:634)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:507)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:480)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252)
+	at org.elasticsearch.search.action.SearchServiceTransportAction.sendExecuteQuery(SearchServiceTransportAction.java:202)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction.sendExecuteFirstPhase(TransportSearchQueryThenFetchAction.java:80)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:216)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:203)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$2.run(TransportSearchTypeAction.java:186)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [epsi] [_na] query malformed, no field after start_object
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:216)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:330)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:260)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:622)
+	... 11 more
+[2014-06-15 19:24:05,271][DEBUG][action.search.type       ] [Balder] [epsi][2], node[Le5cCYHCR625yABYuEvT4g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@7c87b07a] lastShard [true]
+org.elasticsearch.search.SearchParseException: [epsi][2]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"match":"quentin"}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:634)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:507)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:480)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252)
+	at org.elasticsearch.search.action.SearchServiceTransportAction.sendExecuteQuery(SearchServiceTransportAction.java:202)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction.sendExecuteFirstPhase(TransportSearchQueryThenFetchAction.java:80)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:216)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:203)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$2.run(TransportSearchTypeAction.java:186)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [epsi] [_na] query malformed, no field after start_object
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:216)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:330)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:260)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:622)
+	... 11 more
+[2014-06-15 19:24:05,271][DEBUG][action.search.type       ] [Balder] [epsi][1], node[Le5cCYHCR625yABYuEvT4g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@7c87b07a]
+org.elasticsearch.search.SearchParseException: [epsi][1]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"match":"quentin"}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:634)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:507)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:480)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252)
+	at org.elasticsearch.search.action.SearchServiceTransportAction.sendExecuteQuery(SearchServiceTransportAction.java:202)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction.sendExecuteFirstPhase(TransportSearchQueryThenFetchAction.java:80)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:216)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:203)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$2.run(TransportSearchTypeAction.java:186)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [epsi] [_na] query malformed, no field after start_object
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:216)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:330)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:260)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:622)
+	... 11 more
+[2014-06-15 19:24:05,271][DEBUG][action.search.type       ] [Balder] [epsi][4], node[Le5cCYHCR625yABYuEvT4g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@7c87b07a] lastShard [true]
+org.elasticsearch.search.SearchParseException: [epsi][4]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"match":"quentin"}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:634)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:507)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:480)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252)
+	at org.elasticsearch.search.action.SearchServiceTransportAction.sendExecuteQuery(SearchServiceTransportAction.java:202)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction.sendExecuteFirstPhase(TransportSearchQueryThenFetchAction.java:80)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:216)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:203)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$2.run(TransportSearchTypeAction.java:186)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [epsi] [_na] query malformed, no field after start_object
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:216)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:330)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:260)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:622)
+	... 11 more
+[2014-06-15 19:24:05,278][DEBUG][action.search.type       ] [Balder] All shards failed for phase: [query]
+[2014-06-15 19:24:16,547][INFO ][cluster.metadata         ] [Balder] [epsi] deleting index
+[2014-06-15 19:24:17,857][INFO ][cluster.metadata         ] [Balder] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-15 19:24:17,915][INFO ][cluster.metadata         ] [Balder] [epsi] update_mapping [memories] (dynamic)
+[2014-06-15 19:43:32,613][INFO ][cluster.metadata         ] [Balder] [epsi] deleting index
+[2014-06-15 19:43:39,278][INFO ][cluster.metadata         ] [Balder] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-15 19:43:39,341][INFO ][cluster.metadata         ] [Balder] [epsi] update_mapping [memories] (dynamic)
+[2014-06-15 19:44:01,299][DEBUG][action.search.type       ] [Balder] [epsi][3], node[Le5cCYHCR625yABYuEvT4g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@351f1981] lastShard [true]
+org.elasticsearch.search.SearchParseException: [epsi][3]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"match":{"first_name":null}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:634)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:507)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:480)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252)
+	at org.elasticsearch.search.action.SearchServiceTransportAction.sendExecuteQuery(SearchServiceTransportAction.java:202)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction.sendExecuteFirstPhase(TransportSearchQueryThenFetchAction.java:80)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:216)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:203)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$2.run(TransportSearchTypeAction.java:186)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [epsi] No text specified for text query
+	at org.elasticsearch.index.query.MatchQueryParser.parse(MatchQueryParser.java:162)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:223)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:330)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:260)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:622)
+	... 11 more
+[2014-06-15 19:44:01,299][DEBUG][action.search.type       ] [Balder] [epsi][1], node[Le5cCYHCR625yABYuEvT4g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@351f1981]
+org.elasticsearch.search.SearchParseException: [epsi][1]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"match":{"first_name":null}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:634)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:507)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:480)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252)
+	at org.elasticsearch.search.action.SearchServiceTransportAction.sendExecuteQuery(SearchServiceTransportAction.java:202)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction.sendExecuteFirstPhase(TransportSearchQueryThenFetchAction.java:80)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:216)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:203)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$2.run(TransportSearchTypeAction.java:186)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [epsi] No text specified for text query
+	at org.elasticsearch.index.query.MatchQueryParser.parse(MatchQueryParser.java:162)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:223)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:330)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:260)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:622)
+	... 11 more
+[2014-06-15 19:44:01,299][DEBUG][action.search.type       ] [Balder] [epsi][2], node[Le5cCYHCR625yABYuEvT4g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@351f1981] lastShard [true]
+org.elasticsearch.search.SearchParseException: [epsi][2]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"match":{"first_name":null}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:634)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:507)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:480)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252)
+	at org.elasticsearch.search.action.SearchServiceTransportAction.sendExecuteQuery(SearchServiceTransportAction.java:202)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction.sendExecuteFirstPhase(TransportSearchQueryThenFetchAction.java:80)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:216)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:203)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$2.run(TransportSearchTypeAction.java:186)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [epsi] No text specified for text query
+	at org.elasticsearch.index.query.MatchQueryParser.parse(MatchQueryParser.java:162)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:223)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:330)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:260)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:622)
+	... 11 more
+[2014-06-15 19:44:01,299][DEBUG][action.search.type       ] [Balder] [epsi][4], node[Le5cCYHCR625yABYuEvT4g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@351f1981] lastShard [true]
+org.elasticsearch.search.SearchParseException: [epsi][4]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"match":{"first_name":null}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:634)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:507)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:480)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252)
+	at org.elasticsearch.search.action.SearchServiceTransportAction.sendExecuteQuery(SearchServiceTransportAction.java:202)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction.sendExecuteFirstPhase(TransportSearchQueryThenFetchAction.java:80)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:216)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:203)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$2.run(TransportSearchTypeAction.java:186)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [epsi] No text specified for text query
+	at org.elasticsearch.index.query.MatchQueryParser.parse(MatchQueryParser.java:162)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:223)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:330)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:260)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:622)
+	... 11 more
+[2014-06-15 19:44:01,299][DEBUG][action.search.type       ] [Balder] [epsi][0], node[Le5cCYHCR625yABYuEvT4g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@351f1981] lastShard [true]
+org.elasticsearch.search.SearchParseException: [epsi][0]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"match":{"first_name":null}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:634)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:507)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:480)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252)
+	at org.elasticsearch.search.action.SearchServiceTransportAction.sendExecuteQuery(SearchServiceTransportAction.java:202)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction.sendExecuteFirstPhase(TransportSearchQueryThenFetchAction.java:80)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:216)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:203)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$2.run(TransportSearchTypeAction.java:186)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [epsi] No text specified for text query
+	at org.elasticsearch.index.query.MatchQueryParser.parse(MatchQueryParser.java:162)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:223)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:330)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:260)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:622)
+	... 11 more
+[2014-06-15 19:44:01,301][DEBUG][action.search.type       ] [Balder] All shards failed for phase: [query]
+[2014-06-15 19:57:18,892][INFO ][node                     ] [Balder] stopping ...
+[2014-06-15 19:57:18,918][INFO ][node                     ] [Balder] stopped
+[2014-06-15 19:57:18,918][INFO ][node                     ] [Balder] closing ...
+[2014-06-15 19:57:18,923][INFO ][node                     ] [Balder] closed

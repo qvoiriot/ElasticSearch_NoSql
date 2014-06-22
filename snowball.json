@@ -1,0 +1,14 @@
+{
+  "index" : {
+    "memories" : {
+      "analyzer" : {
+        "my_analyzer" : {
+          "type" : "snowball",
+          "language" : "French"
+          "stopwords":
+          "le,la,les,de,des,te,tes,mon,ma,mes,un,une"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,76 @@
+[2014-05-26 09:26:50,283][INFO ][node                     ] [Grasshopper II] version[1.1.0], pid[1547], build[2181e11/2014-03-25T15:59:51Z]
+[2014-05-26 09:26:50,284][INFO ][node                     ] [Grasshopper II] initializing ...
+[2014-05-26 09:26:50,310][INFO ][plugins                  ] [Grasshopper II] loaded [], sites []
+[2014-05-26 09:26:53,248][INFO ][node                     ] [Grasshopper II] initialized
+[2014-05-26 09:26:53,248][INFO ][node                     ] [Grasshopper II] starting ...
+[2014-05-26 09:26:53,384][INFO ][transport                ] [Grasshopper II] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.8.15:9300]}
+[2014-05-26 09:26:56,437][INFO ][cluster.service          ] [Grasshopper II] new_master [Grasshopper II][lxthJBSDQ92T_7wmF7e5NA][MacBook-Pro-de-Quentin.local][inet[/192.168.8.15:9300]], reason: zen-disco-join (elected_as_master)
+[2014-05-26 09:26:56,463][INFO ][discovery                ] [Grasshopper II] elasticsearch/lxthJBSDQ92T_7wmF7e5NA
+[2014-05-26 09:26:56,481][INFO ][http                     ] [Grasshopper II] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.8.15:9200]}
+[2014-05-26 09:26:57,137][INFO ][gateway                  ] [Grasshopper II] recovered [2] indices into cluster_state
+[2014-05-26 09:26:57,139][INFO ][node                     ] [Grasshopper II] started
+[2014-05-26 09:51:32,276][INFO ][cluster.metadata         ] [Grasshopper II] [my_index] creating index, cause [api], shards [5]/[1], mappings []
+[2014-05-26 10:12:39,875][INFO ][cluster.metadata         ] [Grasshopper II] [memories] creating index, cause [api], shards [5]/[1], mappings []
+[2014-05-26 11:21:22,442][INFO ][cluster.metadata         ] [Grasshopper II] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-05-26 11:21:22,570][INFO ][cluster.metadata         ] [Grasshopper II] [epsi] update_mapping [memories] (dynamic)
+[2014-05-26 11:26:36,479][INFO ][cluster.metadata         ] [Grasshopper II] [epsi] update_mapping [memories] (dynamic)
+[2014-05-26 11:58:00,176][INFO ][cluster.metadata         ] [Grasshopper II] [epsi] update_mapping [memories] (dynamic)
+[2014-05-26 12:04:33,858][INFO ][cluster.metadata         ] [Grasshopper II] [epsi] deleting index
+[2014-05-26 12:04:33,882][INFO ][cluster.metadata         ] [Grasshopper II] [memories] deleting index
+[2014-05-26 12:04:33,892][INFO ][cluster.metadata         ] [Grasshopper II] [index] deleting index
+[2014-05-26 12:04:33,901][INFO ][cluster.metadata         ] [Grasshopper II] [tp_epsi] deleting index
+[2014-05-26 12:04:33,914][INFO ][cluster.metadata         ] [Grasshopper II] [my_index] deleting index
+[2014-05-26 12:11:57,616][INFO ][cluster.metadata         ] [Grasshopper II] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-05-26 12:11:57,720][INFO ][cluster.metadata         ] [Grasshopper II] [epsi] update_mapping [memories] (dynamic)
+[2014-05-26 12:24:54,463][INFO ][cluster.metadata         ] [Grasshopper II] [epsi] deleting index
+[2014-05-26 12:30:18,703][INFO ][cluster.metadata         ] [Grasshopper II] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-05-26 12:30:18,810][INFO ][cluster.metadata         ] [Grasshopper II] [epsi] update_mapping [memories] (dynamic)
+[2014-05-26 12:31:10,145][INFO ][cluster.metadata         ] [Grasshopper II] [epsi] update_mapping [memories] (dynamic)
+[2014-05-26 12:34:47,932][INFO ][cluster.metadata         ] [Grasshopper II] [epsi] deleting index
+[2014-05-26 12:35:26,642][INFO ][cluster.metadata         ] [Grasshopper II] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-05-26 12:35:26,755][INFO ][cluster.metadata         ] [Grasshopper II] [epsi] update_mapping [memories] (dynamic)
+[2014-05-26 12:37:05,913][INFO ][cluster.metadata         ] [Grasshopper II] [epsi] update_mapping [memories] (dynamic)
+[2014-05-26 12:37:39,410][INFO ][cluster.metadata         ] [Grasshopper II] [epsi] deleting index
+[2014-05-26 12:37:48,825][INFO ][cluster.metadata         ] [Grasshopper II] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-05-26 12:37:48,932][INFO ][cluster.metadata         ] [Grasshopper II] [epsi] update_mapping [memories] (dynamic)
+[2014-05-26 12:37:54,190][INFO ][cluster.metadata         ] [Grasshopper II] [epsi] update_mapping [memories] (dynamic)
+[2014-05-26 12:43:50,794][INFO ][cluster.metadata         ] [Grasshopper II] [epsi] deleting index
+[2014-05-26 12:43:57,516][INFO ][cluster.metadata         ] [Grasshopper II] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-05-26 12:43:57,606][INFO ][cluster.metadata         ] [Grasshopper II] [epsi] update_mapping [memories] (dynamic)
+[2014-05-26 12:44:51,543][INFO ][cluster.metadata         ] [Grasshopper II] [epsi] deleting index
+[2014-05-26 12:44:56,657][INFO ][cluster.metadata         ] [Grasshopper II] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-05-26 12:44:56,747][INFO ][cluster.metadata         ] [Grasshopper II] [epsi] update_mapping [memories] (dynamic)
+[2014-05-26 12:47:50,364][INFO ][cluster.metadata         ] [Grasshopper II] [epsi] deleting index
+[2014-05-26 12:47:56,195][INFO ][cluster.metadata         ] [Grasshopper II] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-05-26 12:47:56,281][INFO ][cluster.metadata         ] [Grasshopper II] [epsi] update_mapping [memories] (dynamic)
+[2014-05-26 12:49:11,014][INFO ][cluster.metadata         ] [Grasshopper II] [epsi] deleting index
+[2014-05-26 12:49:15,286][INFO ][cluster.metadata         ] [Grasshopper II] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-05-26 12:49:15,371][INFO ][cluster.metadata         ] [Grasshopper II] [epsi] update_mapping [memories] (dynamic)
+[2014-05-26 12:52:25,545][INFO ][cluster.metadata         ] [Grasshopper II] [epsi] deleting index
+[2014-05-26 12:52:31,472][INFO ][cluster.metadata         ] [Grasshopper II] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-05-26 12:52:31,556][INFO ][cluster.metadata         ] [Grasshopper II] [epsi] update_mapping [memories] (dynamic)
+[2014-05-26 12:54:26,334][INFO ][cluster.metadata         ] [Grasshopper II] [epsi] deleting index
+[2014-05-26 12:54:30,584][INFO ][cluster.metadata         ] [Grasshopper II] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-05-26 12:54:30,660][INFO ][cluster.metadata         ] [Grasshopper II] [epsi] update_mapping [memories] (dynamic)
+[2014-05-26 13:04:19,362][INFO ][cluster.metadata         ] [Grasshopper II] [epsi] deleting index
+[2014-05-26 13:04:45,912][INFO ][cluster.metadata         ] [Grasshopper II] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-05-26 13:04:45,987][INFO ][cluster.metadata         ] [Grasshopper II] [epsi] update_mapping [memories] (dynamic)
+[2014-05-26 13:05:15,474][INFO ][cluster.metadata         ] [Grasshopper II] [epsi] deleting index
+[2014-05-26 13:05:20,931][INFO ][cluster.metadata         ] [Grasshopper II] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-05-26 13:05:21,007][INFO ][cluster.metadata         ] [Grasshopper II] [epsi] update_mapping [memories] (dynamic)
+[2014-05-26 13:06:52,394][INFO ][cluster.metadata         ] [Grasshopper II] [epsi] deleting index
+[2014-05-26 13:06:58,419][INFO ][cluster.metadata         ] [Grasshopper II] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-05-26 13:06:58,493][INFO ][cluster.metadata         ] [Grasshopper II] [epsi] update_mapping [memories] (dynamic)
+[2014-05-26 13:08:37,637][INFO ][cluster.metadata         ] [Grasshopper II] [epsi] deleting index
+[2014-05-26 13:08:41,335][INFO ][cluster.metadata         ] [Grasshopper II] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-05-26 13:08:41,408][INFO ][cluster.metadata         ] [Grasshopper II] [epsi] update_mapping [memories] (dynamic)
+[2014-05-26 13:10:27,483][INFO ][cluster.metadata         ] [Grasshopper II] [epsi] deleting index
+[2014-05-26 13:10:31,535][INFO ][cluster.metadata         ] [Grasshopper II] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-05-26 13:10:31,612][INFO ][cluster.metadata         ] [Grasshopper II] [epsi] update_mapping [memories] (dynamic)
+[2014-05-26 13:11:53,038][INFO ][cluster.metadata         ] [Grasshopper II] [epsi] deleting index
+[2014-05-26 13:11:56,562][INFO ][cluster.metadata         ] [Grasshopper II] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-05-26 13:11:56,637][INFO ][cluster.metadata         ] [Grasshopper II] [epsi] update_mapping [memories] (dynamic)
+[2014-05-26 13:12:58,606][INFO ][node                     ] [Grasshopper II] stopping ...
+[2014-05-26 13:12:58,637][INFO ][node                     ] [Grasshopper II] stopped
+[2014-05-26 13:12:58,637][INFO ][node                     ] [Grasshopper II] closing ...
+[2014-05-26 13:12:58,642][INFO ][node                     ] [Grasshopper II] closed

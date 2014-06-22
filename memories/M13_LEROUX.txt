@@ -1,0 +1,2945 @@
+!
+
+!
+
+2013
+
+!
+187, avenue Haut Lévêque
+33600 Pessac
+
+!"#$%&'()*"'&+%(&%+)*#!"#$%#&'()$)*+!
+Pierre Le Roux
+!
+!
+!
+!
+!
+!
+!
+
+!
+
+Promotion 2013
+
+!
+!
+!
+!
+"#$#%&'#$#()*!
+!
+!
+Je souhaite remercier la société Sogeti pour la confiance qu’elle m’a accordée durant mon
+stage.
+Dominique Colonna pour la mission qu’il m’a confiée dans le domaine de la mobilité.
+Sylvain Labasse pour l’aide qu’il m’a apportée dans l’élaboration de mon mémoire de fin
+d’études.
+
+Sommaire
+Introduction ................................................................................................................ 1
+I
+
+II
+
+Les applications web dans la mobilité ....................................................................... 8
+1-
+
+Évolution des technologies web ............................................................................... 9
+
+2-
+
+Différents types d'application mobile ...................................................................... 20
+
+3-
+
+Lʼenjeux économique des applications web dans la mobilité ................................. 28
+
+Exigence des applications web dans la mobilité ................................................... 33
+1-
+
+Les applications connectées/déconnectées ........................................................... 33
+
+2-
+
+La réactivité des applications internet..................................................................... 39
+
+3-
+
+La compatibilité sur différentes plates formes ........................................................ 44
+
+4-
+
+Les limites des applications web ............................................................................ 49
+
+III
+
+Spécificité des plates formes ................................................................................. 54
+1-
+
+Développement natif, les différents stores .............................................................. 55
+
+2-
+
+Développement serveur .......................................................................................... 58
+
+3-
+
+Les applications hybrides ....................................................................................... 62
+
+Conclusion (7-8pages) .................................................................................................... 74
+
+!
+!
+
+"#$%&'()$*&#
+« Internet sera à l'économie du 21e siècle ce que l'essence fut au 20e siècle.
+La puissance des ordinateurs c'est l'essence dʼinternet. » Citation de Craig Barret
+(ancien président d'Intel). L'homme est nomade par nature, l'essence l'a aidé à se
+déplacer plus rapidement via des voitures ou même des avions. Dans cette optique
+de déplacement, nous avons observé, depuis 4 ans, une montée en flèche des
+ventes d'appareils mobiles (1,2 milliard d'unités vendues en 2013). Cette croissance
+signe un tournant dans le monde numérique tout comme internet avant lui.
+Internet, qui a su démontrer son importance dans l'univers multimédia. Importance
+marquée tout particulièrement par son évolution exponentielle depuis plus de 50 ans.
+
+Une évolution qui se dénote tant en terme technologique qu'en terme
+d'utilisation. D'après la CIA World Factbook, en 2008 on ne dénombra pas moins de
+1,6 milliard d'abonnés à Internet contre 61 millions en 1996.
+
+L'évolution d'internet dénote plusieurs dates importantes :
+• 1962 : début des recherches par ARPA, un projet du ministère de la Défense
+américaine
+• 1969 : connexion des premiers ordinateurs entre quatre universités américaines
+(UCLA, Stantford, lʼUtah, UCSB)
+• 1971 : 23 ordinateurs sont reliés sur ARPAnet.
+• 1973 :l'Angleterre et la Norvège rejoignent le réseau Internet avec un ordinateur
+par pays
+• 1979 : création des NewsGroups (forums de discussion) par des étudiants
+américains
+• 1982 : définition du protocole Tcp/ip et du mot « Internet »
+• 1983 : apparition du premier serveur de noms de sites
+• 1990 : disparition d'ARPAnet
+• 1991 : annonce publique du World Wide Web
+
+1
+
+À partir de 1992, plus dʼun million dʼordinateurs étaient connectés au réseau, puis en
+1996, soixante et un millions étaient connectés. Enfin en 2000 cʼest lʼexplosion de la
+bulle dʼinternet avec plus de 368 540 000 d'ordinateurs connectés.
+
+La croissance du nombre dʼordinateurs connectés entre 1992 et 1996
+sʼexplique par lʼapparition du premier navigateur internet, appelé NCSA Mosaic, en
+1993, ouvrant internet au grand public.
+
+Cette ouverture au marché public a permis entre autres lʼenvoi de mail ou
+même lʼaccès à des pages web définies comme des sites internet (site web). Ces
+sites internet ont permis un échange dʼinformation, une révolution pour lʼépoque. On
+notera ainsi, lʼapparition de moteurs de recherche comme Google (1998) et Yahoo
+(1995), ou dans lʼéchange de bien comme EBay (1996). On remarquera aussi le site
+« Comment Ça Marche », site internet français, créé en février 1999, qui illustre bien
+lʼéchange de savoir et dʼinformation.
+
+En 2003, Dale Dougherty invente le terme « Web 2.0 », le web 2.0 signe un
+tournant dans le monde d'internet. Les internautes pourront, en plus d'acquérir des
+informations, échanger eux-mêmes des données. C'est la naissance croissante
+d'applications web comme Facebook ou Wikipédia qui développe l'échange entre les
+internautes.
+
+Les applications web peuvent être identifiées comme des blogs, des jeux en
+lignes, des sites commerçants (Amazon, EBay…). À la différence des sites web qui
+possèdent des pages statiques, les applications web proposent des contenus
+dynamiques et donc modifiables depuis un outil adéquat souvent appelé « backoffice ».
+
+Aujourd'hui, les « sites web », à proprement parlé, sont de moins en moins
+connus du grand public. Il s'agit de site « vitrine » qui présente des informations sur
+
+2
+
+une activité, parfois composé de cinq ou six pages statiques.
+
+Les applications web n'étant pas toujours connectées à internet, elles peuvent
+être installées sur un réseau local ou chargées sur une seule machine. Certaines
+peuvent allier plusieurs comportements comme par exemple Deezer, service
+d'écoute de musique, qui propose d'écouter de la musique sur internet et depuis
+2012 propose d'écouter de la musique en mode hors connexion.
+
+Le réseau Internet a évolué en terme de technologie, mais aussi en terme de
+connexion. On remarquera différentes manières de communiquer avec un
+fournisseur d'accès internet :
+
+• Ligne téléphonique fixe (ligne analogique, ADSL…),
+• Ligne téléphonique mobile (protocole WAP, EDGE, 3G, 4G+…),
+• Ligne par satellite,
+• Wi-Fi,
+• Fibre optique, plus récemment.
+
+Le système de connexion qui m'a le plus intrigué est celui par ligne
+téléphonique mobile. D'une part pour sa croissance en volume de connexion plus
+qu'impressionnant depuis ces dernières années, et d'autre part pour les futures
+fonctionnalités qu'elle pourra offrir.
+
+Pour la partie « nombre de connexion », le monde du mobile et d'internet a
+connu un vrai changement lors de la sortie des premiers « smartphones* », vers la
+fin des années 2010. Pourtant il était possible d'obtenir un accès à internet via un
+téléphone portable depuis bien plus longtemps. En France par exemple le Nokia
+7110, sortie en mars 2000, est le premier téléphone portable utilisant le service WAP.
+Mais les inconvénients des premiers services de connexion à internet sont nombreux.
+
+Le service WAP a rapidement été succédé par le « General Packet radio Service »
+
+3
+
+(GPRS), à cause d'un échec tant technologique que commercial.
+
+En effet, les téléphones de l'époque ne proposaient pas, pour la plupart, de
+clavier « azerty » ou « qwerty », les écrans étaient minuscules, la vitesse de
+connexion était proche du Minitel (avec la fiabilité en moins), la facturation excessive
+est aussi un point non négligeable pour l'époque.
+
+Le service WAP comptait 70.000 utilisateurs en Europe, 4 mois après sa sortie,
+dʼaprès la société de conseil Ovum.
+
+La connexion GPRS voyait donc son arrivée près dʼun an après la sortie du
+service WAP. Cette technologie nʼétait quʼune amélioration du WAP. Là où le WAP
+offrait un débit de 9,6 kbit/s, le GPRS proposait un débit théorique de l'ordre de
+171,2 kbit/s, qui en pratique était de l'ordre de 50 kbit/s. Cette amélioration permettait
+une utilisation plus pratique d'internet et un accès plus direct aux emails.
+
+Même avec un débit multipliait par 18 (en théorie), le réseau n'était pas encore
+capable de s'adapter aux technologies du futur. Les flux vidéo demandant plus de
+ressource par exemple.
+L'orientation vers un réseau UMTS aussi appelait 3ème génération (3G), étant à
+l'époque bien trop couteux, pour les opérateurs téléphoniques, mais offrait un réel
+débit de connexion. Dans un souci économique, les différents opérateurs
+choisissaient de s'orienter vers une amélioration du GPRS, c'était la naissance de le
+« Enhanced Data Rates for GSM Evolution » (EDGE).
+L'EDGE est une vraie réponse au problème de faible débit. Ce nouveau type de
+connexion offrait un débit maximum théorique de 384kbit/s, en pratique ce débit sera
+réévalué à 200 Kbit/s. Même si l'on était déjà bien ancré dans la connexion ADSL à
+domicile, ce nouveau débit, toujours utilisé aujourd'hui, était un réel pas en avant
+pour l'époque. Aujourd'hui, l'EDGE est encore utilisé pour couvrir des zones non
+desservies par le réseau 3G. De plus, l'EDGE a connu une évolution en 2007,
+s'appuyant sur la technologie GERAN (GSM Edge Radio Access Network) qui utilise
+
+4
+
+les infrastructures GSM (exploitant le service WAP), le but était d'augmenter le débit
+à plus de 400 kbit/s.
+
+La troisième génération (3G) marque un tournant décisif dans l'ère de la
+téléphonie mobile, le débit pouvant atteindre 1,92 Mb/s. Mais pour atteindre un tel
+débit il faudrait être statique devant un émetteur, rarement le cas dans le monde de
+la mobilité.
+Pour éviter des variations trop importantes, les opérateurs français ont choisi de
+brider le réseau à 384Kbit/s pour obtenir un débit constant. Ce bridage permettait
+d'obtenir une borne passante constante indispensable pour des appels en
+visioconférence.
+La 3G a vu son apparition sur le sol français début 2005, certes le débit était
+imposant, mais le bémol reste sur la couverture réseau du pays. Lorsque 85 % du
+territoire était potentiellement couvert par l'EDGE seulement 65 % était couvert par la
+3G.
+
+Ce débit de plus en plus constant et puissant a engendré, de la part des
+constructeurs de téléphone portable, la création de mobile de plus en plus accès sur
+le multimédia. On notera par exemple l'exploit d'Apple qui a su se faire une place
+dans le monde du mobile grâce à ses services multimédias proposés par l'iPhone.
+Par exemple : son navigateur internet, son store privé ou même ses applications
+embarquées dans le téléphone comme la « map » de Google. Mais Apple n'est pas
+le seul à proposer la nouvelle génération de téléphone portable, plus communément
+appelé « smartphone », son principal concurrent, Android (système d'exploitation
+pour téléphone portable proposé par Google), offre les mêmes services, mais sur
+des téléphones de différents constructeurs (Samsung, HTC, LG…).
+
+C'est dans cet univers multimédia que les grands noms d'internet (Facebook,
+Twitter, EBay, Google…) ont choisi d'être présent au travers d'application
+téléphonique propre à chaque système d'exploitation (iOs, Android, Windows
+Phone...)
+
+5
+
+Ces applications, dites « native », sont développées dans le langage
+informatique préconisé par les OS (iOs : Objective-C, Android : Java, WP7 : C#…).
+Dans une telle optique les applications multiplateformes (disponible sur toutes les
+plateformes mobiles : iOs, Android, Windows Phone…) sont plus compliquées à
+mettre en place, car plus couteuse et plus dure à maintenir.
+Cʼest pour cela que certaines applications web, autrefois utilisé principalement sur
+ordinateur, se sont adaptées à la mobilité (tablette, smartphone).
+Plusieurs applications internet ont fait le choix de ne pas mettre en place des
+applications natives sur téléphone portable. « Comment ça marche », « 118 218 » ou
+encore « Plank » (www.plankdesign.com) offrent une nouvelle ergonomie à leurs
+applications web qui s'adaptent à toute forme d'écran y compris les plus petits
+comme les smartphones.
+
+Les WebApp sont accessibles via un navigateur web disponible sur n'importe
+quel smartphone. Contrairement aux applications mobiles classiques qui sont
+disponibles sur des stores distincts par OS, les applications web ne bénéficient pas
+d'une telle visibilité. Le site d'Apple propose à l'adresse « www.apple.com/webapps »
+un référentiel de Web App. Les applications sont triées par genre tout comme « l'App
+Store » (plateforme de téléchargement d'application mobile d'Apple pour iOs).
+
+Même si l'on doit utiliser un navigateur internet pour accéder aux applications web, il
+est possible de les installer sur le bureau du téléphone portable.
+
+Le cabinet « Kleiner Perkins Caufield & Byers » a rendu un rapport montrant
+que le monde du mobile génère 15 % du trafic internet. Alors quʼen 2009, ce chiffre
+était évalué à 0,9 %. On voit bien que les usages changent, surtout que ce même
+institut prévoit une hausse pour fin 2014, avec un trafic évalué à 30 %.
+
+6
+
+Dans cette optique, nous sommes en droit de nous poser la question suivante :
+
+• Les applications web vont-elles supplanter les applications natives ?
+
+En effet, avec les futurs débits délivrés par le réseau 4G+, les futurs téléphones
+portables toujours plus puissants et toujours plus connectés, la question reste
+présente.
+Beaucoup de sites internet ont essayé dʼy répondre, mais les explications données
+restent très souvent succinctes, et portent à de nombreux débats souvent creux et
+sans réelle finalité.
+Dans lʼobjectif de donner une explication approfondie du sujet, jʼai choisi
+dʼanalyser dans un premier temps le développement web dans le domaine de la
+mobilité. De ce fait, nous analyserons lʼévolution des technologies web puis nous
+verrons les différents types dʼapplication mobile et enfin nous traiterons de lʼaspect
+pécuniaire des applications web mobile.
+Dans un second temps, nous verrons les différentes exigences des applications
+web mobiles. À savoir les aspects de connexion, la réactivité ou même la
+compatibilité suivant le téléphone utilisé. Dans cette même partie, il sera intéressant
+dʼanalyser les limites des applications web. Que ce soit les limites de connexion, les
+limites en terme de ressource ou en terme de visibilité.
+Puis nous terminerons cette analyse en essayant de proposer une solution à la
+mise en place dʼapplication web au travers de la mobilité.
+
+7
+
+"!
+
++,-!.//0*).$*&#-!1,2!'.#-!0.!3&2*0*$4!
+Les applications web sont souvent assignées comme des applications de type
+
+client-serveur. Le client désigne un appareil connecté, comme un ordinateur ou un
+téléphone portable ou même une tablette. Alors que le serveur désigne dans la
+plupart des cas un ordinateur dédié au logiciel serveur. Cette architecture permet
+d'obtenir :
+• une meilleure répartition des calculs machine,
+• un stockage de données centralisé sur le serveur,
+• l'identification de chaque client,
+• une maintenance et un enrichissement des contenus de l'application client en
+dynamique,
+• un espace de stockage nettement réduit pour le côté client.
+
+Ces différents points offrent à l'utilisateur lambda la possibilité d'avoir accès à
+un grand nombre d'applications sur un seul terminal, car tous les stockages
+volumineux et les calculs gourmands sont pris en charge par le serveur (dans un
+grand nombre de cas).
+
+C'est le principe de base d'internet, une application web comme "Plank" offre un
+contenu dynamique au client, contenu qui sera mise à jour depuis le serveur. Mais
+les Web App ne sont pas les seuls bénéficiaires de cette technologie, le client peut
+être apparenté à des applications natives d'un téléphone portable par exemple.
+Cette architecture regroupe un grand nombre de technologies qui ont évolué avec
+leur temps et leurs innovations. L'environnement client-serveur s'est bien installé
+dans le monde de la mobilité. Elle permet de mettre à jour certains points d'une
+application sans passer par un store quelconque.
+
+8
+
+56
+
+78&0($*&#!',-!$,)9#&0&:*,-!1,2!!
+
+!"
+
+#$%&'()*++,''
+
+Comme le souligne ce graphique, nous sommes à l'heure actuelle dans la
+phase d'évolution du web 2.0. Avec l'arrivée du « Cloud computing* », des
+smartphones et des différentes Web App, internet commence à changer nos
+habitudes. Là où l'on utilisait « Microsoft Office Word », plusieurs utilisateurs
+choisissent maintenant « Google Docs » pour le « Cloud computing » par exemple.
+
+Le graphique montre aussi l'émergence de Flex en 2008. Flex est un outil, mise
+en place par Adobe, qui permet de développer des applications/sites internet en
+« Flash ». Le problème de Flex est qu'il n'est pas conçu pour le mobile, mais plutôt
+pour les ordinateurs fixes ou portables. De plus, tous les smartphones n'ont pas de
+lecteur Flash intégré. Dans la même branche, « Silverlight » permet, lui aussi, de
+créer des applications web, mais il possède des problèmes de compatibilité avec
+l'OS Linux. De plus, Silverlight n'est plus maintenu depuis 2 ans.
+9
+
+L'HTML 5 est aujourd'hui la meilleure solution web pour constituer des
+applications web multiplateforme mobile.
+L'HTML est constitué de multiples balises qui ont pour but de mettre en forme les
+pages. Par exemple, une balise <h1> permettra d'afficher un titre en grand format.
+
+L'HTML 5 a vu le jour en 2006, mais a commencé à être démocratisé depuis
+environ 3ans. La mise en place de nouvelles balises comme :
+• la balise « vidéo » ou « audio » pour le traitement des médias,
+• la balise « canvas » qui permet d'obtenir des rendu 2D ou 3D,
+• la mise en cache de contenu,
+• et d'autres balises plus générales, balise propre au rendu graphique (ex : section,
+article, header, footer…).
+
+Les traitements médias sont de loin les plus importants dans la mobilité. Que ce
+soit pour les jeux vidéo (qui sont grandement majoritaire dans les téléchargements
+mobiles) ou plus généralement les traitements vidéo, audio et dʼimages (Instagram
+étant un bon exemple dʼapplication téléphonique native utilisant des traitements
+média).
+
+L'ajout de la balise vidéo permet de pallier à l'utilisation du flash, autrefois plus
+quʼindispensable pour la visualisation de vidéo sur internet. Les smartphones
+peuvent désormais lire des contenus vidéo plus facilement sur internet via cette
+balise.
+Les « canvas » permettent, par exemple, la création de jeux vidéo. Avec des
+performances par fois plutôt surprenante comme le montre le jeu vidéo : SkateDuck2.
+
+La mise en cache de contenu permettra à lʼutilisateur dʼavoir des contenus
+sauvegarder dans son téléphone. Que ce soit des pages entières ou des images
+ainsi que des actions utilisateurs..
+
+10
+
+Dans la saisie des formulaires web, on voit apparaître de nouveaux types de
+champs. Comme le type « tel », « date » ou « number » qui afficheront sur un
+téléphone des claviers bien distincts comme l'illustre l'image si dessous.
+
+iPhone
+D'autres fonctionnalités, dans le domaine de l'interaction entre l'utilisateur et
+l'application, voient le jour. Il est possible de glisser-déposer des éléments dans une
+page de l'application, une fonctionnalité présente dans le développement
+d'application mobile native.
+
+La géolocalisation fait aussi son apparition avec l'HTML 5. Il est maintenant
+possible de localiser un téléphone ou ordinateur (si l'utilisateur l'accepte) via
+quelques lignes de code.
+
+Ces différentes fonctionnalités permettent aux développeurs d'avoir un accès
+plus étendu sur le développement d'application web pour téléphone portable.
+
+Le CSS 3 permet de gérer les aspects graphiques. Les animations,
+transformation 2D/3D, la gestion de la transparence, les effets de texte (comme
+l'ombrage) font partie des nouvelles fonctionnalités du CSS 3. Les développeurs
+pourront créer des transitions ou animations autrement quand JavaScript. Le CSS3
+va permettre d'alléger le code JavaScript autrefois présent en abondance sur les
+applications web.
+11
+
+Contrairement à lʼancienne version, le CSS 3 offre la possibilité de gérer
+certains événements, autrefois géré exclusivement par le JavaScript. Il est
+maintenant possible de capté lorsquʼun utilisateur sélectionne un champ dʼun
+formulaire ou sʼil clique sur un lien.
+
+Les applications web sont aussi appelées « rich internet application » (RIA),
+ce terme désigne les applications web offrant des services similaires aux logiciels
+installés sur téléphone ou ordinateur. Le principe dʼune RIA est basé sur lʼaspect
+graphique et la vitesse dʼexécution de lʼapplication. Cʼest là que lʼHTML 5 et la CSS 3
+offrent une vraie réponse à ce domaine dʼapplication. Deezer ou Gmail sont des très
+bons exemples de RIA.
+
+Cependant, lʼHTML 5 et la CSS 3 ne permettent pas dʼeffectuer des traitements
+évolués, comme le rafraichissement dʼune partie dʼune page ou lʼinsertion dʼune
+« scroll view1 » ou plus généralement le contrôle de surface tactile. Cʼest pour cela
+que plusieurs framwork JavaScript, spécialisés dans le domaine de la mobilité, ont vu
+le jour.
+
+'
+
+!!"'
+
+&-.'/012-33-.'3!456!5!-.'
+
+Internet a évolué avec ses technologies. Lʼinteraction entre lʼHTML et le
+JavaScript est un élément omniprésent dans les applications web. Dans un souci
+dʼaide au développement, des librairies JavaScript voient le jour. On notera lʼarrivée
+de jQuery en janvier 2006, Prototype en février 2005 ou encore accDC en novembre
+2010. Ces différentes librairies sont utilisées pour simplifier lʼutilisation du JavaScript.
+Elles permettront de mieux gérer les appels AJAX* ou des animations complexes.
+Avec lʼarrivée du développement web sur téléphone portable, plusieurs librairies
+se sont spécialisées dans ce domaine. Répondant à un besoin plus précis,
+1
+
+Faire défiler le contenu d'une vue
+
+12
+
+contrairement à jQuery et Prototype qui sont bien plus gourmands en ressource (car
+plus volumineux). Ils répondent à une problématique de compatibilités sur les vieilles
+versions dʼ« Internet Explorer » ce qui nʼest pas le réel problème du développement
+web dans la mobilité.
+
+On notera par exemple :
+• Zepto.js
+• DynamicX
+• Sencha
+• jQuery Mobile
+• jQTouch
+
+Zepto.js
+« Zepto » propose aux développeurs une syntaxe jQuery, plus intuitive et
+simple dʼutilisation. Ce framework* a pour but dʼêtre léger avec seulement 2Kb, ce
+qui rendra le téléchargement des fichiers et leurs mises en cache plus optimiser pour
+du développement mobile. Bien entendu zepto permettra lʼaccès aux fonctionnalités
+dʼanimation et de gestuel propre aux écrans tactiles. Cependant, cette librairie étant
+très légère elle ne permet pas de faire des traitements avancés en JavaScript.
+
+DynamicX
+« DynamicX » offre un accès à de multiples fonctionnalités mobile, comme le
+glisser-déposer (drag and drop). DynamicX est très accès sur lʼaspect graphique des
+applications. Les applications qui en résultent sont très similaires à des applications
+mobiles. Mais, son principal défaut reste sa taille (plus de 80 Mb pour la version
+complète gratuite). Ce problème impacte directement les appareils mobiles
+dʼancienne génération (2012 et moins), comme lʼiPhone 4.
+Il rend les animations moins agréables, car souvent saccadées. De plus, ce
+framework est payant si lʼon souhaite acquérir une version professionnelle
+permettant un accès au support et la commercialisation des applications.
+
+13
+
+Sencha
+« Sencha » utilise intensivement les composants HTML 5 surtout dans le
+domaine des formulaires. Cela permet à cette librairie dʼêtre plus fluide sur les
+terminaux mobiles. Sencha propose des fonctionnalités présentes sur les écrans
+tactiles (glisser déposer, diaporama tactile). De plus, les développeurs pourront avoir
+un accès à de nombreuse icône et Sencha reste libre dʼutilisation. Mais on retrouve
+un point négatif présent dans plusieurs librairies mobiles, la personnalisation des
+effets visuels est difficile à mettre en place. Les applications web utilisant donc cette
+libraire risque de fortement se ressembler.
+
+jQuery Mobile
+« jQuery mobile » est la librairie la plus connue dans le développement web
+mobile. Elle a de nombreux atouts comme sa documentation exhaustive et
+régulièrement maintenue. La faciliter de prise en main ou encore la possibilité de
+personnaliser les composants facilement, reste aussi un atout important. « jQuery
+mobile » propose bien entendu lʼutilisation des fonctionnalités tactiles des téléphones
+portables. Le principal bémol de « jQuery mobile » est son volume trop important
+pour du développement mobile.
+
+jQTouch
+« jQTouch » est un plugin de jQuery, il devra donc utiliser la librairie jQuery pour
+faire fonctionner cet outil. Cʼest un point assez gênant pour du développement mobile,
+la plupart des fonctionnalités de jQuery ne seront pas utiles, car elles sont mises en
+place pour les terminaux fixes. JQTouch propose tout de même de nombreuses
+fonctionnalités mobiles. Dans la gestion des formulaires ou la gestion dʼanimation.
+
+Il existe bien dʼautres librairies comme Wink ToolKit, iUI, Webkit ou
+WebAPP.net. Toutes ces librairies ont toutes leurs avantages et leur inconvénient,
+mais toutes ont en point commun la gestion des aspects tactiles et ergonomiques
+dʼune application mobile native. Libre au développeur de choisir par la suite celle qui
+
+14
+
+convient au mieux pour son projet. Que ce soit pour une application qui nécessite
+des configurations élevées, mais qui aura donc certaines latences ou des
+applications moins gourmandes, mais moins poussées fonctionnellement parlant.
+
+La norme W3C a noté les différentes librairies par rapport aux règles du bon
+développement Web. Sancha obtient la meilleure note avec un total de 84 % sur le
+« W3C mobile checker ». Au contraire JQTouch est la librairie la plus mal notée due
+faite de sa lourdeur et de son abandon en terme de maintenance aux dépens de
+« JQuery mobile » avec un score de 55 %.
+
+'
+
+!!!"'
+
+&-.'7-89/030:!-.'.-52-15'
+
+Les technologies serveur servent principalement à traiter les données
+dynamiques
+
+dʼune application. Le monde dʼinternet utilise grandement le
+
+développement serveur. En effet, les rares applications web ne lʼutilisant pas sont
+souvent des sites vitrines ou certains jeux vidéo ne nécessitant pas de sauvegarde
+complexe.
+
+Le développement serveur existe depuis bien longtemps. Par exemple : le
+PHP, qui est le langage serveur le plus populaire dans le monde du développement
+web, est apparu en 1994. Mais dʼautres langages plus anciens permettaient de
+construire des logiciels serveur comme le « Basic* » ou le « C++* ».
+
+Les technologies serveur ont évolué avec le temps, aujourdʼhui les plus
+importantes sont :
+•
+
+.Net* (2002)
+
+•
+
+Java (1995)
+
+•
+
+PHP (1994)
+
+•
+
+Ruby On Rails (2004)
+
+15
+
+PHP
+Le PHP est apparu en 1994, grâce à Rasmus Lerdof. Cʼest en 1995 que la
+première version voit le jour. Mais la vraie naissance du PHP est en 1997, avec la
+sortie de la troisième version. Un projet dʼorigine personnel devient un projet de
+groupe. Avec la collaboration dʼAndi Gutmans et Zeev Suraski qui prirent contact
+avec Rasmus Lerdof via internet pour discuter des structures du PHP et de la
+réécriture de la base du langage.
+
+Le PHP a pour réputation dʼêtre simple à apprendre et à mettre en place. Cʼest
+pour cela que les jeunes développeurs apprennent très souvent à utiliser ce langage
+pour connaitre les bases du développement. De plus, le PHP est écrit en langage
+« C ». Cʼest pour cela que lʼon retrouve très souvent des similitudes entre les deux
+langages, ce qui est utile lorsque lʼon sait que le langage « C » est la base de
+lʼapprentissage du développement informatique. Mais depuis les toutes dernières
+versions du PHP, son utilisation est plus étendue dans le monde de lʼentreprise. Car
+dans un premier temps un grand nombre de développeurs ont appris les bases de
+développement de ce langage. Et dans un deuxième temps, la création de
+Framework permettant la facilité du développement voit le jour comme Zend ou
+Symfony.
+Le PHP est le langage le plus populaire sur internet, la documentation y est très
+exhaustive (pour exemple, la documentation officielle sur : php.net, disponible sous
+30 langues).
+
+Le vrai problème du PHP est sa permissivité trop importante, ce qui peut être
+un réel problème si un projet doit durée dans le temps et donc être maintenu. Les
+développeurs risquent de perdre plus de temps dans la compréhension du projet sur
+le long terme.
+
+16
+
+Le PHP est une solution très satisfaisante pour les applications web
+nécessitant de faibles traitements serveur, mais nʼest pas forcement le meilleur choix
+sur le développement de plus grosse structure.
+
+Ruby on Rails
+
+Le Ruby on Rails a été créé en 2004 par David Heinemeier Hansson. Cet outil
+combine le langage de programmation Ruby et le framework Ruby on Rails aussi
+appelé RoR. Il existe actuellement 3 versions majeures du RoR.
+Le Ruby on Rails est, comme le PHP, un langage interprété. Mais, à la
+différence du PHP, il est orienté objet depuis sa création.
+
+Le Ruby a pour avantage dʼêtre simple à relire et à apprendre. Mais des
+difficultés, dans les premières versions, liées à lʼinstallation de lʼoutil ont rendu le
+langage moins populaire que d'autres. Même si lʼinstallation de base est assez
+simple il sʼen suit des difficultés lorsque lʼon souhaite installer des « gems* » plus
+spécifiques à son projet.
+Le Ruby on Rails a du mal à sʼinstaller en France, du fait de sa communauté
+anglophone. Il est très rare de trouver des tutoriels dʼapprentissage en français, et
+toutes les documentations techniques sont disponibles en anglais.
+Mais, au-delà des barrières de langue, le RoR est un langage facilement
+maintenable, car il est plus simple à lire et à comprendre quʼun site développé en
+PHP. Par expérience, il est plus simple de comprendre le fonctionnement dʼun ancien
+script Ruby quʼun ancien script PHP.
+
+.NET
+Le .Net a été conçu par Microsoft. Cʼest un framework utilisant le langage C#.
+Il repose sur plusieurs technologies, comme son IDE* Visual Studio ou la multitude
+
+17
+
+de bibliothèques de haut niveau ainsi quʼun ensemble de protocoles de
+communication*.
+Le .NET est une technologie sous licence. Le prix varie selon le revendeur,
+mais reste dʼenviron 700 €, par poste de travail, pour ce qui est de la licence de
+développement (Licence Visual Studio). On pourra cependant noter que la
+documentation est très exhaustive et quʼil existe un support dʼaide pour les aspects
+dʼinstallation de la solution ou lʼutilisation des composants techniques du framework
+.NET.
+Le .NET est la deuxième solution serveur choisie dans le monde du WEB
+dʼaprès les chiffres de W3Techs. Cette réussite sʼexplique du fait que les SSII
+choisissent ce langage, car cette solution fait partie dʼun ensemble de solutions de
+développement proposé par Microsoft. Et en général, les SSII ont des partenariats
+avec la solution Microsoft et des ressources compétentes dans ce domaine.
+
+JAVA
+Le Java est un langage de programmation développé par Sun Microsystems
+racheté par Oracle en 2009. Il est entièrement orienté objet. Tout comme le Ruby et
+le C#. Il utilise un framework pour mettre en place un développement serveur qui est
+le J2EE (Java 2 Enterprise Edition).
+Le Java est un langage open source*, qui a la chance de posséder une grande
+communauté à travers internet.
+Le J2EE est très riche et permet la création dʼarchitecture serveur
+sophistiquée. Mais, du fait de sa couverture étendue, il sʼen suit une installation de
+diverse librairie et dʼinfrastructure réseau. Ses installations sont par fois très
+complexes à mettre en place et peuvent engendrer des maintenances plus difficiles
+avec des temps de développement rallongé.
+Le Java reste tout de même très prisé des sociétés de services, car il est gratuit et
+permet la création de projet compliqué. De plus, ce langage est très utilisé par les
+
+18
+
+jeunes développeurs, car il est très généraliste. La main dʼœuvre est donc très
+présente sur le marché du travail.
+
+Ces différents langages sont assez anciens et ils ont chacun leurs avantages
+et inconvénients. Mais les fonctionnalités sont généralement les mêmes. Les vraies
+différences sont leurs installations sur les serveurs ou leurs facilités dʼapprentissages
+et de maintenances.
+
+Dernièrement, le JavaScript qui est à lʼorigine un langage utiliser du côté client
+a vu la création dʼun framework pour lʼutiliser aussi du côté serveur. Ce framework
+sʼappelle Node.js.
+
+Node.js a été créé en 2009 et déjà en 2011 LinkedIn a choisi de migrer ses
+serveurs Ruby on Rails vers Node.js. En effet, son application mobile rencontrée des
+problèmes de performance. Et dʼaprès LinkedIn, le Node.js serait 20 fois plus rapide
+que le Ruby on Rails.
+
+19
+
+;6!
+
+<*==4%,#$-!$>/,-!'?.//0*).$*&#!3&2*0,!
+
+Dans le monde du développement mobile, le choix des technologies à adopter
+pour créer son projet est limité. On a le choix entre deux principes : les applications
+natives ou les applications web. Le choix est souvent délicat et sujet à beaucoup
+dʼanalyse sur internet.
+Les grands groupes optent en général pour le développement sur les deux
+plateformes. Comme Facebook :
+
+!!!!!!!!!!!!!!
+Application iPhone native
+
+!
+Application web sur Safari iPhone
+
+On remarque que les deux applications sont fortement ressemblantes, mais quelles
+sont les réelles différences ?
+
+20
+
+'
+
+!"'
+
+;<<3!867!0/'/67!2-'
+
+Dans le monde du développement mobile, on distingue six plateformes
+principales. Elles sont distinguées par six systèmes dʼexploitation (OS) majeurs :
+• iOS,
+• Android,
+• Windows Phone,
+• BlackBerry,
+• Symbian OS.
+
+Mais, sur les six plateformes, seulement trois sont représentatives de lʼavenir des OS
+mobiles à savoir Android, iOS et Windows Phone.
+
+Source : http://www.docdoku.com
+
+Ces graphiques de lʼIDC (International Data Corporation) montrent les parts du
+marché mondial. On remarque donc que les trois OS regrouperont 81 % des ventes
+de smartphone en 2014.
+
+21
+
+Mais les chiffres sont différents sur le sol français :
+
+Source : www.monwindowsphone.com
+
+Ce graphique montre les résultats dʼune enquête menée par lʼassociation du
+marketing mobile français (MMAF) au premier trimestre 2013. On observe que les
+trois OS cités au-dessus regroupent 78,4 % de part de marché.
+
+iOs
+
+iOs est le système dʼexploitation disponible sur les téléphones (iPhone), tablette
+(iPad et iPad mini) et lecteur MP3 (iPod touch) de la société américaine Apple.
+Le développement dʼapplication native sur cette plateforme nécessite lʼutilisation du
+framework Cocoa* et le langage de programmation Objective-c.
+LʼObjective-c est une surcouche du C, créé par Brad Cox et Tom Love. Ce langage
+implémente les notions de programmation orientée objet.
+Le développement dʼapplication native iOs est possible avec lʼutilisation de lʼIDE
+xCode. Ce logiciel est disponible gratuitement sur le site dʼApple, mais il nʼest
+exécutable que sur un ordinateur Mac OSX.
+LʼIDE ne suffit pas pour mettre en place une application iOs. Il faudra en plus installer
+le SDK* iOs (fourni par Apple) pour avoir accès au simulateur dʼiPhone et dʼiPad.
+
+22
+
+Pour ce qui concerne la mise en ligne des applications native iOs, il existe un store
+public, mais aussi un store privé. La licence coute 99 $ par ans pour un particulier et
+299 $ par ans pour une société. Lʼoffre entreprise permettra dʼutiliser le store privé.
+
+Android
+
+Android est une solution proposée par le géant du web : Google. Ce système
+dʼexploitation est gratuit pour les fabricants qui souhaitent lʼinstaller sur leurs
+appareils mobiles.
+Android repose sur la fusion entre la JVM* (Java Virtual Machine) Dalvik et un noyau
+Linux* modifier. Le développement dʼapplication Android est effectué en Java, mais
+sʼexécute dans la JVM* Dalvik. De ce fait, toutes les librairies disponibles en Java ne
+sont pas accessibles, car elles doivent être compilables sur la JVM Dalvik.
+À la différence de lʼiOs, il est possible dʼécrire et de compiler des applications
+Android dans différents IDE. Mais seulement deux sont recommandés par les
+équipes dʼAndroid, à savoir IntelliJ IDEA et le plugin ADT pour Eclipse.
+Le développement Android est gratuit, et la mise en ligne via le « Play Store* » est
+elle aussi gratuite. Cʼest un avantage de point lorsque lʼon connait le prix des
+licences du principal concurrent à savoir iOs dʼApple.
+
+Windows Phone
+
+Windows Phone est le dernier Os pour téléphone portable à voir le jour, il est
+mis en place par lʼentreprise Microsoft. Son lancement a été effectué en novembre
+2010 succédant à Windows Mobile qui était plus accès au monde de lʼentreprise.
+Microsoft a choisi dʼentrer dans le monde du mobile grand public en utilisant une
+nouvelle IHM* : Modern UI (anciennement Metro). Cette IHM est la nouvelle marque
+de fabrique de Microsoft, car elle est reprise dans lʼinterface de Windows 8.
+
+Il est possible de développer des applications Windows Phone via deux
+langages le C# et le VB.NET. Ces deux langages peuvent être utilisés simultanément
+
+23
+
+dans une application. Il faut savoir quʼil existe aussi deux framework pour le
+développement dʼapplication Windows Phone :
+
+• Le XNA, qui permettra la création de jeux vidéo en 2D et 3D, mais aussi tout ce
+qui concerne le traitement des médias (audio, vidéo).
+• Et Silverlight qui sera plus orienté vers un développement dʼapplication de
+gestion.
+
+Pour lʼenvironnement de développement, Microsoft propose une solution
+gratuite Visual Studio 2012 Express qui est une version dédiée à Windows Phone
+contrairement à Visual Studio 2012.
+
+Pour pouvoir sortir son application sur le store Windows Phone il faudra
+acquérir un compte développeur évaluer à 99 $.
+
+Pour ce qui concerne les autres OS :
+
+• Symbian OS, créé par Nokia, est victime du fort succès dʼApple et Google.
+Nokia cède son OS à Accenture (entreprise internationale de conseil) et signe
+un partenariat pour lʼinstallation de Windows Phone sur leurs futurs
+smartphones.
+• BlackBerry est lʼOS de lʼentreprise RIM. Ce système dʼexploitation équipe tous
+les terminaux mobiles de cette société. BlackBerry connait depuis quelque
+temps une perte de vitesse qui est due à la fois à la crise et à leur retard en
+terme dʼinnovation technologique. Le PDG du groupe, Thorsten Heins,
+explique que les chiffres de lʼentreprise ne vont pas améliorer et explique
+pourquoi : « au cours des prochains trimestres (le groupe) va augmenter ses
+investissements pour soutenir la sortie de nouveaux produits et services. ».
+BlackBerry fait donc le pari de lʼinnovation technologique dans les futures
+années ?
+
+24
+
+Tous ces OS ont des points communs, mais ont tous la même différence : la
+méthode de création dʼapplication mobile. Cʼest là que la « cross-compilation* »
+rentre en jeux.
+
+Il existe plusieurs outils permettant la cross-compilation, WinDev Mobile ou
+même la technologie MONO. Cette méthode de compilation* permet de créer une
+seule application qui sera compilée dans tous les langages spécifiés au préalable.
+Le gros problème de cette solution reste la personnalisation selon lʼOS ou lʼaccès à
+différent composant qui ne seront pas toujours présents sur tous les terminaux.
+Les applications qui utilisent cette méthode ne sont pas toujours très poussées
+et elles relèvent plus de lʼapplication dite « vitrine » montrant une activité ou une
+campagne publicitaire.
+
+'
+
+!!"'
+
+;<<3!867!0/'=-4'01'>?-4';<<.@''
+
+Lʼinstallation dʼune application web, sur téléphone portable, est très simple. Il
+suffit dʼutiliser le navigateur internet de son téléphone et de lancer lʼapplication via
+son URL. Le seul prérequis est donc dʼavoir un navigateur internet installé sur son
+téléphone. Cette prérogative devient obsolète lorsquʼon sait que tous les OS installés
+sur smartphone possèdent un navigateur internet préinstallé.
+
+Le terme « Web Apps » désigne les sites internet optimisés pour téléphone
+portable. Ces « Web Apps » ont pour objectif dʼêtre identiques visuellement à des
+applications dites natives (ce qui peut être contradictoire lorsque lʼon sait que chaque
+OS mobile a sa propre identité visuelle). Même si le but premier dʼune application
+web mobile reste sa compatibilité sur le multiplateforme il reste difficile dʼêtre proche
+de chaque identité visuelle mobile.
+
+Cette compatibilité graphique est tout de même rendue plus simple via les
+nouvelles librairies JavaScript citées plus haut, elle reste proche de lʼaspect de base
+
+25
+
+dʼune application mobile. LʼHTML 5 et le CSS 3 permettent, eux aussi, dʼobtenir des
+rendus appréciables pour les applications web. Avec des animations graphiques
+lançables en CSS 3 ou les différentes nouvelles fonctionnalités du HTML 5 comme le
+stockage de donnée en local ou le support du « multitouch* », les sites web sont de
+plus en plus adaptables pour le monde de la mobilité.
+
+Les « Web Apps » sont plus quʼimportants dans lʼutilisation de lʼinternet mobile.
+Une enquête menée par CREDOC note que 29 % des connexions mobiles sont
+effectuées via un téléphone portable (voir graphique si dessous).
+
+Cette proportion qui est en constante évolution force les pionniers dʼinternet à
+proposer des applications internet adaptées aux téléphones portables.
+
+Nous pouvons trouver plusieurs types dʼapplication web, les plus courantes
+restent les applications de gestion comme Facebook, Linkedin ou le Monde. On
+retrouvera aussi des jeux vidéo, comme SkateDuck2 ou Biolab, qui démontrent les
+26
+
+performances graphiques des Web Apps dans le jeu vidéo. Il faut tout de même
+noter que les jeux vidéo web sont généralement en 2D, les performances matérielles
+nʼétant pas suffisamment poussées pour gérer du rendu 3D. Des applications web,
+dans le domaine du service, sont aussi disponibles comme la carte interactive de
+Google : la « Google Map » qui permet à lʼutilisateur dʼêtre localisé sur une carte et
+lui offre la possibilité de parcourir un itinéraire défini entre sa localisation et un point
+quelconque.
+!
+
+!
+
+27
+
+@6!
+
++A,#B,(C!4)&#&3*D(,!',-!.//0*).$*&#-!1,2!'.#-!0.!3&2*0*$4!
+
+Le « Jounal du Net » a recensé, en 2011, plus de 2,2 milliards dʼinternautes à
+travers le monde, et près de 5,9 milliards dʼabonnés à la téléphonie mobile. Ces
+chiffres ne cessent dʼaccroitre chaque année. En France, on note 50 millions
+dʼinternautes ainsi que 66 millions dʼabonnés mobiles. Lʼenjeu économique sur une
+telle population est un tournant prioritaire dans le développement numérique actuel.
+
+'
+
+!"'
+
+&AB80/0C!-'DA!/7-5/-7'
+
+!
+Sur les 5 dernières années, internet a généré 40.000 milliards de dollars et
+représente 21 % de la croissance des pays développés. Avec plus de 340 millions de
+sites internet, le style de vie de la population mondiale sʼest vu fortement modifier.
+Internet a permis de créer une nouvelle valeur économique et est devenu un secteur
+économique à part entière. Le « McKinsey Global Institute » sʼest penché sur lʼeéconomie* des pays les plus touchés par la vague Internet.
+Son étude démontre « quʼInternet représente 3,4 % du PIB des économies
+des pays développés ». Des chiffres astronomiques lorsque lʼon sʼaperçoit que la
+contribution dʼinternet au PIB mondial représente un montant bien supérieur à celui
+de lʼEspagne.
+Internet est le cœur de métier de nombreuse société. En 2011, les 250 firmes les
+plus influentes au sein des TIC* (technologies de l'information et de la
+communication) pesaient près de 4.600 milliards de dollars.
+
+Au-delà des revenus générés par internet, des coûts de mise en place dʼune
+solution web sont présents.
+Une entreprise se penchera sur le choix technologique dʼune solution web. À savoir
+le choix dʼun langage serveur plutôt quʼun autre.
+
+28
+
+En effet, dans la partie « Les technologies serveur » différents langages et
+framework associé ont été mis en avant. Une solution pourra être plus rapide à
+mettre en place, mais lʼutilisation de serveur plus puissant ouvrira des coûts plus
+importants. Dʼautres solutions vont demander lʼachat de licence de développement
+parfois couteuse.
+
+Le choix dʼune technologie doit se faire selon lʼimportance et la pérennité du
+projet qui doit être mis en place. Dans la plupart des cas, le choix se porte sur les
+ressources disponibles et leurs connaissances associées. En cas de pénurie sur le
+marché de lʼemploi le coût de la main-d'œuvre risque de sʼalourdir.
+
+Une étude sur le choix des technologies à mettre en place est obligatoire
+aujourdʼhui pour prendre en compte les coûts de mise en place ainsi que les coûts de
+maintenance dʼun projet.
+
+Il existe une multitude de modèles économiques sur Internet qui sont propres
+à chaque application. Par exemple, Groupon offre un modèle unique en son genre en
+proposant des réductions sur des produits ou services locaux, par la suite lʼentreprise
+perçoit 50 % de la vente et reverse le reste à la société qui offre le service. Mais
+dʼautres modèles économiques sont plus rependus comme le système dʼabonnement,
+la rémunération par la publicité (revenu premier de Google ou Facebook) ou encore
+lʼachat de contenu directement dans lʼapplication (majoritairement utilisé dans le
+monde du jeu vidéo).
+
+Chaque modèle économique est propre à lʼapplication qui lʼutilise. Cʼest une
+réelle problématique lors de la mise en place dʼun produit. Une application innovante,
+mais souffrant dʼun modèle économique bancal risque dʼêtre mise de côté. Car
+manquant de fonds dʼinvestissement pour la maintenance de celle-ci.
+
+29
+
+'
+'
+
+!!"'
+
+&AB80/0C!-'D-.'6<<3!867!0/.'C04!3-.'/67!2-.'
+
+Dans le monde du développement natif, il existe 3 systèmes de monétisation
+très répandus :
+•
+
+La vente de lʼapplication sur un store,
+
+•
+
+La mise en place de contenu payant au sein de lʼapplication,
+
+•
+
+Lʼaffichage de publicité,
+
+•
+
+Ou la proposition dʼabonnement.
+
+Dʼautres systèmes sont aussi rendus possibles comme la promotion dʼautre
+application. Comme lʼapplication « AppGratis » qui proposait chaque jour une
+application a lʼorigine payante et qui devenait gratuite pendant un jour. Pour
+apparaître dans lʼapplication il fallait débourser environ 10.000 €, mais en
+contrepartie votre application gagnée énormément en visibilité et généralement
+passez première en terme de nombre de téléchargement.
+
+Il nʼy a pas de méthode meilleure que d'autres. La seule mise en garde est sur
+lʼapplication payante de base. En effet, lʼutilisateur qui souhaite télécharger une
+application sur un store préférera une application gratuite à une application payante.
+Dʼautant que sur certaines plates-formes il nʼest pas possible de tester le produit
+avant de lʼacheter. Le client devra donc se reporter à une brève description de
+lʼapplication ainsi que quelques copies dʼécran pour faire son choix. Il est donc
+conseillé de proposer à la fois une application avec du contenu réduit, mais gratuit
+(une version dʼessai) et une version payante, mais complète.
+Les applications gratuites utilisent en général un système de publicité pour la
+rémunération. Dʼautres feront le choix de vente dʼabonnement comme « coyote » qui
+propose le repérage communautaire des radars routiers ou le Monde qui a construit
+tout un « business model » autour de la vente dʼabonnement.
+
+30
+
+Selon une étude menée par le cabinet dʼétude Canalys, les principales platesformes de vente dʼapplication mobile ont généré un revenu de plus de 2 milliards de
+dollars. Mais la répartition nʼest pas équivalente entre chaque store. Lorsque le
+Google Play totalisait 51 % des téléchargements dʼapplication, lʼApple Store, quant à
+lui, représenté 74 % du chiffre dʼaffaire sur les ventes dʼapplication.
+
+Lʼéconomie des applications mobiles repose sur la vente des appareils qui la
+composent, à savoir les smartphones. Or, les smartphones connaissent une
+croissance de vente exceptionnelle avec la vente de 237 millions de téléphone vendu
+à travers le monde durant le deuxième trimestre 2013. Il nʼest pas simple dʼinnover
+en terme de modèle économique sur le lancement dʼune application mobile native,
+car sur tous les payements, le propriétaire du store (ou plus généralement des OS
+mobiles) reçoit une taxe. Les propriétaires des différents stores auraient donc plus
+intérêt à verrouiller les modèles économiques pour continuer à percevoir cette taxe.
+Cʼest le cas de AppGratis où Apple a choisi de la supprimer de son store, car
+lʼapplication ne respectait pas des points de la nouvelle charte du store, qui excluait
+(par exemple) les applications promouvant dʼautres applications. En quelque sorte, la
+publicité dʼApple pour les applications du store ne passait plus par leur soin, donc
+Apple ne percevait pas de taxe sur cette méthode publicitaire.
+
+'
+
+!!!"'
+
+&EB80/0C!-'D1'=-4'D6/.'36'C04!3!7B'
+
+Internet connaît bien plus de modèles économiques que le monde des
+applications natives mobile. Dʼaprès Fred Wilson, lʼéconomie dʼinternet va se greffer
+à lʼéconomie du mobile dans les futures années. En quelque sorte, les modèles
+économiques les plus performants dans Internet seront disponibles sur mobile. La
+seule différence restera sur lʼapproche des grands groupes, comme Apple ou
+Microsoft, qui ne souhaitent pas forcément ne plus avoir la main mise sur les revenus
+des applications installer sur leur OS mobile.
+
+31
+
+Aujourdʼhui, une Web App souffre de visibilité sur le marché du mobile. Il est
+difficile de trouver un annuaire complet dʼapplication web. Ce qui nʼest pas le cas
+pour les applications natives. Une personne voulant partager son travail sur une
+application web ne pourra pas la proposer payante au téléchargement, car étant un
+contenu dʼInternet son ouverture est faite via une URL publique.
+Cʼest donc aujourdʼhui la seule limite en terme de modèle économique dont
+souffre les Web Apps.
+Mais de toute manière le modèle économique basé sur une application
+payante nʼest pas forcement le meilleur choix. En effet, un client ayant téléchargé
+lʼapplication ne formulera plus de source de revenus (sauf si lʼapplication contient
+tout de même des pubs en version payante ou propose des contenus payants). Alors
+quʼun modèle basé sur la vente de contenu ou la mise en place de publicité
+rapportera plus sur le long terme (selon lʼattraction de votre application).
+Cʼest pour cela que lʼavenir économique des applications web est très ouvert.
+Le seul problème aujourdʼhui, réside sur la visibilité des Web Apps, car si une
+application nʼest pas visible elle ne sera pas utilisée et si elle nʼest pas utilisée elle ne
+génère pas de revenu.
+
+!
+
+!
+
+32
+
+""!
+
+EC*:,#),!',-!.//0*).$*&#-!1,2!'.#-!0.!3&2*0*$4!
+
+Lʼexigence utilisateur sur les différents types applications est un point à part
+entière dans le développement dʼune solution informatique. Lʼutilisateur va se baser
+sur la vitesse de communication entre lui et la machine. Il risque dʼavoir des
+faiblesses en terme de connaissance technique et donc de ne pas comprendre
+certains fonctionnements dʼune application. Dans le domaine de la mobilité, les
+problèmes de connexion ou dʼIHM sont par fois rédhibitoire pour un client. Cʼest ce
+qui permettra à lʼutilisateur de choisir entre 2 applications qui proposent le même
+contenu, mais qui visuellement et fonctionnellement sont totalement différentes.
+
+"#!
+
++,-!.//0*).$*&#-!)&##,)$4,-F'4)&##,)$4,-!
+
+Les applications web mobiles et même les applications natives, utilisant des
+services internet, ont besoin dʼune connexion au réseau internet pour pouvoir
+fonctionner. Cet accès aux réseaux est proposé par 4 opérateurs en France qui
+sont :
+•
+
+Orange,
+
+•
+
+SFR,
+
+•
+
+Bouygues Telecom,
+
+•
+
+Free.
+
+Chacun de ces opérateurs à sa propre couverture réseau du territoire français
+qui est plus ou moins importante.
+
+33
+
+!"
+
+*012-5715-'D-.'5B.-61F'7B3B<90/!G1-.'C04!3-'
+
+Orange
+
+Cette carte de France représente la couverture réseau du pays par lʼopérateur
+Orange. Orange qui était anciennement appelée France Télécom. Elle est tirée du
+site official dʼOrange. On peut voir que le réseau 4G* commence à prendre de
+lʼenvergure dans les grandes villes, mais que le centre de la France souffre toujours
+dʼun réseau dʼancienne génération.
+
+SFR
+
+SFR obtient la meilleure couverture réseau. LorsquʼOrange propose une
+couverture de 98 % de la population française avec le réseau 3G, SFR couvre, quant
+
+34
+
+à lui, 98,6 % de la population. De même avec le GSM/GPRS où SFR a une capacité
+de couverture de 99,6 % soit 0,6 % de plus quʼOrange.
+Mais lorsque lʼon regarde la couverture du réseau de demain, à savoir la 4G,
+SFR nʼest plus en première tête. En effet, Orange couvre un plus grand espace avec
+environ 15 villes desservies contre 5 villes pour SFR. On peut donc en conclure que
+SFR a fait le choix dʼaméliorer ses couvertures réseau 3G plutôt que de viser vers
+une meilleure couverture 4G.
+
+Bouygues Telecom
+
+Bouygues Télécom est plus réduite en terme de couverture réseau. Avec
+95 % de la population couverte pour le réseau 3G et 99 % pour le réseau
+GSM/GPRS. Même problème pour le réseau 4G qui pour le moment regroupe 4 villes.
+Mais sur le site officiel de Bouygues Télécom, lʼentreprise annonce un déploiement
+pour le 1er octobre sur plus de 100 villes ainsi que 40 % de la population française
+de couvert.
+
+Free
+
+Free est le dernier opérateur français à faire son apparition. Il est considéré
+comme le réseau à bas prix. Lors de son insertion, il a eu pour effet de baisser les
+prix des abonnements téléphoniques avec des factures par moment diminué de 50 %
+sur chaque opérateur. Mais en terme de qualité de réseau, il est situé en dernière
+position. On peut tout de même noter que lʼoffre Free Mobile nʼa vu son apparition
+que le 10 janvier 2012. Free est pour le moment dans une meilleure progression de
+couverture réseau que lʼétait Orange ou SFR 1an après leur lancement.
+
+35
+
+Comme on peut le voir sur
+cette carte, le réseau de Free
+occupe une grande partie du
+territoire.
+
+Mais
+
+Free
+
+ne
+
+propose que deux types de
+réseaux à lʼheure actuelle :
+• la 3G,
+• et le GSM/GPRS
+Représenté
+
+par
+
+du
+
+rouge
+
+foncé pour le premier et un
+rouge
+
+plus
+
+clair
+
+pour
+
+le
+
+second.
+
+De plus, les réseaux appartenant à Free ne représentent que 37 % de la
+population. Ce chiffre représente à la fois le 3G et le GSM/GPRS. Mais Free peut
+proposer lʼaffichage dʼune telle carte, car Free repose sur le réseau dʼOrange pour
+les parcelles quʼil ne desservit pas.
+
+Ces multiples opérateurs proposent donc différentes couvertures réseau. Pour
+choisir la meilleure couverture réseau, il ne suffit pas de regarder les chiffres, mais
+de vérifier que la couverture du réseau est disponible à lʼendroit ou vous risquez
+dʼutiliser le plus votre téléphone.
+
+36
+
+'
+
+!!"'
+
+H5!/8!<-'D-.'6<<3!867!0/.'DB80//-87B-.'
+
+Une application est dite connectée lorsque son réseau mobile (ou réseau WiFi)
+lui offre la possibilité dʼaccéder à internet (ou juste un réseau informatique). Dans le
+cas où votre application utilise internet, comme les Web Apps, si votre téléphone est
+déconnecté dʼun réseau internet, il serait judicieux de proposer à votre utilisateur un
+contenu, même sʼil doit être réduit. En effet, dans le cas dʼune application web qui ne
+gère pas les pertes de connexion lʼaffichage dʼun écran blanc sera visible par
+lʼutilisateur. En général lʼécran blanc sur téléphone portable est rédhibitoire et le
+client risque de favoriser une autre application.
+
+Dans le cas dʼune application native, ce sera au développeur de gérer les
+pertes de connexion. Le développeur pourra savoir si les retours dʼinternet sont
+perçus par lʼapplication (ou pas du tout) et pourra de ce fait notifier à lʼutilisateur une
+perte du réseau. Par la suite, il sera en mesure de proposer un contenu statique
+propre à lʼapplication.
+
+Pour les Web Apps il est plus difficile de savoir si un téléphone est connecté à
+internet ou non. Mais une solution existe, elle réside dans lʼanticipation. Le
+développeur devra anticiper une perte de connexion et utiliser la nouvelle
+fonctionnalité du HTML 5 : lʼenregistrement de donnée en cache.
+
+Lʼexemple type dʼune application qui fonctionne en mode déconnecter est Gmail
+proposé par Google. Lorsque vous utilisez Gmail sur votre téléphone portable, même
+si vous perdez la connexion internet, vous ne serez jamais déconnecté de
+lʼapplication. Car Gmail gère le mode déconnecté en HTML 5, vous pourrez toujours
+envoyer vos mails. Les mails seront stockés sur le téléphone et seront envoyés
+lorsque vous retrouverez lʼaccès au réseau.
+
+37
+
+Mais il existe tout de même un bémol sur lʼutilisation de cette nouvelle
+fonctionnalité du HTML 5. La sauvegarde de fichier et de contenu sur le téléphone
+est bloquée à 5 Mo. En 2012, la taille moyenne dʼune application native sur
+téléphone portable était de 23 Mo et elle ne cesse dʼaugmenter avec le temps.
+Cette limite force le développeur à proposer des contenus plus sélectionner. Il sera
+difficile de pouvoir sauvegarder une application complexe dans le cache de lʼappareil.
+Les images représentent la partie la plus délicate à sauvegarder, car elles constituent
+le contenu le plus volumineux sur une page internet. Il faudra donc bien choisir
+lʼaspect visuel de votre application et proposer une solution avec le moins dʼimages
+possible.
+Pour la sauvegarde de vidéo, elle est fortement déconseillée, car le développeur ne
+pourra pas enregistrer beaucoup de contenu à côté de la vidéo qui devra en plus être
+réduite à moins de 5 Mo.
+
+La mise en cache dʼune application permet à la fois de pouvoir naviguer dans
+une application en mode déconnecter mais aussi dʼaméliorer la vitesse de
+chargement des pages puisque les fichiers sont enregistrés sur le téléphone en local.
+Le HTML 5 propose une vraie réponse au problème de connexion. Même si cette
+solution est moins connue du grand public, car elle est faiblement médiatisée par
+rapport aux balises vidéo et audio.
+La mise en cache dʼune ou plusieurs pages de votre application permettra une
+meilleure expérience utilisateur. Dʼune part, lʼutilisateur nʼaura normalement plus de
+page blanche assimilée à un dysfonctionnement de lʼapplication et de plus
+lʼapplication aura des performances de réactivité plus notable ce qui est important
+pour un client mobile.
+
+!
+
+!
+
+38
+
+$#!
+
++.!%4.)$*8*$4!',-!.//0*).$*&#-!*#$,%#,$!
+
+Dans lʼunivers du mobile, la concurrence est rude, la technologie étant encore
+jeune, le marché ne souffrent pas de demande et lʼoffre se veut innovante de jour en
+jour.
+Dans une telle optique, la demande des utilisateurs sera portée sur les apports
+fonctionnels de celle-ci. Le client choisira entre deux solutions, fonctionnellement
+identique, la solution qui sera le plus agréable à utiliser que ce soit dʼun point de vue
+réactif ou dʼun point de vue esthétique.
+
+!"
+
+&6'2!7-..-'DE!/7-5<5B767!0/'
+
+La vitesse dʼinterprétation du langage, utilisé pour développer une application
+mobile, sera grandement influencée par le niveau du développeur. Mais un autre
+paramètre est à prendre en compte : la compilation. En effet, les applications
+natives sont toutes compiler, c'est-à-dire que les fichiers sont envoyés à un
+compilateur qui va traduire les fichiers dans un langage plus proche de la machine. Il
+faudra une version compiler par langage.
+On ne peut pas compiler une application en Objective c pour des téléphones sous
+Android. Le problème de cette solution est la mise à jour dʼune partie de lʼapplication,
+car il faudra à nouveau compiler le projet et envoyer la mise à jour aux différents
+stores qui proposent lʼapplication.
+
+Les applications web sont développées avec des langages interprétés*. Le
+JavaScript, lʼHTML 5/CSS3 ainsi que le langage serveur (si votre application en a
+besoin). Les langages interprétés ont pour réputation dʼêtre plus lents que les
+langages compilés, car un langage interprété aura besoin dʼun interpréteur qui
+traduira les différents scripts pour que la machine les identifie.
+
+39
+
+Les applications web, dans leurs ensembles, utilisent énormément de
+JavaScript. Que ce soit pour des aspects visuels ou pour des rechargements de
+page via la technologie Ajax. Cʼest pour cela que les librairies JavaScript, pour
+téléphone portable, ont, dans lʼensemble, fait un travail sur la taille des fichiers. Il est
+beaucoup plus compliqué pour un téléphone dʼinterpréter 10 Ko de donnés, par
+rapport à un ordinateur qui aura une puissance de calcul bien supérieur.
+
+De plus, lʼHTML 5 ainsi que CSS 3 permettent dʼalléger les scripts JavaScript.
+Google a porté son application Gmail en HTML 5. Les performances sont notables :
+•
+
+Le temps de chargement de lʼapplication a été réduit en moyenne de
+une seconde,
+
+•
+
+Lʼutilisation du CSS 3 a permis une accélération du rendu graphique de
+12 %,
+
+•
+
+Environ 443.000 lignes de code en JavaScript, chiffre qui a diminué
+grâce au HTML 5.
+
+Ces chiffres proviennent du site « objectdirect.com ». Ils montrent bien que des
+performances sont tout de même notables, même si nous ne pouvons connaître le
+nombre de lignes de JavaScript avant le portage HTML 5.
+
+Les constructeurs de téléphone portable font de plus en plus attention aux
+performances de lecture du JavaScript. À lʼimage dʼApple, qui a créé un moteur
+JavaScript pour son navigateur mobile à savoir « Safari ». Ce moteur appelé « Nitro
+JavaScript » permet de compiler le JavaScript avant lʼinterprétation du navigateur.
+
+Même si les navigateurs mobiles reposent sur la bibliothèque « WebKit* »,
+bibliothèque qui utilise son propre moteur « SquirrelFish* ». SquirrelFish est un
+moteur JavaScript qui utilise un mode « compilé », mais il faut bien comprendre que
+le code JavaScript doit tout de même être compilé par SquirrelFish puis le code
+compilé est directement lu par la machine. Il y a quand même une étape de plus que
+sur des langages compilables de base.
+
+40
+
+!!"
+
+&6'2!7-..-'D-'80//-F!0/'
+
+La vitesse de votre connexion est importante pour une application qui
+fonctionne dans un mode connecté. Surtout si votre application est une Web App.
+Lʼune des différences entre lʼapplication native et lʼapplication web est le chargement
+des pages qui la compose. Pour une application native, ces pages sont enregistrées
+sur le téléphone. Pour une application web, ces pages sont chargées depuis internet
+puis mises en sauvegarde sur le téléphone (pour fluidifier la navigation par la suite).
+
+La vitesse de connexion permettra donc à une application web de charger les
+différentes pages qui la composent en un espace de temps plus réduit. Cʼest un gain
+de temps non négligeable vis-à-vis des scripts JavaScript qui peuvent par moment
+être très volumineux et demander un temps de chargement allongé.
+
+Si lʼapplication connectée (native ou web) offre des contenus médias, la
+vitesse de connexion en sera plus importante. Pour le chargement dʼune vidéo ou
+dʼune galerie dʼimage, la vitesse dʼexécution sera bien plus agréable pour lʼutilisateur.
+
+Les applications mobiles évoluent avec le réseau téléphonique. Au début des
+années 2000, il nʼétait pas imaginable de regarder une vidéo disponible sur internet
+en lecture direct depuis son téléphone. Aujourdʼhui, nous pouvons modifier des
+images, regarder des vidéos sur « You tube » ou encore écouter de la musique
+disponible en ligne sur internet.
+
+Il y a différente manière pour se connecter à des services internet depuis son
+téléphone. Utiliser le réseau de lʼopérateur téléphonique ou être connecté à un
+réseau WiFi. La connexion WiFi est de plus en plus utilisée en mobilité depuis que
+différentes mairies, en France, installent des bornes WiFi dans les endroits très
+fréquentés. Différentes entreprises proposent, aussi, le WiFi gratuitement dans leurs
+locaux, comme McDonald's ou la SNCF.
+
+41
+
+Mais les connexions mobiles sont souvent hors dʼune couverture WiFi. La 3G
+offre un bon débit, mais cette connexion a des limites. Que ce soit sur des fichiers
+très volumineux ou des vidéos de très bonne qualité, sa vitesse nʼest pas toujours
+adaptée à lʼévolution de lʼunivers média.
+
+Source : Wikipedia
+
+Ce tableau illustre bien lʼévolution du réseau téléphonique mobile français.
+Nous sommes actuellement au passage entre la 3G et la 4G. Comme on peut le voir,
+le réseau 4G va offrir des débits presque équivalents à des réseaux WiFi de faibles
+niveaux. Dʼaprès Frédéric Fleury – Devoteam — : « La 4G va faire exploser les
+usages autour de la télé-expertise et de l'apprentissage en ligne ». Le réseau 4G est
+bien plus performant que le réseau 3G. Cʼest le domaine multimédia qui en est le
+principal bénéficiaire.
+
+Un exemple typique dʼutilisation comme la possibilité de passer un entretien
+en déplacement et en appel vidéo depuis Skype. Dʼautres aspects sont améliorés
+comme le « cloud cumpting », lʼaccès à des « Google Docs » sera bien plus rapide
+avec lʼaspect communautaire accéléré. On pourra utiliser le réseau pour faire passer
+de gros volume de donné à analyser et donner le résultat presque en temps réel à
+lʼutilisateur. Comme dans le domaine de la reconnaissance dʼoiseau.
+
+Ayant travaillé sur une application mobile de reconnaissance dʼoiseau. Jʼai eu
+à me poser un certain nombre de questions avec mon équipe. Nous avions choisi de
+prendre plusieurs photos successives des oiseaux dans le ciel pour avoir la meilleure
+qualité dʼimage. Or chaque photo représentée 10Mo, nous devions pouvoir envoyer
+
+42
+
+plus de 20 photos à la fois. Avec un téléphone sous 3G, il fallait compter plus de
+5 min. Puis le serveur devait analyser les images pour ensuite retourner lʼinformation
+au téléphone. Avec un réseau 4G, le résultat aurait été bien plus rapide, voire
+immédiat.
+
+La vitesse de connexion est donc un point essentiel pour des applications
+connecter encore plus pour les Web Apps. Lʼutilisateur sera plus attiré par une
+application réactive que d'autres, plus lentes.
+!
+
+!
+
+43
+
+%#!
+
++.!)&3/.$*2*0*$4!-(%!'*==4%,#$,-!/0.$,-!=&%3,-!
+
+La mobilité héberge un grand nombre de marque de fabricant et de téléphone
+ainsi que de système dʼexploitation. Chaque OS mobile propose en navigateur
+internet par défaut : Safari pour iOs ou encore Internet Explorer pour Windows
+Phone. Android nʼa pas vraiment de navigateur par défaut, cʼest le fabricant de
+téléphones qui installera le navigateur quʼil souhaite. Puis chaque OS est installé sur
+des téléphones qui ont des caractéristiques différentes. Plus on sʼavance dans le
+temps, plus les téléphones offrent des vitesses de calcul intéressantes.
+Ces différences sont importantes lorsque lʼon parle dʼapplication compilée ou
+dʼapplication interprétée. On arrive vite à des limites matérielles pour certaines
+applications selon la plate forme.
+
+Lʼautre différence entre chaque OS est lʼaspect graphique de celle-ci.
+Lʼutilisateur dʼun téléphone Android mettra plus de temps à sʼhabituer à un autre
+système dʼexploitation comme iOS ou Windows Phone.
+
+!"
+
+'H015'3-.'/62!:67-15.'
+
+Les systèmes dʼexploitation proposent généralement un navigateur internet par
+défaut. Or il faut savoir quʼil est possible dʼinstaller un autre navigateur. Par exemple,
+sur iOs vous aurez le navigateur Safari installer, mais via lʼApple Store vous pourrez
+télécharger un autre navigateur comme Chrome ou Opéra mobile.
+
+La différence entre chaque navigateur internet est lʼinterprétation des multiples
+scripts web. Sur le site de « StatCounter », on peut voir quʼentre décembre 2012 et
+février 2013 les deux principaux navigateurs utilisés sont : le navigateur dʼAndroid
+avec 30 % des parts et le navigateur dʼiPhone avec 23 % des parts. Ce sont aussi
+les plus avancés technologiquement pour répondre aux nouvelles fonctionnalités du
+
+44
+
+HTML 5 dʼaprès lʼentreprise « Dot Com Infoway ».
+
+HTML 5 offre plusieurs nouvelles fonctionnalités, mais les navigateurs ne les
+prennent pas toujours en compte. On trouvera le plus de différence avec
+lʼappréhension des formulaires. Un champ « date », qui offrira un calendrier pour
+sélectionner une date, ne sera pas compris par tous les navigateurs, seul Safari,
+Chrome et Opéra lʼanalyseront. Dʼautres champs ne sont compris dʼaucun
+navigateur, on prendra lʼexemple du champ « tel » qui permet de renseigner
+seulement un numéro de téléphone.
+
+Les fonctionnalités ne sont pas les seuls à changer entre les différents
+navigateurs. Lʼaspect visuel change aussi, lʼinterprétation du CSS 3 peut être
+différente. Certains navigateurs vont être plus permissifs que d'autres. Des oublis
+dans le code, propre à des affichages de tableau ou des fermetures de balise
+manquante ou même des fonctions JavaScript non connus, ne seront pas identifiés
+de la même manière sur tous les navigateurs.
+
+Lʼentreprise « Dot Com Infoway » nous présente des chiffres sur la
+compatibilité des applications web mobile et les fonctionnalités du HTML 5, sur
+téléphone portable. Le navigateur qui donne lʼaccès à plus de fonctionnalités est
+Firefox mobile avec 66 % des innovations HTML 5 prises en compte pour mobile.
+Puis suis Safari et Opéra. Il faut savoir que Firefox mobile nʼest disponible que sur
+Android à lʼheure actuelle.
+De plus, lʼentreprise nous explique que les usages ont de fortes chances de changer.
+En 2010, on comptait 109 millions dʼapplications web en HTML 5, « Dot Com
+Infoway » prévoit en 2016 une augmentation de 2 milliards.
+
+Lors du développement dʼune Web App, il faudra bien prendre en compte tous
+les navigateurs. Le mieux est de tester son application sur les navigateurs mobiles
+les plus utilisés :
+• Safari sous iOs,
+
+45
+
+• IE sur Windows,
+• Chrome/Opera sur Android.
+
+Le test sur toutes les plates formes peut être cher si vous devez vous fournir un
+téléphone pour chaque OS. La solution est de faire croire au navigateur de votre
+ordinateur que lʼutilisateur est un téléphone. Vous pouvez, pour ce faire, changer
+lʼ« User Agent ». Lʼ« User Agent » permettra une interprétation du navigateur
+différente. Si vous changez votre « User Agent » en iPhone plutôt que MacBook pro,
+votre navigateur va interprété que vous êtes sur un iPhone. Par contre, il faudra bien
+entendu changer de navigateur et à nouveau changer lʼ« User Agent ».
+
+!!"
+
+H015'3-.'!/7-5I68-.':56<9!G1-.'
+
+En informatique, lʼinterface graphique est un point important, dans le
+développement dʼune solution. Elle est aussi assimilée à une interface entre lʼhomme
+et la machine (IHM). LʼIHM dʼune application doit être pensé par rapport au domaine
+de lʼapplication, mais aussi vis-à-vis de lʼOS sur lequel lʼapplication sera installée.
+
+Certaines applications internet ont du faire de gros changements dans leur
+interface graphique pour sʼadapter au format mobile. Maintenant, on peut les
+assimiler à des applications web.
+On peut prendre lʼexemple de Wikipedia ou encore « Dominoʼs pizza » qui ont
+tous deux fait le choix de créer un site internet pour les versions mobiles.
+
+46
+
+Comme le montre cette image, Dominoʼs Pizza a revu du tout au tout lʼinterface
+dʼutilisation entre le site sur ordinateur et le site sur mobile. Sur le comparatif si
+dessus nous avons à gauche lʼinterface graphique de la Web App et à droite
+lʼinterface normale de lʼapplication.
+
+Une autre solution est de rendre votre site « responsive ». Le responsive design
+désigne les applications internet qui sʼadaptent à la taille de lʼécran. Mais lʼapplication
+nʼaura pas une interface optimisée pour lʼappareil qui la lance. La différence entre la
+taille dʼécran dʼun smartphone et dʼune télévision, dernière génération, est très
+importante, pourtant le principe du responsive permettra au site de sʼafficher
+normalement sur les deux appareils. Lʼaspect interface homme-machine perd du
+sens dans ce cas, vue que la machine change du tout au tout.
+
+Les applications natives sont sujettes à lʼutilisation du modèle dʼIHM de la plate
+forme ciblé. Elles peuvent suivre ce modèle ou créer leur propre structure.
+Généralement, les applications natives suivent le modèle de base de lʼOS. Chaque
+
+47
+
+OS a sa manière de gêner les événements avec lʼutilisateur. Comme la gestion de la
+suppression dʼun élément, ou tout simplement la navigation dans lʼapplication.
+
+Les applications Web sont plus restreintes en terme de fonctionnalité
+graphique. Certains effets personnalisés sur une application ne peuvent pas toujours
+être reproduits sur une Web App, du fait de la différence entre lʼapplication compilée
+et lʼapplication interprétée. Une application web peut choisir son propre système
+dʼinteraction. Mais il faut savoir que lʼutilisateur a déjà des principes de bas acquis
+avec lʼutilisation dʼapplication native, lʼutilisateur va donc avoir des réflexes
+dʼinteraction, et sʼil nʼarrive pas à faire marcher votre application il risque de chercher
+une application concurrente.
+
+Il faudra donc bien réfléchir à lʼinterface à utiliser lors de la création dʼune Web
+App. Wikipédia est un très bon exemple de navigation simplifié sur application web.
+Car il propose toujours le même contenu que sur le site normal, mais lʼinformation est
+aménagée pour être plus lisible par lʼutilisateur.
+!
+
+!
+
+48
+
+G6!
+
++,-!0*3*$,-!',-!.//0*).$*&#-!1,2!!
+
+Les applications web ont des avantages non négligeables en terme de coût de
+développement, mais aussi de vitesse de création. La mise en ligne est simple et à la
+fois rapide. Lʼaccessibilité est facilitée pour lʼutilisateur. Il nʼaura pas dʼinstallation à
+mettre en place, juste avoir un navigateur internet. Mais le navigateur web doit être
+connecté à un réseau qui délivre internet. Nous atteindrons donc vite la limite en
+terme de connexion qui est de loin la plus contraignante.
+
+Une application web peut aussi rencontrer des problèmes alors quʼelle a un
+accès à internet avec son téléphone portable. Des ralentissements sur internet
+peuvent se produire, causés par une trop grande affluence dʼutilisateur sur votre
+application. Le serveur qui héberge votre application ne doit pas être situé à lʼautre
+bout du globe. Pour des soucis de vitesse, car plus la distance entre le serveur et le
+téléphone est grande plus le temps de transfert dʼinformation le sera aussi.
+
+Lors du choix du serveur il ne faudra pas analyser seulement sa localisation,
+mais aussi si le serveur est mutualisé ou dédié. Si votre serveur est mutualisé, il sera
+partagé avec dʼautres clients de lʼhébergeur, vous serez de ce fait plus sujet à des
+problèmes de performance réseau et donc à des latences dans votre application
+web. Alors que le serveur dédié est consacré à vos applications. Vous pourrez en
+installer autant que vous aurez dʼespace de stockage.
+
+Si jamais lʼapplication web, installée sur un serveur, connait un grand succès
+et que lʼinfrastructure nʼest pas suffisante pour répondre à la demande, votre
+application risque de ne pas pouvoir fonctionner normalement. Dans ce cas, il faudra
+changer de serveur avec des infrastructures capables de répondre à la demande des
+utilisateurs.
+49
+
+En général, plus votre application est utilisée, plus vos revenus seront
+importants. De ce fait, vous pourrez facilement adapter votre infrastructure sans
+problème.
+
+Le choix des images est aussi important. Si vous faites le choix dʼimage de
+haute définition, vous risquez dʼavoir des temps de chargements de page, sur votre
+application, qui seront allongés. Il faudra donc négliger un peu la qualité des images
+pour obtenir des performances plus notables. Et utiliser le plus possible les
+fonctionnalités du CSS 3 pour limiter le nombre dʼimages sur la page.
+
+Il est possible de faire une sauvegarde de page en HTML 5, mais si votre
+application subit des ralentissements dus au réseau, lʼappareil ne prendra pas la
+sauvegarde, via HTML 5. Il cherchera à atteindre la page sur le serveur, durant des
+phases de ralentissement votre application risque de ne pas être agréable à
+lʼutilisation. La fonctionnalité de sauvegarde de contenu nʼest utilisable que pour une
+perte totale du réseau.
+
+La limite de connexion impacte le temps chargement de tous les script (CSS,
+JavaScript et HTML). Plus vous utiliserez différents scripts, plus votre application
+mettra du temps à se charger. Il faudra limiter les appels aux scripts qui sont
+vraiment utilisés par votre page. Car certaines librairies ne seront pas forcement
+utilisé dans telle ou telle page. Or, le chargement de librairie peut être contraignant.
+Surtout si elle nʼest pas utilisée dans cette page.
+
+Au-delà de la limite de connexion, on retrouve aussi une limite en terme de
+ressource. Les Web Apps nʼauront pas accès à la totalité des fonctionnalités du
+téléphone. Vous nʼaurez pas accès à tout le contenu du téléphone ou à différents
+
+50
+
+composants techniques. Comme le microphone, pour lʼenregistrement de son, ou à
+la bibliothèque de photographie.
+
+Dans le cadre de mon stage de fin dʼétudes, effectué au sein de Sogeti
+Aquitaine, jʼai dû travailler sur une application web qui recevait des idées
+dʼutilisateurs. Le client a demandé à ce que lʼapplication enregistre du son pour que
+les utilisateurs envoient des idées par format sonore. Or, nous nʼavons pas pu mettre
+en place cette évolution au sein de lʼapplication web. Car nous avions atteint une
+limite en terme de ressource.
+
+Lʻapplication web est une réponse au développement sur multiple plate forme
+et la problématique de compatibilité sur les différents appareils est difficile à prendre
+en compte. Certains téléphones portables peuvent afficher votre application web,
+mais là où un téléphone de dernière génération se comportera très bien, un
+téléphone moins récent risque dʼavoir des latences, voire dʼarrêt de calcul par rapport
+à sa propre puissance. Il faudra donc faire des tests. Et spécifié aux utilisateurs que
+certaines fonctionnalités ne sont pas disponibles sur les téléphones ne répondant
+pas à certaines caractéristiques techniques.
+
+Les premières applications web utilisaient fortement lʼergonomie des
+applications iOs. Pour la navigation, lʼutilisation des boutons typique des applications
+iOs (le bouton « Retou » par exemple) ou même lʼutilisation de diverses icônes
+dʼapplication native (comme lʼicône dʼaccueil). Aujourdʼhui, les Web Apps se veulent
+plus généralistes, car lʼévolution des parts de marché a été nettement égalisée. Il y
+aura une seule ergonomie pour toutes les plates formes. Il est donc difficile dʼutiliser
+des interfaces ou images propres à une plate forme.
+
+51
+
+Les applications natives ont accès à un store pour être téléchargées puis
+installées. Ce store permettra de référencer les applications natives disponibles sur
+lʼOS. Cʼest un très bon moyen de mise en avant. Car les utilisateurs pourront faire
+une recherche précise et télécharger par la suite lʼapplication voulue.
+
+La courbe bleue représente le nombre de téléchargements dʼapplication
+seulement sur lʼApple Store (les chiffres sont en milliard). À savoir que lʼApple Store
+regroupe, actuellement, environ 890.000 applications. Statistiquement, votre
+application sera téléchargée 55.000 fois. Mais les statistiques sont faussées
+du faite de la popularité dʼun petit nombre dʼapplications vis-à-vis dʼautres
+applications moins connu avec peu dʼinvestissement sur le marketing autour de
+lʼapplication.
+
+Le problème de lʼapplication web est son référencement. À ce jour, il nʼy a pas
+dʼannuaire dʼapplication web performant. Certes, Google permet de retrouver des
+
+52
+
+sites ou applications via des mots clés, mais il ne fait pas encore la différenciation
+entre Web App et site internet pour ordinateur.
+On atteint vite une limite en terme de visibilité, on dit quʼactuellement seules
+les personnes connaissant la technologie savent quʼil existe un système dʼapplication
+web. Il reste à ce jour un gros travail à effectuer sur le référencement des
+applications web.
+
+!
+
+!
+
+53
+
+"""!
+
+H/4)*=*)*$4!',-!/0.$,-!=&%3,-!
+
+Comme on peut le voir sur ce graphique, les ventes de téléphone portable sont
+séparées entre plusieurs OS. Android et iOs représentent pas moins de 85 % des
+ventes de téléphone pour une courte période (janvier 2013). Or en France, 44 % de
+là population (11ans et plus) possède un smartphone, soit 24.1millions.
+
+Lorsque vous décidez de créer une application mobile seulement sur la plate
+forme iOs vous toucherez 28 % de la clientèle. Si vous choisissez de la développer
+sur Android, vous toucherez une plus grande population, mais ce chiffre peut être
+erroné. Car Android abrite un grand nombre de téléphones différents, dont les
+téléphones situés au premier prix. Ces téléphones sont en général vendus à des
+clients qui nʼutilisent pas toutes les capacités du téléphone. En moyen le nombre de
+connexions via un téléphone sous iOs est plus élevé quʼAndroid. Il faudra donc faire
+aussi attention au public que lʼon vise selon la plate forme.
+
+Les clients à la recherche dʼune solution dʼapplication mobile ont tendance à
+demander des applications Android et iOs. Mais il ne faut pas oublier les 15 % de
+détenteur de smartphone quʼil reste. En effet, Black Berry et Windows Phone
+regroupe pas moins de 3 millions de client potenciel.
+54
+
+Le
+
+choix
+
+dʼun
+
+développement
+
+dʼapplication
+
+multiplateforme
+
+ou
+
+dʼOS
+
+spécifiquement choisi doit être comptabilisé. La contrainte financière est très
+importante, car le prix peut être multiplié par 3 pour une application multiplateforme
+par rapport à une application dédier à un seul système.
+
+Un développement dʼapplication native, mais onéreuse, ou dʼapplication web
+multiplateforme, mais étant limité en terme de connexion, ressource et visibilité, doit
+être fait.
+
+"#!
+
+<48,0&//,3,#$!#.$*=I!0,-!'*==4%,#$-!-$&%,-!
+
+Le développement natif est certes plus couteux quʼun développement web,
+mais offre à lʼutilisateur un panel bien plus élargi. Il est bon de sélectionner les plates
+formes susceptibles de générer le plus de téléchargement pour votre application.
+
+App Store
+
+La plate forme iOs est apparue en juin 2007. Près dʼun an après son
+lancement Apple communique des chiffres : 3.000 applications recensées pour 100
+millions de téléchargements. Cinq ans plus tard, Apple annonce un total de 50
+milliards dʼapplications téléchargé sur leur store pour 900.000 applications. On voit
+bien que lʼévolution est plus que présente.
+
+Même les revenus versés aux développeurs dʼApple sont en augmentation. En
+moins dʼun an, ils ont plus que doublé, passant de 4 milliards à 10 milliards. Mais
+selon une étude menée par « Canalys », 50 % des revenus versés par Apple sont en
+réalité perçus par 25 sociétés qui ont le meilleur rendement.
+
+55
+
+Il faudra donc bien faire attention à ce que lʼapplication ne soit pas perdue
+dans la masse. Une étude de « Adeven » révèle que 580.000 applications sur lʼApp
+Store peuvent être considérées comme « morte », car elles ne gênèrent plus de
+téléchargement.
+
+Windows Phone Store
+
+Windows Phone est paru début 2010. En juin 2013, le Windows Phone Store
+comptait 160.000 applications, pour 2 milliards de téléchargements dʼapplication. Les
+chiffres sont bien en deçà visa vi dʼApple, mais Windows Phone est sorti 3 ans après
+lʼapparition dʼiOs. 3 ans après la sortie dʼiOs lʼApp Store, compter 250.000
+applications soit 90.000 de plus que Windows Phone Store. Mais Apple avait un
+avantage sur la concurrence, car à cette époque ils étaient moins nombreux à
+proposer des services adaptés à la nouvelle génération de mobilité.
+
+Windows Phone connaît une évolution croissante. En 2014, lʼIDC prévoit 21 %
+des parts de marché pour les Windows Phone dans le monde. Cette croissance est
+la plus importante toute plate forme confondue. Elle pousse à la non-négligence de
+cette plate forme pour les futurs choix stratégiques.
+
+Play Store
+
+Android est né en novembre 2007, il est aujourdʼhui le système dʼexploitation
+le plus utilisé dans le monde. Android touche une plus grande masse communautaire,
+car il est installé sur les téléphones de ba de gamme, moyen et haut de gamme. Ce
+qui peut être un atoût dans les chiffres mais en terme de monétisation sur le store,
+Play Store nʼest pas le premier.
+
+56
+
+Cʼest lʼApp Store qui monétise le mieux la vente dʼapplication. Au deuxième
+trimestre 2013, le Play Store gagnait un revenu évalué à 47 millions de dollars alors
+que lʼApp Store engrangeait environ 100 millions de dollars.
+
+Le Play Store abrite un peu moins de 1 million dʼapplications, soit presque
+100.000 de plus que lʼApp Store. Il est donc aussi difficile de faire connaître une
+application sur Android que sur iOs.
+
+Les deux principaux stores dʼapplication mobile sont lʼApp Store et le Play
+Store. Le Windows Phone Store est par la suite le plus prometteur. Pour les autres
+plates formes, seul BlackBerry Word survie dans la marche du mobile.
+
+On voit que malgré son ancienneté BlackBerry Word nʼest pas attractif dans le
+monde du développement. Cela influe sur la qualité du store et donc sa fréquentation.
+
+57
+
+$#!
+
+<48,0&//,3,#$!-,%8,(%!
+
+La partie serveur est la partie invisible dʼune application mobile. Mais
+les applications qui montrent des contenus ou enregistrent des contenus sur
+internet sont reliées à un serveur. Nous avons vu quʼil existe plusieurs types
+de
+
+langage
+
+serveur.
+
+Il
+
+serait
+
+favorable
+
+de
+
+savoir
+
+lequel
+
+choisir
+
+pour
+
+le développement dʼune architecture favorable au bon fonctionnement de votre
+application.
+
+!"
+
+*0//-F!0/'-/75-'3-'.-52-15'-7'3-'83!-/7J'3-'890!F'D1'36/:6:-'
+
+Le serveur occupe la place de traitement de donnée, il effectuera les
+traitements lourds de lʼapplication, et synchronisera les données de chaque
+application dans une base de données.
+
+Analyse de W3Techs
+
+Sur ce graphique, on aperçoit que le PHP est très populaire dans le
+développement serveur. Mais nous avions vu quʼil nʼétait pas forcement la meilleure
+
+58
+
+solution pour des applications volumineuse. Cʼest la même problématique pour les
+applications mobiles. Le client (téléphone portable) communique avec le serveur via
+des web services*. Il nʼy a pas de langage plus adéquat pour effectuer des appels
+avec un système de web service. Le but est de communiqué entre le serveur et le
+client pour administrer une base de données.
+
+Il faudra donc faire son choix par rapport à dʼautres caractéristiques du
+langage. Car chaque langage est certes différent, mais effectuera au final les mêmes
+actions. Il faudra faire son choix par rapport à des éléments extérieurs au
+développement.
+
+!!"
+
+K!IIB5-/7-.'C6/!L5-.'<015'D!IIB5-/7.'36/:6:-.'
+
+Le choix du langage serveur a évolué dans le temps et repose maintenant sur
+plusieurs critères. On retrouvera par exemple :
+•
+
+Le Management
+
+•
+
+Lʼenvironnement de lʼentreprise
+
+•
+
+La durée de vie du projet
+
+•
+
+Les ressources
+
+Il est rare de choisir un langage serveur par rapport à ces apports techniques,
+car lʼensemble des technologies serveur permet dʼeffectuer les mêmes traitements.
+
+Management
+
+Lʼaspect du « management » est propre à une équipe de développement. Une
+équipe travaillant avec la méthode Agile* choisira un langage plus optimisé dans ce
+
+59
+
+domaine comme le Ruby On Rails. Le PHP est par exemple le langage qui
+demandera le plus de travail pour lʼadapter à une équipe Agile.
+
+Lʼenvironnement de lʼentreprise
+
+Lʼenvironnement de lʼentreprise est la différenciation entre une structure
+importante comme une SSII et une PME ou « start-up2 ». Dans le cas dʼune SSII, le
+choix de la technologie se fera selon les connaissances de lʼentreprise. En effet, une
+SSII choisira un langage serveur quʼelle maitrise plutôt que de lancer des projets
+dans un langage inconnu qui nécessiterait la formation dʼune équipe et le potentiel
+recrutement de nouvelles ressources. Alors que les plus jeunes structures se
+pencheront vers des technologies plus récentes. La société Snappʼ est un bon
+exemple de « start-up » bordelaise travaillant dans le monde du mobile et ayant
+choisi le Ruby On Rails comme langage serveur. Les points positifs, des nouvelles
+technologies serveur, sont leur temps de mise en marche plus rapide et leur
+orientation vers un développement suivant la méthode Agile.
+
+De plus, une fois que lʼentreprise a choisi une technologie (ou plusieurs), le
+choix est souvent préétabli. Vis-à-vis des connaissances engrangées lors des
+premiers développements de projets ou des interfaces réseau mises en place. La
+reprise de projet client est aussi un exemple de technologie serveur prédéfini, il serait
+dommage de recréer un projet, déjà abouti, ou dʼajouter de nouvelle fonctionnalité
+avec un langage différent.
+
+La durée de vie du projet
+
+Le choix de lʼenvironnement serveur est parfois défini par la longévité du futur
+projet. Par exemple, la société Cdiscount est à lʼorigine dʼun choix qui suscite des
+interrogations actuellement. Lʼapplication Cdiscount est développée avec le langage
+2
+
+Entreprise possédant un fort potentiel de croissance, mais ayant un risque dʼéchec important.
+
+60
+
+« .NET ». Le « .NET » est une technologie propriétaire, donc couteuse. Aujourdʼhui,
+Cdiscount réfléchit sur la possible orientation vers une solution « open source » qui
+serait moins couteuse sur le temps, mais nécessiterait un investissement colossal
+pour la recréation de lʼensemble de la structure serveur.
+
+Les ressources
+
+Les ressources disponibles au sein dʼune entreprise ont des connaissances
+dans une ou plusieurs technologies. Il faudra donc orienter le choix vers la
+technologie que maitrise le mieux lʼéquipe. Il faudra faire attention à la différence de
+prix, sur le marché de lʼemploi. Entre un développeur de Java JEE et un développeur
+de PHP, la différence peut être de 4.000 euros bruts par ans
+!
+Le choix de la technologie serveur nʼest pas à négliger, car elle sera lʼoutil qui
+permettra dʼadministrer et dʼeffectuer des calculs poussés pour votre application
+mobile native ou web.
+
+61
+
+%#!
+
++,-!.//0*).$*&#-!9>2%*',-!
+
+Les
+
+applications
+
+hybrides
+
+représentent
+
+des
+
+applications
+
+natives
+
+qui
+
+encapsulent des contenus internet. Cʼest une réelle réponse aux problématiques des
+Web Apps. En utilisant cette technique, il est possible de combiner à la fois une
+application web avec divers composant natif.
+
+!"
+
+H5!/8!<-'D-'I0/87!0//-C-/7''
+
+Les applications hybrides fusionnent à la fois le côté natif et aussi le côté
+application web. Les applications hybrides sont développées avec les librairies
+JavaScript, vue au début du mémoire.
+
+Au début, lʼapplication est assimilé à une Web App, mais il est possible par la
+suite, via des composants natifs, dʼencapsuler des programmes web, on parle dans
+ce cas dʼapplication hybride. Le framework PhoneGap est une librairie JavaScript qui
+permet de faire un pont entre lʼapplication web et lʼapplication native. Lors de
+lʼencapsulation de lʼapplication web dans lʼapplication native, PhoneGap fera le pont
+entre les fonctionnalités natives et web. Comme lʼappareil photo, lʼaccéléromètre ou
+encore le vibreur de lʼappareil.
+
+PhoneGap permettra donc de créer des applications hybrides plus facilement
+et de les proposer sur plusieurs plates formes à la fois.
+
+62
+
+Il est donc possible de développer une application native en utilisant du
+contenu web. Lʼapplication utilisera les composants HTML 5 et CSS 3. Vous aurez
+donc une possibilité de manoeuvre au niveau graphique et fonctionnel assez élargi.
+De plus, votre application pourra être portée pour toutes les plates formes
+compatibles avec cette solution (Windows Phone, iOs, BlackBerry ou même
+Android).
+
+PhoneGap nʼest pas le seul outil proposant cette solution. On retrouve dans le
+même registre Titanium Mobile. Les deux solutions sont gratuites, la différence
+fondamentale entre Titanium et PhoneGap est lʼinterprétation du JavaScript. Titanium
+est plus proche de lʼappareil alors que PhoneGap ait plus basé sur les pages web est
+leur interprétation. Les performances de vitesse sont donc à lʼavantage de Titanium
+alors que PhoneGap sera plus simple à prendre en main et à adapter.
+
+Titanium supporte quatre plates formes différentes : iOs, Android, BlackBerry
+et récemment Windows Phone. PhoneGap en supporte neuf soit plus de deux fois le
+support de Titanium. Mais Titanium peut être utilisé sur les plates formes qui
+englobent le plus dʼutilisateurs.
+
+Les Web Apps peuvent donc être encapsulés dans des applications natives
+via un framework ou directement en utilisant quelques lignes de code natif à la portée
+de nʼimporte quel développeur.
+
+Cette technique est présente depuis le commencement des smartphones,
+mais elle commence à être de plus en plus utilisée par les développeurs.
+
+63
+
+!!"
+
+MF-C<3-'3E17!3!.6/7'
+
+Voici des exemples dʼapplication hybride. Elles sont toutes disponibles sur le
+store de leur plate forme, mais utilisent un contenu web.
+
+Lʼexemple de Facebook est très parlant quant à cette mouvance du HTML 5.
+En 2007, Facebook a choisi de créer leurs applications de manière native. Mais en
+2011, après avoir constaté que leur effectif était plus spécialisé dans le domaine du
+web par rapport au domaine du développement mobile natif (Objective-c, Java,
+.NET…) , Facebook a choisi de passer sur une méthode hybride pour harmoniser
+leur solution mobile vis-à-vis des différentes plates formes.
+
+64
+
+Ce choix est à la fois porté sur un problème de ressource, mais on peut aussi
+se douter quʼau niveau de la maintenance des applications natives, cela devait
+demander plus de temps. Car il fallait maintenir au temps dʼapplication mobile quʼil y
+avait de plates formes couvertes par les différentes applications native.
+
+Les applications web ont un autre point fort, leur portabilité au-delà des
+téléphones ou des tablettes. Une application web pourra être utilisée aussi bien sur
+une console de salon que sur une télévision connecter à internet. Lʼapplication
+hybride pour concrètement être adapté bien plus facilement quʼune application
+native, à bien plus de terminaux.
+
+Les applications hybrides peuvent être diverses et variées. Dans le cadre de
+mon stage de fin dʼétudes, jʼai eu à travailler sur une application hybride. À lʼorigine,
+nous avions une application web que nous devions faire porter en natif pour ajouter
+des
+
+fonctionnalités
+
+dʼenregistrement
+
+audio
+
+ou
+
+lʼajout
+
+dʼun
+
+système
+
+de
+
+notification. Le choix sʼest donc porté sur une solution hybride pour limiter le
+temps de développement. Les améliorations ont été ajoutées avec succès et
+simplicité.
+
+Des applications hybrides couvrent des domaines très différents, de la prise
+de photo (PixWithMe) à la navigation sur une carte (Google Map), on retrouvera
+presque tous les types dʼapplications. Seules les applications demandant
+énormément de ressource graphique, comme les jeux vidéo 3D, sont absentes à
+cause de souci de performance.
+
+65
+
+!!!"
+
+&-.'-/N-1F'
+
+Nous avons vu quʼil existe à lʼheure actuelle trois possibilités pour créer une
+application mobile :
+
+•
+
+Lʼapplication native,
+
+•
+
+Lʼapplication web,
+
+•
+
+Et lʼapplication hybride.
+
+Lʼapplication native
+
+Lʼapplication native possède plusieurs points positifs. La visibilité sur le store
+de la plate forme étant son principal, car le store lui offre un potentiel de clientèle très
+intéressant ce qui permettra de plus facilement faire connaitre son application. Les
+applications natives ont aussi accès à toutes les fonctionnalités proposées par le
+système dʼexploitation. Que ce soit la gestion de lʼappareil photo du terminal ou
+lʼaccès au système de notification de la plate forme. Des animations pousser peuvent
+aussi être mises en place. La réactivité de lʼapplication sera bien mieux prise en
+compte par rapport aux deux autres solutions, car lʼapplication native est la seule qui
+propose un code totalement compilé.
+
+Lʼapplication web
+
+Lʼapplication web a la possibilité dʼêtre utilisée sur nʼimporte quel téléphone
+portable qui possède un navigateur internet. Le coût en développement est donc
+réduit. La maintenance de lʼapplication sera elle aussi bien moins couteuse, par
+rapport à la maintenance de plusieurs applications natives proposant le même
+
+66
+
+contenu. De plus, les applications web ne sont pas soumises aux taxes des
+différents stores, mais ne pourront pas y être référencées.
+
+Lʼapplication hybride
+
+Lʼapplication hybride est économiquement plus proche de lʼapplication web. Le
+coût de développement pour une application multiplateforme sera au même niveau
+quʼune application web. Lʼaccès au store est le point positif le plus important. Certes,
+le développeur devra payer des taxes aux différents stores, mais il aura la possibilité
+de gagner en visibilité.
+
+Le tableau ci-dessous illustre bien les enjeux de lʼapplication hybride. Il montre
+que les applications hybrides attirent à la fois les avantages de la solution native et à
+la fois les avantages dʼune solution web. Mais au niveau de la vitesse, il omet de
+préciser que les parties, de lʼapplication hybride en HTML 5, seront forcement plus
+lente quʼune application native.
+
+(Source : Worklight).
+
+67
+
+Le marché de lʼemploi est lui aussi en évolution. Il est aujourdʼhui plus facile
+de trouver des développeurs web que des développeurs dʼapplication mobile native.
+Pour une simple application portée sur trois plates formes, il faudra trois
+développeurs pour une application native contre un pour une application hybride.
+
+Une étude sur le marché de lʼemploi américain montre que la tendance
+HTML 5 est de plus en plus présente sur le marché de lʼemploi :
+
+Depuis le lancement du développement mobile à grande échelle et
+lʼélaboration de diverses librairies JavaScript spécialisées dans le mobile, le profil de
+développeur HTML 5 est de plus en plus présent.
+
+Lʼévolution constante des ventes de smartphone et tablette est représentée
+par une clientèle potentiellement conséquente (24 millions en France). Lʼenjeu est
+
+68
+
+donc de pouvoir proposer une application mobile sur les différentes plates formes à
+lʼensemble de la clientèle.
+
+Lʼapplication
+
+hybride
+
+permettra
+
+donc
+
+lʼélaboration
+
+dʼapplications
+
+multiplateformes qui resteront proches fonctionnellement des applications natives.
+Les ressources seront plus simples à trouver et le temps de développement sera
+diminué. Cela induira directement sur le coût total de lʼapplication mobile.
+Lʼapplication pourra toucher la majorité du parc téléphonique français, qui ne cesse
+dʼaugmenter.
+
+69
+
+!2"
+
+&-.'626/76:-.'-7'!/80/2B/!-/7.'
+
+Le développement hybride possède des avantages et des inconvénients vis-àvis du développement natif ou du développement web.
+
+Les avantages sont multiples :
+• Les diverses librairies JavaScript permettant le développement hybride,
+• la maintenance,
+• le développement multiplateforme,
+• le coût de développement réduit,
+• un langage standard,
+• la gestion des modes connecter et déconnecter,
+• lʼaccès aux fonctionnalités des téléphones portables,
+• lʼaccès au store dʼapplication mobile,
+• la gestion des versions de mises à jour,
+• lʼaccès aux modèles économiques des applications natives,
+• et lʼaccès à lʼespace de stockage de lʼappareil.
+
+Les inconvénients sont moins nombreux, mais tout de même présents :
+• la performance graphique,
+• la performance en terme de vitesse,
+• le respect des normes graphique,
+• lʼinstallation de lʼapplication.
+
+On retrouve donc plus dʼavantages que dʼinconvénients. Pour ce qui est des
+avantages, on se rend compte que le principal reste le développement
+multiplateforme.
+
+70
+
+Le développement multiplateforme permettra donc de couvrir une plus grande
+clientèle. Certaines applications, comme des applications pour des campagnes
+politiques, sont plus propices au développement multiplateforme. Grâce à cet
+avantage, il en découle d'autres. Comme lʼutilisation dʼun langage plus standard
+(HTML, CSS, JavaScript) par rapport aux multiples langages natifs. Puis on retrouve
+la maintenance qui est simplifiée puisquʼil nʼy a quʼune seule application à maintenir.
+
+Il est vrai que trouver une ressource pour du développement hybride est plus
+évident que de devoir chercher plusieurs ressources pour du développement natif
+multiplateforme. Surtout que le développement hybride à la chance dʼêtre assisté par
+des librairies JavaScript comme PhoneGap, Titanium ou encore une solution Ruby
+avec Rhodes.
+
+La maintenance dʼune application sera donc bien moins couteuse dans le
+temps et prendra bien moins de temps et de ressource. Car à lʼinverse dʼun
+développement natif multiplateforme, vous nʼaurez quʼune seule application à
+maintenir.
+
+Le développement hybride dʼapplication multiplateforme permettra dʼobtenir des
+temps de création et des coûts bien plus intéréssant que lʼapplication native.
+
+71
+
+Source : Needeo
+
+Ce graphique, proposait par la société Needoe, montre la différence en le prix
+dʼapplication hybride par rapport à des application Native. Lʼapplication native est
+évalué à presque trois fois le prix dʼune application hybride.
+
+La solution dʼune Web App souffre dʼun lourd défaut vis-à-vis de la connexion
+permanente ainsi que la perte du référencement via un store. La gestion du mode
+déconnecté, en HTML 5, nʼest pas forcément la meilleure solution. Lorsque lʼon
+sʼaperçoit que le développeur dispose dʼun espace de stockage de 5 Mo avec une
+application web, alors quʼen utilisant un système hybride le développeur dispose dʼun
+accès direct au stockage du téléphone.
+
+En plus de disposer de lʼespace de stockage du téléphone, le développeur
+pourra tout aussi accéder aux fonctionnalités telles que la caméra, le microphone ou
+encore le système de notification. Les applications hybrides ne souffriront pas dʼun
+manque de fonctionnalité comme une Web App. Mais garderons leur souci de
+latence vis-à-vis dʼune application native. Les normes graphiques, de chaque type
+dʼapplication native, seront aussi difficiles à mettre en place pour une application
+
+72
+
+hybride.
+
+Les applications hybrides bénéficieront de lʼaccès au store de ventre
+dʼapplication mobile de chaque plate forme. Contrairement à un Web App, une
+application devra tʼêtre installée sur le téléphone portable. Mais lʼapplication hybride
+pourra, tout comme une application native, accéder au gestionnaire de version des
+stores et être mises à jour à la fois par la partie internet, mais aussi via les stores des
+différentes plates formes.
+
+Lʼaccès au store permettra aux applications hybrides de sʼadapter aux différents
+modèles économiques natifs. Les solutions hybrides obtiendront donc la possibilité
+dʼêtre monétisé, ou dʼajouter les systèmes de publicité des différents OS.
+Lʼapplication hybride pourra aussi proposer des contenus payant, exactement
+comme une application native. Mais lʼapplication hybride pourra aussi se reposer sur
+les modèles économiques dʼinternet. Le modèle hybride obtiendra un choix de
+modèle économique bien plus varié quʼune application native.
+
+!
+
+!
+
+73
+
+J&#)0(-*&#!!
+Romain Pellerin : « Récemment nous avons vu cette application pour valider sa
+fiche d'imposition... Donc finalement nous n'allons l'utiliser qu'une fois par an... un
+site mobile aurait suffit ». Lʼapplication web ne répond pas encore à la demande des
+utilisateurs mobiles. La Web App souffre dʼun manque de visibilité ainsi quʼun lourd
+défaut lié au problème de connexion à internet. Mais comme le souligne Romain
+Pellerin, la Web App répond à des types dʼapplication éphémère, qui nʼont pas pour
+but une utilisation courante. Faire le choix dʼun développement dʼapplication web à
+lʼheure actuelle est un choix propre à lʼapplication, car les Web App ne peuvent pas,
+à lʼheure actuelle, écraser le marché des applications natives.
+
+Lʼapplication web ne pourra pas être démocratisée tant que les problèmes de
+connexion et de visibilité ne seront pas résolus. Le souci lié à la connexion à internet
+risque dʼêtre réglé dans les prochaines années avec lʼarrivée de la 4G. Mais pour ce
+qui concerne le souci de référencement à ce jour Apple proposé des applications
+web mobiles sur son site, mais leur service a pris fin en juin. Il est très difficile de
+trouver dʼautre référenceur dʼapplication web mobile sur internet.
+
+Le choix du développement web dans la mobilité est à ce jour un choix financier
+plus que technique. Les ressources sont plus simples à trouver et le temps de
+développement sera nettement réduit pour du développement multiplateforme. La
+mise à jour de lʼapplication web sera aussi facilitée. Le développeur devra mettre à
+jour les fichiers web sur le serveur, alors que si lʼapplication était native il faudrait
+passer par un processus de validation pour certains systèmes dʼexploitation (iOs,
+Windows Phone).
+
+Lʼapplication native est historiquement la plus utiliser, car elle était la solution
+proposée par les différentes plates formes au début de lʼère des smartphones.
+Lʼapplication web a été plus utilisée après 2009, avec lʼarrivée des diverses librairies
+JavaScript. Aujourdʼhui lʼapplication hybride nous permet de trouver une réponse par
+
+74
+
+rapport à la place des applications internet dans la mobilité.
+
+Lʼapplication web mobile élaborée est donc présente sous forme dʼapplication
+hybride. Lʼapplication hybride qui est la fusion entre application web et application
+native.
+
+Lʼapplication hybride pourra à la fois gérer plus facilement la partie connexion à
+internet, mais permettra aussi lʼaccès aux stores des différentes plates formes. Les
+principes de monétisation deviendront donc plus en adéquation avec la partie mobile
+(vente de lʼapplication, vente de contenu), mais lʼapplication hybride gardera aussi
+les modèles économiques web qui sont bien plus nombreux (et ils ne sont soumis à
+aucune taxe vis-à-vis des propriétaires des systèmes dʼexploitation).
+
+Les librairies permettant lʼélaboration dʼapplication hybride sont créées en
+JavaScript et permettent lʼaccès aux fonctionnalités du téléphone portable. Comme le
+microphone, la gestion de la caméra ou le système de notification. Le développeur
+pourra donc se limiter à la connaissance du langage JavaScript pour mettre en place
+son application hybride.
+
+Mais lʼapplication hybride quʼavait mise en place Facebook, en 2011, nʼa pas
+convaincu le grand public. Et un an plus tard, Facebook est revenu en arrière dans
+ces choix de technologie. Les utilisateurs déploraient une application trop peu fluide
+et par moment les déconnexions étaient mal gérées par le programme, et lʼaffichage
+de page blanche sur lʼapplication était constaté. Le passage en langage natif de
+Facebook a permis de rendre lʼapplication bien plus fluide et de gérer les
+problèmes de connexion. Cʼest donc à nouveau un changement dʼobjectif quʼaffiche
+Facebook qui avait déjà transformé ses applications natives vers un modèle hybride
+en 2011.
+
+Lʼapplication hybride nʼest peut-être pas le modèle le plus perfectionné, mais il
+a le mérite de proposer un développement multiplateforme à moindre coût. Mais ce
+
+75
+
+nʼest pas encore une technologie assez mature pour pouvoir supplanter les
+applications natives.
+
+Actuellement, le choix entre lʼapplication native, lʼapplication web et lʼapplication
+hybride doit être fait suivant la nature du projet (voir annexe 1). Lʼapplication hybride
+ne sera pas adaptée pour des applications demandant de la fluidité et de la vitesse.
+
+Sur le store dʼiOs, il est fréquent de télécharger et installer des applications
+natives qui auraient pu être développées avec une solution hybride comme des
+applications affichant des résultats sportifs (football, basket…). Ce genre
+dʼapplication demande un système de notification très performant, mais ne cherche
+pas à obtenir lʼaccès aux fonctionnalités du smartphone ou dʼafficher des animations
+très élaborées. Le choix dʼune application hybride aurait été plus judicieux dans un
+souci de portage de lʼapplication dans un mode multiplateforme.
+
+Lʼapplication hybride nʼest donc pas encore assez connue et pas assez utilisée
+par les petites entreprises. Pourtant cʼest une solution utilisable dans bien des cas, et
+cette méthode permettra de réduire les financement dʼune application mobile
+multiplateforme.
+
+Aujourdʼhui, les systèmes dʼexploitation mobile ne sont pas adaptés à une
+utilisation qui consacre toutes les applications pour le web. Même sʼil essaye de tirer
+au mieux les performances JavaScript (comme Apple avec son moteur JavaScript
+développé spécialement pour Safari Mobile).
+
+76
+
+Des systèmes dʼexploitation basés sur les technologies du web ?
+
+Si les OS actuels ne permet pas une optimisation des temps de calcul et des
+performances graphiques adéquates au monde du web, peut être que lʼavenir du
+web se trouve dans les futurs OS mobiles.
+
+Trois nouveaux systèmes dʼexploitation vont voir le jour dans une optique qui
+est plus accès sur le web :
+• Tizen, qui est un projet de la fondation Linux,
+• Firefox OS, qui a été élaboré par Mozilla,
+• Et Open WebOS, qui est la version open source de webOS développer
+par HP.
+
+Firefox OS est disponible au total dans cinq pays. Trois pays européens
+lʼEspagne, le Portugal et la Pologne et deux pays dʼAmérique du Sud le Brésil et le
+Venezuela. Cʼest une plate forme très jeune, sortie en juin 2013. La société Mozilla
+compte sʼinstaller dans dʼautres territoires avant la fin de lʼannée. Ce système
+propose une interface utilisateur entièrement en HTML 5 et CSS 3. Firefox OS est
+basé sur un noyau Linux appelé Gonk, pour son fonctionnement. Contrairement à
+Tizen, Firefox OS utilise des composants Android pour lʼaccès à diverses
+fonctionnalités du téléphone portable. Le moteur de rendu JavaScript est Gecko
+développer par la fondation Mozilla. Gecko est un moteur ouvert, il peut être utilisé
+par dʼautre plate forme comme Android, mais certaines fonctionnalités risquent dʼêtre
+fermées.
+
+Les applications mobiles, proposées par Firefox OS, sont entièrement faites en
+HTML 5 et JavaScript. En sʼappuyant sur ces technologies, ce système dʼexploitation
+met en première page le web dans la mobilité. Mais contrairement à une Web App,
+qui est disponible sur toutes les plates formes, les applications Firefox OS
+développer en HTML 5 seront compatibles seulement avec cet OS. Même si la
+technologie est la même, les sources JavaScript ne vont pas être adaptées pour
+
+77
+
+nʼimporte quel OS. Car les différents systèmes dʼexploitation (iOs, Android, Windows
+Phone…) ne permettent pas de gérer les interactions entre le JavaScript et les
+composants du téléphone portable.
+
+Tizen est proposé par la fondation Linux, il repose sur un noyau Linux couplé
+avec du HTML 5 pour lʼinterface graphique. Tizen utilise la librairie EFL
+(Enlightenment Foundation Libraries) pour ce qui est de la gestion graphique. WebKit
+est lui utilisé pour ce qui concerne le contenu web du système dʼexploitation.
+
+Tizen reçoit le soutien de plusieurs constructeurs de téléphone portable, comme
+Samsung ou Nokia. Samsung ayant abandonné le système dʼexploitation mobile
+« Bada », va installer Tizen sur sa gamme de « Samsung Wave3 ». Cela représente
+un marché important, car Samsung est le constructeur de téléphone portable qui
+obtient depuis quelque temps les meilleurs chiffres de vente dʼappareil mobile.
+
+Le système dʼexploitation « Open WebOS » est lui aussi basé sur un noyau
+Linux. À lʼorigine, Open WebOS est un OS proposer par lʼentreprise HP, qui en aout
+2011 a décidé dʼabandonner sa plate forme mobile et a rendu son système
+dʼexploitation en open source. Depuis, le projet a été repris par la société HP qui a
+racheté WebOS en février 2013. Cʼest donc LG qui joue le rôle de commanditaire
+pour le développement de ce nouveau système dʼexploitation mobile.
+
+Firefox OS est le seul des trois systèmes à avoir fait son apparition dans le
+marché du mobile. Tizen prévoit son lancement en fin dʼannée 2013 sur un terminal.
+Open WebOS est lui toujours en cour de développement, même si des version bêta
+on été installer sur une tablette Google Nexus 7.
+
+Le point commun des trois systèmes dʼexploitation est leur base Linux/HTML 5.
+Cela va permettre la compatibilité des différentes applications entre ces OS. Le
+nombre dʼapplications disponible pour ces plates formes sera donc bien plus
+3
+
+Modèle de smartphone proposé par la marque Samsung
+
+78
+
+important, car il combinera les trois plates formes à la fois.
+
+Les nouveaux systèmes dʼexploitation pour téléphone portable sont entièrement
+adaptés à un environnement web. Il reste à voir si les interactions avec le serveur
+internet ne poseront pas de problème lors de lʼutilisation. Mais de toute évidence, la
+qualité du réseau reste important dans du développement web. Avec lʼarrivée du
+réseau 4G, la qualité et le débit du réseau risque dʼêtre fortement amélioré.
+
+À lʼheure actuelle, les applications web nʼont pas les capacités à supplanter les
+applications natives. Elles ne sont quʼune solution de développement offrant des
+avantages et des inconvénients vis-à-vis de lʼapplication native. Nous avons vu quʼil
+était tout de même possible de fusionner les deux types dʼapplication (web et native)
+pour confectionner une application hybride. Cette solution permet en effet dʼutiliser
+son application web sous forme dʼapplication native. Mais le principe de liberté
+dʼinternet nʼest plus réellement en lʼétat. Certains stores comme lʼApp Store dʼApple
+et le Windows Phone Store effectuent des vérifications sur les applications. Ils
+peuvent interdire une application, car elle ne répond pas au critère quʼils ont euxmêmes défini. Une application web doit être par principe libre de contenu.
+
+Les trois nouveaux systèmes dʼexploitation, cité au dessus, offrent au web une
+nouvelle place dans la mobilité. En effet ici on ne parle plus dʼapplication web par
+rapport aux applications natives, mais dʼapplication native qui sont développées
+directement avec les technologies du web.
+
+Lʼavenir du web se trouve donc plus dans les futurs OS mobiles qui sont
+tournés vers le développement internet que dans les actuels qui restent plus tournés
+vers leur choix technologique.
+
+On pourrait donc dire que lʼapplication web ne pourra pas sʼimposer par rapport
+à lʼapplication native, car ce sont deux applications différentes qui ne répondent pas
+aux mêmes exigences. Le choix reste à faire vis-à-vis de la méthode de création de
+
+79
+
+lʼapplication mobile. Mais les futurs OS eux proposeront des applications web en
+terme dʼapplication native.
+
+Il restera donc à voir si les futurs systèmes dʼexploitation mobile permettront
+dʼobtenir des applications aussi fluides et rapides que sur nos OS actuels.
+
+80
+
+Bibliographie :
+
+Introduction :
+
+• Radio : France Info
+• Wikipédia,
+• ZDNet : Antoine Duvauchelle |e 11 Décembre 2012,
+• 01Net,
+• Christophe Clément medcost.fr,
+• http://philippe-b.forumpro.fr article "GSM / GPRS / UMTS / EDGE / 3G / WIFI",
+• Clubic : article "Téléphonie de troisième génération : EDGE, 3G, etc" Publié par
+Julien Jay & Alexandre Laurent le 18 Juillet 2006
+• http://fr.slideshare.net/needeo/les-applications-mobiles-sites-mobiles-web-apps
+
+Partie I chapitre 1.1
+
+• http://ser-info-02.ec-nantes.fr/users/info3/weblog/2ee24/
+• http://www.alsacreations.com/tuto/lire/1372-formulaires-html5-nouveaux-typeschamps-input.html
+• http://www.w3schools.com/html/html5_intro.asp
+• http://www.w3schools.com/css3/default.asp
+• http://j-willette.developpez.com/critiques/html/html5-quels-enjeux-pour-lamobilite-et-le-ria/
+
+Partie I chapitre 1.2
+• http://www.queness.com/post/6706/9-mobile-framework-to-kick-start-yourmobile-development-career
+• http://aerilys.fr/blog/?tag=jqtouch
+• http://validator.w3.org/mobile/
+
+81
+
+Partie I chapitre 1.3
+
+•
+
+http://fr.wikipedia.org/wiki/PHP
+
+•
+
+http://php.net/manual/fr/history.php.php
+
+•
+
+http://www.scriptol.fr/programmation/langages-populaires.php
+
+•
+
+http://fr.wikipedia.org/wiki/Microsoft_.NET
+
+•
+
+http://www.commentcamarche.net/contents/548-j2ee-java-2-enterprise-edition
+
+•
+
+http://www.microsoft.com/en-us/server-cloud/windows-server/buy.aspx
+
+•
+
+http://en.wikipedia.org/wiki/Nodejs
+
+• http://blog.vincentbrouillet.com/post/2010/06/27/Quelle-solution-de-technologieWeb-Php,-Java,-.Net,-Rails,-Python
+• http://www.journaldunet.com/developpeur/outils/linkedin-de-ruby-on-rails-anode-js-1012.shtml
+
+Partie 1 chapitre 2.1
+
+• http://olivierguillet.com/2012/02/panorama-plateformes-mobiles/
+• https://developer.apple.com/programs/start/ios/
+• http://www.docdoku.com/blog/2011/04/06/premier-mobile-monday-toulouseretours-et-presentation-docdoku-en-ligne/
+• http://fr.wikipedia.org/wiki/Objective-C
+• http://www.journaldunet.com/developpeur/expert/51048/le-developpementmulti-plateforme---enjeux--promesses-et-realite.shtml
+• http://lapetitedev.blogspot.fr/2013/04/jquery-mobile.html
+• http://fr.wikipedia.org/wiki/WinDev_Mobile
+• http://fr.wikipedia.org/wiki/Xamarin
+
+Partie 1 chapitre 2.2
+
+• http://mobithinking.com/native-or-web-app
+• http://olivierguillet.com/2012/02/les-differents-types-dapplications-mobiles82
+
+natives-web-apps-hybrides-flash/
+• http://www.apple.com/webapps/index.html
+
+Partie 1 chapitre 3
+
+•
+
+http://www.journaldunet.com/web-tech/chiffres-internet
+
+Partie 1 chapitre 3.1
+
+• http://www.challenges.fr/high-tech/20121004.CHA1644/l-ocde-quantifie-lepoids-grandissant-d-internet-dans-l-economie-mondiale.html
+•
+
+http://www.atlantico.fr/decryptage/institut-mckinsey-evalue-8000milliards-dollars-revenus-generes-internet-219858.html
+
+•
+
+http://www.atlantico.fr/atlantico-light/internet-inquietant-maisexcellent-pour-economie-selon-francais-748230.html
+
+• http://www.economie.gouv.fr/files/rapport-mckinsey-company.pdf
+
+Partie 1 chapitre 3.2
+
+•
+
+http://blog.beule.fr/analyses-dexpert/application-native-vs-web-application-leduel-fraticide/
+
+•
+
+http://www.monetilab.fr/6-moyens-rentabiliser-application-mobile-iphoneandroid-generer-revenus/
+
+•
+
+http://www.pcinpact.com/breve/61093-applications-app-store-android-marketovi-store-world.htm
+
+•
+
+http://www.iphonegen.fr/android-market-croissance-plus-rapide-app-storeactualite-7800.html
+
+•
+
+http://www.zdnet.fr/actualites/le-windows-phone-market-place-monte-enpuissance-39784035.htm
+
+•
+
+http://www.canalys.com/newsroom/11-quarterly-growth-downloads-leadingapp-stores
+83
+
+• http://www.eco-conscient.com/art-714-quels-sont-les-parts-de-marche-desfabricants-de-smartphone-apple-rim-htc-samsung-nokia.html
+
+Partit 2 chapitre 1.1
+
+• couverture-reseau.orange.fr
+• http://www.meilleurmobile.com/documents/mobiles/reseaux.jsp
+
+Partit 2 chapitre 2.1
+
+•
+
+http://www.journaldunet.com/developpeur/tutoriel/theo/060601-theo-differencelangages-compiles-interpretes.shtml
+
+•
+
+http://arstechnica.com/apple/2011/06/ios-5-brings-nitro-speed-to-homescreen-web-apps/
+
+•
+
+http://blog.loof.fr/2008/06/du-javascript-compil.html
+
+• http://blog.objetdirect.com/wordpress/wp-content/uploads/2011/07/1S%C3%A9minaire-HTML5.pdf
+
+Partit 2 chapitre 2.2
+
+•
+
+http://www.cle-3g.fr/difference-3g-4g/
+
+•
+
+http://www.journaldunet.com/solutions/mobilite/applications-et-services-prosen-4g.shtml
+
+Partit 2 chapitre 3.1
+
+• http://www.presse-citron.net/quel-navigateur-offre-la-meilleure-compatibiliteavec-les-web-apps-html5-infographie
+• http://lewebmobile.fr/2011/01/le-monde-des-navigateurs-de-smartphonestraduction/
+
+84
+
+Partit 2 chapitre 3.2
+
+•
+
+http://graphism.fr/design-mobile-diffrencier-web-application-2
+
+•
+
+http://fr.wikipedia.org/wiki/Interface_graphique
+
+• http://wdfriday.com/blog/2013/01/jquery-mobile-une-introduction-au-frameworket-principes-de-base/
+
+Partit 2 chapitre 4
+
+•
+
+http://www.graphiste-freelance-lyon.fr/webapp-application-iphone-android.html
+
+•
+
+http://tekcollab.imdeo.com/mobile-webapp-vs-application-native/
+
+•
+
+http://blog.beule.fr/analyses-dexpert/application-native-vs-web-application-leduel-fraticide/
+
+•
+
+http://www.directoid.com/top/top-10-perte-performance-site-web.html
+
+•
+
+http://www.zdnet.fr/actualites/app-store-d-apple-5-ans-de-croissance-et-derivalite-avec-google-en-chiffres-39792302.htm
+
+Partit 3
+
+• http://www.zdnet.fr/actualites/france-44-de-la-population-equipee-desmartphones-en-majorite-sous-android-39791046.htm
+
+Partit 3 chapitre 1
+
+•
+
+http://www.bbc.co.uk/news/technology-23240971
+
+•
+
+http://www.zdnet.fr/actualites/app-store-d-apple-5-ans-de-croissance-et-derivalite-avec-google-en-chiffres-39792302.htm
+
+•
+
+http://www.monwindowsphone.com/160000-applications-disponibles-sur-lewindows-phone-store-t25523.html
+
+•
+
+http://www.smartphonefrance.info/actu.asp?ID=8498
+
+85
+
+•
+
+http://www.zdnet.fr/actualites/app-store-d-apple-5-ans-de-croissance-et-derivalite-avec-google-en-chiffres-39792302.htm
+
+•
+
+http://www.pcinpact.com/news/81514-le-play-store-aurait-surpasse-app-storeen-nombre-telechargements.htm
+
+Partit 3 chapitre 3.1
+
+•
+
+http://www.generation-nt.com/gartner-applications-mobiles-hybride-natif-html5entreprise-actualite-1689762.html
+
+•
+
+http://www.journaldunet.com/solutions/mobilite/web-apps-html5-ou-appsnatives/web-apps-et-apps-hybrides-les-atouts.shtml
+
+•
+
+http://blog.brightcove.com/fr/2011/11/la-montee-en-puissance-desapplications-hybrides
+
+Partit 3 chapitre 3.2
+
+•
+
+http://blog.brightcove.com/fr/2011/11/la-montee-en-puissance-desapplications-hybrides
+
+•
+
+http://phonegap.com/app/
+
+Partit 3 chapitre 3.3
+
+•
+
+http://pro.clubic.com/creation-de-site-web/langage-programmation/actualite497418-developpement-mobile-web-natif-retours-enjeux.html
+
+•
+
+http://lecercle.lesechos.fr/entreprises-marches/high-techmedias/mobilite/221167318/application-mobile-native-web-hybride-6-poin
+
+•
+
+http://blog.brightcove.com/fr/2011/11/la-montee-en-puissance-desapplications-hybrides
+
+•
+
+http://www.journaldunet.com/developpeur/expert/51048/le-developpementmulti-plateforme---enjeux--promesses-et-realite.shtml
+
+86
+
+Partit 3 chapitre 3.4
+
+• http://butterflyeffect.fr/blog/application-mobile-native-ou-hybride-il-faut-choisir/
+• http://www.lesnouveauxmedias.fr/developpement/web-app-mobile-vsapplication-native%C2%A0-pas-facile-de-trancher%C2%A0/
+• http://www.developpeur.orange.tn/news/developpement-mobile%C2%A0-natifvs-html-vs-hybride
+• http://www.journaldunet.com/developpeur/expert/51048/le-developpementmulti-plateforme---enjeux--promesses-et-realite.shtml
+
+Conclusion
+• http://olivierguillet.com/2012/02/panorama-plateformes-mobiles/
+• http://fr.wikipedia.org/wiki/Tizen
+• http://fr.wikipedia.org/wiki/Firefox_OS
+• http://lecollectif.orange.fr/articles/2013-lannee-des-os-mobiles-alternatifs/
+• http://www.01net.com/editorial/587571/lg-rachete-webos-pour-l-integrer-dansses-tv-connectees/
+• http://www.itespresso.fr/video-tristan-nitot-mozilla-firefox-os-present-continents2013-62340.html
+
+87
+
+Annexe 1 - Source Ekito :
+
+88
+
+Glossaire
+
+4G : La 4G est la 4iem génération de réseau mobile.
+
+.NET : « nom donné à un ensemble de produits et de technologies informatiques de
+l'entreprise Microsoft pour rendre des applications facilement portables sur Internet. »
+Wikipedia
+
+(méthode) Agile : nouvelle méthode de développement, qui repose sur un ensemble
+de pratique et de valeur lʼéquipe, lʼapplication, la collaboration et lʼacceptation du
+changement.
+
+AJAX : architecture qui permet un dialogue, entre le serveur et le client, plus
+interactivement et plus dynamiquement.
+
+API
+
+:
+
+«
+
+Automate
+
+Programmable Industriel est
+
+un
+
+dispositif
+
+électronique
+
+programmable destiné à la commande de processus industriels par un traitement
+séquentiel. Il envoie des ordres vers les préactionneurs (partie opérative ou PO côté
+actionneur) à partir de données dʼentrées (capteurs) (partie commande ou PC côté
+capteur), de consignes et dʼun programme informatique. » Wikipedia
+
+Basic : le basic (Beginner's All-purpose Symbolic Instruction Code) est un langage
+de programation de haut niveau.
+
+C++ : Le C++ est un langage informatique proche de la machine permettant une
+gestion de la mémoire à de hauts niveaux.
+
+Cloud computing : nouvelle manière dʼaccéder à des contenus ou des applications.
+Les données sont enregistrées sur internet, et les applications peuvent tʼêtre
+manipulées par plusieurs personnes simultanément.
+
+89
+
+Cocoa : est une API native d'Apple pour le développement orienté objet sur son
+système d'exploitation Mac OS X.
+
+Compilation : procéder de transformation dʼun langage de programmation en un
+langage proche de la machine.
+
+Cross-compilation : est un compilateur croisé capable de créer un code exécutable
+pour différente plate forme avec un seul langage informatique.
+
+Développement orienté objet : méthode de développement qui consiste en la
+définition et l'interaction de briques logicielles appelées objets.
+
+Eclipse : Logiciel permettant lʼécriture de script pour différent langage. Et qui
+propose plusieurs outils dʼaide au développement.
+
+E-économie : économie autour dʼinternet.
+
+Framework : “ensemble cohérent de composants logiciels structurels, qui sert à
+créer les fondations ainsi que les grandes lignes de tout ou dʼune partie d'un logiciel”
+Wikipedia
+
+Gem : représente une bibliothèque ou un programme Ruby.
+
+IDE : « (Integrated Development Environment) est une interface qui permet de
+développer, compiler et exécuter un programme dans un langage donné. »
+Dicodunet
+
+IHM : Interface Homme Machine, acronyme qui désigne les interactions entre
+lʼutilisateur et lʼapplication graphique.
+
+90
+
+IntelliJ IDEA : est un IDE qui permet le développement dʼune solution Android.
+
+Interprété : un langage dit interprété est soumis à un interpréteur qui analyse le code
+et exécute lʼapplication.
+
+Java : langage informatique de haut niveau.
+
+JVM : « La machine virtuelle Java (anglais Java virtual machine abr. JVM) est un
+appareil informatique fictif qui exécute des programmes compilés sous forme de
+bytecode Java. » Wikipedia
+
+Linux : « est le nom couramment donné à tout système d'exploitation libre
+fonctionnant avec le noyau Linux. » Wikipedia
+
+Multitouch : action qui consiste à utiliser plusieurs points sur un écran tactile
+simultanément.
+
+MVC : « modèle-vue-contrôleur est un modèle destiné à répondre aux besoins des
+applications interactives en séparant les problématiques liées aux différents
+composants au sein de leur architecture respective. » Wikipedia
+
+Open source : Le code open source désigne des travaux libres dʼaccès. On pourra
+le redistribuer et le modifier.
+
+Play Store : est une application permettant lʼaccès à la boutique dʼapplication pour
+Android
+
+Protocole de communication : « est une spécification de plusieurs règles pour un
+type de communication particulier. » Wikipedia
+
+91
+
+SDK : est un ensemble dʼoutils qui aide le développeur à créer une application.
+
+Smartphones : représente la nouvelle génération de téléphone portable assimilé à
+de petits ordinateurs.
+
+SquirrelFish : est le moteur dʼinterprétation du code JavaScript des navigateur qui
+repose sur WebKit.
+
+TIC : la notion TIC (technologies de l'information et de la communication) regroupe
+« les techniques utilisées dans le traitement et la transmission des informations,
+principalement de l'informatique, de l'Internet et des télécommunications. » Wikipedia
+
+WebKit : « est une bibliothèque logicielle libre permettant aux développeurs
+d'intégrer
+
+facilement
+
+un
+
+moteur
+
+de
+
+rendu
+
+de
+
+pages
+
+Web
+
+dans
+
+leurs
+
+logiciels. » Wikipedia
+
+Web Service : Permets le dialogue entre un poste client (téléphone, tablette, borne,
+ordinateur…) et un serveur distant.
+
+92
+
+
