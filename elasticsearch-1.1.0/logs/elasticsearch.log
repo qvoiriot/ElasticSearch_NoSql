@@ -932,3 +932,56 @@ Caused by: java.lang.NumberFormatException: For input string: "EPSI"
 [2014-06-16 19:29:29,058][INFO ][node                     ] [Morg] stopped
 [2014-06-16 19:29:29,059][INFO ][node                     ] [Morg] closing ...
 [2014-06-16 19:29:29,064][INFO ][node                     ] [Morg] closed
+[2014-06-24 20:37:50,177][INFO ][node                     ] [Overmind] version[1.1.0], pid[4241], build[2181e11/2014-03-25T15:59:51Z]
+[2014-06-24 20:37:50,177][INFO ][node                     ] [Overmind] initializing ...
+[2014-06-24 20:37:50,197][INFO ][plugins                  ] [Overmind] loaded [], sites []
+[2014-06-24 20:37:52,756][INFO ][node                     ] [Overmind] initialized
+[2014-06-24 20:37:52,756][INFO ][node                     ] [Overmind] starting ...
+[2014-06-24 20:37:52,859][INFO ][transport                ] [Overmind] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.13:9300]}
+[2014-06-24 20:37:55,895][INFO ][cluster.service          ] [Overmind] new_master [Overmind][OP8Q1BhhTrST47qfFvnKhA][mbp-de-quentin.home][inet[/192.168.1.13:9300]], reason: zen-disco-join (elected_as_master)
+[2014-06-24 20:37:55,923][INFO ][discovery                ] [Overmind] elasticsearch/OP8Q1BhhTrST47qfFvnKhA
+[2014-06-24 20:37:55,941][INFO ][http                     ] [Overmind] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.13:9200]}
+[2014-06-24 20:37:56,477][INFO ][gateway                  ] [Overmind] recovered [1] indices into cluster_state
+[2014-06-24 20:37:56,478][INFO ][node                     ] [Overmind] started
+[2014-06-24 20:38:25,886][INFO ][cluster.metadata         ] [Overmind] [epsi] deleting index
+[2014-06-24 20:38:27,975][INFO ][cluster.metadata         ] [Overmind] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-24 20:38:28,117][INFO ][cluster.metadata         ] [Overmind] [epsi] update_mapping [memories] (dynamic)
+[2014-06-24 20:44:16,271][INFO ][cluster.metadata         ] [Overmind] [epsi] deleting index
+[2014-06-24 20:44:16,406][INFO ][cluster.metadata         ] [Overmind] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-24 20:44:16,568][INFO ][cluster.metadata         ] [Overmind] [epsi] update_mapping [memories] (dynamic)
+[2014-06-24 20:44:19,255][INFO ][cluster.metadata         ] [Overmind] [epsi] deleting index
+[2014-06-24 20:44:22,416][INFO ][cluster.metadata         ] [Overmind] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-24 20:44:22,547][INFO ][cluster.metadata         ] [Overmind] [epsi] update_mapping [memories] (dynamic)
+[2014-06-24 20:57:31,117][INFO ][cluster.metadata         ] [Overmind] [epsi] deleting index
+[2014-06-24 20:57:33,373][INFO ][cluster.metadata         ] [Overmind] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-24 20:57:33,476][INFO ][cluster.metadata         ] [Overmind] [epsi] update_mapping [memories] (dynamic)
+[2014-06-24 20:58:49,379][INFO ][cluster.metadata         ] [Overmind] [epsi] deleting index
+[2014-06-24 20:58:50,001][INFO ][cluster.metadata         ] [Overmind] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-24 20:58:50,117][INFO ][cluster.metadata         ] [Overmind] [epsi] update_mapping [memories] (dynamic)
+[2014-06-24 20:59:05,513][INFO ][cluster.metadata         ] [Overmind] [epsi] deleting index
+[2014-06-24 21:01:37,448][INFO ][cluster.metadata         ] [Overmind] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-24 21:01:37,550][INFO ][cluster.metadata         ] [Overmind] [epsi] update_mapping [memories] (dynamic)
+[2014-06-24 21:01:58,214][INFO ][cluster.metadata         ] [Overmind] [epsi] deleting index
+[2014-06-24 21:02:00,056][INFO ][cluster.metadata         ] [Overmind] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-24 21:02:00,156][INFO ][cluster.metadata         ] [Overmind] [epsi] update_mapping [memories] (dynamic)
+[2014-06-24 21:10:02,545][INFO ][cluster.metadata         ] [Overmind] [epsi] deleting index
+[2014-06-24 21:10:03,586][INFO ][cluster.metadata         ] [Overmind] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-24 21:10:03,687][INFO ][cluster.metadata         ] [Overmind] [epsi] update_mapping [memories] (dynamic)
+[2014-06-24 21:16:50,153][INFO ][cluster.metadata         ] [Overmind] [epsi] deleting index
+[2014-06-24 21:16:50,612][INFO ][cluster.metadata         ] [Overmind] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-24 21:16:50,704][INFO ][cluster.metadata         ] [Overmind] [epsi] update_mapping [memories] (dynamic)
+[2014-06-24 21:37:05,416][INFO ][cluster.metadata         ] [Overmind] [epsi] deleting index
+[2014-06-24 21:37:07,079][INFO ][cluster.metadata         ] [Overmind] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-24 21:37:07,163][INFO ][cluster.metadata         ] [Overmind] [epsi] update_mapping [memories] (dynamic)
+[2014-06-24 21:44:50,950][INFO ][cluster.metadata         ] [Overmind] [epsi] deleting index
+[2014-06-24 21:44:53,192][INFO ][cluster.metadata         ] [Overmind] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-24 21:44:53,282][INFO ][cluster.metadata         ] [Overmind] [epsi] update_mapping [memories] (dynamic)
+[2014-06-24 21:46:00,232][INFO ][cluster.metadata         ] [Overmind] [epsi] deleting index
+[2014-06-24 21:46:01,804][INFO ][cluster.metadata         ] [Overmind] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-24 21:46:01,888][INFO ][cluster.metadata         ] [Overmind] [epsi] update_mapping [memories] (dynamic)
+[2014-06-24 21:48:14,732][INFO ][cluster.metadata         ] [Overmind] [epsi] deleting index
+[2014-06-24 21:48:16,052][INFO ][cluster.metadata         ] [Overmind] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-24 21:48:16,139][INFO ][cluster.metadata         ] [Overmind] [epsi] update_mapping [memories] (dynamic)
+[2014-06-24 21:52:04,491][INFO ][cluster.metadata         ] [Overmind] [epsi] deleting index
+[2014-06-24 21:52:06,096][INFO ][cluster.metadata         ] [Overmind] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-24 21:52:06,184][INFO ][cluster.metadata         ] [Overmind] [epsi] update_mapping [memories] (dynamic)

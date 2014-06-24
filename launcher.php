@@ -8,14 +8,17 @@ $params = array();
 $params['index'] = 'epsi';
 $params['type']  = 'memories';
 
-// transform pdf to txt memories
-exec('/usr/local/bin/pdftotext -enc UTF-8 /www/memories/M13_LEAUTE.pdf');
-exec('/usr/local/bin/pdftotext -enc UTF-8 /www/memories/M13_LEROUX.pdf');
+$pdfArray = array("/ElasticSearch_NoSql/memories/M13_LEROUX.pdf", "/ElasticSearch_NoSql/memories/M13_LEAUTE.pdf");
 
-//get the content of all .txt
-$bodyContent = file_get_contents('/www/memories/M13_LEAUTE.txt');
+foreach ($pdfArray as $pdf) {
+  exec('/usr/local/bin/pdftotext -enc UTF-8 '.$pdf);
 
-//fake static data
+  $name = explode('.', $pdf);
+  $nametxt = $name[0];
+  $bodyContent = file_get_contents($nametxt.'.txt');
+
+}
+
 $params['body']  = array('content' => $bodyContent);
 
 $ret = $client->index($params);
