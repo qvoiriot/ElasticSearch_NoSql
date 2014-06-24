@@ -1,0 +1,3220 @@
+73 Rue de Marseille,
+
+Immeuble Andromède,
+
+33000 Bordeaux
+
+6 Rue des Comètes, 33187 Le Haillan
+
+Dématérialisation dans le domaine
+Banque/Assurance/Finance
+TEYSSIER BRIAN
+
+Loïc Lacombe
+
+CSII3
+
+Sommaire
+Introduction.................................................................................................................. 1
+I.
+
+Dématérialisation ................................................................................................ 10
+1. La numérisation ............................................................................................... 13
+2. La vérification .................................................................................................. 18
+3. La diffusion ...................................................................................................... 22
+4. L’archivage ...................................................................................................... 28
+
+II. Documents dématérialisés dans la banque/assurance/finance .......................... 40
+1. Services financiers .......................................................................................... 40
+2. Banque ............................................................................................................ 46
+3. Assurance........................................................................................................ 48
+4. Documents communs aux différents domaines Banque/Assurance/Finance .. 55
+5. La loi et les documents numériques ................................................................ 58
+III.
+
+Exploitation ...................................................................................................... 60
+
+1. Les changements de la dématérialisation sur l’entreprise ............................... 62
+2. Les risques ...................................................................................................... 65
+3. Le marché de la dématérialisation ................................................................... 70
+Conclusion................................................................................................................. 73
+Glossaire ................................................................................................................... 82
+Table de figures......................................................................................................... 86
+Bibliographie.............................................................................................................. 87
+Annexe ...................................................................................................................... 90
+
+Remerciements
+
+Je tiens à remercier mon maître de stage, Monsieur Loïc LACOMBE, chargé de
+projet et expert technique au sein de l'équipe éditique, ainsi que Monsieur Eddy
+GALLET responsable applicatif, Monsieur Alexandre MAILLARD, chef de projet,
+Monsieur Franck DABEZIES, directeur de projet, Messieurs Pierre MAILLARD,
+Pierre-Élie LAVILLE, Fabien LE TINNIER, Tristan BOISHUS, Damien TARAUD
+développeurs et concepteurs documentaires.
+Leur aide m’a été également précieuse lors de ce stage me permettant d’acquérir de
+nouvelles connaissances et compétences. Celles-ci me seront fort précieuses pour la
+réalisation de mes projets à venir.
+Tous les conseils reçus lors de ce stage m’ont permis de facilement m’intégrer au
+sein de ce service et d’améliorer mon travail au quotidien. J’y ai énormément appris
+et ce stage représente sans aucun doute une grande étape dans ma vie
+professionnelle.
+
+Introduction
+
+En 2011, seulement aux États-Unis, environ 168 milliards de courriers ont été
+envoyés, cela représente 9 milliards de kg soit l’équivalent de 52700 baleines bleues
+adultes.
+Comparé à cela, le nombre d’emails dans le monde en 2010 est égal à 107 milliards,
+mais tend à augmenter chaque année à l’inverse du courrier.
+Avant d’aborder la dématérialisation, je ferai un bref historique des premiers
+échanges électroniques entre les personnes jusqu’à en devenir principalement
+dématérialisés grâce à internet.
+L’invention du télégraphe électrique (machine permettant d’envoyer des signaux
+électriques entre deux points utilisant le langage Morse) en 1838 puis de la fondation
+de la « Western Union Telegraph » a permis d’accélérer les communications entre
+les entreprises en facilitant toutes les opérations au niveau des transactions.
+En 1930, du fait des progrès en communication, le langage Morse est peu à peu
+délaissé et l’utilisation du clavier de machine à écrire est chose courante afin de
+retranscrire directement un message écrit qui est ensuite transmis sur le réseau
+Télex (réseau de communication entre téléscripteurs).
+En 1970, le premier fax « numérique » permet quant à lui de reproduire à l’identique
+un document à envoyer sur les lignes téléphoniques.
+Depuis, grâce à l’avancée d’internet, c’est le mail qui est favorisé à tous les autres
+modes de communications.
+Avant et après la Seconde Guerre mondiale, les documents traitant de la Banque,
+Assurance et de la Finance sont soit fait à la main soit écrit à la machine à écrire, ce
+qui est un travail long et contraignant.
+
+1
+
+Avec l’évolution de l’ordinateur, les moyens pour saisir un document et l’imprimer ont
+été beaucoup facilités, de plus comme le coût des ordinateurs et des imprimantes a
+été réduit de façon considérable depuis leur création, chaque entreprise possède
+maintenant au moins un parc d’ordinateurs et d’imprimantes.
+Aujourd’hui la méthode pour créer des documents spécifiques à chaque client et en
+grand nombre est l’éditique pour faciliter leur distribution soit en utilisant le format
+papier soit le format électronique.
+L’éditique représente un ensemble d’éléments (personnels, processus, flux et outils)
+destinés à la conception, production et distribution de documents. Cette méthode est
+souvent utilisée dans des documents ayant une structure fixe (contrats, factures,
+relevés de compte …) et possédant des parties variables en fonction du destinataire
+(adresses, numéro de compte, numéro de téléphone …).
+Une chaîne éditique se décompose en trois niveaux d'opérations :
+•
+
+Le cœur métier génère les données nécessaires à la production des
+documents.
+
+•
+
+L'éditique métier assure la mise en forme électronique des documents et la
+production des flux de données de fabrication.
+
+•
+
+L'éditique
+
+de
+
+production
+
+imprime
+
+les
+
+documents,
+
+effectue
+
+les
+
+regroupements et la mise sous pli.
+L'éditique moderne banalise les médias de restitution et de distribution (impression,
+poste, e-mail, fax, web). Les logiciels de conception éditique les plus récents sont
+capables de composition dynamique, de changer de police typographique, d'utiliser
+des attributs (gras, inclinaison), d'insérer des images (logos, signatures) de contrôler
+le contenu de manière programmable (conditions d'affichage de paragraphes, de
+certaines lignes d'un tableau), de gérer des spécificités de présentation (blocs
+insécables).
+
+2
+
+Au départ orienté vers le
+
+traitement de masse, l'éditique évolue vers des
+
+applications en temps réel, permettant l'édition unitaire de document (contrat,
+simulation), remis en agence clientèle, envoyé par fax ou par email.
+Pendant longtemps la meilleure méthode pour transmettre un message a été la lettre
+manuscrite pour enfin devenir aujourd’hui, à l’ère numérique, le mail grâce à internet.
+En un peu plus de deux décennies, nos habitudes de communication et transfert
+d’informations ont radicalement changé ; de plus la technologie a fait avancer les
+outils nous permettant de communiquer.
+Dans le domaine bancaire, avant pour recevoir les comptes rendus bancaires, nous
+devions attendre de les réceptionner par courrier à chaque fin de mois. Depuis
+internet, ils sont consultables instantanément et autant de fois souhaités nous
+permettant ainsi de mieux gérer nos comptes.
+Cet exemple est applicable aussi dans le domaine de l’assurance comme pour
+souscrire à une assurance pour sa voiture. Auparavant,
+
+il fallait obligatoirement
+
+passer dans une agence et attendre la réponse par courrier. Aujourd’hui, il suffit de
+renseigner les bonnes informations dans un formulaire en ligne et après un mail et
+un courrier de validation, nous voilà assurés.
+Et pour le domaine de la finance afin de vendre un bien ou d’en acheter, toutes les
+transactions se faisaient par téléphone, maintenant il est facile de suivre le cours de
+l’action sur son ordinateur mis à jour automatiquement et de vendre ou acheter en un
+clic rendant la finance accessible même à un enfant.
+Concernant la France, celle-ci a mis en place en 2008 le plan numérique 2012 qui a
+permis le passage de la télévision hertzienne terrestre au tout numérique, le
+lancement de la 4G et la création du Conseil national du numérique par exemple.
+Afin de continuer à suivre l’avancement des technologies, le plan France numérique
+2020 fixe de nouveaux objectifs plus centrés sur la dématérialisation avec la
+généralisation de la facture électronique aussi bien pour les entreprises que pour la
+sous-traitance de l’administration ou pour les services à la personne. Il est également
+prévu d’accompagner ainsi les PME et les administrations à l’utilisation du cloud
+
+3
+
+computing. Ce plan prévoit aussi que d’ici 2020 l’ensemble des démarches
+administratives serait disponible en ligne.
+Le principal problème du secteur Banque/Assurance/Finance est d’avoir un service
+de création de document rapide et efficace. Le fait de devoir créer des documents
+spécifiques à chaque client est long, de plus regrouper les informations nécessaires
+à l’élaboration des documents est aussi fastidieux que leur création. Pour résoudre
+ces problèmes, la dématérialisation de toutes les données et documents est
+nécessaire.
+Cela permet de les centraliser sur un seul réseau et de ne plus devoir rechercher des
+informations spécifiques dans une archive papier.
+Dématérialiser toutes ces informations est bien sûr un investissement et un pari sur
+l’avenir même si c’est une étape obligatoire au vu de l’évolution de la technologie
+(cloud computing …)
+D’après une étude de MARKESS international, environ 25% de personne n’ont pas
+accès à des données situées sur des postes utilisateurs distants. Ce qui provoque
+des soucis au niveau de la création de documents.
+Pour réduire ce pourcentage, les entreprises se mettent petit à petit à la
+dématérialisation. D’après une étude de CXP, début 2013, sur 206 intervenants
+venant de différents secteurs, nous pouvons voir l’attrait des entreprises pour la
+dématérialisation.
+
+4
+
+Figure 1 : Pourcentage des différentes catégories d'entreprise
+
+82% des intervenants à cette enquête dans le secteur de la banque / assurance
+dématérialisent aujourd’hui leurs documents entrants. Cette observation montre
+l’avancée de la dématérialisation dans ce secteur et souligne que c’est un des points
+clés pour eux.
+De plus grâce à ce graphique, nous pouvons remarquer que l’un de leurs enjeux
+principaux est le temps de réponse qui tend à devenir le plus court possible.
+
+Figure 2 : Temps de réponse des entreprises de la Banque / Finance
+
+5
+
+D’après cette enquête, 70% des entreprises qui ne dématérialisent pas aujourd’hui
+souhaitent, dans les années à venir, se lancer en mettant en place un système de
+gestion des documents entrants.
+Propositions commerciales, courriers aux clients et aux partenaires, factures,
+contrats, bons de commande, plaquettes et documentations marketing… Ces
+documents, plus ou moins formalisés selon les cas, représentent l’un des principaux
+vecteurs de communication des entreprises. Ils jouent un rôle essentiel dans la
+stratégie des entreprises et sont au cœur de la relation avec leurs clients et leurs
+partenaires. La qualité de leurs formes et de leurs contenus ainsi que la rapidité de
+leurs conceptions et de leurs productions sont donc primordiales. Les besoins
+d’interactivité et de temps réel imposés par les nouveaux canaux de communication
+(internet, mobile…) renforcent ces exigences de réactivité.
+Quelles sont les raisons qui poussent les entreprises à entreprendre cette
+dématérialisation ?
+Les principales raisons que les entreprises peuvent avoir sur un projet de
+dématérialisation de leurs documents sont :
+
+
+Amélioration de la productivité :
+
+Chaque entreprise recherche le maximum de productivité pour ses employés et la
+dématérialisation est un moyen de réduire le temps passé à la recherche de
+documents dans les archives ou encore de trier et de ranger plus efficacement les
+documents entrants. Ou encore de réduire le temps de réponse à leur client grâce à
+des réponses préétablies en remplissant juste des champs à personnaliser en
+fonction du client.
+
+
+Faciliter la circulation de l’information :
+
+Une fois dématérialisé, le document peut être mis en partage sur un serveur et ainsi
+être accessible de partout grâce à une connexion internet. Le partage est simplifié,
+car le document peut être joint avec un email réduisant le temps d’envoi et de
+réception.
+
+6
+
+
+
+Amélioration de la sécurité de l’archivage :
+
+Il est bien plus facile de contrôler l’accès aux documents une fois dématérialisés,
+car il suffit d’administrer le serveur de stockage des documents souhaités pour
+autoriser ou interdire certains utilisateurs d’accéder aux fichiers.
+
+
+Aspect « écologique » :
+
+Le fait de dématérialiser ses documents permet d’économiser l’encre et le papier
+utilisés avant à l’impression. De plus cela peut aussi servir comme aspect
+commercial en mettant en avant cette dématérialisation.
+
+
+Atout commercial :
+
+La dématérialisation est un atout pour les commerciaux mettant en avant le suivi
+technologique de l’entreprise vis-à-vis de ses concurrents en montrant leur
+détermination d’être les plus productifs possible.
+
+
+Amélioration de la qualité et des contrôles :
+
+La traçabilité d’un document est facilitée une fois dématérialisée, car les outils de
+dématérialisation permettent de tracer plus efficacement l’origine d’un document.
+De plus grâce à l’automatisation, on évite ainsi toute erreur « humaine » lors de la
+gestion des documents.
+Le fait de dématérialiser permet de réduire les coûts liés à l’achat de papier, aux
+traitements de documents papier et aux frais d’envois postaux. Mais cette économie
+est redirigée dans l’achat de serveur pour le stockage des documents numériques et
+dans la maintenance de ce ou ces serveurs (sauvegarde mensuelle, mise à jour de
+l’équipement de stockage) ; donc on ne peut pas la considérer comme une raison
+importante pour passer à la dématérialisation.
+
+7
+
+Avec la multiplication des sources de données, les entreprises font face à de
+nouvelles difficultés sur des points tels que :
+
+
+La traçabilité des documents produits afin d’assurer des échanges avec le
+client et de garantir une uniformité au niveau des données utilisées.
+
+
+
+Un accès rapide aux documents du client afin de retrouver rapidement des
+informations situées dans des documents indépendants et souvent isolés.
+
+
+
+Un partage d’informations plus rapide en interne pour accélérer la création de
+documents grâce au partage de modèles ou de références pour chaque
+document.
+
+
+
+L’automatisation des processus documentaires pour éviter de devoir recréer
+un document créer plus tôt, mais ne nécessitant pas les mêmes données ou
+réutiliser les mêmes données, mais dans une autre mise en forme.
+
+Durant ce mémoire, j’aborderai dans un premier temps le pourquoi et le comment de
+la dématérialisation en spécifiant toutes les étapes et les relations avec le domaine
+de la Banque/Assurance/Finance.
+Je décrirai en détail ces étapes en expliquant les moyens utilisés et leur mise en
+œuvre dans une entreprise.
+Je parlerai de la modification du cycle de vie d’un document à cause de
+l’informatique et d’internet et du procédé type de la numérisation d’un document.
+Dans la deuxième partie, je listerai les documents généralement dématérialisés dans
+chaque domaine spécifique. J’évoquerai aussi l’aspect juridique des documents
+dématérialisés et leur impact.
+Dans la troisième partie, j’énumérerai les changements relatifs à la dématérialisation.
+Puis j’aborderai les risques entourant la mise en place et l’utilisation de la
+dématérialisation dans une entreprise aussi bien sur les collaborateurs que sur les
+partenaires.
+
+8
+
+Lors de ma conclusion, je ferai un état des lieux dans le domaine de la
+Banque/Assurance/Finance
+
+puis
+
+j’établirai
+
+une
+
+liste
+
+de
+
+l’utilisation
+
+de
+
+la
+
+dématérialisation dans les autres domaines en mentionnant le bitcoin qui a réussi à
+devenir une monnaie reconnue par des pays/états alors que ce ne sont que des
+données numériques.
+Enfin je donnerai une liste de documents qui ne peuvent être dématérialisés en
+général.
+
+9
+
+I.
+
+Dématérialisation
+
+Dématérialisation : procédé permettant de rendre un document physique (lettre,
+photo, livre, diapo, etc.) en un document numérique.
+Quelles sont les étapes à suivre avant de démarrer un projet de dématérialisation
+pour son entreprise ?
+
+
+Analyse au niveau de l’entreprise et des modifications à faire afin de préparer
+le passage à la dématérialisation :
+
+La typologie des documents et de leur volumétrie permet de définir l’équipement
+nécessaire à la numérisation et le nombre de personnes à affecter à cette étape.
+L’étude des flux, des temps de traitements et des erreurs rencontrées fréquemment
+rendent possible la détection des éventuels problèmes ou erreurs à surveiller lors du
+passage à la dématérialisation.
+La cartographie des acteurs impliqués et des modes de circulation des
+documents permettent d’identifier les personnes à former et les modifications à
+effectuer au niveau de l’entreprise pour la circulation de l’information.
+L’analyse du mode de production des documents (Progiciel, Bureautique …) met en
+avant l’utilité des logiciels actifs et juge de leur obsolescence face au procédé de
+dématérialisation des documents.
+Un
+
+rapport
+
+sur
+
+l’environnement
+
+informatique
+
+interne
+
+et
+
+externe
+
+(clients,
+
+fournisseurs) définit s’il faut mettre à jour l’équipement informatique de l’entreprise,
+des clients et des fournisseurs.
+
+
+Améliorations attendues et choix des solutions à appliquer :
+
+Une fois cette phase d’analyse effectuée, il est possible d’établir les gains attendus.
+Par exemple une estimation des gains de temps, des gains sur les coûts
+d’infrastructure (mise sous pli, affranchissement, stockage …) ou une estimation de
+la baisse des taux d’erreurs. On prévoit la réaffectation des tâches des personnes
+
+10
+
+rattachées à la gestion documentaire afin de redéfinir le périmètre et le mode de
+dématérialisation en fonction des moyens de l’entreprise.
+
+
+Développement de la solution :
+
+Après le choix des solutions, on les intègre au SI (Système d’Information), il est
+possible de modéliser les flux de dématérialisation et d’établir les tests locaux et
+d’intégration sur des courriers par exemple.
+
+
+Mise en exploitation :
+
+Si la phase de test est concluante, la mise en place d’un scénario de démarrage de
+la dématérialisation sur toute l’entreprise commence. Pendant la phase de
+démarrage, il faut rédiger un plan de contrôle et une piste d’audit pour garantir que
+chaque étape est contrôlée et dispose d’un scénario de gestion de crise.
+Après 3 ou 4 mois d’utilisation, nous pouvons en déduire un bilan d’exploitation et
+par la suite entrevoir un plan d’optimisation et d’extension.
+
+11
+
+Pour dématérialiser ses documents, une entreprise doit passer par 4 phases
+obligatoires :
+
+
+La numérisation
+
+
+
+La validation
+
+
+
+La diffusion
+
+
+
+L’archivage
+
+Figure 3 : La dématérialisation
+
+12
+
+1. La numérisation
+
+La numérisation est l’étape principale dans la dématérialisation. Cela permet de
+définir dans quelle catégorie va finir le document et comment il sera traité lors de
+l’archivage et la diffusion.
+Chaque solution de numérisation de documents se doit de respecter les cinq
+critères suivants :
+
+
+La préservation de documents
+
+
+
+La qualité des résultats
+
+
+
+La simplicité d’utilisation de la solution de numérisation
+
+
+
+L’adaptabilité de cette solution
+
+
+
+La durabilité de cette solution
+
+Ces critères sont essentiels si l’on veut une solution de numérisation efficace et
+durable.
+La numérisation est requise lorsque les documents sont au format papier et que ces
+documents revêtent une valeur importante (factures, devis, etc.) ou une nécessité à
+divers endroits (Pau, Paris, Bordeaux …) et qu’ils contiennent des données clients.
+Si les documents sont déjà numériques (fichiers texte, PDF, image d’une photocopie,
+etc.), la phase de numérisation laisse sa place à celle de la validation.
+Il y a plusieurs avantages à numériser ses documents. Cela permet de conserver,
+sécuriser, faciliter l’utilisation, partager, utiliser les informations contenues dans le
+document pour une exploitation commerciale, etc.
+Pour réaliser les traitements adéquats pour la numérisation, il est nécessaire de
+recruter du personnel qualifié. Sinon lors de la recherche de document, certains
+fichiers pourront être mal rangés ou mis dans les mauvaises catégories
+compromettant alors tout l’intérêt de leur numérisation.
+
+13
+
+Pour la numérisation de documents papier, il faut tenir compte de certains points :
+
+
+De la méthode de numérisation : on peut numériser un document grâce à un
+scanner ou encore grâce à un appareil photo numérique.
+
+
+
+Du nombre de documents à numériser : afin de numériser un grand nombre
+de documents, il faudra viser un équipement haut de gamme pour suivre la
+cadence et ne pas accumuler les documents physiques.
+
+
+
+De la qualité souhaitée : plus la qualité sera haute, plus l’outil demandé sera
+onéreux et affectera aussi l’espace de stockage.
+
+L’opération de numérisation peut être effectuée en interne ou confiée à un
+prestataire. Il est possible de recourir simultanément à ces deux choix pour répondre
+à l’ensemble des besoins.
+Les avantages de la numérisation en interne sont généralement : une meilleure
+accessibilité aux documents pendant le projet, une réduction des risques liés à la
+manipulation des documents fragiles, un meilleur contrôle de la qualité.
+Le recours à un prestataire présente lui aussi des avantages, notamment l’accès à
+du personnel possédant une plus grande expérience et à du matériel spécialisé, la
+rapidité d’exécution, un coût fixe par page ou par document numérisé, des prix
+établis en fonction du volume et l’absence de frais liés à l’obsolescence
+technologique et à la formation du personnel.
+Choisir l’une ou l’autre de ces approches dépend des objectifs et des ressources
+disponibles de chaque projet.
+Pour tout projet de numérisation, il faut respecter les étapes suivantes :
+
+
+Préparation matérielle des documents avant et après la numérisation
+
+
+
+Réalisation de projets guides
+
+
+
+Numérisation des documents
+
+
+
+Vérification de la qualité, tant en cours de projet qu’une fois celui-ci terminé
+
+
+
+Destruction ou conservation, selon les cas, des documents sources
+
+14
+
+Préparation matérielle des documents avant et après la numérisation :
+Avant toute chose, il faut arranger chaque document et dossier à numériser pour
+faciliter l’opération de numérisation et réduire les risques de dommage sur les
+documents et l’équipement. Il faut classer les pages ou les documents originaux
+dans le bon ordre, les déplier au besoin et retirer tout élément pouvant nuire à
+l’opération (reliures à anneaux, agrafes, trombones, papillons autocollants, éléments
+d’encadrement, etc.). C’est pendant ce procédé que peuvent être comptés les pages
+ou le nombre de documents originaux à numériser.
+Après la numérisation, il faut prendre le temps de réorganiser les documents, soit
+pour en permettre leur réutilisation, soit pour pouvoir retracer rapidement un
+document qui doit être numérisé à nouveau.
+Réalisation de projets guides :
+Avant la mise en place de la numérisation, il est indispensable de réaliser des projets
+guides afin de tester le processus de numérisation, l’équipement, le logiciel, le choix
+de traitement, la résolution et le format de conservation des images, les méthodes de
+contrôle des résultats et de création de copies de sûreté, le rythme de réalisation,
+etc.
+Malgré la possible détérioration de documents originaux par de multiples expositions
+à la lumière et de manipulations répétées lors de projets guides, l’utilisation des
+documents source est parfois nécessaire pour effectuer des essais. Dans de tels
+cas, il est nécessaire d’appliquer toutes les précautions pour assurer la préservation
+des documents fragiles.
+En fonction des résultats, il est possible d’apporter les correctifs nécessaires et
+d’effectuer ensuite de nouveaux essais jusqu’à ce que l’on ait atteint le degré de
+qualité requis.
+
+15
+
+Numérisation des documents :
+La numérisation doit être réalisée en s’assurant de respecter les règles établies à la
+fin des projets guides.
+Les documents dans le domaine Banque/Assurance/Finance sont en moyenne de
+format A4 (21cm, 29,7cm), pour numériser ce type de format, il existe plusieurs types
+de numérisation :
+
+
+Le scanner à plat :
+
+Scanner le plus répandu, il en existe deux types :
+Les capteurs CCD (Charge-Coupled Device) qui sont fixes et dont la partie mobile
+est un miroir. Il possède la meilleure qualité de numérisation.
+Les capteurs CMOS (Complementary Metal Oxyd Semi-Conductor) eux sont mobiles
+et sont appliqués directement contre la vitre. Leur qualité est inférieure que les
+capteurs CCD, mais sont aussi moins encombrants.
+
+
+Le scanner à défilement :
+
+Scanner qui fonctionne comme un fax, c'est-à-dire que c’est le document qui se
+déplace et non les capteurs. La numérisation des documents grâce à cet appareil est
+plus rapide du fait que ce sont les documents qui se déplacent.
+
+
+L’appareil photo numérique :
+
+Pour numériser un document avec un appareil photo numérique, c’est exactement la
+même méthode que pour prendre une photo, il suffit par contre d’avoir du matériel
+professionnel ou de bonne facture pour l’éclairage afin de ne pas voir de problème
+de reflet ou d’ombre sur la photo il faut aussi faire attention à ce que le document est
+bien à plat pour éviter des soucie au niveau de la lecture du document.
+
+Le choix du type de numérisation et de leur nombre dépend des besoins du projet de
+dématérialisation.
+
+16
+
+Chaque document issu de la numérisation peut voir sa valeur ajoutée augmentée en
+utilisant différents traitements :
+
+
+Reconnaissance optique de caractères (ROC ou OCR : Optical Character
+Recognition)
+
+
+
+Reconnaissance intelligente de caractères (ICR : Intelligent Character
+Recognition)
+
+
+
+Reconnaissance de forme
+
+
+
+Traitement d’image (amélioration du contraste, suppression du bruit …)
+
+
+
+Segmentation sémantique (reconnaissance des différentes parties d’un
+document)
+
+Grâce aux technologies OCR et ICR, il est donc possible de convertir l’image d’un
+document textuel (texte scanné par exemple) en un document ouvrable par un
+traitement de texte. Les avantages de ce processus sont nombreux et importants.
+Tout d’abord, il permet d’intervenir directement sur le texte, autrement dit d’exploiter
+le contenu des documents textuels qui viennent d’être numérisés ou photographiés.
+L’information peut être ainsi retraitée dans un outil bureautique, être directement
+intégrée dans une base de données, etc.
+Autre avantage, ces processus permettent de réduire considérablement le poids des
+fichiers numériques, qui deviennent ainsi plus facilement stockables et diffusables.
+Par exemple, une page de texte au format A4 et scannée à 300 dpi pèse en général
+quelques centaines de Ko (KiloOctets), mais le fichier texte qui est produit après le
+traitement OCR ne pèse plus lui qu’une dizaine de Ko.
+Après avoir numérisé les documents et effectué le traitement adéquat à leur bonne
+utilisation, il faut les valider.
+
+17
+
+2. La vérification
+
+L’étape de vérification est cruciale dans un plan de dématérialisation. C’est celle qui
+définit si le document numérisé est d’une qualité optimale à l’utilisation. Elle permet
+aussi de revérifier d’anciens (+ de 5 ans d’archivage) documents pour vérifier s’ils
+sont toujours utilisables avec les technologies d’aujourd’hui.
+La 1re étape de la vérification est la collecte et le triage de tous les documents
+entrants.
+Les principales questions à résoudre sont :
+
+
+Quel est le type du document ? (.jpeg, .docx, .xls, etc.)
+
+
+
+Quelles données sont dans le document ? (images, texte, etc.)
+
+
+
+De quel document s’agit-il ? (facture, relevé de compte, etc.)
+
+
+
+D’où vient le document ? (client, fournisseur, etc.)
+
+Chaque question permet de définir le traitement à apporter au document pour qu’il
+soit conforme aux règles de stockage établies avant la mise en place du projet de
+dématérialisation.
+Après l’étape de numérisation des documents, il est primordial de contrôler le
+résultat. Il faut que les textes soient clairs et lisibles, qu’aucune phrase, image,
+illustration ou ligne ne soit coupée, que la résolution soit suffisamment élevée. En
+résumé, il est important de faire un travail de repasse afin de s’assurer que le double
+numérique soit le plus fidèle possible et qu’il dispose d’une résolution suffisante par
+rapport au type de document et de l’usage que l’on prévoit d’en faire.
+En plus de contrôler la qualité du contenu des documents numérisés, il faut contrôler
+la qualité de la reproduction (luminosité, contraste, couleurs, etc.).
+
+18
+
+Cela permet de déceler des erreurs :
+
+
+perte de partie du document dans les points d’ombre et dans les éléments
+éclairés
+
+
+
+apparition de parasite lors de l’acquisition ou de la compression (bruit,
+pixellisation)
+
+
+
+mauvaise luminosité et mauvais contraste
+
+
+
+sous-exposition ou surexposition des images
+
+
+
+images floues, mal orientées ou mal découpées
+
+
+
+erreurs de mode (exemple : photographie couleur transformée en photo noir
+et blanc)
+
+Dans les cas de travaux de numérisation associés à une destruction des documents
+sources, une vérification visuelle exhaustive de chacun des documents numérisés
+doit être effectuée pour documenter et assurer l’intégrité des reproductions.
+Je reviendrai sur la destruction des documents sources lors de la phase d’archivage.
+Une fois cette vérification effectuée, une signature numérique de la personne
+approuvant la qualité du document doit être ajoutée au document pour garantir son
+intégrité.
+Cette signature permet au futur utilisateur du document de reconnaître et retrouver la
+personne ou l’organisme qui a apposé sa signature. Elle garantit que le document
+n’a pas été modifié entre le moment où la signature a été apposée et le moment où
+le lecteur consulte le document.
+Depuis le 30 mars 2001, en France, l’article 1316-1 « L'écrit sous forme électronique
+est admis en preuve au même titre que l'écrit sur support papier, sous réserve que
+puisse être dûment identifiée la personne dont il émane et qu'il soit établi et
+conservée dans des conditions de nature à en garantir l'intégrité. (Loi 2000-230 du
+13 mars 2000) » admets que la signature électronique d’un document à la même
+valeur légale qu’une signature manuscrite.
+
+19
+
+En utilisant dans cette étape des logiciels de reconnaissance de caractères, il est
+possible d’automatiser la validation de document.
+Si le logiciel détecte les caractères du document, c’est que le document est numérisé
+dans une qualité suffisante, s’il n’est pas reconnu, il faudra refaire l’étape de
+numérisation pour ce document en choisissant soit une autre méthode de
+numérisation ou en améliorant la résolution de numérisation.
+Néanmoins, une personne physique doit pouvoir faire la signature numérique afin de
+garantir la qualité du document numérique. Cela permet de ne pas déshumaniser
+complètement l’étape de validation et de garder un contrôle sur la qualité de
+validation.
+
+L’étape de vérification permet aussi de faire une indexation de tous les documents.
+L’indexation permet de faire une recherche non plus sur le nom des documents, mais
+sur tous les mots et expressions contenus dans les documents.
+Il existe deux types d’indexation :
+
+
+L’indexation manuelle :
+
+L’indexation manuelle est effectuée par une personne physique disposant d’une
+connaissance suffisante sur le document à indexer. Il analyse et interprète le contenu
+selon l’usage visé puis synthétise et reformule cette analyse dans un vocabulaire tiré
+d’un dictionnaire de termes prévus pour ce type de document. L’inconvénient majeur
+reste la lenteur du processus et souvent le résultat n’est souvent pas garanti.
+
+
+L’indexation automatique :
+
+L’indexation automatique ne peut se faire que sur des documents traités par une
+reconnaissance de caractères. Il est exécuté par des logiciels spécifiques qui suivent
+un certain nombre d’opérations (filtrage des mots, lemmatisation, modélisation
+vectorielle et pondération). Les avantages c’est qu’il est rapide et qu’il ne coûte pas
+cher. Par contre l’indexation peut être non pertinente en fonction du texte, car les
+logiciels n’interprètent ni le sens des phrases ni les expressions.
+
+20
+
+C’est une opération importante permettant une fois le document archivé de le
+retrouver plus rapidement en fonction de son type et de son contenu.
+
+Une fois l’indexation faite, le document numérique peut être soit archivé directement
+si l’utilité n’est pas imminente (moins de 1 à 2 semaines), soit directement transmis
+aux personnes nécessitantes ou encore être mis dans un espace de stockage
+temporaire le temps qu’il soit archivé.
+Cette étape permet aussi de faire un rapport sur la qualité délivrée par l’étape de
+numérisation et ainsi mettre des places des optimisations si nécessaires sur les
+différentes phases de la numérisation précisée plus tôt.
+
+Une fois le document validé, il peut être diffusé.
+
+21
+
+3. La diffusion
+
+L’étape de diffusion peut être considérée comme l’étape de distribution des
+documents numérisés.
+
+Figure 4 : Cycle de diffusion d'un document
+
+Pour les entreprises du domaine de la Banque/Assurance/Finance , environ 70% des
+documents sortants sont destinés à être retournés à l’entreprise, c’est pour cela que
+les documents sortants se doivent d’être formalisés afin de pouvoir rendre le travail
+de numérisation et de collecte de données plus facile.
+Les documents à envoyer à chaque client (documents manquants, acceptation/refus
+d’une demande, relevées bancaires …) doivent être générer en fonction du client qui
+les demande et en possédant des documents formalisés et structurés (logo de
+l’entreprise, code-barres, fond de page en fonction du document, etc.), les données
+des clients sont automatiquement stockées et garder lors de l’étape de numérisation.
+
+22
+
+Afin de produire des documents spécifiques pour chaque client, il faut faire appel à la
+solution offerte par l’éditique.
+L'éditique consiste à produire dynamiquement des documents personnalisables mis
+en page à partir de données électroniques et de modèles réalisés par des
+concepteurs documentaires.
+L’éditique comprend le positionnement, le calibrage, la mise en page des illustrations
+et des textes rédigés par les différents services de l’entreprise (Marketing,
+communication, juridique, comptable, etc.) ainsi que la gestion des annexes.
+Selon les cas, l'éditique intègre les activités suivantes :
+
+
+Réalisation du fond documentaire : création de modèles de documents
+(conception graphique, mise en page, charte graphique)
+
+
+
+Réception des données
+
+
+
+Normalisation, restructuration, validation postale, duplication, enrichissement,
+segmentation, tri et regroupement
+
+
+
+Composition dynamique des documents et mise en page de données avec le
+moteur de composition
+
+
+
+Mise en production - fabrication intelligente des documents (suivant le type
+d’imprimante et de machines de mise sous pli)
+
+
+
+Diffusion multi canal (mail, fax, sms, lettre, etc.) vers différents destinataires
+
+
+
+Traçabilité et compte rendu sur l’intégralité de la production
+
+Les principaux objectifs de l’éditique sont donc de fournir au client des courriers de
+qualité dans les plus brefs délais et offrir une maintenance rapide et efficace en cas
+de modifications contractuelles ou légales sur ces documents.
+Pour l’éditique, il y a 3 types de production :
+
+
+La production de masse (l’éditique de gestion) : Elle concerne la
+transmission d’informations de gestion (états des comptes bancaires, factures
+détaillées, relevés de consommation d’un service, bordereaux d’appels à
+cotisations, etc.). Les documents correspondant à ce type de message sont
+
+23
+
+plutôt structurés, leur production est largement industrialisée et sont destinés
+à un grand nombre de clients. Leur flux de données entrant : batch
+
+
+La production interactive : Le document proprement dit implique la
+participation des utilisateurs. Les formulaires d'embauche, la correspondance
+et les propositions sont les documents interactifs les plus courants. Leur flux
+de données entrant : XML
+
+
+
+La production à la demande : Elle concerne la production de courriers
+unitaires réalisés depuis un poste de travail. Ce sont des demandes
+ponctuelles d'un document spécifique (par exemple, pour un service bancaire
+personnel, un agent ou une borne libre-service). Dans ce cas, les demandeurs
+doivent fournir des données spécifiques. Dans la plupart des cas, l’utilisateur
+final est généralement en communication directe avec le client dans une
+agence ou dans un call-center.
+
+Une fois que les documents à destination des clients sont créés, il ne reste plus qu’à
+les générer. C'est-à-dire produire les documents en ajoutant toutes les données
+correspondant à chaque client.
+L’éditique permet aussi de faire de la diffusion multi-canal, c'est-à-dire qu’à partir
+d’un seul document créé par des concepteurs documentaires, il est possible de
+l’envoyer sur divers type de support afin de pouvoir le distribuer plus facilement et
+ainsi améliorer l’accès à l’information.
+
+Figure 5 : Le multi-canal
+
+24
+
+L’impression unique :
+Il est possible de faire un envoi direct sur une imprimante en local, afin d’effectuer
+une vérification lors de la création du courrier pour avoir un rendu direct de la
+création et ainsi inspecter si le courrier correspond à la maquette du dit courrier. Ou
+bien c’est une impression d’un seul exemplaire pour une demande spécifique ou
+pour un client particulier.
+L’envoi par email :
+L’envoi par email se fait en envoyant le document au format PDF à la liste de clients
+listée dans le fichier de flux de données. Il peut être aussi envoyé à des listes de
+diffusion si le document est générique comme par exemple une note de service
+personnalisée par secteur.
+Il est aussi possible d’opter pour plusieurs méthodes d’envoi :
+
+
+Email avec accusé de réception : il assure le traçage du courrier avec ses
+différentes étapes (préparation, envoi, envoyer et lu)
+
+
+
+Email avec un lien vers le document : il assure aussi le traçage du courrier,
+mais permet de garder un contrôle sur l’accès du document. Nécessité d’un
+espace de stockage dédié à cette méthode.
+
+L’envoi par SMS :
+L’envoi par SMS est un moyen de communiquer avec le client pour le prévenir d’une
+transaction ou encore que sa demande de virement a été acceptée par exemple.
+Il est aussi possible de passer par un automate afin de laisser des messages sur le
+répondeur afin d’alerter son client. Ou encore d’envoyer un document directement
+sur un fax.
+
+25
+
+Figure 6 : Moyens de communication par tranche d'âge
+
+Chaque tranche d’âge ayant son moyen de communication, il faut toucher ces
+personnes par la technologie qui les entoure. Néanmoins afin que ce canal de
+communication fonctionne, le client doit fournir des informations personnelles
+(numéro de téléphone, adresse, email, etc.).
+L’envoi par SMS est utilisé davantage par les services marketing pour proposer de
+nouvelles offres aux clients que dans un but purement informatif.
+L’impression large volume :
+Afin de permettre l’impression en larges volumes, les ADF (Automated Document
+Factory : Usine de production de documents automatisés) ont été mises en place.
+Ces progiciels permettent à partir du document créé par les concepteurs
+documentaires (fichier .pub) et des données clients fournies par la base de données
+(flux de données batch ou XML) de réaliser un courrier personnalisé pour chaque
+client.
+La mise sous pli des courriers est aussi comprise dans les ADF, elle est située juste
+après l’impression.
+26
+
+Figure 7 : Fonctionnement de l'ADF
+
+L’archivage :
+Il est aussi possible d’envoyer le document récemment validé directement à
+l’archivage si celui-ci n’est pas utilisé dans un court laps de temps.
+
+27
+
+4. L’archivage
+
+L’étape d’archivage est essentielle, car c’est elle qui permet de centraliser et de
+partager tous les documents.
+L’archivage se définit par « l’ensemble des règles, méthodes, processus et solutions
+permettant, de manière raisonnée et sécurisée, la conservation, la consultation, la
+restitution, la gestion dans le temps et, à l’échéance de la durée de conservation, la
+destruction des documents ».
+Un système d’archivage électronique (SAE) peut être défini comme un système
+permettant :
+
+
+Le stockage sécurisé des documents et données de valeur pour
+l’entreprise
+
+
+
+Le classement de ces documents et données dans un plan structuré et
+hiérarchisé
+
+
+
+La gestion de la confidentialité et des droits d’accès sur ces documents et
+données
+
+
+
+Le maintien de l’intégrité des documents et données
+
+
+
+La conservation de la méthode de capture et des données ainsi que de
+toutes modifications intervenues
+
+
+
+La conservation des documents pendant une durée définie
+
+Tout comme l’étape de numérisation, l’opération d’archivage peut être effectuée en
+interne ou confiée à un prestataire. Il est possible de recourir simultanément à ces
+deux choix pour répondre à l’ensemble des besoins.
+En interne ou confié à un prestataire, la sauvegarde des documents numérisés peut
+s’effectuer sur deux types de support :
+
+
+Les supports optiques
+
+
+
+Les supports magnétiques communément appelés disque dur
+
+28
+
+Supports optiques
+La solution du support optique reste ici plus dans une solution de stockage à long
+terme que dans le stockage pour la réutilisation des documents numérisés.
+Les supports optiques les plus connus sont les CD-ROM (Compact Disc ou disques
+optiques compacts), les DVD (Digital Versatile Disc) et les BD (Blu-ray Disc).
+Les CD-ROM disposant d’une capacité de stockage six fois plus faible que les DVD
+ne sont pas recommandés pour des projets de dématérialisation d’envergure. Les
+DVD, pour leur part, offrent des capacités de stockage plus considérables (4,7 Go
+pour un DVD standard simple couche).
+Quant aux disques Blu-ray, du fait de leur capacité de stockage élevée (26 Go pour
+un Blu-ray simple couche) et de leur démocratisation, il peut être considéré comme
+un support de choix pour la conservation de données.
+Ces disques sont plus coûteux que les DVD disponibles sur le marché, mais ont
+aussi une espérance de vie plus longue.
+Pour graver les Blu-ray, il faut un graveur de Blu-ray et un logiciel de gravure. Ils sont
+généralement fournis avec les ordinateurs actuels, mais on peut aussi acquérir des
+logiciels spécialisés offrant davantage de possibilités.
+Pour assurer la longévité des supports optiques et l’accès à long terme aux
+informations qu’ils contiennent, certaines précautions s’imposent :
+
+
+éviter de graver la capacité maximale d’un disque afin que les données ne se
+retrouvent pas sur les bords du disque, une zone plus fragile souvent
+disposant d’une couche moins homogène
+
+
+
+graver les fichiers à la vitesse recommandée par le fabricant
+
+
+
+utiliser un ordinateur réservé à la gravure
+
+
+
+graver au moins deux exemplaires de tous les disques et les conserver dans
+des lieux différents, si possible des édifices différents
+
+
+
+utiliser des boîtiers conçus pour la conservation des supports optiques
+
+29
+
+
+
+suivre les conseils d’utilisation (éviter d’exposer les disques au soleil, à la
+chaleur ou à l’eau) et de les conserver dans des conditions appropriées (20°C
+et 40% d’humidité)
+
+
+
+effectuer une vérification des disques une fois la gravure terminée (certains
+logiciels de gravure peuvent faire cette vérification automatiquement)
+
+
+
+prévoir des vérifications périodiques (exemple : tous les trois à cinq ans)
+
+
+
+planifier la migration des données sur un autre support (repiquage) tous les
+dix à quinze ans.
+
+Supports magnétiques
+Les supports magnétiques les plus répandus sont les disques durs et les cartouches
+magnétiques. Leurs capacités de stockage sont considérables et s’accroissent sans
+cesse.
+Je ne parlerai pas des cartouches magnétiques du fait de leur vétusté et de leur
+utilisation moins pratique.
+Les disques durs peuvent résider sur des serveurs situés en interne ou chez un
+prestataire. Ils ont un temps d’accès et un taux de transfert plus rapides que les
+supports optiques. En général, les disques durs sont placés dans un serveur
+disposant d’un protocole de sécurisation des données appelé RAID (Redundant
+Array of Independent (or Inexpensive) Discs) qui assure la protection des données
+en cas de panne d’un des disques durs. Des outils sont disponibles afin
+d’automatiser la surveillance de la santé des disques durs situés dans les serveurs,
+mais la meilleure solution est de disposer d’une autre copie située dans d’autres
+locaux.
+Choix de formats et de supports de conservation
+Aucun format ou support ne peut assurer une pérennité absolue. Il est cependant
+souhaitable de préférer les supports magnétiques qui sont une solution plus simple
+et permettent à tout moment de disposer des documents précédemment numérisés.
+
+30
+
+Il existe aussi des solutions externes spécialisées dans le stockage de ces
+documents dématérialisés. Ces solutions sont du type SaaS (Software as a Service
+exemple : Gmail) qui combinées à une numérisation externalisée des documents
+peuvent être accessibles à tout type d’entreprises.
+Ces solutions ont des avantages et des défauts :
+
+
+Avantage :
+
+Il n’y a aucun logiciel à installer sur le parc informatique de l’entreprise, aucune
+donnée stockée en interne, aucune gestion de patch et mise à jour des applications.
+Les applications sont disponibles partout et à n’importe quel moment, c’est donc un
+meilleur niveau de sécurité par rapport à une gestion interne.
+Le SaaS est un service coûteux, mais représente aussi une charge immédiatement
+déductible du résultat de l’entreprise. À l’inverse d’un investissement qui est déduit
+sur plusieurs années.
+
+
+Défaut :
+
+Le plus grand défaut est que l’utilisation d’une SaaS est fortement dépendante de la
+qualité du réseau permettant d’accéder au service. Aucun fournisseur ne peut
+garantir une disponibilité de 100% et cela peut handicaper fortement l’entreprise. À
+l’entreprise de prévoir une solution de secours permettant l’accès aux documents
+lors des pannes de réseau.
+Comme les données ne peuvent être localisées précisément, il y a des questions
+juridiques qui se posent. Car l’entreprise ne dispose plus de garanties (autres que
+contractuelles) de l’utilisation qui est faite de ses données, puisqu’elles sont confiées
+à des tiers.
+Là encore le choix de son fournisseur est primordial afin de garantir la sécurité et
+l’accès permanent aux données.
+
+31
+
+Les offres SaaS fournissent plusieurs services (applications) :
+
+
+Gestionnaire de relation client
+
+
+
+Gestion des ressources humaines
+
+
+
+Communications unifiées
+
+
+
+Gestion documentaire
+
+Dans le domaine de la Banque / Assurance / Finance et pour la dématérialisation, le
+service de gestion documentaire est majoritairement préféré.
+Ce service de gestion documentaire est une GED (Gestion Électronique
+Documentaire)
+Penser que la GED est la réponse au besoin de conservation au même titre que
+l’archivage est une erreur que bon nombre d’organismes font encore aujourd’hui (de
+même que croire que sauvegarde et archivage sont la même chose).
+Un outil de GED n’a pas vocation à gérer les documents dans le temps donc à
+assurer et garantir leur conservation sur le moyen et long terme. Les besoins pour
+les documents électroniques relèvent de l’archivage électronique.
+Mais il est fréquent que les documents qui ont vocation à être archivés soient
+conservés dans un outil de GED pendant une partie de leur cycle de vie. D’où la
+nécessité de prendre les bonnes dispositions afin d’éviter le danger, en cas de litige,
+de ne pas pouvoir disposer des éléments probants suffisants comme la garantie
+d’intégrité du document pendant sa conservation au sein du système de GED (qui
+autorise les modifications) avant d’être versé dans un système d’archivage. Sur ce
+point, la loi est très claire et impose une garantie d’intégrité dès l’instant que le
+document est figé.
+Une GED regroupe toutes les étapes de la dématérialisation : acquisition,
+classement, stockage et diffusion des documents. Les projets de GED ont un Retour
+Sur Investissement (ROI) généralement inférieur à une année. Ce qui en fait un
+choix généralement préféré par les entreprises.
+
+32
+
+Pour revenir sur la loi du 13 mars 2000, quatre exigences sont demandées afin de
+garantir la valeur d’un document électronique, à savoir son intégrité, son
+identification, son intelligibilité et sa pérennité.
+C’est pourquoi il est nécessaire de coupler à l’outil de GED un SAE afin de garantir
+ces exigences et en particulier :
+
+
+la conservation de l’intégralité des documents après transfert de la GED vers
+le SAE pendant une durée définie
+
+
+
+sa destruction à l’échéance de la durée de la conservation (ou dans quelques
+cas une conservation définitive)
+
+Il n’est pas illogique d’envisager la conservation en double d’un même document, à
+la fois dans un système de GED et dans un SAE. La GED répond ainsi à une
+problématique opérationnelle au quotidien et le SAE aux contraintes sécuritaires
+indispensables.
+Bien sûr, tout dépend du budget alloué au projet de dématérialisation. Mais il
+possible de prévoir une solution d’un document « virtuel » qui apparaîtrait dans la
+GED alors qu’il est réellement archivé. Il s’agit de la solution adoptée dans les
+espaces SharePoint quand un document concerne plusieurs dossiers : on ne le
+stocke qu’une fois et on fait un document virtuel dans les autres dossiers.
+Si la solution de stockage choisie est un SaaS avec une solution GED il est possible
+de recevoir les documents en deux modes :
+
+
+Mode pull : la personne demande le document voulu directement sur la GED
+
+
+
+Mode push : la GED peut être configurée pour envoyer certains types de
+documents à des personnes spécifiques dès leur traitement.
+
+Pour des raisons de sécurité et en fonction des fichiers transmis (factures, contrats,
+demandes de client …), des droits d’accès peuvent également leur être associés :
+lecture, modification, impression.
+Une fois que le document numérique est archivé, on peut penser à détruire le
+document original afin que la dématérialisation s’effectue vraiment. Pour cela, il faut
+
+33
+
+mettre en place une politique de destruction des documents (surtout pour les
+documents contenant des informations confidentielles) et d’en contrôler l’application.
+De plus, la création d’un registre peut être prévue indiquant la date et le procédé de
+destruction utilisé, le nom de la personne ou du responsable de la destruction, le lieu
+de la destruction et le nom de la personne responsable du transport des documents.
+Il existe plusieurs solutions pour la destruction de documents :
+
+
+Le déchiquetage :
+
+C’est la solution la plus fréquemment utilisée dans les entreprises concernant la
+destruction de document ou de support numérique (CD-ROM, Disque dur, clé USB,
+etc.). Rapide et efficace, elle permet de réduire tout support en morceau rendant
+celui-ci difficile, voire impossible à reconstituer.
+
+
+Le brasier :
+
+Solution plus difficile à mettre en place et à utiliser seulement dans de rares cas.
+Tous les documents ou supports numériques sont jetés dans un grand incinérateur
+jusqu’à devenir cendre.
+
+
+Les entreprises spécialisées :
+
+Beaucoup d’entreprises de recyclage disposent d’une solution de destruction de
+documents physiques tout comme pour les supports numériques. Afin d’avoir des
+garanties sur la destruction de documents et de supports numériques, les entreprises
+dans le domaine de la Banque/Assurance/Finance privilégient ce type de solution.
+Mais ces entreprises spécialisées se doivent de fournir des garanties par rapport à
+cette destruction.
+Un contrat doit être passé entre les deux parties spécifiant :
+
+
+le procédé utiliser pour la destruction des documents
+
+
+
+les pénalités à appliquer lors du non-respect des engagements de l’entreprise
+de récupération
+
+
+
+la nécessité d’un accord préalable entre les parties avant de confier la
+destruction des documents confidentiels à un sous-contractant
+34
+
+Pour être plus précis, l’accord préalable entre les parties se constitue de ces
+éléments :
+
+
+reconnaître que les informations contenues dans les documents sont de
+nature confidentielle et faire signer un engagement de confidentialité à toute
+personne qui aura à manipuler ces documents
+
+
+
+s’engager à ce que les documents soient stockés dans des locaux sécurisés
+et qu’ils soient toujours sous bonne garde jusqu’à leur destruction définitive
+
+
+
+s’engager à ne pas céder les documents en sa possession à des tiers à des
+fins autres que de la destruction des documents spécifiés
+
+
+
+assurer à son client le droit d’avoir accès en tout temps à ses installations
+pendant toute la durée du contrat
+
+
+
+permettre la vérification lors de la destruction finale des documents qui ne font
+pas l’objet d’une transformation quelconque
+
+
+
+faire un rapport au client sur la destruction des documents reçus
+
+Après avoir choisi une politique de destruction des documents adaptés à l’entreprise,
+il faut établir quelle est la durée de conservation des documents archivés. Car
+chaque document peut avoir une durée de vie propre en fonction de son utilité.
+
+Comment définir qu’un document est devenu inutile et doit être détruit ?
+Dans le domaine de la Banque/Assurance/Finance, tous les documents produits ont
+une valeur juridique, ce qui veut dire que chaque entreprise se doit au minimum de
+respecter leur temps de conservation.
+
+35
+
+Tableau de conservation :
+Document
+
+Délai
+
+Dossiers généraux concernant les
+
+5 ans à compter de la clôture du compte
+
+comptes (spécimens de signature,
+
+ou de la cessation de la relation
+
+formulaires d'ouverture de compte,
+procurations, mesures de protection
+juridique, etc.)
+Dossiers concernant les comptes,
+
+5 ans à compter de la clôture
+
+livrets et plans de nature spéciaux
+(livrets et comptes d'épargne, PEA,
+etc.
+Dossiers d'opposition (sur chèque, sur
+
+5 ans à compter de l'opposition
+
+carte...)
+Saisies et blocages
+
+5 ans à compter du dénouement de la
+saisie
+
+Opérations de caisse (entrées et
+
+5 ans à compter de l'opération (à
+
+sorties d'espèces, opérations réalisées
+
+condition, pour les opérations relevant de
+
+par chèque...)
+
+l'article L 133-1 C, d'avoir contesté
+
+Ordres de paiement (virement,
+
+l'opération dans le délai de 13 mois)
+
+prélèvement...)
+Opérations par carte bancaire (tickets
+DAB et factures chez les
+commerçants)
+Relevés de comptes
+
+Cf opération de caisse
+
+Bordereaux de remise (chèques,
+
+5 ans à compter de l'opération
+
+espèces ...)
+Offre préalable de prêt, formulaires de
+
+2 ans à compter du remboursement
+
+rétractation, d'acceptation de l'offre,
+
+intégral du crédit
+
+contrat, tableaux d'amortissement,
+etc.
+Les justificatifs de constitution de
+
+5 ans à compter du remboursement
+
+garantie (caution reçue, nantissement,
+
+intégral (prêt) ou à compter de la
+
+assurance décès-invalidité, assurance
+
+résiliation du contrat (ouverture de crédit)
+
+emprunteur)
+
+ou à compter de la clôture du compte
+(découvert)
+
+36
+
+Information annuelle des cautions
+
+5 ans à compter du remboursement
+intégral du crédit
+
+Succession (acte de décès, acte de
+
+5 ans à compter du paiement de tous les
+
+notoriété, certificat de propriété...)
+
+héritiers
+
+Quittances de cotisation, double de
+
+2 ans
+
+lettre demandant résiliation et son
+accusé réception, correspondance
+avec l'assureur concernant le
+règlement d'un sinistre
+Contrats d'assurance habitation,
+
+Durée du contrat + 2 ans
+
+automobile, et professionnelle
+Factures, expertises et certificats
+
+10 ans après la fin de l'indemnisation
+
+médicaux
+Assurances sur la vie et assurance
+
+Durée du contrat + 10 ans
+
+décès
+
+Une fois les obligations juridiques dépassées, l’entreprise n’a plus aucune obligation
+envers la loi concernant ces documents.
+
+Concernant l’éditique, l’archivage des documents est simplifié au maximum grâce à
+leur mode de création. Le procédé employé est décrit ci-dessous.
+Celui-ci comporte deux entrées : un flux de données et un fichier .pub (créé par les
+concepteurs documentaires). Elles sont ensuite mises en relation par le moteur de
+création de documents (ex. : logiciel HP Extream) afin de générer les documents
+correspondant au nombre de clients spécifiés dans le flux de données.
+
+37
+
+Figure 8 : Schéma de génération de document éditique
+
+Son stockage est facilité en conservant le fichier créé par les développeurs
+documentaires (fichier .pub sur le schéma) afin d’avoir une source pour la génération
+d’autres documents basés sur ce modèle. De plus, un seul fichier de données mis à
+jour avec les anciens et nouveaux clients permet de réduire la multiplicité de
+documents par utilisateurs.
+
+38
+
+Chaque document passe par quatre phases :
+
+
+La création
+
+
+
+La validation
+
+
+
+La diffusion
+
+
+
+L’archivage
+
+Ce même document, quelle que soit son utilisation respecte cette ligne temporelle.
+
+Figure 9 : Cycle de vie d'un document
+
+Il est considéré comme une ‘archive courante’ pendant sa phase de numérisation, de
+validation jusqu’au point où il devient une ‘archive intermédiaire’ définie soit par ces
+créateurs soit par ces utilisateurs.
+Pour finir, il devient une ‘archive historique’ lorsqu’il est considéré comme obsolète
+(nouveau logo, changement d’offre, etc.) ou qu’il arrive au terme de son utilisation
+juridique.
+
+39
+
+II.
+
+Documents dématérialisés dans la banque/assurance/finance
+
+Dans le domaine de la Banque/Assurance/Finance, il existe un nombre important de
+documents afin de les répertorier, j’ai sélectionné ceux qui sont le plus souvent
+dématérialisés par domaine d’utilisation.
+
+1. Services financiers
+
+ Relevés d’investissement :
+Ce document est un résumé des investissements effectués par le client. Il affiche la
+valeur de ses investissements ainsi que des graphiques montrant la santé et la
+répartition de ses investissements. Il y a même un espace de management pour le
+client afin qu’il soit conseillé lors de ses prochains placements.
+
+Figure 10 : Relevés d'investissement
+
+40
+
+ Plan d’épargne entreprise :
+Le plan d'épargne entreprise (PEE) est un système d'épargne collectif mis en place
+par l’entreprise qui permet au salarié d'augmenter ses revenus par la constitution,
+avec l'aide de l'entreprise, d'un portefeuille de valeurs mobilières.
+Il peut être alimenté par plusieurs sources différentes :
+
+
+l'intéressement
+
+
+
+la participation
+
+
+
+des versements volontaires dans la limite de 25 % du salaire annuel brut,
+intéressement compris
+
+Cette épargne accumulée pendant 5 années minimum peut être ensuite récupérée. Il
+est possible de débloquer cette épargne de façon anticipée dans certains cas précis
+(mariage, naissance, divorce, décès, invalidité, chômage, acquisition de la résidence
+principale…). Mais il est aussi possible de conserver ce plan au-delà de 5 ans et de
+continuer à l’alimenter.
+Ce document résume en général le total de cette épargne et la somme cumulée par
+année.
+
+ Plan d’épargne retraite populaire :
+Le plan d’épargne retraite populaire (PERP) est un plan d’épargne retraite individuel
+permettant de toucher une fois arrivé à la retraite un complément de revenu.
+Pour cela il faut établir un système de versement sur ce plan d’épargne. Il n’y a pas
+de condition de montant et les versements sont laissés au choix du client. Tout
+comme le PEE, il est possible de débloquer cette somme dans certaines situations
+(mariage, naissance, divorce, décès, invalidité, chômage, acquisition de la résidence
+principale…).
+
+41
+
+L’organisme de gestion est tenu d’informer régulièrement son client de la valeur de
+ce plan d’épargne au moins à chaque versement et une fois par an s’il n’y a aucun
+versement.
+
+ Plan d’épargne pour la retraite collectif :
+Le plan d’épargne pour la retraite collectif (PERCO) est un plan d’épargne entre
+l’entreprise et son salarié. Il n’est accessible que si l’entreprise dispose d’un PEE.
+Il est similaire au PEE à une seule condition : il n’est possible de débloquer cette
+somme qu’à la retraite du salarié.
+L’entreprise se doit d’informer son client de la valeur de ce plan d’épargne au moins
+à chaque versement et une fois par an s’il n’y a aucun versement.
+
+ Relevés de fortune :
+Ce document est un résumé de l’état des finances des personnes ayant un revenu
+supérieur à 800 000 euros.
+Il fournit l’état des comptes du client ainsi qu’un regroupement d’informations
+spécifiques à ce type de client. D’une qualité supérieure que le relevé de compte
+‘classique’ en termes d’esthétique, il fournit les mêmes informations.
+
+42
+
+Figure 11 : Relevés de fortune
+
+
+
+Rapports de performances :
+
+Un rapport de performance permet de définir la capacité de rendement (efficacité) et
+la rentabilité (efficience) d’une association à but non lucratif.
+Il décrit :
+
+
+Le but de l’organisation
+
+
+
+Les personnes dirigeant cette association et leur durée d’occupation de
+poste
+
+
+
+Les différents liens avec d’autres organisations
+
+
+
+Les objectifs à atteindre de l’organisation et une description des services
+fournis
+
+Ces rapports de performance sont souvent intégrés aux rapports d’activité annuels.
+Pour éviter la duplication des informations, ce document ne fait pas partie des
+comptes annuels.
+
+43
+
+ Relevés consolidés :
+Les relevés consolidés sont un regroupement d’informations sur tous les comptes
+dont dispose une entreprise. Elle a recours aux comptes consolidés lorsqu’il est
+composé d’une société mère détenant plusieurs filiales. Les relevés consolidés
+regroupent une analyse détaillée de ses comptes (représentation graphique de l’état
+de santé de ses comptes et représentation en tableau), mais aussi des conseils sur
+la gestion de ces comptes.
+Ils constituent un outil précieux de gestion et de reporting.
+Les comptes consolidés sont obligatoires pour les groupes dont les résultats
+dépassent, sur les deux derniers exercices, deux des trois seuils suivants :
+
+
+Bilan supérieur à 15 millions d’euros
+
+
+
+Chiffre d’affaires supérieur à 30 millions d’euros
+
+
+
+Effectif supérieur à 250 personnes
+
+Figure 12 : Relevés consolidés
+
+44
+
+ Rapports fiscaux :
+Un rapport fiscal est un document sur les finances d’une entreprise à un moment
+donné. Il y a deux objectifs à ce document, la première est de décrire la situation
+financière de l’entreprise et son plan de développement. La seconde est de faciliter
+l’accès aux informations essentielles pour de futurs investisseurs.
+Il y a deux sections importantes dans un rapport fiscal : la première partie se
+concentre sur les activités et l'autre sur la valeur réelle de l'entreprise.
+La partie se rapportant aux activités de l’entreprise présente l'ensemble des budgets
+de l'entreprise. En outre, les déclarations de revenus sont souvent incluses pour
+documenter tous les revenus entrants de l'entreprise.
+La deuxième partie exprime la valeur réelle de l'entreprise en décrivant tous les actifs
+et passifs de la société.
+C’est un document annuel obligatoire pour chaque entreprise.
+
+45
+
+2. Banque
+
+ Relevés de comptes :
+Les relevés de compte sont des documents présentant l’état des comptes d’un client.
+Il récapitule les différents numéros de compte dont le client dispose, la liste des
+opérations sur ses comptes et leur plafond autorisé.
+Il permet aux clients de contrôler et, si besoin est, de contester la validité des
+opérations qui y sont enregistrées.
+Ce document est mensuel, mais il est possible de demander à sa banque que ce
+document soit reçu de façon hebdomadaire.
+
+ Relevés de portefeuille :
+Les relevés de portefeuille sont des documents regroupant les actifs financiers tels
+que les actions, investissements, les obligations et les équivalents de trésorerie, ainsi
+que leurs valeurs négociées en bourse.
+Les portefeuilles sont détenus directement par les investisseurs et/ou gérés par des
+professionnels de la finance.
+Ce document est édité régulièrement permettant au client de connaître la valeur des
+biens acquis.
+
+ Échéanciers de remboursement :
+Un échéancier de remboursement est un document joint à une offre de contrat de
+crédit ou de prêt. Y sont inscrites les sommes et les dates auxquelles vous devez
+régler vos paiements.
+Le montant de la mensualité est établi en fonction du taux d’endettement du
+client, de ses revenus, ainsi que de la durée du crédit.
+
+46
+
+Pour un crédit renouvelable, étant donné que le crédit se reconstitue chaque mois au
+fil des remboursements et qu’il peut être utilisé de nouveau tant qu’il n’est pas
+épuisé, il n’y a pas de durée définie. C’est le client qui influe sur la durée suivant que
+l’utilisation du crédit est renouvelable ou non. Le montant du remboursement
+mensuel est établi selon un barème et suivant le montant du capital emprunté.
+La périodicité des échéances de remboursement est généralement mensuelle, avec
+la possibilité de choisir le jour du mois. Dans certains cas, l’échéance peut être
+trimestrielle.
+
+47
+
+3. Assurance
+
+ Guide de prestations :
+Un guide de prestations présente tous les apports que peut offrir une assurance.
+Il explique en détail toutes les prestations offertes au client ainsi que leur obtention.
+C’est un moyen simple et efficace pour le client de trouver les assurances qui lui
+correspondent.
+Il est édité une fois par an par les assurances afin de présenter leur catalogue
+d’assurance à leurs clients.
+
+ Police d’assurance :
+La police d’assurance est un contrat passé entre l’assurance et son client.
+Ce contrat permet de définir :
+
+
+la liste des évènements ou désastres garantis, avec les exclusions
+éventuelles.
+
+
+
+les garanties apportées à l’assuré en cas de sinistre
+
+
+
+les obligations de l'assuré :
+o les mesures de prévention éventuelles afin de diminuer le risque
+o les délais de déclaration à l’assurance en cas de sinistre
+o le montant et les conditions de paiement de la prime
+o les possibilités de résiliation de la police d’assurance
+
+
+
+les obligations de la compagnie d'assurances :
+o les délais de paiement de l'indemnisation
+
+Les polices d'assurance sont composées de conditions générales, communes à tous
+les clients d'une même compagnie pour un risque ou un ensemble de risques
+donnés, et de conditions particulières, spécifiques au client.
+
+48
+
+Ce document est publié à chaque nouvelle souscription à une assurance par
+l’entreprise d’assurance.
+
+Figure 13 : Police d'assurance
+
+49
+
+ Déclarations de sinistre :
+Une déclaration de sinistre est un document que le client doit imprimer à partir d’un
+modèle situé soit sur le site internet de son assurance ou reçu par mail lors de la
+souscription à une assurance.
+
+Ce document doit contenir :
+
+
+Une estimation des coûts de réparation du sinistre
+
+
+
+Un descriptif des dommages subis en précisant leur nature
+
+
+
+Une liste de tous les objets perdus ou endommagés.
+
+Pour attester de l'existence et de la valeur des biens détruits ou endommagés, vous
+pouvez produire tout type de document : factures d'achat ou de réparation, actes
+notariés, contrats de location, expertises, photographies, etc.
+Il est aussi possible de le remplir par internet sur le site de l’entreprise d’assurance.
+
+ Kits de bienvenue :
+Le kit de bienvenue est un document que chaque entreprise donne à ses clients lors
+de la souscription d’une de leurs offres. Cela permet de commencer à les fidéliser en
+leur fournissant rapidement des livrets de bienvenue personnalisés qui vont les aider
+à tirer pleinement parti des avantages et services proposés.
+Le suivi et la gestion de ces clients permettent d'assurer qu’ils reçoivent uniquement
+les informations qui les intéressent. L'importation dynamique de textes et d'images
+depuis des bases de données facilite l'incorporation de texte conforme à la
+législation.
+
+50
+
+Figure 14 : Kits de bienvenue
+
+ Avis déchéance:
+Les documents d’avis déchéance ou d’appels à cotisation sont des documents listant
+le montant des règlements à effectuer pour les souscriptions du client sur une année.
+Il contient :
+
+
+La cotisation nette qui est la somme permettant de payer les sinistres et les
+frais de fonctionnement de la société y comprise.
+
+
+
+Les accessoires (ou frais) qui sont les sommes couvrant certains frais de
+gestion comme l'établissement des avis d'échéance.
+
+
+
+L'indice. Si le contrat souscrit est indexé, l'avis d'échéance comporte
+probablement le montant de l'indice. L'indice choisi est généralement un indice
+extérieur à l'assurance, mais il reste lié au risque (indice du coût du bâtiment
+pour les assurances de l'habitation, prix de la journée d'hospitalisation pour
+l'assurance maladie, etc.) L'indexation permet de réajuster automatiquement
+dans la même proportion le montant des cotisations et celui des garanties.
+
+51
+
+
+
+Les taxes qui sont les sommes reversées par les assureurs au Trésor Public.
+Elles varient suivant les risques pris en charge. Toutes les taxes sont
+calculées sur la base de la cotisation nette des frais ou accessoires compris.
+
+L'assuré est dans l’obligation de payer ses cotisations aux dates détaillées dans le
+document, et dispose de dix jours après la date d'échéance pour le faire.
+Si la cotisation n'est pas réglée dans les délais, la société d'assurance enverra une
+lettre recommandée dite de « mise en demeure ». Trente jours après, la garantie
+s'arrêtera.
+
+ Avenants :
+Un avenant est un document permettant de modifier les termes d’un contrat
+d’assurance en accord avec les parties (assureur, assuré, voire les bénéficiaires).
+Un avenant doit :
+
+
+Préciser les points sur lesquels l’accord initial est modifié (ex : personnes ou
+lieux concernés, prix, durée, objectif, etc.)
+
+
+
+Préciser ou rappeler les éléments du contrat initial ne changeant pas
+
+
+
+Ne pas être ambigu et rester clair par rapport au contrat initial
+
+Il est fréquent qu'un contrat stipule qu'un avenant à ce dernier ne pourra produire
+effet qu'une fois que l'accord écrit sera signé par les parties.
+
+52
+
+ Renouvellements :
+Un document de renouvellement est un document permettant au client de se
+réengager pour une année sur une offre déjà souscrite.
+En général, chaque offre de demande de renouvellement est spécifique pour un
+contrat. La société d’assurance propose sur son site web ou en agence une
+demande de renouvellement propre à chacun de leur contrat.
+Il faut répondre et remplir un formulaire deux mois avant la fin du contrat pour
+pouvoir le renouveler.
+
+ Décompte des prestations :
+Un décompte de prestation présente les mêmes caractéristiques qu’un relevé de
+compte, concernant uniquement les actes médicaux pris en charge par la société
+d’assurance.
+Ils sont listés avec leur taux de remboursement et précisent les dates et les montants
+des virements qui ont été effectués sur le compte. À réception du document, le
+versement a déjà eu lieu sur le compte bancaire.
+Il est aussi possible de se faire rembourser par chèque. Lors de cette opération, un
+document y est attaché correspondant au remboursement de la prestation versée
+par l’assurance.
+Si le montant est égal ou supérieur à 150 euros, le document de décompte des
+prestations est envoyé sous huit jours sinon, il est envoyé sous un mois. Dans le cas
+où un assuré n'a pas besoin de ce document pour se faire rembourser par une
+mutuelle ou une assurance santé complémentaire, le relevé de remboursement lui
+parvient sous trois mois.
+
+53
+
+ Avis de résiliation :
+L’assuré, tout comme l’assureur, dispose de la possibilité de mettre un terme à
+son contrat d’assurance. C’est là que le document d’avis de résiliation intervient.
+Ce document est généralement utilisé lors de l’échéance annuelle de l’assurance
+souscrite par le client.
+Le souscripteur doit prévenir son assureur en lui adressant une lettre recommandée
+avec accusé de réception 2 mois avant la date d'échéance, mais le contrat souscrit
+peut prévoir un délai inférieur.
+Pour les assureurs, ils sont tenus d'informer l'assuré, au plus tôt 3 mois et au plus
+tard 15 jours avant la date limite de résiliation, de la possibilité de ne pas reconduire
+le contrat. Cette information figure sur l’avis d’échéance.
+Il existe aussi des résiliations par rapport à différents cas :
+
+
+La résiliation pour augmentation du montant de la prime
+
+
+
+La résiliation en cas de diminution du risque
+
+
+
+La résiliation pour perte de la chose assurée
+
+
+
+La résiliation suite à un sinistre
+
+
+
+La résiliation en cas de cession de la chose assurée
+
+
+
+La résiliation en cas de décès
+
+54
+
+4. Documents
+
+communs
+
+aux
+
+différents
+
+domaines
+
+Banque/Assurance/Finance
+
+ Facture :
+Ce document est une preuve comptable, c’est-à-dire qu’il atteste de l'achat ou de
+la vente de biens ou de services.
+Pour le fournisseur, la facture est une créance, déclenchée par la vente d'un bien,
+vers son client qui bénéficiera de l'objet vendu.
+Une facture dispose des informations suivantes:
+
+
+Le nom du vendeur et de l'acheteur ainsi que leur adresse respective
+
+
+
+la date de la vente
+
+
+
+la quantité de biens vendus
+
+
+
+le prix unitaire des biens et du total de la prestation
+
+
+
+la date d'exigibilité du règlement de la facture s’il y a lieu
+
+
+
+les pénalités de retard en cas de non-paiement
+
+Une facture peut être reçue sous différentes formes : par mail, par courrier ou par
+papier remis directement lors de l’achat.
+
+ Devis :
+Un devis est un document où un fournisseur propose de vendre un bien à un certain
+prix qu'il s'engage à ne pas modifier tant que l'acheteur n'a pas exprimé son intention
+de ne pas en faire l'acquisition.
+Un devis détaille les travaux à effectuer ou les fournitures à prévoir avec estimation
+des dépenses.
+Le devis n'est pas en soi un contrat, mais un engagement entre le fournisseur et son
+client qui ne devient un contrat que lorsque le devis a été accepté par le client.
+
+55
+
+Ce document peut comporter une limite de temps déterminée par les parties, pour
+éviter que celle-ci devienne déraisonnable. Dans le cas général, le devis n’a pas de
+limite de temps.
+
+ Lettre d’information :
+Une lettre d’information communément appelée newsletters est un document envoyé
+aux clients (anciens comme nouveaux) afin de garder le contact sans lui imposer une
+recherche d'informations sur les nouvelles offres que peut offrir une société.
+La fréquence de diffusion d'une lettre d'information est variable (quotidienne,
+hebdomadaire, mensuelle, etc.) selon les entreprises. Il est possible de la recevoir
+par mail ou encore par courrier.
+Une lettre d'information permet de recevoir des informations sur :
+
+
+les actualités de l’entreprise
+
+
+
+les nouveaux produits et les promotions
+
+
+
+Une relance d’une offre
+
+ Contrat :
+Un contrat est un document par lequel une ou plusieurs personnes s’engagent à
+donner à faire, ou à ne pas faire quelque chose.
+Un contrat doit être clair, ferme et précis :
+
+
+clair : pas d'ambiguïté (langage compréhensible de tous si le client n’a pas de
+connaissance sur le sujet du contrat)
+
+
+
+ferme : on ne peut pas en changer les conditions
+
+
+
+précis : il doit y avoir les conditions essentielles d’un contrat
+
+56
+
+ Correspondance :
+La correspondance est un document que chaque client reçoit pour confirmer
+l’acceptation, communiquer les termes et conditions et présentant les informations
+réglementaires par rapport au choix du client.
+
+Figure 15 : Correspondance
+
+57
+
+5. La loi et les documents numériques
+La signature d’un document peut être calligraphiée ou manuscrite et également
+électronique. La loi ne reconnait la validité d’un document que lorsqu’il présente une
+signature, quelle que soit sa forme.
+Concernant la loi et les documents numériques, c’est la signature électronique des
+documents qui fait foi.
+La signature électronique se distingue des signatures graphiques et biométriques.
+Définie par la norme ISO 7498-2, elle est constituée de "Données ajoutées à une
+unité de données, ou transformation cryptographique d'une unité de données
+permettant à un destinataire de prouver la source et l'intégrité de cette unité en la
+protégeant contre la contrefaçon (par le destinataire par exemple)".
+Le droit positif actuel présente trois utilisations différentes pour la signature
+électronique :
+1 : la validation de l'écrit numérique
+Depuis la loi du 13 mars 2000 (cf. chapitre 1.2), l’article 1316-4 du Code civil définit
+la notion de signature et indique que la signature d'un acte juridique peut être
+électronique. Pour être valide, la signature électronique d'un acte doit se présenter
+comme un "procédé technique fiable d'identification" du signataire. Comme la fiabilité
+du procédé technique doit pouvoir être démontrée, l'article 1316-4 et son décret
+d'application du 30 mars 2001 renvoient aux garanties sécuritaires d'identification et
+d'intégrité. Ce décret précise les exigences à mettre en œuvre pour sécuriser la
+signature électronique.
+
+2 : la validation de la dématérialisation d'un acte juridique
+L'évolution technologique des sociétés provoque la transformation d’une grande
+quantité d'actes juridiques sur support papier en actes sous forme électronique. La
+LCEN permet de définir les conditions de dématérialisation de l’acte papier : un
+nouvel article 1108-1 du Code civil exige le respect de l'identification et de l'intégrité
+58
+
+pour la dématérialisation. La forme électronique de substitution pourra être établie
+dans les conditions de l'article 1316-4 (cas des actes ratifiés) ou dans celles de
+l'article 1316-1 (cas des actes non ratifiés).
+
+3 : la sécurisation de l'échange numérique des actes
+L’article 1316 du Code civil permet de considérer la signature électronique comme
+un moyen de certifier l'identification et l'intégrité des documents pendant la
+transmission.
+Prenons comme exemple un email contenant une facture. L'article 289 du Code
+général des Impôts prévoit que les factures peuvent être transmises par voie
+électronique dès lors que l'authenticité de leur origine (identification) et l'intégrité de
+leur contenu sont garanties au moyen d'une signature électronique.
+Ce cas prouve bien que la signature ne sert pas à ratifier un acte, mais à sécuriser
+sa transmission.
+
+59
+
+III.
+
+Exploitation
+
+Le contexte actuel contribue au développement de la dématérialisation des
+documents dans le domaine de la Banque/Assurance/Finance, car les entreprises
+cherchent d’abord à réduire leurs coûts.
+Cependant,
+
+la
+
+dématérialisation
+
+des
+
+documents
+
+dans
+
+le
+
+domaine
+
+de
+
+la
+
+Banque/Assurance/Finance implique des changements de pratiques et reste
+indissociable de la recherche de performance. De plus en plus imposée dans les
+relations des entreprises avec certains tiers, la dématérialisation se généralise et on
+peut même considérer qu’elle se banalise.
+Pour pousser la dématérialisation à devenir un standard, Le Mouvement des
+entreprises de France propose un guide d’accompagnement des entreprises à la
+dématérialisation afin de leur permettre de comprendre comment mettre en place un
+projet de dématérialisation et les obligations à respecter.
+Depuis
+
+les
+
+années
+
+2000,
+
+les
+
+entreprises
+
+du
+
+domaine
+
+de
+
+la
+
+Banque/Assurance/Finance commencent à dématérialiser leurs documents secteur
+par secteur afin d’améliorer leur capacité et leur infrastructure à dématérialiser et de
+ne pas avoir de perte de service envers leurs clients.
+Début 2013, d’après une étude CXP, plus de 82% d’entreprise dans le domaine de la
+Banque/Assurance/Finance possède une prestation dématérialisée.
+
+Figure 16 : Les prestations de dématérialisation selon le secteur d'activité (n=196)
+
+60
+
+De plus, ces entreprises consacrent chaque année une partie de leur budget pour
+améliorer leur fonctionnement et proposer à leurs clients de nouvelles offres
+correspondant à leurs demandes (ex. : des alertes spécifiques).
+
+Figure 17 : Les fonctions d'optimisation (n102)
+
+Mais pour atteindre ce stade, certains changements dans les opérations
+d’organisations et de management sont nécessaires dans les entreprises afin de
+permettre l’utilisation de la dématérialisation.
+
+61
+
+1. Les changements de la dématérialisation sur l’entreprise
+Les améliorations technologiques donnent la possibilité d’avoir des informations
+quasiment instantanées. Ces améliorations, associées à l’accroissement de la
+concurrence et aux demandes diversifiées, ont poussé les entreprises du domaine
+de la Banque/Assurance/Finance à s’adapter et à offrir de nouvelles possibilités à
+leurs clients pour accéder à leurs services et améliorer leur confort d’utilisation.
+Pour y parvenir, l’entreprise doit être réorganisée en permanence, afin d’améliorer
+les outils ou processus apportant le plus de valeur pour le client. Analyser les
+processus métiers et bien cerner les besoins en matière de processus
+documentaires sont deux étapes incontournables pour mieux piloter l’entreprise en
+amont vers une démarche de dématérialisation.
+La mise en place de la dématérialisation dans une entreprise va inévitablement
+entraîner une suppression voire une modification de certaines tâches. Du fait de
+cette réorganisation imposée, certaine entreprise préfère l’infogérance qui consiste à
+externaliser les services informatiques auprès d’un prestataire, que ce soit pour tout
+ou une partie de leur système d’information (SI).
+Dans le cas de la numérisation, en externalisant, il est alors possible de développer
+des activités de conseil ou d’analyse, à plus forte valeur ajoutée, à condition d’avoir
+un personnel compétent.
+La dématérialisation nécessite une adhésion des collaborateurs concernés, afin de
+lever leurs craintes. Il est nécessaire de les associer en amont du processus de
+dématérialisation afin de les préparer à la suppression du support papier.
+Selon la personnalité et les compétences de l’employé, il lui sera plus facile ou plus
+difficile
+
+de
+
+s’adapter
+
+aux
+
+nouvelles
+
+tâches
+
+remplaçant
+
+celles
+
+exercées
+
+habituellement. Il sera plus facile à l’employé de participer à ce changement et de
+devenir performant rapidement avec une formation ou un accompagnement adapté.
+En effet, l’employé doit pouvoir surmonter ses problèmes quotidiens ou encore ceux
+exceptionnels résultant de la transformation de l’environnement de travail.
+
+62
+
+Dans le domaine de la Banque/Assurance/Finance, il y a deux types de services
+envers les clients :
+
+
+Le front-office
+
+
+
+Le back-office
+
+Le front-office offre par exemple des services d’aide aux clients répondant à leurs
+questions et les guidant dans leurs démarches.
+Le back-office offre quant à lui d’autres services (envoi de confirmations, vérification
+des encaissements, gestion de la vie des contrats, suivi des échéances) non visibles
+par le client, mais collabore étroitement avec le front-office.
+L’impact de la dématérialisation pour le front-office est visible sur le long terme dans
+la relation client. Le fait de pouvoir avoir accès à l’intégralité des informations va
+permettre au technicien ou gestionnaire de renforcer la qualité du service par une
+plus grande rapidité dans la réponse (disposer au guichet ou par téléphone de
+l’ensemble des échanges et des annotations en fonction du client permet une
+amélioration de la qualité du traitement des problèmes ou questions soumis au
+technicien ou gestionnaire). Cela permet dans certains cas de résoudre seul le
+problème du client. Il facilite aussi la communication avec le back-office permettant
+un traitement avec une garantie d’échéance ou de résoudre le souci directement.
+Une simple formation ou des ‘rappels de consigne‘ pour ces employés sont
+nécessaires pour qu’ils connaissent bien les circuits d’informations disponibles.
+La dématérialisation des informations et la facilité d’accès à ces données permettent
+au conseiller de compléter sa connaissance du dossier et d’être plus précis dans ses
+réponses.
+Concernant le back-office, s’il est vrai que la dématérialisation ne change pas la
+mode de travail, elle modifie l’organisation du travail, y compris l’organisation
+individuelle.
+L’indexation (l’organisation des données comportant les informations clients) ne peut
+pas être personnalisée pour chaque employé, car elle a été définie lors de sa mise
+
+63
+
+en place. Ceci empêche l’employé d’organiser lui-même ses classements de
+dossiers pour son propre poste.
+Malgré ce souci, le travail est simplifié par la disponibilité immédiate de tous les
+dossiers qui sont complets et à jour. De plus il n’y a presque plus de temps perdu
+dans la recherche de vieux dossiers.
+La
+
+dématérialisation
+
+amène
+
+aussi
+
+des
+
+changements
+
+dans
+
+les
+
+relations
+
+commerciales. L’optimisation de la trésorerie et la gestion des délais de paiement
+sont un enjeu sur lequel beaucoup d’entreprises jouent.
+En
+
+conséquence,
+
+certaines
+
+entreprises
+
+dans
+
+le
+
+domaine
+
+de
+
+la
+
+Banque/Assurance/Finance incitent leurs partenaires à s’équiper en solution de
+dématérialisation, argumentant sur le raccourcissement des délais de paiement et
+pouvant également améliorer leurs flux nets de trésorerie.
+Cependant, malgré une volonté et un besoin des entreprises françaises de
+développer la dématérialisation avec leurs partenaires étrangers, des difficultés
+restent encore à surmonter. Ainsi, la dématérialisation dans le cadre des échanges
+commerciaux est freinée, car il n’existe pas, pour le moment, une harmonisation
+généralisée des formats et des pratiques de dématérialisation.
+
+64
+
+2. Les risques
+
+Lors de la mise en place d’un projet de dématérialisation et e son utilisation, il y a
+des enjeux, mais aussi des risques.
+Huit domaines de l’entreprise sont impactés :
+
+
+
+
+
+
+
+
+Les risques liés aux ressources humaines
+Les risques juridiques
+Les risques liés au contrôle et à la maitrise du SI
+Les risques stratégiques
+Les risques marketing
+Les risques liés au patrimoine numérique
+Les risques périphériques
+
+Les risques liés aux ressources humaines :
+La gestion des ressources humaines peut être fortement impactée lors de la
+numérisation d’une entreprise. En effet, l’arrivée du numérique dans une entreprise
+s’accompagne parfois de licenciements, de changements dans les habitudes
+quotidiennes de travail ou nécessite de nouvelles formations…
+Or, ces changements affectent directement le facteur humain de l’entreprise, et sa
+réaction négative potentielle impacte le résultat de l’entreprise par une diminution de
+sa productivité ou un ralentissement de son activité.
+Sans mettre en place des pratiques de management dans le cadre de la conduite du
+changement, l’entreprise peut se retrouver face à une attitude hostile de ses salariés
+lors de la numérisation des activités de l’entreprise.
+Il faut aussi prendre en compte la dématérialisation des rapports humains.
+La numérisation des processus de l’entreprise simplifie souvent les procédures de
+décision, notamment dans le secteur de la Banque/Assurance/Finance. Même si cela
+fait gagner du temps, l’entreprise qui reste ancrée dans ses automatismes peut
+s’éloigner du client, fournisseur ou employé perdant ainsi tous les bénéfices du côté
+relationnel et empêchant le développement des services.
+65
+
+Les risques juridiques :
+Si les lois ne suivent pas l’évolution technologique, l’entreprise ne pourra se protéger
+ou se défendre si le besoin se fait. À l’inverse, l’entreprise se doit d’être aux normes
+juridiques pour éviter une perte de gains liés à la régulation établie par les nouvelles
+lois.
+Dans le cas où l’entreprise est internationalisée, l’entreprise se doit de se soumettre
+aux réglementations en vigueur du pays dans lequel elle réside. Par exemple, les
+serveurs de données situés aux États-Unis sont soumis au ‘Patriot Act’, et la NSA a
+donc le droit de consulter les données qu'ils contiennent.
+Plus généralement, la législation concernant l'échange de données est différente
+selon les pays. Le cryptage de données peut être autorisé, interdit, soumis à
+autorisation, etc. Pour l'entreprise, des pertes en cas de non-respect de la loi locale,
+ou des problèmes de productivité et d'homogénéisation des processus dans le cadre
+d'une activité internationale sont à prévoir.
+
+Les risques liés au contrôle et à la maitrise du SI :
+La question est quel est le degré de contrôle que veut exercer l’entreprise sur son
+réseau ? Car plus les échanges de données sont fluides et rapides, moins le contrôle
+est maîtrisé. Moins le contrôle est important et plus grandes sont les fuites
+d’informations ou encore pire le vol d’informations. Plus l’information est contrôlée,
+plus elle est lente et donc par extension ralentit l’entreprise.
+Les failles de sécurité dans un SI peuvent être exploitées par beaucoup de monde :
+employés malintentionnés, hacker ou encore par les virus. Les dommages causés
+peuvent être catastrophiques et handicaper l’entreprise vis-à-vis de ses clients et
+partenaires.
+Une autre source de problèmes est liée à la négligence des employés par une
+méconnaissance de règle informatique. En laissant un ordinateur connecté au
+réseau, une personne malveillante peut profiter de cette occasion pour infliger des
+dommages ou dérober des documents à la société.
+66
+
+Les risques stratégiques :
+Le passage de l’entreprise classique à une entreprise dématérialisée suppose la
+définition d’un plan stratégique pour la dématérialisation des activités, et ce avec un
+objectif final prédéfini.
+Si le passage au dématérialisé n’est pas préparé ou mal organisé, il est possible que
+des conflits internes entre processus ou fonctions propres à l’entreprise se créent
+(fonctions numériques contre fonctions non numériques). Il est même possible de
+dématérialiser des processus qui n’auraient pas dû l’être.
+Si l’entreprise décide de passer par une solution externe, il est possible que celle-ci
+soit dans une situation de lock-in. Le lock-in est la situation où l’entreprise décide de
+changer de solution externe, et dans ce cas elle devra payer un supplément pour le
+transfert de données.
+
+Les risques marketing :
+Les risques marketing peuvent affecter la réputation de l’entreprise et sa capacité de
+se vendre aux clients et partenaires potentiels tout comme sur l’organisation de
+l’entreprise.
+Si l’entreprise ne prévient pas ses clients ou encore ses partenaires qu’un projet de
+dématérialisation est en place, ils peuvent prendre peur, car ils n’en connaissent pas
+les conséquences. L’information joue alors un rôle clé dans le marketing et si elle
+n’est pas partagée, le pire est à craindre.
+Le calcul de la valeur de processus d’une entreprise disposant d’activités
+dématérialisées est plus difficile à chiffrer, car elle ne dispose pas d’actifs réels, mais
+immatériels, dont la valorisation est difficile. La valeur de l'entreprise peut donc être
+mal évaluée, ce qui peut avoir des conséquences au niveau de ses actionnaires et
+investisseurs.
+
+67
+
+Les risques liés au patrimoine numérique :
+Une mauvaise conservation de données peut entraîner des pertes pour l'entreprise :
+la durabilité des supports et des formats n’étant pas infaillibles dans le cadre du
+stockage numérique.
+Par ailleurs, les entreprises sous-traitent souvent cet hébergement des données,
+impliquant que la sûreté du contrôle sur les mesures de protection et de conservation
+ne peut être facilement assurée, de même que l'accès à ces données peut être
+temporairement coupé suite à des incidents survenus chez le fournisseur.
+Enfin, il ne faut pas exclure les risques liés aux catastrophes naturelles, qui peuvent
+affecter ces Datacenters, et donc paralyser ou encore ralentir toutes les activités
+d’entreprise disposant de Datacenter.
+
+Les risques périphériques :
+Cette dernière branche de risques regroupe les risques liés à la perte de contrôle de
+la dématérialisation et des risques géopolitiques, qui, s’ils apparaissent comme
+pouvant être exceptionnels, n’en sont pas moins dangereux pour l’entreprise.
+Depuis près de 20 ans, une partie de l’économie est devenue dématérialisée. La
+dématérialisation des flux financiers et d’informations a connu une croissance
+exponentielle.
+Grâce à la dématérialisation, tout s’est accéléré, amplifié et devient de moins en
+moins contrôlable. Toute cette avancée technologique peut avoir des répercussions
+en périphérie de l’entreprise dont les conséquences peuvent être catastrophiques si
+elles ne sont pas détectées en avance. Une bonne vision de notre environnement est
+essentielle afin de pouvoir éviter des catastrophes surtout dans le domaine de la
+Banque/Assurance/Finance.
+
+68
+
+On pourrait croire que les entreprises du domaine de la Banque/Assurance/Finance
+sont protégées contre les risques de guerre ou encore d’attaque terroriste, mais en
+fait ce sont elles qui sont des cibles privilégiées, car elles sont au centre de
+l’économie d’un pays. Les attaques DDoS (attaque par déni de service, Distributed
+Denial of Services attack) sont malheureusement fréquentes contre ce type
+d’entreprises.
+
+69
+
+3. Le marché de la dématérialisation
+
+Le marché de la dématérialisation est un marché en croissance depuis ces 5
+dernières années. Surtout en France, car en 2009, seulement 3% des 2 milliards de
+factures électroniques sont échangées le reste étant des factures papiers. Et 20%
+des factures entrantes sont électroniques alors qu’il est de 50% pour nos confrères
+européens.
+
+Figure 18 : Évolution du marché de la dématérialisation
+
+70
+
+Aujourd’hui ce ne sont plus des projets facilitant la vie de l’entreprise et gagnant de la
+place, mais plus une stratégie de fonctionnement. Ceci permet d’être devant ses
+concurrents et d’offrir une meilleure palette d’offres pour ses clients devenus
+beaucoup plus demandeurs de supports et de services nécessitant des facilités
+d’accès à leurs données.
+La dématérialisation possède une multitude d’acteurs comme on peut le voir dans le
+graphique ci-dessous (source : SerdaLab).
+
+Figure 19 : Segmentation du marché de la dématérialisation
+
+71
+
+Comme on peut le voir, 34% du marché de la dématérialisation appartient au
+prestataire de service et 32 % aux intégrateurs/SSII montrant que les entreprises
+préfèrent se reposer sur des solutions préétablies plutôt que de développer euxmêmes une solution de dématérialisation. Ou bien, elles sous-traitent une partie de
+leurs activités afin de consacrer plus de ressources à une meilleure gestion de la
+dématérialisation.
+Les entreprises du domaine de la Banque/Assurance/Finance aujourd’hui ne
+réduisent plus seulement les documents entrants dans l’entreprise, mais elles les
+dématérialisent afin d’alimenter des processus de bout en bout pour un traitement
+plus rapide et plus approfondi.
+Comme par exemple, l’analyse des relevés de compte des clients afin de connaître
+leurs dépenses et ainsi en déduire s’il faut leur proposer une offre correspondant
+plus à leur profil. Ou encore, leur accorder des crédits à taux avantageux lors des
+périodes où ils sont susceptibles d’être en déficit.
+De plus, grâce à la centralisation des données permises par la dématérialisation, de
+plus en plus de banques s’ouvrent au domaine de l’assurance. Cette globalisation
+des domaines permet une plus grande optimisation des services afin que le client
+fidélisé ne change plus d’entreprise pour ses différents besoins.
+
+C’est un marché de plus en plus grand ne s’arrêtant plus au domaine de la
+Banque/Assurance/Finance. Ainsi, le domaine public a vu son intérêt grandir en la
+dématérialisation en même temps qu’internet se développer chez les particuliers.
+
+72
+
+Conclusion
+
+Tout au long de ce mémoire, nous avons pu voir les différents processus de la
+dématérialisation dans le domaine de la Banque/Assurance/Finance.
+Force est de constater que la dématérialisation est présente, aujourd’hui tout autour
+de nous (email, e-book, facture, journaux, etc.) et qu’il nous faut la connaitre et la
+comprendre.
+Les entreprises du domaine de la Banque/Assurance/Finance l’ont bien comprise et
+dématérialisent leurs documents entrants comme sortants afin de proposer toujours
+plus d’avantages pour leurs clients.
+Les principaux avantages extérieurs notables sont :
+
+
+L’amélioration de la qualité de service et de la relation client
+
+
+
+Réduction du temps de réponse moyen à un client
+
+
+
+Meilleure accessibilité des documents sur différentes plateformes (ordinateurs,
+smartphones, tablettes)
+
+Bien sûr, il n’y a pas que des avantages pour les clients, mais aussi pour les
+entreprises comme nous le montrent ces statistiques ci-dessous.
+
+Figure 20 : Principaux gains obtenus ou recherchés avec l’optimisation des processus documentaires
+entrants et sortants grâce à la dématérialisation
+
+73
+
+L’optimisation des documents entrants comme sortants est une pierre angulaire de la
+dématérialisation
+
+pour
+
+les
+
+entreprises
+
+dans
+
+le
+
+domaine
+
+de
+
+la
+
+Banque/Assurance/Finance.
+Pour les aider dans leur gestion de ces documents, l’éditique est la solution la plus
+couramment adoptée afin de pouvoir créer et générer la masse de documents que
+doivent traiter ces entreprises.
+De plus, la possibilité de sous-traiter la création de documents permet de réorganiser
+l’effectif travaillant sur la création documentaire en les affectant à d’autres postes
+prioritaires.
+Malheureusement il n’y a pas que des bons côtés à la dématérialisation. Les risques
+sont bien présents et peuvent apparaître n’importe quand. Si votre Datacenter à une
+coupure d’électricité et que le back-up du Datacenter n’a pas pu être financé, cela
+impacte directement l’entreprise en rendant impossible l’accès aux documents et
+données nécessaires au fonctionnement de l’entreprise.
+Ensuite il est possible que certains employés soient réticents à cette évolution et
+s’opposent à sa mise en place. La seule solution disponible dans ce cas est de se
+montrer compréhensif et de proposer une formation afin de faire comprendre
+l’importance de ce changement pour l’entreprise et comment l’utiliser pour améliorer
+sa qualité de travail au quotidien. L’autre possibilité est un changement de poste
+dans un secteur où l’utilisation du papier est encore prédominante.
+Si le changement est bien accueilli par les employés et partenaires alors, la
+dématérialisation aura des répercussions bénéfiques pour tout le monde.
+Accélération des paiements entre les différents partenaires, transfert de dossier
+instantané rendant les échanges commerciaux plus dynamiques.
+Mais ce changement peut très bien être aussi mal organisé et mettre l’entreprise en
+péril. Il est donc impératif de mettre en place un équipement adéquat, de savoir quel
+document il est essentiel de dématérialiser pour permettre la réussite d’un projet de
+dématérialisation.
+
+74
+
+Heureusement, le marché de la dématérialisation est grandissant et des acteurs se
+distinguent en proposant des offres complètes de dématérialisation pour les
+entreprises classiques. Concernant les domaines de la Banque/Assurance/Finance,
+le recours à des prestataires de services voir des SSII/intégrateurs est mis en place
+afin de sous-traiter une partie de leurs activités de dématérialisation.
+C’est une solution idéale de confier la création de documents et leur gestion à un
+organisme extérieur afin d’avoir des conseils ou retours par rapport à la gestion de la
+dématérialisation dans son entreprise.
+La validité des données est un processus important dans la dématérialisation afin de
+donner des conseils précis et justes auprès des clients. Cela permet aussi de faire
+de l’exploitation de données (datamining), de définir des catégories de clients et de
+déterminer ceux qui seront plus sensibles que d’autres à un plan marketing.
+Elle sert aussi à établir comment distribuer de façon optimale les informations que le
+domaine de la Banque/Assurance/Finance utilise par le biais du multicanal. Car
+chaque tranche d’âge a son moyen de communication.
+Une fois la dématérialisation ancrée dans les sociétés, une question se pose :
+comment gérer les documents sources qui ont été dématérialisés ?
+Il existe des solutions permettant de détruire complètement ces documents avec des
+garanties envers la société et la loi. Soit la société décide d’elle-même de gérer cette
+destruction par des broyeurs de documents ou elle fait appel à une société
+spécialisée afin de s’en occuper en vérifiant que cette entreprise lui remet un contrat
+spécifiant la garantie de non-divulgation de ses documents.
+
+75
+
+La définition de la dématérialisation peut être appliquée à beaucoup de choses et
+pas seulement à des documents papier.
+La dématérialisation existe aussi dans d’autres domaines :
+
+
+Domaine public
+
+
+
+Bibliothèque
+
+
+
+Cinéma, jeu vidéo, télévision
+
+
+
+Musique
+
+
+
+Les moyens de paiement
+
+Domaine public :
+En tenant compte de la durée de vie des documents papier, la charte de l’UNESCO
+sur la préservation du patrimoine immatérielle (numérique) a été créée afin de rendre
+accessible l’accès au savoir et à la sauvegarde des ‘mémoires du monde’.
+Toutes les administrations françaises ont commencé un projet de dématérialisation
+de leurs archives.
+Le programme ACTES, qui signifie « Aide au Contrôle de légaliTé dématErialiSé »,
+désigne à la fois le projet tendant à dématérialiser la transmission des actes soumis
+au contrôle de légalité et budgétaires.
+Le programme Hélios est une application créée et gérée au sein de la Direction
+générale des finances publiques. C’est cette application qui se charge de gérer la
+dématérialisation des documents publics.
+Ce projet s'inscrit dans le cadre de la modernisation de l’État auquel il contribue par
+le développement de l’e-administration.
+Le 25 avril 2013, la Commission nationale de l’informatique et des libertés (CNIL)
+autorise la FamilySearch Internationale, entreprise généalogique des mormons, à
+dématérialiser des documents d’archives d’état civil français.
+Sous réserve de contrainte stricte : dispositif ultra sécurisé, non apparition de la
+religion, santé, condamnation, pendant 150 ans suivant le décès de la personne.
+
+76
+
+Cela permettra d’obtenir plus d’informations lors de la création d’arbres
+généalogiques et aussi de pouvoir donner les sacrements aux ancêtres tant qu’un
+lien de parenté, même lointain, peut être prouvé.
+Malgré l’accord de la CNIL, il faut encore obtenir l’aval des organismes publics qui
+n’est toujours pas conclu.
+
+Bibliothèque :
+La dématérialisation pour les bibliothèques concerne plus particulièrement la
+conservation et l’archivage des biens appartenant à la bibliothèque.
+À l’ère du web 2.0, les bibliothèques traditionnelles doivent revoir leur mode de
+fonctionnement, à ce titre l’utilisation de la dématérialisation s’avère efficace.
+La dématérialisation leur permet d’atteindre un tout autre public en proposant en
+ligne des ouvrages complets en passant par des magazines quotidiens ou encore
+des nouvelles.
+Les bibliothèques numériques sont accessibles à partir de n’importe quel navigateur
+internet. Il existe aussi des liseuses électroniques permettant à tout lecteur d’avoir
+accès au catalogue des bibliothèques n’importe où.
+Cette dématérialisation permet de redonner une nouvelle jeunesse au marché des
+quotidiens et livres de poche à l’heure de l’infobésité.
+
+Cinéma, jeu vidéo, télévision :
+Concernant le cinéma et la dématérialisation, aujourd’hui il n’y a rien de plus simple
+que de regarder un film grâce à internet. Quasiment toute la filmographie a été
+dématérialisée et est maintenant accessible grâce à des offres de vidéo à la
+
+77
+
+demande (VOD) qui nous permettent de télécharger un film avec une durée limitée
+de visionnage. On loue un film, on ne l’achète pas réellement.
+Il existe aussi des offres de streaming permettant de regarder un film directement
+depuis internet sans restriction de durée.
+Les majors du cinéma l’ont bien compris et proposent aujourd’hui une version
+numérique gratuite du film lors de l’achat du DVD ou Blu-Ray d’un film.
+Malheureusement cette facilité d’accès rend le piratage beaucoup plus aisé. De nos
+jours, chaque film qui sort est accessible gratuitement, mais en toute illégalité sur
+des réseaux peer to peer (P2P) ou encore sur des sites de streaming.
+La télévision possède les mêmes offres que le cinéma, chaque programme peut être
+revu ultérieurement grâce au ‘replay’ proposé par certaines chaînes de télévision.
+Les offres de VOD et de streaming sont aussi disponibles.
+Pour le jeu vidéo, la dématérialisation est différente, car contrairement au cinéma et
+à la télévision, l’achat d’un exemplaire du logiciel ne nous appartient pas vraiment,
+car une fois acheté il est impossible de le revendre, seules sa conservation ou
+utilisation reste sans limites de temps.
+Des
+
+plateformes
+
+comme
+
+Steam,
+
+Sony Entertainment
+
+Network,
+
+Xbox
+
+live
+
+marketplace, Nintendo E-shop proposent des jeux vidéo uniquement dématérialisés
+et permettent au joueur de se passer complètement de jeux vidéo physiques s’il le
+désire, car chaque nouveau jeu sortant actuellement est disponible en version
+physique et dématérialisée.
+
+Musique :
+La dématérialisation de la musique est aujourd’hui une évidence. Il existe de plus en
+plus de moyen d’écouter partout de la musique (Smartphone, ordinateur, tablette,
+lecteur MP3) et à partir de sources différentes (Disques, MP3, 33 tours, internet).
+
+78
+
+La venue d’internet et de la dématérialisation des données a été mal accueillie par
+les grandes compagnies de la musique, effrayées par la facilité de piratage et de la
+perte éventuelle de revenus.
+Le logiciel iTunes et son iPod ont révolutionné nos habitudes en proposant une
+nouvelle vision sur la consommation de la musique à travers le monde. Le fait de
+posséder toute sa discographie dans un appareil a permis à l’industrie du disque de
+toucher une autre génération de personnes et de relancer l’économie de la musique
+grâce à ce marché.
+iTunes Store propose aujourd’hui plus de 5 millions de titres à télécharger avec déjà
+plus de 10 milliards de chansons téléchargées et a permis de prouver aussi aux
+industries de la télévision et du cinéma qu’il y a un marché à conquérir.
+Les moyens de paiement :
+La dématérialisation des paiements est apparue il y a plus de 25 ans par l’invention
+de la carte de paiement (carte bleue). Elle nous permet de payer nos achats sans
+avoir à posséder de l’argent en liquide. De plus, elle nous permet de faire nos achats
+sur internet.
+L’argent géré par la banque est directement débité du compte de l’acheteur vers le
+fournisseur sans aucune action d’une personne physique. Les transferts d’argent
+hors internet sont vérifiés par la banque afin de valider le destinataire.
+Pour les achats par internet, compte tenu de la forte possibilité d’écoute ou encore
+de piratage d’ordinateur, il existe des moyens afin de sécuriser les transferts.
+PayPal, Buyster ou encore les ‘e-carte bleue’ ajoutent une protection supplémentaire
+à ces transferts.
+Il est possible de payer avec toutes les monnaies du monde, la banque s’occupera
+de faire la conversion et de la transférer au destinataire.
+La dématérialisation de l’argent est très récente et commence à prendre de plus en
+plus d’importance.
+
+79
+
+Le bitcoin est une monnaie et un système de paiement
+
+complètement
+
+dématérialisés. Il ne fonctionne que grâce à ses utilisateurs et sans aucune autorité
+centrale. Démarré en 2009, le bitcoin a depuis évolué et devient petit à petit une
+monnaie à part entière.
+Le bitcoin dispose de règles bien précises qui sont vérifiées collectivement par le
+réseau :
+
+
+Il existe au maximum 21 millions de bitcoin
+
+
+
+Les bitcoins sont divisibles jusqu'à 8 chiffres après la virgule, soit environ
+21×1014 unités.
+
+
+
+Les transactions sont irréversibles.
+
+
+
+Les transactions sont diffusées dans les secondes et vérifiées dans les 10 à
+60 minutes suivantes.
+
+Pour plus d’informations sur son fonctionnement, se référer à l’annexe 1.
+Le bitcoin a permis de prouver qu’il est possible de dématérialiser l’argent et de créer
+une économie parallèle, bouleversant ainsi le régime économique établi.
+
+La dématérialisation est maintenant une réalité et change les habitudes. Auparavant
+pour faire ses comptes, on prenait les reçus de paiement de carte bancaire pour les
+comparer au relevé de compte. Aujourd’hui, généralement les gens les jettent
+directement, car une simple vérification sur internet ou encore sur l’application de
+votre banque ou sur votre smartphone permet de visualiser les dépenses
+instantanément.
+La majorité des documents sont voués à disparaitre pour devenir uniquement
+numériques. Mais pour certains d’entre eux, ce n’est toujours pas le cas.
+Les
+
+avenants,
+
+contrats,
+
+décomptes
+
+de
+
+prestations,
+
+relevés
+
+de
+
+compte,
+
+correspondances et beaucoup d’autres ne le sont toujours pas. Pourquoi ? En effet,
+la loi oblige les entreprises du domaine de la Banque/Assurance/Finance à fournir
+des preuves matérielles à leurs clients/partenaires de leurs activités dans le but
+d’effectuer un contrôle en cas de fraudes.
+80
+
+Nos modes de consommation ont beaucoup évolué depuis l’apparition de la
+dématérialisation. Par exemple, on préfèrera prendre un film en VOD que se
+déplacer au cinéma ou encore regarder une série télévisée en streaming plutôt que
+de devoir acheter les DVD, rendant ainsi le divertissement plus accessible.
+Mais la dématérialisation a aussi poussé à la diffusion exhaustive d’informations. À
+chaque souscription ou inscription faite pour une offre, grâce à une clause dissimulée
+dans les conditions générales de vente, l’entreprise peut se réserver le droit d’utiliser
+vos informations personnelles. Elle a de ce fait la possibilité de les exploiter dans un
+cadre purement informatif afin de créer une base de clients et les répertorier. Ou
+encore, dans un but purement commercial, revendre ses informations à d’autres
+sociétés tierces ayant besoin de toucher le plus grand nombre de personnes.
+En général, le client ne s’aperçoit de rien, car l’information de diffusion ne lui est pas
+transmise.
+Aujourd’hui la vente d’information possède son propre marché avec ses vendeurs et
+ses acheteurs grandissant au fur et à mesure qu’internet se généralise auprès du
+grand public.
+La dématérialisation possède bien des atouts, mais également des contreparties.
+Quels seront les sacrifices que les gens seront capables de faire afin de leur faciliter
+la vie ?
+Que nous restera-t-il une fois que la dématérialisation sera indissociable de nos
+modes de vie ?
+
+81
+
+Glossaire
+
+ADF (Automated Document Factory)
+Stratégie pour créer, imprimer et distribuer en masse les documents critiques de
+l’entreprise.
+Éditique
+L'éditique est un néologisme qui désigne l'ensemble des outils, services et moyens
+informatiques appliqués à l'édition de documents
+Au sein d'un système d'information, l'éditique constitue l'ensemble des personnels,
+des processus, des flux et des outils informatiques destinés à la conception, la
+production et la distribution de documents.
+Cloud Computing
+Le cloud computing est une nouvelle manière de fournir et d'utiliser les aptitudes des
+systèmes informatiques, qui est basée sur les nuages (cloud en anglais) : un parc de
+machines, d'équipement de réseau et de logiciels maintenus par un fournisseur, que
+les consommateurs peuvent utiliser en libre-service via l'internet. Les caractéristiques
+techniques du nuage ne sont pas connues du consommateur et les services sont
+payés à l'usage. Selon la définition du National Institute of Standards and
+Technology (NIST),
+
+le
+
+cloud
+
+computing
+
+est
+
+l'accès
+
+via
+
+un réseau
+
+de
+
+télécommunications, à la demande et en libre-service, à des ressources
+informatiques partagées configurables.
+SI (système d’information)
+Un système d'information (SI) est un ensemble organisé de ressources (matériels,
+logiciels, personnel, données et procédures) qui permet de collecter, regrouper,
+classifier, traiter et diffuser de l'information sur un environnement donné.
+L'apport des nouvelles technologies de l'Information (NTIC) est à l'origine du regain
+de
+
+la
+
+notion
+
+de système
+
+d´information.
+
+82
+
+L'utilisation
+
+combinée
+
+de
+
+moyens informatiques, électroniques et de procédés de télécommunication permet
+aujourd'hui -selon les besoins et les intentions exprimés- d'accompagner,
+d'automatiser et de dématérialiser quasiment toutes les opérations incluses dans les
+activités ou procédures d'entreprise.
+Document numérique
+Un document numérique est une forme de représentation de l'information consultable
+à l'écran d'un appareil électronique. L’affichage de ce type de document peut être
+apparenté soit au « document » même, ou soit à l’interface logicielle. Suivant
+l'intervention d'applications informatiques dans une partie de son contenu (bases de
+données, POO), les changements dans l'organisation logique de ses données
+peuvent être apportés. À l'inverse du document papier, le document numérique
+permet de séparer l'aspect présentation (les techniques de mise en page) de l'aspect
+information
+
+(composition de texte, données).
+
+Des multimédias (image fixe
+
+ou
+
+animée, vidéo, son) peuvent être insérés à l’intérieur du document numérique. Sa
+technique de production et de communication se résume en quatre grandes familles
+de logiciels: les outils de traitement de texte, les tableurs, les logiciels de courriel, les
+logiciels de gestion documentaire.
+RAID (Redundant Array of Independent Disks)
+En informatique, le mot RAID désigne les techniques permettant de répartir
+des données sur plusieurs disques durs afin d'améliorer soit la tolérance aux pannes,
+soit la sécurité, soit les performances de l'ensemble, ou une répartition de tout cela.
+Saas (Software as a Service)
+Le logiciel en tant que service ou SaaS est un modèle d'exploitation commerciale des
+logiciels dans lequel ceux-ci sont installés sur des serveurs distants plutôt que sur la
+machine de l'utilisateur. Les clients ne paient pas de licence d'utilisation pour une
+version, mais utilisent généralement gratuitement le service en ligne ou payent un
+abonnement récurrent.
+
+83
+
+GED (gestion électronique des documents)
+La gestion
+
+électronique
+
+des
+
+documents ou EDM (Electronic
+
+Document
+
+Management en anglais) désigne un procédé informatisé visant à organiser et gérer
+des informations et des documents électroniques au sein d'une organisation. Le
+terme GED désigne également les logiciels permettant la gestion de ces contenus
+documentaires.
+La GED met principalement en œuvre des systèmes d'acquisition (exemple
+d’utilisation : la numérisation de masse de documents papier), d'indexation, de
+classement, de gestion et stockages, d'accès (navigation et recherche) et de
+consultation des documents. La GED participe aux processus de travail collaboratif,
+de capitalisation et d'échanges d'informations. Elle prend en compte le besoin de
+gestion des documents selon leur cycle de vie, de la création à l'archivage en
+passant par la gestion des différentes versions.
+Bitcoin
+Le Bitcoin est une monnaie électronique décentralisée conçue en 2009 par Satoshi
+Nakamoto (pseudonyme). Son utilisation passe par un protocole informatique
+exécuté par un logiciel libre du même nom, écrit en C++ et publié sous licence MIT.
+Fonctionnant de façon entièrement distribuée, la gestion de la monnaie est répartie
+sur tous les nœuds du réseau, de façon à ce que le bon fonctionnement du système
+ne dépende pas de l'intégrité ou de la compétence d'un émetteur central, mais
+uniquement de la robustesse des procédés cryptographiques employés.
+SAE (Système d’archivage Électronique)
+Système d'Archivage Électronique (SAE, également connu sous l'acronyme ERMS
+(Electronic Records Management System) dans les pays anglophones), est un type
+de Système de gestion de contenu. Dans le SAE, le mot "Archivage" doit être
+remplacé par "de cycle de vie du document" et non dans le sens simpliste de
+"stockage de fichiers".
+
+84
+
+Infobésité
+L’infobésité
+
+est
+
+la surcharge
+
+informationnelle ou surinformation (en
+
+anglais Information overload), qui est un concept couvrant le trop-plein d'informations
+reçues.
+« Chacune et chacun d’entre nous a aujourd’hui accès par une diversité de canaux,
+de la radio à Internet, du téléphone portable à la télévision, à une multitude
+d’informations instantanées et en continu. Ce roulis ininterrompu donne le sentiment
+d’être toujours informé. Parfois, il assiège plus les citoyens qu’il ne les libère. Cette
+surinformation chasse l’information et sa hiérarchisation. » L'Humanité, 15 juin 2011
+
+85
+
+Table de figures
+
+Figure 1 : Pourcentage des différentes catégories d'entreprise .................................. 5
+Figure 2 : Temps de réponse des entreprises de la Banque / Finance ....................... 5
+Figure 3 : La dématérialisation .................................................................................. 12
+Figure 4 : Cycle de diffusion d'un document .............................................................. 22
+Figure 5 : Le multi-canal ............................................................................................ 24
+Figure 6 : Moyens de communication par tranche d'âge ........................................... 26
+Figure 7 : Fonctionnement de l'ADF .......................................................................... 27
+Figure 8 : Schéma de génération de document éditique ........................................... 38
+Figure 9 : Cycle de vie d'un document ...................................................................... 39
+Figure 10 : Relevés d'investissement ........................................................................ 40
+Figure 11 : Relevés de fortune .................................................................................. 43
+Figure 12 : Relevés consolidés ................................................................................. 44
+Figure 13 : Police d'assurance .................................................................................. 49
+Figure 14 : Kits de bienvenue .................................................................................... 51
+Figure 15 : Correspondance ...................................................................................... 57
+Figure 16 : Les prestations de dématérialisation selon le secteur d'activité (n=196) . 60
+Figure 17 : Les fonctions d'optimisation (n102) ......................................................... 61
+Figure 18 : Évolution du marché de la dématérialisation ........................................... 70
+Figure 19 : Segmentation du marché de la dématérialisation ................................... 71
+Figure 20 : Principaux gains obtenus ou recherchés avec l’optimisation des
+processus documentaires entrants et sortants grâce à la dématérialisation ............. 73
+
+86
+
+Bibliographie
+Colin Webb, Directives pour la sauvegarde du patrimoine numérique, mars 2003
+Ce document présente les directives pour la sauvegarde du patrimoine numérique et
+leurs perspectives de gestion tout comme leurs perspectives techniques et
+pratiques.
+http://unesdoc.unesco.org/images/0013/001300/130071f.pdf
+
+Claire Rémy, « Les aspects juridiques de la dématérialisation de documents », avril
+2010
+Article paru dans Solutions&Logiciels N°12 dans lequel sont abordés les aspects
+juridiques de la dématérialisation de documents et de leur solution d’archivage.
+http://www.solutions-logiciels.com/magazine_articles.php?titre=Les-aspectsjuridiques-de-la-dematerialisation-de-documents&id_article=211
+
+Sia Conseil, « La dématérialisation, une véritable opportunité pour les banques », 4
+septembre 2012
+Cet article parle de comment la dématérialisation est devenue un enjeu pour les
+banques.
+http://finance.sia-partners.com/20120904/la-dematerialisation-une-veritableopportunite-pour-les-banques/
+
+Dématérialisation des marchés publics – Guide pratique, décembre 2012
+Document du ministère de l’Économie et des Finances, guidant les entreprises à la
+mise en œuvre de leurs échanges dématérialisés.
+http://www.economie.gouv.fr/files/directions_services/daj/marches_publics/conseil_a
+cheteurs/guides/guide-pratique-dematerialisation-mp.pdf
+
+87
+
+Bertrand Garé, « La DÉMATÉRIALISATION s’impose plus largement », le 1er mars
+2011
+Article parlant de la dématérialisation et de son développement en France. Décrivant
+ses acteurs et des solutions logicielles.
+http://www.linformaticien.com/dossiers/id/20138/la-dematerialisation-s-impose-pluslargement.aspx
+
+UNESCO, Convention pour la sauvegarde du patrimoine culturel immatériel, 17
+octobre 2013
+Listes des articles pour la sauvegarde du patrimoine culturel immatériel.
+http://unesdoc.unesco.org/images/0013/001325/132540f.pdf
+
+Moe, « L’infobésité, nouveau fléau du geek ? », 4 octobre 2012
+Article décrivant le phénomène de l’infobésité.
+http://www.journaldugeek.com/2012/10/04/infobesite-nouveau-fleau-du-geek/
+
+Stanislas Jourdan, « Game over, Bitcoin ! À quand des monnaies virtuelles au
+service de l’humain ? », 25 juin 2013
+Article décrivant le fonctionnement du bitcoin et analysant ses mécanismes pour en
+faire ressortir les controverses.
+http://ouishare.net/fr/2013/07/game-over-bitcoin-monnaievirtuelle/?utm_source=feedly
+
+88
+
+Ludovic DESAUBRY, La dématérialisation des dossiers documentaires :
+les enjeux et les techniques, 16 novembre 2009
+Mémoire sur la dématérialisation des dossiers documentaires.
+http://memsic.ccsd.cnrs.fr/docs/00/52/38/99/PDF/DESAUBRY.pdf
+
+TiKibuzz, Enjeux et défis de la dématérialisation ; ce qu’il faut savoir avant de se
+lancer, 19 mai 2011
+Document synthèse d’une conférence sur la dématérialisation.
+http://www.directexperts.com/iso_album/20110519_conference_dematerialisation_v2
+.pdf
+
+Réjean SAVARD, Le numérique : impact sur le cycle de vie du document, 15 octobre
+2004
+Document regroupant plusieurs articles concernant le cycle de vie d’un document et
+le numérique.
+http://www.enssib.fr/bibliotheque-numerique/document-1223
+
+89
+
+Annexe
+Annexe 1 : Comment fonctionne le bitcoin
+
+90
+
+Annexe 2 : Résumé du mémoire en anglais
+Summary of the dissertation
+The dematerialization is the act of putting a real object into a digital state.
+There is four step in the dematerialization :
+
+
+Digitalization
+
+
+
+Checking
+
+
+
+Broadcasting
+
+
+
+Archiving
+
+The digitization :
+The digitalization is to convert an analog information from any form (text,
+photographs, voice, film, etc.) to a digital state with suitable electronic devices (such
+as a scanner, digital camera) so that the information can be processed, stored, and
+transmitted through equipment, and networks.
+Before digitalize the files, their need some preparation to make the digitalization
+easier like remove staple or maybe dust if the files is old.
+If they are no preparation, a lot of time can be lost between the step of digitalization
+and checking.
+When every file that had to be digitalized is, they can move to the step of checking.
+Checking :
+Checking is a cornerstone of the dematerialization. Every file that has been
+digitalized has to be check if there is no alteration on the file compare to the original
+file.
+There is some software that can be used to help this. The OCR (Optical Character
+Recognition) and the ICR (Intelligent Character Recognition) can help detect some
+
+91
+
+damage on the digitalize file by reading it. If they can read it, there are some
+problems and the file has to be digitalizing again.
+The checking step must be done for the files coming from archiving because if the file
+is 10 years old for example he maybe can’t be read by modern computer. And have
+to be treated to become standard.
+When the step of checking is done the file has two paths. Either they are not needed
+for the moment and go to the archiving or they are required in a department and go
+to the broadcasting.
+
+Broadcasting :
+70% of the outgoing files of a company in a field of banking/assurance/finance are
+likely to come back. This is why outgoing documents must be formalized.
+Every files send to each client must be generated according to the clients who
+demand it. With formalized and structured in order to make the step of digitalization
+and data collection easier.
+To do this, the companies in a field of banking/assurance/finance generally use
+Enterprise Output Management (EOM). An EOM is an information technology
+practice that deals with the organization, formatting, management and distribution of
+data.
+Thanks to the EOM the broadcasting can be on various channels :
+
+
+Single impression
+
+
+
+Send by email
+
+
+
+Send by SMS
+
+
+
+Mass impression
+
+
+
+Archiving
+
+An OEM Is used to reduce the cost of traditional printing by using other channel
+directly used by their customers.
+
+92
+
+Archiving :
+When the files are not needed anymore they can be archive.
+To save these files they are two ways :
+
+
+The optical media
+
+
+
+The magnetic media
+
+They are used to preserve these files against time. So that people can use maybe 10
+years later the same files.
+A solution used in the field of banking/insurance/finance is the SaaS (Software as
+service) combine to an EDM (electronic documentation management).
+Make possible to manage of project of dematerialization. Their benefit is to have a
+ROI (return on investment) lower than a year and make accessible the files from
+anywhere by several platform.
+But there are some drawbacks with all these data out of reach; you can face the
+problem of lost connection that can be a disaster to the company or worst they
+maybe face a flood destroying all of your files.
+The best solution is to have one outsourced solutions and a back-up plan inside your
+company to prevent these event to become real.
+
+Every step can be done inner the company or outsourced. It is possible to use these
+two options simultaneously to meet every need.
+
+They are various assets to dematerialize like :
+
+
+The improvement of productivity
+
+
+
+The data collection
+
+
+
+The commercial aspect
+
+
+
+The increase in customer feedback
+
+93
+
+The data collection can be very useful for a company in the field of
+banking/insurance/finance.
+With the amount of new customers’ data, they can improve their marketing by target
+a specific range of people. Or make deeper analysis to help customer to use more
+effectively their contract with the company.
+The dematerialization has been made to help companies to deal with the amount of
+information they receive each day. And help companies to trade information much
+faster.
+But there is not only perks to the dematerialization. If it is not managed enough or the
+employees don’t agree this changes. They can lead the company into a crisis.
+To deal with the eventual problems, the company has to be well prepared and put the
+dematerialization step by step, branch by branch in to order to acclimate everybody
+(employees, partner and clients) to these changes.
+The dematerialization is not in effect only in companies of banking/insurance/finance
+it touch a lot of people :
+•
+
+Public domain
+
+•
+
+Library
+
+•
+
+Film, video game, TV
+
+•
+
+Music
+
+•
+
+Payment
+
+Each one has their own perks to use the dematerialization.
+Every one using a computer or internet already dematerialize (emails, films, pictures,
+etc.).
+With internet the dematerialization is around us and change the way we use to buy or
+to interact with each other.
+What will be the next step of the dematerialization and what I we willing to give to
+make that append?
+
+94
+
+

@@ -1,0 +1,2798 @@
+EPSI Bordeaux
+73 rue de Marseille 33000
+Bordeaux
+
+VOLCOM EUROPE
+1 ALLEE BELHARRA
+ANGLET 64600
+
+Mise en place d’une
+solution décisionnelle dans
+une PME en expansion
+Yannick Talec
+
+Directeur de recherche :
+Sylvain Labasse
+
+Promotion Septembre 2013
+1
+
+2
+
+REMERCIEMENTS
+
+Je tiens à remercier monsieur Antoine Delaunay responsable du service informatique
+ainsi que monsieur Nicolas Tissier analyste fonctionnel qui m'ont confié le
+développement d'une solution décisionnelle chez Volcom-Europe.
+
+3
+
+Sommaire :
+
+REMERCIEMENTS.................................................................................................... 3
+Introduction ................................................................................................................ 7
+Problématique .......................................................................................................... 10
+1-
+
+Organisation des entreprises ............................................................................ 13
+1-1
+
+Les évolutions de l’organisation des entreprises ......................................... 13
+
+1-1-1
+
+Taylor et le Taylorisme ......................................................................... 14
+
+1-1-2
+
+Ford et le Fordisme............................................................................... 16
+
+1-1-3
+
+Fayol et l’administration industrielle ...................................................... 18
+
+1-1-4
+
+Weber et la rationalisation de l’organisation .......................................... 19
+
+1-1-5 Burns et Stalker ....................................................................................... 22
+1-1-6
+
+La théorie de la décision ....................................................................... 23
+
+1-1-7
+
+Mintzberg et la structuration des organisations ..................................... 26
+
+1-2
+
+Les différents Services d’une entreprise. ..................................................... 31
+
+1-2-1
+
+Le service des Ressources Humaines .................................................. 31
+
+1-2-2
+
+Le service Marketing............................................................................. 32
+
+1-2-3
+
+Le service Qualité ................................................................................. 33
+
+1-2-4
+
+Le service Recherche et Développement ............................................. 33
+
+1-2-5
+
+Le service Informatique ........................................................................ 35
+
+1-2-6
+
+Le service Logistique ............................................................................ 36
+
+1-2-7
+
+Le service Financier.............................................................................. 37
+
+1-2-8
+
+Le service Achat ................................................................................... 38
+
+1-2-9
+
+Le service Commercial ......................................................................... 39
+
+4
+
+1-3
+
+Génération d’une entreprise Lambda .......................................................... 40
+
+1-3-1 Description de l’entreprise ...................................................................... 40
+1-3-2 Schématisation de l’entreprise ................................................................. 42
+2-
+
+Les Indicateurs.................................................................................................. 46
+2-1 Généralités sur les indicateurs ....................................................................... 46
+2-1-1 Indicateurs « temps réel » ........................................................................ 47
+2-1-2 Mesurer des objectifs ............................................................................... 48
+2-1-3 Induire l’action ......................................................................................... 48
+2-1-4 Des indicateurs constructibles ................................................................. 49
+2-1-5 Des indicateurs présentables ................................................................... 49
+2-2 Les sources de données ................................................................................ 50
+2-2-1 Les logiciels spécifiques .......................................................................... 50
+2-2-2 Organisation des sources données .......................................................... 57
+2-3
+
+Les indicateurs par services ........................................................................ 58
+
+2-3-1
+
+Le service des Ressources Humaines .................................................. 58
+
+2-3-2 Le service Commercial / Marketing .......................................................... 59
+2-3-3 Le service Recherche et Développement................................................. 60
+2-3-5 Le service Logistique ............................................................................... 61
+2-3-6 Le service Financier ................................................................................. 62
+2-3-7 Le service Achats .................................................................................... 63
+3-
+
+Les technologies des systèmes décisionnelles ................................................. 64
+3-1 La dé-normalisation des données ................................................................... 64
+3-1-1 La normalisation ...................................................................................... 64
+3-1-2 La dé-normalisation ................................................................................. 66
+3-2 Les Cubes de données ................................................................................... 69
+3-3 Architecture décisionnelle ............................................................................... 71
+
+5
+
+Conclusion ............................................................................................................... 75
+
+6
+
+Introduction
+Le monde comptait en 2012 7.058 milliards d’habitants réparties dans 196
+pays, on peut considérer que chaque pays a sa propre culture et ses propres sous
+cultures régionales. Dans chacun de ces pays, il y a de fortes chances pour qu’une
+concurrence existe sur chaque marché dans tous les secteurs. Si l’on ajoute à cette
+concurrence celle des autres pays on se rend vite compte qu’une entreprise ne peut
+ignorer l’ensemble de son marché et ses concurrents au niveau mondial. En effet se
+concentrer uniquement sur le marché local ou national est dangereux. Un des
+risques est l’arrivée soudaine d’un concurrent préparé, souhaitant s’implanter. Ce
+concurrent à de forte chance de réussir si l’entreprise attaquée n’est pas préparée.
+Au risque de paraitre pessimiste, il est donc possible de comparer le milieu naturel
+avec le monde du business. On parle souvent de la jungle des affaires où les gros
+requins mangent les petits poissons. La nature n’est-elle même qu’un système
+complexe, prenons le cas de la gazelle qui s’abreuve au bord du fleuve. Elle boit
+sachant que le danger est partout, le lion derrière les hautes herbes, le crocodile
+sous la surface du fleuve. Pourquoi la gazelle se fait elle manger (ou pas) ? Sa
+vitesse de réaction ? Ses capacités de perception ? En partie oui, elle ne perçoit pas
+le danger, la menace seulement à la dernière seconde dans le meilleur des cas, ce
+qui lui demande un gros effort pour s’en sortir. Si elle pouvait discerner le lion et le
+crocodile, si elle aurait plus d’informations sur le milieu qui l’entoure et augmenterait
+radicalement ses chances de survie.
+Pour continuer dans les analogies, on peut comparer une entreprise à un automate,
+en effet les plus efficaces et les plus complexes sont ceux qui captent le plus
+d’informations du milieu qui les entoure. Prenons pour exemple le classique
+automate de gestion du barrage, dans un premier temps imaginons qu’il ne puisse
+détecter que le volume d’eau contenue dans le barrage. Il capte donc en « temps
+réel » un volume d’eau que nous appellerons « X ». Il a pour simple consigne d’ouvrir
+les vannes quand le volume arrive à Y m³, puis de les fermer lorsque le volume a
+atteint un seuil qu’il juge correct, seuil que l’on peut appeler « S ». L’automate
+barrage ouvre donc la vannes à « Y » puis les refermes à « S ». On arrive donc à
+une oscillation autour d’une valeur moyenne du au temps de réaction du système.
+
+7
+
+Une fois de plus le problème de la perception survient, en effet dans ce système on
+considère que le barrage peut supporter n’importe quel débit, que l’ouverture de ses
+vannes à Y m³ l’empêche de déborder. Il existe donc un débit maximum que le
+barrage ne peut pas supporter, si ce débit est atteint alors le système est condamné.
+Le deuxième cas possible est un système à qui on rajoute « des yeux ». Ce système
+connait, par exemple, le débit du fleuve en amont, on lui donne une forme de
+capacité de prévision, on obtient ainsi une évolution du volume plus lisse dans le
+temps. En effet, le barrage peut ainsi anticiper la future monté de l’eau et va pouvoir
+se vider en prévision augmentant ainsi le débit maximal supporté. Ce n’est
+cependant pas le seul avantage, avec une telle configuration, le système peut ainsi
+économiser
+
+sur
+
+les
+
+coûts
+
+(énergétique,
+
+humaine...etc.)
+
+de
+
+fonctionnement
+
+d’ouverture des vannes. Les ouvrir juste un peu à l’avance coûte moins que de les
+ouvrir au maximum de leurs capacités au dernier moment. Il est facile de justifier
+cette économie, on comprend bien qu’en ouvrant les vannes de 50% (car à l’
+avance) contre 100% au dernier moment puis en les refermant de 50% contre 100%
+on économise 100% de coût. On détecte ici les notions de proactivité et de réactivité
+la première étant moins coûteuse que la seconde.
+Repassons maintenant au niveau de l’entreprise, si elle se place dans le premier cas
+elle pilote son activité avec des œillères, elle subit les crises. En effet, ajuster son
+activité : masse salariale, nombre de machines de production, nombre de soustraitants, changement des contrats client-fournisseur demande du temps de l’énergie
+et des fonds. Le fait qu’une mutation non prévue demande du temps implique un
+coût élevé, celui de la mutation elle-même mais aussi celui découlant du fait que
+l’entreprise n’est pas en phase avec son marché. Si elle ne prévoit pas les
+changements, elle oscillera comme le barrage autour d’une position stable. Cette
+position étant le moment ou l’entreprise est en adéquation avec son marché.
+Au contraire une entreprise prenant en compte des paramètres extérieurs complexes
+et bien choisis va pouvoir prédire les pics ou les creux d’activité de son marché, ou
+s’adapter à d’éventuelles modifications de celui-ci. Et ainsi pouvoir structurer ses
+ressources pour rendre ses évolutions les moins contraignantes possibles, mettre
+des fonds de côté pour une évolution technologique, préparer des embauches,
+
+8
+
+prévoir des clauses augmentant la souplesse des contacts client-fournisseurs. Ce
+système permet à l’entreprise d’être plus proche du meilleur état pour affronter la
+concurrence et les évolutions de son marché.
+Avoir « la vision » est une des principales qualités demandée au dirigeant, il doit
+ressentir le monde qui l’entoure et placer son entreprise dans la meilleure position
+possible, et donc il doit analyser tout ce que ses « capteurs » perçoivent. C’est lui qui
+donne le mouvement, qui choisit le chemin que l’entreprise va emprunter. Bien
+souvent il n’a pas le droit à l’erreur. Tout est planifiable, la production grâce au PDP
+(Plan Directeur de Production), l’évolution du système d’information grâce au
+schéma directeur, etc.… Comme pour les automates si l’on donne à notre dirigeant
+plus d’informations captées par un système dédié à cette tâche, il sera à même de
+prendre de meilleures décisions, d’adapter sa stratégie et sa structure. Si en plus on
+ajoute à ces informations captés un outil d’analyse permettant de comprendre le
+passé, (d’en tirer des tendances) et de déduire mathématiquement les différents
+futures scénarii, on arrive à une solution de Buisines Intelligence (BI) ou Décisionnel.
+
+9
+
+Problématique
+Quelle est l’approche à adopter vis-à-vis de la BI quand on est seulement novice
+dans ce domaine? Cela demande du temps de l’argent, des ressources humaines et
+matérielles. C’est souvent un projet stratégique qui peut effrayer certaines
+entreprises, si elles n’ont pas les moyens d’échouer sur ce genre de projet. De plus,
+en règle générale, ces entreprises ont d’autres soucis en tête que la BI, des
+préoccupations plus opérationnelles telles que la prise de commande, la logistique
+ou la qualité de service.
+Nativement, elle ne pense pas disposer de l’infrastructure matérielle nécessaire,
+serveur puissant notamment pour supporter les calculs. Ni d’un ETL pour la création
+de script d’alimentation du DataWarehouse. Un ETL est un outil mélangeant des
+schémas et de la programmation, dans le but d’extraire, de transformer et de charger
+des données de différentes sources, (Extract, Transform, Load). A partir de ses
+schémas sont générés des scripts. Ces scripts doivent être exécutés par un serveur,
+leurs exécutions doit être planifiées dans le temps. Cette nouvelle technologie fait
+donc peur, les ressources matérielles et les connaissances techniques nécessaires
+peuvent obliger les entreprises à prendre un prestataire de service qui les rassurera
+au niveau technique mais est souvent peu engageant en ce qui concerne le budget.
+De plus un prestataire implique souvent un contrat de maintenance ce qui lie
+l’entreprise. Pour des raisons de sécurité, et pour être sûr que le prestataire ne
+disparaitra pas du jour au lendemain on se tourne souvent vers les leaders du
+marché. Qui sont les moins agréables lorsqu’on parle de coût.
+C’est pourtant vital pour une PME qui a peut-être eu une croissance rapide sur une
+idée brillante, mais qui en grossissant, perd sa vision du marché. Au mieux elle
+stagne, au pire elle disparait si elle ne s’adapte pas. On peut citer comme exemple
+KODAK qui n’a pas su prendre le virage du numérique. Il est bien évident que cette
+entreprise a bien sûr vue l’arrivée du numérique, elle n’a peut-être pas jugé l’impact
+qu’il pouvait avoir, ou le moment où il allait devenir aussi puissant que l’argentique.
+Une analyse poussée du marché ou de meilleur choix stratégique aurait pu permet
+d’éviter cela.
+
+10
+
+Nous sommes en ce moment dans une période dite de crise où il faut rassurer les
+créanciers aussi bien pour les pays que les entreprises, on garde à l’esprit le cas de
+a Grèce et Lehman Brothers. Dans ces conditions la capacité à produire des chiffres
+et à les analyser pour rassurer, convaincre ou justifier permet d’obtenir une facilité en
+termes de crédit d’investissement supérieur aux concurrents. Ceci dans le but de
+gagner de nouveaux marchés par l’innovation, l’implantation de magasins, avec pour
+finalité de dégager de nouvelles liquidités.
+Néanmoins se lancer dans ce type de projet sans cadre peut être un gros risque
+pour une entreprise. Cela l’amène à se poser des questions du type :
+- A-t-elle les ressources internes pour ce genre de projets ?
+- A-t-elle envie de laisser une entreprise tierce gérer ses indicateurs ?
+- Les indicateurs auquel elle pense sont-ils bien choisi ? Ne sont-ils pas orientés ?
+Vont-ils refléter la réalité ?
+Si l’on se réfère au passé, 19ème et début du 20ème siècle, lors de l’âge d’or de
+l’industrie et de la consommation de masse, on a souvent considéré l’équation de
+façon un peu trop simpliste, par exemple une unité de production produit X unités à
+l’heure en Y heures, elle produit donc XxY. Ce type de raisonnement ne fonctionne
+plus aujourd’hui, en effet à l’époque on était sûr de vendre l’ensemble de sa
+production. Aujourd’hui ce n’est plus le cas, il faut donc fabriquer le bon produit au
+bon moment et suivre précisément sa courbe de vie. Pour fabriquer le bon produit au
+bon moment, plusieurs pistes sont possible, analyser ses meilleures ventes, détecter
+les produits qui montent, explorer les habitudes des consommateurs. Dans tous les
+cas il est nécessaire de recueillir des données et de les agréger.
+Nous venons de toucher du doigt quelque chose d’important, les données.
+Aujourd’hui une entreprise dispose de beaucoup d’informations numérisées
+concernant surtout son fonctionnement interne. Les factures, les bons de livraisons,
+l’état des stocks, la balance financière, et parfois quand elle n’est pas externalisée, la
+paye des employés. Il faut que les données soient historisées si l’on veut pouvoir
+comprendre le passé pour anticiper le futur. Mais il faut aussi qu’elles soient
+
+11
+
+régulièrement mises à jour pour pouvoir analyser rapidement une évolution non
+prévue de ses indicateurs, par exemple le Chiffre d’affaires (CA), l’évolution des
+commandes, du stock, retard dans les livraisons etc.…
+Pour faciliter la mise en place d’un tel système, ce mémoire a pour ambition de
+donner une base de travail et de réflexion pour une entreprise souhaitant se lancer
+dans le décisionnel. Pour ce faire une entreprise dite lambda sera générée. Cette
+entreprise tiendra compte des points de vue de différents sociologues ayant étudié
+les organisations humaines.
+A partir de cette entreprise et de ses services, des indicateurs sont proposé pour
+aider le ou les dirigeants à piloter l’entreprise. Ces indicateurs fournissent une base
+de travail pour les futures évolutions du système. Chaque secteur d’activité va avoir
+besoin d’indicateur propre mais quasiment tous les secteurs ont des indicateurs
+communs.
+La dernière partie présente l’approche technique et technologie du décisionnel. Son
+but n’est pas de faire du lecteur (dirigeant ou cadre) un technicien chevronné. Par
+contre, elle cherche à lui fournir les informations nécessaires pour discuter et
+comprendre un prestataire de service ou un technicien.
+Le décisionnel est trop souvent développé tardivement dans les entreprise. La
+technologie se démocratisant cet outil peut s’utiliser beaucoup plus tôt que ce que
+l’on croit. Pas besoin d’avoir une armée de serveurs et d’informaticiens.
+
+12
+
+1- Organisation des entreprises
+
+Avant de commencer cette première partie rappelons différentes définition d’une
+entreprise :
+Selon l’Insee : « L'entreprise est la plus petite combinaison d'unités légales qui
+constitue une unité organisationnelle de production de biens et de services jouissant
+d'une certaine autonomie de décision, notamment pour l'affectation de ses
+ressources courantes. » (http://www.insee.fr/fr/methodes/default.asp?page=definitions/entreprise.htm)
+Selon Larousse : « Affaire agricole, commerciale ou industrielle, dirigée par une
+personne morale ou physique privée en vue de produire des biens ou services pour
+le marché ; unité économique de production ; firme : Entreprise industrielle,
+commerciale. » (http://www.larousse.fr/dictionnaires/francais/entreprise/30069)
+
+1-1
+
+Les évolutions de l’organisation des entreprises
+
+Nous allons étudier dans cette partie les différentes mutations qu’a subies la vision
+de l’entreprise. Cette étude est succincte, en effet, elle peut facilement inspirer à elle
+seule un mémoire. Il est néanmoins important dans notre réflexion d’avoir
+conscience du passer afin de mieux comprendre le fonctionnement présent des
+entreprises.
+Le 19eme siècle a vu l’émergence d’un nouveau courant de pensées, qui grâce à de
+nouvelles techniques de création de richesse (mécanisation), ce sont les siècles des
+usines. La science domine par des calculs rationnels chamboulant la vision de
+l’entreprise ainsi que son organisation.
+
+13
+
+Nous verrons dans l’ordre : Taylor, Ford, Fayol, Weber, la théorie de de la décision
+(issue de la théorie managériale des organisations), nous terminerons par Mintzberg
+qui permet de dégager plusieurs tendance d’organisation des entreprises.
+
+1-1-1 Taylor et le Taylorisme
+Frederick Winslow Taylor est né en 1856 et est Mort en 1915. Il vient d’une
+famille aisée mais des ennuis de santé (faiblesse des yeux) ne lui permettent pas de
+faire des études poussées. Il entre dans le monde du travail en tant qu’apprenti et
+s’élève au rang d’ingénieur en passant par tous les échelons.
+Il réfléchira sur l’organisation du travail et plus particulièrement sur la gestion de la
+production dans les ateliers industriels. Il est persuadé que les ouvriers et les
+dirigeants ont des intérêts communs. En effet il pense que l’augmentation de la
+valeur ajoutée sera profitable à tous, rendant l’ensemble plus riche, plus prospère et
+installant ainsi une paix sociale durable.
+Taylor propose dans son ouvrage de 1911 intitulé « Les principes de la direction
+scientifique » une organisation scientifique du travail (OST). On peut synthétiser les
+apports fondamentaux de Taylor en quatre principes :
+
+
+La division horizontale du travail
+Si l’on voit le travail comme une chaine allant de la conception à la matière
+première en passant par un ensemble de produits semi-finis pour arriver au
+final au produit préalablement conçu, Taylor préconise la parcellisation du
+travail, une spécification des taches et l’étude des temps d’exécutions de ses
+tâches afin d’arriver à la meilleur façon de faire.
+Ce premier principe nous intéresse fortement en effet il permet, si il est
+respecté, de dégager un ensemble de données qui nous permettrons par la
+suite de définir des indicateur de production. Ces indicateurs seront souvent
+les plus faciles à mettre en évidence.
+
+14
+
+
+
+La division verticale du travail
+Ce principe vise à distinguer les exécutants des concepteurs du travail. Le but
+final est de placer la bonne personne à la bonne place. C’est-à-dire d’exploiter
+au maximum les capacités des membres de l’entreprise.
+
+
+
+Un système de salaire au rendement
+Fondé sur des primes de productivité ce système cherche à développer la
+motivation des exécutants.
+
+
+
+Un système de contrôle du travail
+L’ensemble de l’outil de production est surveillé par des contremaîtres. Ce
+système de contrôle est la force du système Taylorien car il permet d’observer
+d’analyser et d’en tirer des lois ayant un impact sur le savoir-faire de l’ouvrier.
+Ce principe s’applique également aux technologies lors de leur entrée dans
+l’entreprise, robotique, informatique …
+
+Taylor a eu l’idée judicieuse d’appliquer les sciences à la production, en s’attaquant
+ainsi au gaspillage de matière, de temps et de geste. Il a cependant négligé un point
+essentiel : le côté humain. En effet ce n’est pas pour rien que son travail se
+transpose si bien à des machines. En considérant l’être humain comme des opérant
+on néglige tout le coté critique de celui-ci. Et on suppose que les concepteurs du
+travail peuvent penser parfaitement celui-ci sans le faire et sans remonter
+d’information des exécutants.
+
+15
+
+1-1-2 Ford et le Fordisme
+
+Henry Ford est un industriel américain né en 1863 et décède en 1947. Il est devenu
+célèbre en introduisant les concepts de Taylor dans ses usines. C’est un
+continuateur de Taylor qui va mécaniser le travail à la chaine.
+Ford introduit donc les machines qui vont donner la cadence de travail, Le but étant
+encore de réduire les temps opératoires en synchronisant les flux de production dont
+le débit est contrôlé par les machines ce qui va rendre l’ensemble plus fluide. Selon
+Ford, les marchandises produites à bas coûts et en grande séries vont forcément se
+vendre, ce qui se conçoit parfaitement dans le contexte de l’époque. L’offre crée sa
+propre demande.
+Les trois principes du modèle Fordiste :
+
+
+Le travail à la chaine
+Ford accentue la division horizontale du travail et ajoute des machines, ce qui
+se traduit pour l’ouvrier par une déqualification du travail et une répétition des
+mêmes gestes. Ce n’est plus l’ouvrier qui circule autour des produits mais le
+produit qui circule sur une chaine autour de laquelle travaille une série
+d’ouvrier.
+
+
+
+La Standardisation des biens de production
+Une production en grandes séries aidé par des pièces interchangeable le tout
+standardisé. L’accroissement de la productivité induit une baisse du coût
+unitaire de production et donc des économies. Le premier produit peut être
+vendu à un prix compétitif grâce à l’économie faite sur l’ensemble de la série.
+Citons la célèbre phrase de Ford : « …tout le monde aura une voiture de la
+couleur qu’ils souhaite, pourvu qu’elle soit noire… ».
+
+
+
+Le principe du « five dollars a day »
+
+16
+
+Ford innove au niveau salarial, il double les salaires de l’époque (1914) en
+instaurant une rémunération de cinq dollars par jour. Cela permet de fidéliser
+les travailleurs. Mais aussi de permettre aux ouvriers d’acheter à terme leur
+propre production. Production de masse pour une consolation de masse.
+Néanmoins ce model n’est pas propice au changement. Les machines induisent une
+forme d’immobilisme bien moins malléable que les ouvriers et nécessitants de plus
+lourds investissements initiaux ainsi qu’un amortissement. Si le marché change il faut
+changer l’organisation, si le temps de changement d’organisation est plus long que la
+durée du changement alors le model n’est plus viable.
+Contrairement à Ford, Toyota par des séries courtes, le développement du juste à
+temps et la limitation des stocks au minimum réussi bien mieux à s’adapter aux
+changements de la fin du XXème siècle.
+
+17
+
+1-1-3 Fayol et l’administration industrielle
+
+Fayol est un français diplômé de l’Ecole des Mines de Saint-Etienne. Il est considéré
+comme le premier théoricien à s’intéresser à l’administration des entreprises et aux
+problèmes de commandement. Il met en évidence de développer les qualités de
+leadership ainsi que cinq fonctions clef du management qui sont :
+
+
+Prévoir et planifier de manière rationnelle l’avenir.
+
+
+
+Organiser, allouer les différents types de ressources (matériaux; outillage;
+capitaux; personnel) indispensable au bon fonctionnement de l’entreprise.
+
+
+
+Comment tirer le meilleur parti des agents de l’entreprise.
+
+
+
+Coordonner, synchroniser les actions dans le but de maximiser l’efficacité de
+l’entreprise.
+
+
+
+Contrôler et vérifier si tout se passe conformément à la démarche choisie.
+
+Fayol est parti du constat (à l’époque) que les dirigeants sont formés dans les
+grandes
+
+écoles
+
+d’ingénieurs.
+
+Leurs
+
+cours
+
+portent
+
+exclusivement
+
+sur
+
+les
+
+mathématiques, algorithmiques et autres aspects techniques.
+Selon lui un dirigeant peut obtenir les meilleures performances de son personnel à
+l’aide de bonne qualité de commandement, pour cela il crée onze principes
+d’administration :
+
+
+L’unité de commandement : Chaque employé ne doit avoir qu’un seul chef, il
+ne peut pas exister de dualité dans le commandement.
+
+
+
+La division du travail : Implique une forte spécialisation des travailleurs pour
+les rendre plus productif.
+
+
+
+Le principe d’autorité : L’autorité est envisagée comme étant statutaire et
+personnelle, elle implique des responsabilités.
+
+
+
+Le principe de discipline : Obéissance, assiduité, et respect des signes
+extérieurs de respect conformément aux conventions établies au sein de
+l’entreprise.
+
+18
+
+
+
+L’unité de direction : Un seul leader et un seul programme pour un même but.
+Pour obtenir une unité d’action afin d’obtenir une convergence d’effort.
+
+
+
+L’autorité de la hiérarchie : Tout leader doit être capable d’assumer des
+responsabilités hiérarchiques. Répandre autour de lui le courage de prendre
+des initiatives.
+
+
+
+La clarté de la hiérarchie : La chaine hiérarchique est le cheminement imposé
+par le besoin d’une unité de commandement.
+
+
+
+Le sens de l’esprit de corps : Utiliser son talent pour stimuler le zèle, utiliser la
+faculté de tous et récompenser les mérite sans troubler l’harmonie des
+relations.
+
+
+
+Un système de rémunération équitable : Les modes de rétribution doivent
+encourager la création de valeur et le sort du personnel.
+
+
+
+Le principe d’équité : La manière dont sont gérés les salariés doit susciter un
+sentiment de justice sociale.
+
+
+
+La stabilité du personnel : L’instabilité du personnel est envisagée comme la
+conséquence de dysfonctionnements sociaux. Les salariés des entreprises
+prospères doivent être stables.
+
+La différence principale entre Fayol et Taylor réside dans le fait que Taylor brise le
+principe de l’unité de commandement. Taylor place plusieurs autorités comme les
+agents de l’entreprise, alors que Fayol propose un seul supérieur direct.
+Fayol, plus qu’un contrôle étroit du travail, souhaite laisser à l’ouvrier plus de libertés
+comme par exemple le choix de la méthode ou celle de l’outillage.
+
+1-1-4 Weber et la rationalisation de l’organisation
+Max Weber est un sociologue et un juriste allemand. Il fit ses études à l’Université de
+Berlin avant de devenir professeur d’économie politique. Il analysa le rôle du leader
+dans une organisation, c’est le premier à utiliser le terme « charisme ». L’œuvre de
+Weber tourne autour de trois points :
+
+19
+
+
+
+Le premier est philosophique, il s’interroge sur le devenir de la société
+européenne mise en danger par la monté de l’individualisme. Selon lui la
+monté de de la rationalité, de la capacité de calcule, risque de limiter la
+créativité et l’innovation.
+
+
+
+Le second point est basé sur la théorie des sciences humaines. Une étude
+des conditions scientifiques de la connaissance des faits humains l’amène à
+imaginer les « Idéaux-types». Ils sont une construction intellectuelle qui est
+élaborée en exagérant les faits observés. C’est donc un état qui n’est jamais
+observé mais que l’on aimerait atteindre dans un monde parfait.
+
+
+
+Le troisième et dernier axe, est l’axe sociologique. Plus précisément la
+sociologie compréhensive. Qui pourrait se résumer par la phrase : « Il n’est
+pas nécessaire d’être César pour comprendre César». On peut comprendre
+les motivations de quelqu’un en observant ses actes.
+
+Weber distingue trois types d’autorités :
+
+
+L’autorité rationnelle ou légale :
+C’est la forme dominante de l’autorité dans les sociétés modernes. Elle
+repose sur un système de buts et de fonctions étudiés rationnellement, le but
+est de maximiser la performance. L’autorité est portée par la fonction plutôt
+que par l’individu. C’est un système impersonnel qui ne tient pas compte des
+qualités personnelles des individus.
+
+
+
+L’autorité traditionnelle :
+Celle-ci est liée à la personne plus qu’à la fonction, on peut facilement le
+visualiser dans un entreprise familiale. Le nouveau leader est nominé par son
+prédécesseur. Ce type d’entreprise peut se résumer par la phrase : « nous
+avons toujours fait comme cela ».
+
+20
+
+
+
+L’autorité charismatique :
+Contrairement à la précédente elle ne se transmet pas. Cette forme d’autorité
+est basée sur les qualités personnelles d’un individu. Il s’agit d’une relation de
+prophète à adaptes. L’ensemble des individus suivent le meneur, c’est une
+forme d’admiration. Une telle autorité est relativement instable, en effet si le
+meneur perd son emprise sur le groupe alors c’est tout l’édifice social qui
+s’effondre.
+
+Ces trois formes d’autorités correspondent à des idéaux-types ayant pour but d’être
+comparé à la réalité du terrain afin d’analyser les écarts.
+Pour Weber l’autorité rationnelle ou légale est le pilier d’une administration efficace.
+C’est l’idéal type qui se rapproche le plus de la direction administrative
+bureaucratique. Une bureaucratie performante applique les idées suivantes :
+
+
+Les agents sont libres, soumis à l’autorité dans le cadre officiel de leur
+fonction.
+
+
+
+Ils sont organisés dans une hiérarchie d’emplois clairement définie.
+
+
+
+Chaque emploi a une sphère de compétences légales formellement définie.
+
+
+
+L’emploi est occupé sur la base d’une libre relation contractuelle.
+
+
+
+Les candidats sont sélectionnés sur la base de leurs qualifications techniques.
+
+
+
+Ils sont rémunérés par un salaire fixe et ont droit à une retraite.
+
+
+
+La promotion dépend de l’ancienneté et du jugement des supérieurs.
+
+
+
+Chaque agent est soumis à une discipline et un contrôle strict et systématique
+de son travail.
+
+Le but de l’entreprise rationnelle de Weber est de faire du profit par le calcul
+économique ainsi que par la production. C’est au croisement de la rationalité et du
+désir de profit économique que se situe l’entreprise capitaliste occidentale.
+
+21
+
+1-1-5 Burns et Stalker
+T.Burns et G.Stalker étudient vingt entreprises en Grande-Bretagne, et l’impact de
+l’environnement sur celles-ci. Le résultat de ces travaux a été publié dans
+l’ouvrage : «The management of Innovation» en 1966. Leur étude montre que la
+structure d’une entreprise dépend de facteur extérieur. Plus précisément, à partir de
+l’incertitude du marché et de la vitesse d’évolution des technologies. Ainsi, ils
+distinguent deux types de structures : les structures mécanistes et les structures
+organiques.
+
+
+Les structures mécanistes : Ce sont des structures complexes formalisées et
+centralisées. Elles réalisent des tâches répétitives, planifiées. Le travail est
+standardisé, spécialisé, rationalisé au maximum et les conflits sont réglés par
+la hiérarchie. Les décisions sont prises par le sommet de la hiérarchie, c’est
+une organisation bureaucratique au sens de Weber.
+
+
+
+Les structures organiques : Plus flexible et adaptatives. Plutôt que verticales
+les communications sont latérales. Les responsabilités sont définies de
+manière assez large et l’information transite par la communication plus que
+par les directive. Les conflits sont résolus davantage par les échanges. Il
+n’existe qu’une faible standardisation et spécification du travail. Le système de
+prise de décision n’utilise pas la chaine hiérarchique mais la décision est prise
+par la personne possédant les compétences liées à la décision. Le prestige
+est tiré de la contribution apporté à la structure et aux projets plus qu’au poste
+occupé.
+
+On peut comparer ces deux types d’organisations aux structures que l’on rencontre
+dans le milieu informatique. Les mécanistes peuvent être assimilé aux SSII, et les
+organiques aux entreprise agiles ou chaque groupe de développeur et leur « product
+owner » sont autonomes.
+
+22
+
+1-1-6 La théorie de la décision
+
+C’est à travers la décision que les projets et les idées prennent vie. La décision peut
+être définie comme le processus par lequel l’entreprise passe d’une position
+stratégique a une autre.
+
+
+Le modèle décisionnel classique : Selon ce modèle l’homme effectue des
+choix rationnels. Le but est de maximiser le ou les buts recherchés avec les
+moyens à disposition. Les objectifs sont clairement définis et la décision est
+prise de façon à atteindre l’optimum.
+La décision consiste à analyser à la fois l’environnement de l’entreprise mais
+aussi l’organisation elle-même. Mettre en évidence les opportunités et les
+contraintes de l’environnement, mais aussi les forces et faiblesses de
+l’entreprise. Puis la décision est influencé par le dirigeant lui-même, ses
+valeurs, son expérience, ou de sa sensibilité.
+Cette approche se décompose en quatre séquences : Diagnostic du
+problème, repérage et explication de toutes les actions possibles, évaluation
+de chaque éventualité par des critères dérivés des objectifs et des
+préférences et choix de la solution qui maximise le résultat.
+L’université de Harvard a formulé les postulats suivants :
+o Le décideur est seul a décidé et a des positions claires.
+o Le décideur a accès à une information parfaite sur son environnement
+ainsi que sur les conséquences de ses choix.
+o Il y décision avant action, et les décisions ne viennent (a priori) que de la
+hiérarchie.
+o Suivant cette conception, le changement du système ne dépend que de la
+volonté d’un décideur unique et rationnel.
+
+
+
+Cette approche est idéaliste et ne tiens pas compte des conflits d’intérêts et
+de pouvoirs. C’est pourquoi H.A. Simon développa la théorie de la rationalité
+limitée. Il s’oppose au postula de la rationalité parfaite (ci-dessus) développée
+23
+
+par les chercheurs de Harvard. L’organisation est alors vue comme un
+système composé d’une multitude d’acteurs disposant d’une rationalité limité.
+Pour Simon le décideur a trois caractéristiques principales :
+o Il n’a pas une vision totale et n’est pas capable de traiter l’ensemble des
+informations qui lui parviennent.
+o L’homme n’a pas de préférence claire et bien hiérarchisé elles évoluent en
+fonction des moments.
+o Le décideur ne cherche pas à maximiser le résultat de ses choix, mais
+plutôt à atteindre un certain niveau de satisfaction.
+Simon remet en cause l’idée d’optimum et après des recherches empiriques
+montrent que ce sont les problèmes organisationnels qui déclenchent le plus
+souvent la prise de décision. Si un problème se pose différents scénarii
+peuvent se dérouler :
+o Si le problème est connu il tente d’appliquer une solution connu.
+o Si le problème est inconnu il tente de le rapprocher d’un autre problème
+pour lequel il a une solution bien connue.
+o Si le problème est inconnu et que la solution précédente n’est pas
+applicable alors il cherche une solution nouvelle.
+
+Simon démontre que le décideur arrive à des solutions satisfaisantes et non à
+des solutions optimales. Le décideur est influencé par son environnement,
+règle de gestions, jeux politique. Par exemple une décision optimale
+aboutissant au licenciement d’un ami sera décliné au profit d’une solution
+optimale.
+
+
+C.Linblom (politologue) propose le modèle politique, pour lui les acteurs d’une
+entreprise ont tous des objectifs différents. Les décisions sont donc prises par
+des acteurs pouvant avoir des intérêts divergents. Cela implique qu’ils se
+mettent d’accord, et donc négocient sur de petites décision qui ne sont pas
+
+24
+
+forcément en rapport avec les grands objectifs. Ce sont des décisions
+opérationnelles bien loin d’être des décisions de ruptures. Face à problème
+complexe l’homme a tendance à procéder par tâtonnements.
+Ce modèle semble réaliste mais il ne tient pas compte d’éléments pouvant
+dépasser les jeux de pouvoir. Comme des règles strictes, la culture
+d’entreprise, l’effet de masse…etc.
+
+Chaque approche apporte des éléments de réponse sur la prise de décision,
+un modèle à lui seul de peut convenir à toutes les organisations. Et une
+organisation n’est pas forcément bâtie sur un seul de ces modèles, ou ne
+reste pas figé éternellement dans son mode d’organisation.
+
+25
+
+1-1-7 Mintzberg et la structuration des organisations
+Mintzberg est né en 1939. Professeur de management à l’Université Mc Gill de
+Montréal (Canada). Ses travaux sur le management peuvent être structurés en trois
+axes :
+
+
+L’analyse du rôle des managers
+
+
+
+L’élaboration de la stratégie des entreprises
+
+
+
+La structuration des organisations
+
+Il définit une structure comme étant la somme totale des moyens employés pour
+diviser le travail en tâches distinctes et pour, ensuite, assurer la coordination
+nécessaire entre ses tâches. Pour Mintzberg, on ne peut pas définir une organisation
+de manière générale, en utilisant un seul modèle puisqu’il existe un grand nombre de
+types d’organisations. Un modèle de fonctionnement organisationnel est proposé
+découpé en six éléments :
+
+
+Le sommet stratégique : Il s’agit de la direction de l’entreprise qui définit sa
+stratégie. Il a une vue d’ensemble du système opérationnel.
+
+
+
+La ligne hiérarchique : Composée des manageurs, cadres opérationnels. Leur
+activité consiste à encadrer et animer les équipes de travail productif.
+Elle assure au sommet stratégique que l’ensemble de l’entreprise suit la
+stratégie définie.
+
+
+
+Le centre opérationnel : Est la base de toute organisation. Au siens du centre
+opérationnel on trouve le travail productif.
+
+
+
+La technostructure : Analystes et expert compose cette couche. Il s’agit des
+employés exécutant un travail indirectement productif. L’informatique, la
+finance les ressources humaines et le marketing se trouvent dans la
+technostructure.
+
+
+
+Le support logistique : Ensemble des services internes à l’entreprise, pouvant
+regrouper les services postaux, d’entretien des locaux, restauration. Ils
+apportent un soutien à l’ensemble des autres services.
+
+26
+
+
+
+L’idéologie de l’organisation : Concept très proche de celui de culture
+d’entreprise. Elle est alimentée par des traditions, des valeurs, des normes ou
+tout ce qui peut la distinguer d’une autre.
+
+En plus de ces six éléments Mintzberg propose 7 Structures d’entreprises. En effet
+pour lui il est impossible de décrire correctement une organisation avec un seul
+modèle.
+Il définit donc sept configurations structurelles :
+
+
+La structure Simple :
+Aussi appelé organisation entrepreneuriale. Ces types de structures sont sous
+l’autorité d’un leader. Elles ont souvent une histoire
+
+fantastique à l’ origine de
+
+leur création. La vision du dirigeant leader est très intense. Généralement
+l’organisation est de petite ou moyenne taille, plutôt flexible avec une ligne
+hiérarchique peu développée. Son environnement est simple mais dynamique
+et concurrentiel. Le leadership est parfois de type charismatique. Le dirigeant
+tend à prendre des décisions à la fois stratégique et concurrentiel. Ainsi les
+décisions hiérarchiques tiennent compte du fonctionnement opérationnel. Le
+principal risque de cette configuration est le fait que tout repose sur une seule
+et même personne.
+
+
+La bureaucratie mécaniste :
+Elle cherche à créer une voie et rester su celle-ci en s’assurant que tous les
+résultats ont été prévu. Dans cette configuration, on cherche à rendre le plus
+de chose prévisible. Les procédures sont formalisées, le travail spécialisé, la
+division du travail y est forte ainsi que la ligne hiérarchique. La technostructure
+a un rôle très important dans ce système celui de concevoir (essentiellement)
+des procédures de travail. Ces organisations évoluent généralement dans un
+environnement stable, production industrielle a grande échelle et relativement
+ancienne. Ces structures sont peu propices au changement.
+
+27
+
+
+
+La structure divisionnelle :
+Sa structuration est fondée sur des divisions
+
+s’adaptant au marché. Le siège
+
+se contente d’un contrôle administratif. Les divisions sont autonomes dans la
+conduite de leurs activités mais leurs
+
+résultats,
+
+leur
+
+performance
+
+sont
+
+contrôlés par le siège. Celui-ci définit la stratégie du groupe et les divisions
+définissent leur propre stratégie dans le but d’atteindre les objectifs du groupe.
+Les avantages d’une telle structure peuvent êtres tout d’abord de limiter les
+risque financier, d’adapter les produit au pays si les divisions sont
+géographique, la suppression d’activité nécessite uniquement la fermeture
+d’une division. Par contre, une trop grande diversification sera couteuse et peu
+freiner l’innovation.
+
+
+
+La bureaucratie professionnelle :
+Elle est décentralisée et réside sur un classement des emplois. Elle est
+composée de professionnelle autonome mais soumis au contrôle de leur
+profession. Par exemple les médecins, les chirurgiens au sein d’un hôpital.
+Leurs environnements est complexe mais stable. L’avantage d’une telle
+configuration est l’autonomie de ses acteurs mais engendre des problèmes de
+coordination.
+
+
+
+L’organisation innovatrice ou l’adhocratie :
+Structure plate, fluide, organique et décentralisé. Composé d’expert réparti en
+équipes pluridisciplinaires, la coordination est réalisée par ajustement mutuel
+entre les salariés et les manager qui ont avant tout une fonction d’intégration
+au projet. L’environnement de ce type d’entreprise est dynamique et complexe
+(technologies de pointes). Elles sont soumises à une concurrence sévère.
+C’est une organisation efficace en termes d’innovation et de capacité
+d’adaptation au changement. Néanmoins des problèmes humains peuvent se
+posé à cause des fortes personnalités des experts.
+
+28
+
+Originalement, Mintzberg ne faisais état que de cinq configurations. En 1989 il
+rajoute les deux suivantes :
+
+
+L’organisation missionnaire ou idéologique :
+Elle repose sur une idéologie dominante, des valeurs, des croyances auquel
+adhèrent tous les membres. Il existe en son sein des processus de
+ritualisation et d’identification. L’avantage d’une telle structure et la forte
+mobilisation des acteurs. Le risque d’isolement est présent, et dans certains
+cas extrêmes comme les sectes la perte de personnalité des membres.
+
+
+
+L’organisation politique :
+Pour Mintzberg c’est la seule organisation transitoire. L’organisation Politique
+désigne une organisation en crise devant faire face à un conflit. La politique
+existe au sein de chaque organisation humaine ou les différents acteurs
+exercent leur influence. Une organisation devient politique lors de grève, et
+lors des négociations la suivent.
+
+Le tableau suivant issu du site :
+http://www.diversite.eu/pages/Types_et_structures_dorganisations_selon_H_Mintzbe
+rg-5462851.html, permet de résumer l’ensemble des types d’organisations de
+Mintzberge.
+
+29
+
+Types
+d’organisation
+
+structure
+
+stratégie
+
+Entrepreneuriale
+(moyennes et
+très petites
+entreprises)
+
+Simple, flexible et ligne
+hiérarchique peu
+développée. Supervisio
+n directe du leader.
+
+De type
+visionnaire.
+Dépendante
+des positions du
+leader.
+
+Vulnérable, limitée, risque de
+déséquilibre de la stratégie ou
+des opérations.
+
+Mécaniste
+(industries, chaîne
+de montage,
+administ.
+publique)
+
+Bureaucratie centralisée.
+Division du travail.
+Hiérarchie importante.
+
+Programmation
+stratégique.
+Résistance aux
+changements.
+
+L’obsession du contrôle peut
+mener à des problèmes humains
+et des problèmes de
+coordination.
+
+Divisionnalisée
+(grands groupes,
+multinationales)
+
+Divisions autonomes
+sous le contrôle du
+siège. Standardisation
+des résultats.
+
+Le siège défini
+la stratégie du
+groupe. Les
+divisions, leurs
+propres
+stratégies.
+
+La diversification décourage
+l’innovation. Comportement
+social insensible.
+
+Professionnelle
+(écoles,
+universités, centre
+hospitalier)
+
+Bureaucratique
+décentralisée. Support
+logistique important.
+
+Continuellement
+changeante.
+Compétence
+des acteurs.
+
+Manque de coordination au sein
+du processus de classement.
+Routine et freins à l’innovation.
+
+Innovatrice
+ou Team-Based
+organization*
+(style google,
+labo de
+recherche,
+université)
+
+Adhocratique et flexible.
+Equipes
+pluridisciplinaires de
+spécialistes.
+Nécessite un leader.
+
+A base
+d’apprentissage
+, elle évolue à
+travers une
+grande diversité
+de processus.
+
+Danger relationnel dans le cas
+d'une transition vers une autre
+configuration.
+Efficacité atteinte au prix de
+l'inefficience*
+
+Missionnaire
+(Apple avec S.
+Jobb,
+fondations, group
+e sectaires,
+monastère)
+
+Petites unités très
+décentralisées et
+soumises à de
+nombreux contrôles
+normatifs.
+
+Idéologique,
+avec une
+mission
+porteuse
+d’inspiration.
+
+Conversion et encloisonement.
+Isolation ou assimilation de
+l’individu.
+
+Pas de hiérarchie
+spécifique.
+
+Coexistence
+des membres
+: soit en
+opposition soit
+en accord.
+
+Proche du pouvoir.
+Décisions prises, issues de
+manœuvres ou
+manipulations politiques. Impac
+t
+sur certaines organisations.
+
+Politisée
+(assemblée
+nationale)
+
+inconvénients
+
+30
+
+1-2
+
+Les différents Services d’une entreprise.
+
+La partie précédente a énoncé différents modèle d’organisation au sein des
+entreprises. Le modèle de Mintzberg décrit bien l’entreprise mais ne va pas assez
+dans le détail. Nous allons lui rajouter les différents services que l’on peut trouver
+dans une entreprise, ses services se trouve dans la technostructure du model. En
+effet ce sont ces services vont générer des données que nous exploiterons.
+
+1-2-1 Le service des Ressources Humaines
+
+Les ressources humaines sont l'ensemble des collaborateurs tous statuts confondu
+tel que les Ouvriers, les employés où les cadres qui
+
+appartiennent une
+
+l'organisation. On peut parfois ajouter aussi les collaborateurs intérimaires ou soustraitants qui correspondent dans le modèle Mintzberg au support logistique. Le
+service des ressources humaines va donc avoir pour objectif de gérer l'ensemble des
+pratiques mises en œuvre pour administrer, mobiliser et développer ses ressources.
+La première fonction de ce service est d'administrer l’ensemble du personnel, réparti
+en différents niveaux de hiérarchie ou de qualification. La gestion de la paie, le droit
+du travail, le contrat de travail passent par ce service.
+Les ressources humaines ont également pour rôle d'améliorer la communication
+transversale entre services et processus et de mettre en œuvre un développement
+des collaborateurs tout au long de leur séjour dans l'organisation. La gestion des
+carrières, la gestion prévisionnelle des emplois et des compétences, le recrutement
+les formations passent également par ce service.
+
+31
+
+1-2-2 Le service Marketing
+
+Le rôle du marketing est de créer un lien entre le consommateur et l’entreprise. Le
+marketing possède à la fois un rôle d'action et d'analyse dans l'entreprise. Il sert à la
+fois à concevoir le produit et à trouver le produit attendu par le consommateur.
+Ce service doit :
+
+
+connaître et analyser la demande;
+
+
+
+planifier et développer des concepts de produits ou de services;
+
+
+
+communiquer aux consommateurs des informations pertinentes sur le produit
+ou le service;
+
+
+
+organiser la transaction des droits de propriété;
+
+
+
+distribuer les produits ou offrir les services sur leurs marchés respectifs.
+
+Il n’est pas un service générant une grosse quantité de données en entrée du
+système informatique, mais il est par contre un gros consommateur d’information
+comme les liste des produits les mieux vendu, à qui etc... En effet, il cherche à
+comprendre pourquoi sa stratégie fonctionne ou ne fonctionne pas.
+
+32
+
+1-2-3 Le service Qualité
+
+Ce service n’existe pas dans toutes les entreprises, parfois la qualité est gérée en
+interne dans chaque service.
+La gestion de la qualité regroupe l’ensemble des les techniques d'organisation
+concourant à rendre conforme à un standard la production de biens ou celle de
+services.
+
+La qualité est subjective du moins en apparence, mais peut se quantifier dans
+l'entreprise par des normes. Elle rend des comptes au service marketing
+(commercial) car la vente est sensible à la qualité. La gestion de la qualité permet a
+priori d'améliorer la qualité et donc de satisfaire les clients ou utilisateurs. Cette
+qualité est relative aux exigences des clients et ou de l’entreprise. Atteindre la qualité
+ne doit pas produire de surcoût (sur-qualité) car la qualité elle-même a un coût. Ce
+coup doit être inférieur au coût de la non-qualité.
+
+1-2-4 Le service Recherche et Développement
+Ce service met au point les innovations, les nouveaux produits que l’entreprise
+commercialisera (ou pas). Son rôle est de concevoir de nouvelles technologies, une
+façon d’intégrer ses technologies aux produits existant.
+Il existe trois types de recherche selon l’INSEE :
+
+
+la recherche fondamentale (ces travaux sont entrepris soit par pur intérêt
+scientifique - recherche fondamentale libre -, soit pour apporter une
+contribution théorique à la résolution de problèmes techniques - recherche
+fondamentale orientée -).
+
+
+la recherche appliquée (vise à discerner les applications possibles des
+résultats d'une recherche fondamentale ou à trouver des solutions nouvelles
+permettant d'atteindre un objectif déterminé choisi à l'avance) .
+
+33
+
+
+
+le développement expérimental (fondé sur des connaissances obtenues par la
+recherche ou l'expérience pratique, est effectué - au moyen de prototype ou
+d'installations pilotes - en vue de lancer de nouveaux produits, d'établir de
+nouveaux procédés ou d'améliorer substantiellement ceux qui existent déjà).
+
+On distinguera deux types de projet :
+
+
+
+Pull si le produit est « tiré par le marché ». C’est dire que son besoin est
+clairement exprimé.
+Push si c’est la technologie qui est à l’origine du projet. Il permet à l’entreprise
+de se différencier.
+
+34
+
+1-2-5 Le service Informatique
+
+Le service informatique est dirigé par le Directeur du Système d’information qui en
+fonction des objectifs de l’entreprise donne le cap à suivre à l’aide du schéma
+directeur informatique.
+Les besoins des entreprises en informatique sont croissant ce qui a conduit à la
+création d'un Service Informatique, chargé de mettre à disposition des utilisateurs,
+des ressources informatiques communes. Il aussi garant de l’assistance aux
+utilisateurs ainsi que de la sécurité du système d’information.
+Une liste non exhaustive de ses missions pourrait être :
+
+
+Administrer et exploiter les serveurs
+
+
+
+Maintenir le parc informatique c’est à dire planifier les interventions
+d'installation, de configuration et de dépannage du matériel mis à la
+disposition des utilisateurs.
+
+
+
+Etablir et maintenir
+
+l'inventaire du parc informatique et des logiciels en
+
+service.
+
+
+Gérer et maintenir le réseau informatique.
+
+
+
+Assurer la sécurité informatique, et la veille sur l'évolution des risques.
+
+
+
+Mettre en place la sauvegarde et l'archivage des données.
+
+Généralement les services informatiques son découpler selon les cœurs de métier.
+L’administration du réseau et des systèmes, les analyses fonctionnelles sur les
+différents progiciels utilisés par l’entreprise, le « HelpDesk » (qui reçoit les demandes
+utilisateurs) etc...
+
+35
+
+1-2-6 Le service Logistique
+
+Le service cherche à maitriser les flux physiques de l’entreprise afin de mettre à
+disposition et de gérer les ressources.
+Les militaires sont les premiers à utiliser le mot logistique, pour décrire l’organisation
+du ravitaillement des troupes. Le but était qu’elles restent opérationnelles tout au
+long d’une campagne.
+La logistique est un outil de compétitivité sur plusieurs plans. Tout d’abord la
+satisfaction du client lui mettre à disposition ses produits plus rapidement est
+avantage concurrentiel. Mais aussi l’abaissement du temps de fabrication par
+optimisation de la chaine de fabrication et donc du coup. Jusqu’à l’interaction entre
+service pour toujours et encore gagner du temps, par exemple sur le traitement des
+commandes.
+Le service logistique gère le transport et le stockage des produits de l’entreprise :
+véhicules nécessaires au transport, fournisseurs de l’entreprise, entrepôts,
+manutention dans le but d’optimiser les délais et les coûts.
+Les principaux coûts seront les coûts d’approvisionnement,
+d’acheminement, les coûts de production, les coûts de stockage.
+
+les
+
+coûts
+
+36
+
+1-2-7 Le service Financier
+
+Comme son nom l’indique ce service est en charge de l’aspect monétaire de
+l’entreprise. Il enregistre, vérifie et contrôle scrupuleusement tout entrée et sortie
+d’argent.
+Le service financier est composé de la finance pur qui est en charge de contrôler les
+investissements de l’entreprise. Il a un rôle de prévision
+
+ainsi que d’aide à la
+
+décision. Il mesure la performance, le rapport entre le bénéfice dégagé et les
+investissements. Son rôle est dit stratégique.
+Ce service est également constitué de la partie comptable charger de trié et classifier
+les crédits et débits comme la loi le stipule. Elle a un rôle plus administratif que la
+finance. La comptabilité collecte toutes les informations relatives aux opérations
+économiques, grâce aux documents qui les accompagnent qui sont autant de
+preuves en cas de litige sur une opération figurant en comptabilité. Son rôle est plus
+opérationnel.
+Le service financier joue un grand rôle dans un projet décisionnel, avec son
+approche méthodique, il permet de valider un grand nombre de résultats.
+
+37
+
+1-2-8 Le service Achat
+
+Le service achats doit garantir la fiabilité des fournisseurs, obtenir les meilleures
+conditions de vente possible le tout dans les meilleur délais. Il est donc stratégique
+pour l'entreprise. Le service achat, dans l’idéale, est impliquer dès le début du
+processus de création du produit afin de définir parfaitement les besoins nécessaire
+à sa standardisation.
+Les fournisseurs ne donnent généralement pas directement les prix les plus bas.
+Une baisse de prix peut se faire en centralisant tous les achats de la société,
+s’engagent sur du long terme c'est-à-dire à faire de ce fournisseur un partenaire
+privilégié ou encore en lui permettant de se positionner sur un marché pour lequel il
+était absent jusqu'à présent. Ce n’est qu’une liste non exhaustive des moyens mis en
+œuvre par les Achats pour obtenir des prix compétitif.
+Le chiffre d’affaire d’une société est la somme de tous les gains obtenus
+généralement par la vente de ses produits ou de ses services. Afin de générer des
+profits, les prix de vente doivent couvrir tous les coûts engendrés depuis leur
+conception jusqu'à leur vente.
+Les achats sont planifier dans le temps en tenant compte des besoins de la
+production ou des sous-traitants si la production est sous traitée.
+
+38
+
+1-2-9 Le service Commercial
+Est souvent composé d’un directeur commercial et de plusieurs commerciaux. Ce
+service peut être découpé en secteur en fonction des produits vendu ou de la
+clientèle visée. Si les commerciaux ne sont pas des salariés directs de l’entreprise ils
+sont appelés des représentants. Les commerciaux ou représentants ont quasiment
+toujours des objectifs à remplir, Un chiffre cible à atteindre.
+Ce service doit :
+
+
+constituer un fichier clients.
+
+
+
+gérer et développer le fichier clients.
+
+
+
+établir des devis.
+
+
+
+convaincre les prospects de finaliser les commandes.
+
+
+
+gérer le «SAV».
+
+Ce service est le point d’entrée du client et donc de l’argent dans l’entreprise.
+Pour arriver aux objectifs fixés, ce service doit avoir la connaissance du marché ;
+connaitre le comportement d’achat et le mode de consommation des clients
+potentiels. Il doit également étudier les canaux de distribution pour les utiliser durant
+l’action commerciale. Son objectif est d’identifier les besoins et les attentes de la part
+de marché à conquérir en les reliant aux objectifs fixés par la hiérarchie.
+
+39
+
+1-3
+
+Génération d’une entreprise Lambda
+
+Cette partie va utiliser ce qui a été décrit en amont afin de générer une entreprise. Le
+but de ce mémoire étant de facilité l’accès et la compréhension du BI pour les
+entreprises. Celle qui sera générée ne sera pas une multinationale. Pour la simple et
+bonne raison que les multinationales possèdent déjà leurs outils BI.
+
+1-3-1 Description de l’entreprise
+
+Cette entreprise dite lambda est au sens de Mintzberg une entreprise en transition
+entre le type Entrepreneuriale et le type Mécaniste. Elle est en pleine croissance et
+structuration. Le volume de ses ventes et l’augmentation de son chiffre d’affaire
+l’oblige à se structurer à passer du « bidouillage » aux procédures standardisées.
+Certains services énoncés précédemment sont petits (seulement un ou deux
+personne) et certains ne sont pas présent.
+C’est pourquoi dans le but de réagir vite les manageurs ont besoin de données
+fiables et rapidement disponibles. Ils sont ou vont devenir les uniques supérieurs des
+employés travaillant dans leur service. Ces manageurs sont porteurs d’une autorité
+rationnelle au sens de Weber. Ils sont les utilisateurs clef du futur système
+décisionnel.
+Le fait que l’organisation grandisse implique que les employés deviennent de plus en
+plus spécialisés, cela implique également l’achat de logiciels spécialisés pour chaque
+service. Les services devienne de plus en plus cloisonnés, l’information passant de
+plus en plus par des canaux verticaux plutôt que horizontaux. Cette entreprise
+anciennement Entrepreneurial et organique au sens de Burns et Stalker avait pour
+habitude de transmettre l’information directement d’une personne à une autre suivant
+les demandes. Maintenant lorsque le besoin d’information se fait sentir chaque
+service développe des outils informatiques spécifiques permettant ponctuellement de
+répondre aux besoins. Les besoins des services se recoupant parfois il arrive qu’ils
+développent les mêmes outils sans se rendre compte que le service voisin l’a déjà
+fait.
+40
+
+Lors de réunions ou de séances de prise de décision, des chiffres différents
+apparaissent. Ils engendrent une perte de temps dû au faux débat : « mais qui a le
+bon chiffre ? ». La prise de décision dans cette entreprise se fait selon les principes
+de H.A. Simon cité plus haut. Les réunions se font donc pour gérer les petites crises
+du quotidien.
+Le BI ou décisionnel s’inscrit dans la démarche d’unification des données. Ainsi les
+données étant centralisées et mise à disposition, elles ne sont plus (ou ne seront
+plus) discutées. Ainsi les dirigeants cherchent à dégager du temps pour planifier les
+futures actions et la future position de l’entreprise sur son marché.
+
+41
+
+1-3-2 Schématisation de l’entreprise
+
+Appliquons-lui le modèle de Mintzberg sur un schéma :
+
+SOMMET STRATEGIQUE
+
+LIGNE HIERARCHIQUE
+
+Manageur
+
+Manageur
+
+Manageur
+
+Manageur
+
+Manageur
+
+TECHNOSTRUCTURE
+
+CENTRE OPERATIONNEL
+42
+
+On considère ici que le centre opérationnel (production) suit les modèles de Ford et
+Taylor, mécanisé, standardiser et rationalisé au maximum. Il y a donc à disposition
+des données fiables concernant la production.
+Pour arriver à une complète description nous devons développer la technostructure
+ainsi que les interactions entre ses composants. Cela va permettre de comprendre
+les données générer par chacune des parties. Les interaction listé ici sont celles qui
+utilisent les données utiles au indicateurs choisis.
+
+J
+
+Service Ressources
+Humaine
+
+Service Recherche et
+
+Service Financier
+
+Développement
+
+D
+
+L
+
+B
+Service
+
+Service Informatique
+
+Marketing/Commerciale
+
+I
+
+A
+C
+H
+
+F
+
+CLIENTS
+
+Service Achat
+
+Service Logistique
+E
+G
+
+Fournisseurs
+K
+
+CENTRE OPERATIONNEL
+
+43
+
+Le service Qualité n’est pas présent dans la technostructure l’organisation décrite est
+considéré trop petite pour avoir un service entier dédié à la qualité. Le service
+Recherche et Développement s’occupe de la conformité. Le service Commercial et
+Marketing sont regroupé en un seul et même service pour la même raison.
+Dans le schéma précédent seul les flux métiers sont représentés la prise de
+commande par exemple. Les Interactions internes comme le recrutement ou la
+validation des budgets de chaque service ne sont pas représenté. On ne s’y
+intéressera pas car inutile pour le BI (dans une première approche).
+Description des interactions entre services :
+A : n’est pas une interaction entre service mais entre les clients et le service
+Commercial / Marketing, Ce services prend connaissance des commandes.
+B : Interaction entre le service Financier et le service Commercial / Marketing. Les
+Clients sont classés pour leur paiement (bon ou mauvais payeur). Les modifications
+de prix sont soumises à la validation de la finance. Le service Commercial /
+Marketing transmet ses chiffres au service Financier.
+C : Interaction entre le service Commercial / Marketing et le service Achats,
+Transmission des commandes au service des Achats.
+D : Interaction entre le service Commercial / Marketing et le service Recherche et
+Développement. Le service Recherche et Développement transmet au service
+Commercial / Marketing
+E : Interactions entre le service des Achats et le service Logistique, Les achats
+transmette les arrivées de matière premières au service logistique. Le service
+Logistique donne une vision du stock au service achat.
+F : Interaction entre le service Logistique et le service Commercial / Marketing, le
+service Logistique transmet les informations sur les produits disponibles.
+G : Interaction entre le service financier et les fournisseurs, payement à échéance.
+H : Interaction en le service Financier et les clients grossiste, payement à échéance.
+
+44
+
+I : Interaction entre le service Financier et les services Logistiques, le service
+logistique met à disposition l’état des stocks (capital immobilisé).
+J : Interaction entre le service des Ressources Humaines et le service Financier, le
+service des Ressources Humaines met à disposition les données nécessaires au
+calcul du coût de chaque salarier.
+K : Interaction entre le service Logistique et le centre opérationnel, le service
+logistique pilote le centre opérationnel a partir des données du stock et des
+demandes du service des Achats.
+L : Interaction entre le service Informatique et le service Financier, le service
+Informatique met à disposition les informations concernant le matériel obsolète
+devant être remplacer et celui en cours d’utilisation.
+
+45
+
+2- Les Indicateurs
+
+2-1 Généralités sur les indicateurs
+
+Le but des indicateurs est de faciliter et d’accélérer la prise de décisions. De la
+qualité de ses décisions découlera donc directement de la qualité des indicateurs. Il
+faut être capable de mesurer le passer, le présent (le plus en temps réel possible) et
+anticiper le future. Cette dernière tache et le rôle du décideur ou d’un cadre. Il faut
+également ne pas se restreindre à ses habitudes, mesurer en permanence les
+mêmes choses sans rien remettre en question peut être dangereux.
+Prenons un exemple simple connaitre le nombre de pièces sortant de la chaine de
+fabrication et une bonne mesure, elle indique la performance de la chaine. Mais elle
+ne suffit en aucun cas à expliquer le coût de production, une analyse plus fine
+implique de rajouter par exemple le taux de rebut. Cela parait sans doute évident
+pour la problématique de la production mais est transposable à tous les autres
+services : Logistique, Finance…etc.
+Il faut donc régulièrement se remettre en cause et chercher l’amélioration constante
+de ses indicateurs.
+Un indicateur doit réunir cinq points essentiels :
+
+
+Etre le plus possible utilisable en temps réel, ou être synchroniser avec les
+périodes de consultation.
+
+
+
+Mesurer un ou plusieurs objectifs.
+
+
+
+Induire l’action.
+
+
+
+Etre constructible.
+
+
+
+Etre présentable sur le poste de travail.
+
+Développons ses différents éléments.
+
+46
+
+2-1-1 Indicateurs « temps réel »
+
+Le but d’indicateur temps réel est de travailler dans le même espace-temps que
+l’entreprise mesurée. En effet, on se rend facilement compte que des informations
+datant d’une semaine seront bien moins pertinentes que celle du jour. Pouvoir suivre
+un système en véritable temps réel pose un véritable défi technologique qui sera
+abordé techniquement dans la troisième partie. Le coût du temps réel étant très
+élevé il n’est pas Néanmoins il faut se rapprocher le plus possible du temps réel. La
+production a clairement besoin d’être suivie en temps réel, c’est cela qu’un outil autre
+sera utilisé pour ses indicateurs que le système globale, afin d’être en véritable
+temps réel. Pour les autres services nous aurons les données disponibles à j-1.
+Même si les données ne sont en généralement pas en temps réel et doivent être
+synchronisées avec les phases de consultations. Si les données sont mises à jour
+durant la consultation cela peut entrainer des erreurs dans les indicateurs. Imaginons
+un indicateur I ou I=A/B avec A et B corrélés. Si A est mise à jour durant la phase de
+consultation, A peut tout à fait augmenter si il s’agit par exemple du cumule de la
+valeur totale des commandes. B lui reste inchangé, il vaut par exemple le nombre
+total de commandes. Notre indicateur est donc faussé temps que B n’est pas à jour.
+Même si ce décalage ne dur que de quelques minutes à une heure il n’est pas
+tolérable.
+Les indicateurs doivent donc être le plus proche possible du temps réel et garder leur
+intégrité durant leur exploitation.
+
+47
+
+2-1-2 Mesurer des objectifs
+
+Les décideurs, et les cadres savent où ils souhaitent et doivent emmener leur
+entreprise. Cela donne naissances aux objectifs. Ces objectifs sont classables en
+deux catégories les objectifs généraux et les objectifs locaux. Les généraux sont
+défini par ce que Mintzberg appel le sommet stratégique. Ces décisions sont du
+type : « Augmentation du chiffre d’affaire de 8% », ou encore « Diminution du stock
+de 30% ». Pour réaliser les objectifs globaux, des objectifs locaux sont attribués aux
+différents services impactés. Diminutions du coup de la masse salariale pour les
+services des ressources humaines, augmentation des ventes pour le service
+commerciale, augmentation de la vitesse de traitement des commandes…etc.
+Un indicateur doit donc permettre de suivre ces objectifs. Un objectif complexe peut
+nécessiter plusieurs indicateurs. Améliorer la vitesse de traitement des commandes
+impacte à la fois le service commercial et le service logistique il faudra donc mesurer
+leur vitesse respectives puis agréger ces données pour obtenir le temps total.
+
+2-1-3 Induire l’action
+
+Pour atteindre les objectifs il ne suffit pas de mesurer il faut aussi agir. La vision que
+nous donne l’indicateur ne sert pas à savoir si oui ou non l’objectif est atteint mais à
+agir sur le système lors de son évolution pour justement atteindre le but fixé. Cela
+peut être par exemple : placé en déstockage des produits présent dans le stock
+depuis plus de 2 ans, augmenter la production du produit le plus vendu, déterminer
+le goulet d’étranglement dans un processus etc...
+Un indicateur ne sert pas à contrôler le travail effectué dans le but de punir ou de
+motiver. Son rôle est d’être analysé, pour si besoin, replacer l’entreprise sur le
+chemin qu’elle s’est fixé ou confirmer qu’elle ne s’en est pas éloigner.
+
+48
+
+2-1-4 Des indicateurs constructibles
+
+C’est le point le plus simple, les indicateurs choisis doivent pouvoir être obtenue. Il
+faut s’assurer d’avoir l’ensemble des données nécessaires à leur calcule. Que le
+données viennent d’un ERP ou d’une autre source de donnée. Le point 2-3 traite des
+différentes sources de données possible.
+Lorsque que l’on choisit un indicateur il faut s’assurer que la valeur celui-ci sera
+déterminable à partir des données à disposition.
+
+2-1-5 Des indicateurs présentables
+
+Deux aspects sont essentiels le fond et la forme. Le fond est défini en amont,
+l’ensemble des utilisateurs doivent être d’accord sur ce que représente l’indicateur. Il
+faut que tout le monde parle de la même chose et se base sur le même référentiel.
+Une fois que l’on obtient notre chiffre ou notre état ce n’est pas terminer il faut le
+présenter d’une façon lisible pour l’utilisateur. Il est dommage d’avoir un indicateur
+pertinent et juste mais non exploité car illisible.
+L’informatique propose aujourd’hui un grand nombre d’outil graphique pour
+construire des rapports qui utilisent au mieux les informations récolter. L’utilisateur
+fera souvent dans un premier temps plus attention à l’habillage d’un rapport qu’a son
+contenu. Il faut donc soigner l’esthétisme.
+Néanmoins passer plus de temps à « décorer » un rapport qu’a produit de
+l’information n’est pas envisageable. Egalement, il ne faut pas trop investir sur le
+design en voulant exploiter tous les outils disponible, pour au finale obtenir l’inverse
+de l’effet escompté c’est à dire un rapport trop chargé et illisible.
+Ne jamais oublier que logiciel informatique contribue à la fabrication de l’image
+mentale que se fait le dirigeant ou l’utilisateur de l’entreprise.
+
+49
+
+2-2 Les sources de données
+
+Après avoir choisi les indicateurs et déterminer l’information générée par chaque
+service de l’organisation, se pose la question d’où se situe physiquement
+l’information. Si l’entreprise possède un ERP (Enterprise Ressource Planning) ou
+PGI (Progiciel de Gestion Intégré) beaucoup d’information sera contenue dans la
+base de données de celui-ci. Si en plus l’ERP couvre l’ensemble des besoins de
+chaque service par des modules spécifiques, il n’y aura qu’une source de données.
+Mais ce scénario parfait n’est pas compatible avec l’hypothèse de départ, une
+entreprise en plein expansion passant du type Entrepreneurial à celui d’entreprise
+Mécaniste. Cette entreprise possède pour chaque service au mieux un logiciel dédié,
+au pire une application dite « custom » développée et maintenue en interne par des
+non professionnels en informatique. Les échange de données entre ces application
+se fessant par des fichiers Excel ou CSV. Ceci augmente le décalage en termes de
+données entre les applications ainsi que la crédibilité des chiffres.
+Le cas imaginer ici est le pire c'est-à-dire qu’il y à la fois des logiciels spécifiques
+ainsi que des applications « custom ». Celles-ci permettant d’effectuer des taches
+non prévues par le logiciel spécifique. Il n’y a donc aucune source de donnée
+générale. Le seul avantage des applications « custom » sera l’extraction facile des
+règles de calculs.
+
+2-2-1 Les logiciels spécifiques
+
+Ces logiciels utilisent généralement une base de données relationnelle. Les données
+sont donc consultables. Elles sont également structurées et normalisées. Le plus
+gros travail sera de comprendre leur organisation afin d’extraire les bon chiffres et
+reproduire les calculs qui leur sont appliqués. En effet certain logiciel stock une
+donnée sous une forme « A » et l’affiche sous un forme « B ». A la volée cette
+donnée est transformé par une règle de calcul, par exemple la conversion d’une
+
+50
+
+devine de euro en dollars se faire en multipliant soit par le taux du jour ou par le taux
+historisé.
+Le plus gros problème sera donc de comprendre la logique métier du logiciel au
+travers de sa base de données relationnelle. Certain éditeur fournisse ce que l’on
+appelle un « Data Dictionary »ou dictionnaire de données c'est-à-dire un listing des
+tables avec leurs champs. Ce dictionnaire de données renseigne aussi sur le type de
+données (entier, chaine de caractères…) ainsi que sur les clefs des tables. C’est ce
+que l’on appelle le reverse engineering comprendre après développement la logique
+d’un logiciel.
+
+ La GPAO :
+Selon Minztberg le cœur de toute organisation est le centre
+opérationnel, qui est dans la vision décrite ici le centre de production. Il
+existe un grand nombre d’outil de gestion de la production appelés
+GPAO pour (Gestion de Production Assisté par Ordinateur).
+Ce logiciel peut couvrir diffèrent besoin :
+
+
+Gestion des stocks et des achats
+
+
+
+Gestion de commandes
+
+
+
+Gestion des produits engendrés par ces commandes
+
+
+
+Gestion des articles entrant dans la fabrication de ces produits et
+de leurs nomenclatures-gammes
+
+
+
+Gestion des ressources par familles (couple homme/spécialité)
+permettant
+
+la
+
+création
+
+des
+
+gammes
+
+(nomenclature
+
+de
+
+fabrication)
+
+
+Création et gestion du planning de fabrication
+
+
+
+Expédition des produits
+
+51
+
+Le service logistique et le service achat sont des utilisateurs de la
+GPAO
+
+52
+
+ Le WMS :
+« Warehouse Management Système », utilisé par le service Logistique
+pour avoir une vision des stocks. On peut se demander si la GPAO ne
+couvre pas déjà ce besoin. L’expérience a prouvé que la gestion des
+stocks st un métier à part entière qui a des contraintes bien spécifique, et
+nécessite un logiciel spécifique.
+Il couvre les besoins suivant :
+
+
+
+
+
+
+
+
+la réception
+l'entreposage
+la préparation
+la gestion de stock
+l'expédition
+l'inventaire
+la gestion des volumes.
+
+Tout ce qui semble redondant avec la GPAO sera traité dans le WMS
+plutôt que dans la GPAO.
+
+
+
+Le CRM :
+
+Le « Customer Relationship Management » ou en français Gestionnaires
+de Relation Client (GRC) utilisé par le service Commercial / Marketing est
+devenu un outil indispensable pour gérer les clients et prospects dans le
+but de maximiser ses profits.
+Il couvre les besoins suivant :
+
+
+
+
+
+La gestion des contacts
+
+
+
+La gestion des opportunités
+
+
+
+La gestion des processus de vente
+
+
+
+Le catalogue de produits et les tarifs
+
+
+
+La planification des ventes
+
+
+
+La gestion des comptes clients
+
+
+
+La gestion des contrats
+
+Le Mailing
+
+53
+
+
+
+L'e-mailing
+
+
+
+La gestion de documents
+
+
+
+Le suivi/historique des tâches.
+
+
+
+La gestion des commissions/primes
+
+
+
+La gestion multilingue et multidevise
+
+ Le PLM :
+Le « Product Lifecycle Management » en français gestion du cycle de vie
+du produit a pour de créer et maintenir les produits tout au long de leur
+cycle de vie. Il est utilisé par le service Recherche et Développement et el
+service Commercial / Marketing.
+Il couvre les besoins suivant :
+
+
+Cahier des charges du produit et/ou des services associés
+
+
+
+Mode de fabrication et le mode de marketing associé
+
+
+
+Mode de distribution de la fabrication
+
+
+
+Mode de stockage intermédiaire éventuel
+
+
+
+Mode de distribution
+
+
+
+Service apporté au client final par rapport à ses attentes.
+
+
+
+Evolutions du produit
+
+
+
+Programmation de la fin de vie du produit.
+
+54
+
+ Le logiciel de comptabilité :
+Ce logiciel permet d'assurer les tâches de la comptabilité d'une entreprise.
+Il enregistre et traite les transactions, la comptabilité fournisseurs, la
+comptabilité clients, la paie… Il est utilisé par le service Financier.
+Il couvre les besoins suivant :
+
+
+Gestion des factures d'achat et de vente
+
+
+
+Gestion des relevés bancaires et cartes
+
+
+
+Comptabilisation des immobilisations acquises ou cédées selon
+facture.
+
+
+
+Comptabilisation
+
+des
+
+écritures
+
+de
+
+fin
+
+d'année
+
+:
+
+stock,
+
+amortissements, provisions, régularisation...
+
+
+Création à demande de journaux, grand livre, balance
+
+
+
+Création des documents des comptes annuels à la clôture : Bilan,
+compte de résultat, liasses fiscales diverses
+
+ Le logiciel de gestion des ressources humaines :
+Ce logiciel permet au service des ressources humaines d’être plus
+efficace dans les tâches administratives et répétitives inhérente à la
+gestion des ressources humaines.
+Il couvre les besoins suivant :
+
+
+Automatiser la paie
+
+
+
+Gestion des prestations de travail, planning et répartition du travail
+
+
+
+Gestion des prestations sociales
+
+
+
+Gestion de la carrière des travailleurs
+
+
+
+Gestion des données personnelles
+
+
+
+Gestion et planification des actions RH (entretiens, formation,
+recrutement...)
+
+55
+
+Aucun logiciel spécifique n’est cité pour le service informatique. Il en possède
+pourtant comme le logiciel de « tickéting » pour gérer les demandes utilisateur ou le
+système de monitoring pour détecter et gérer les machines. Mais à la différence des
+logiciels cités précédemment ils ne gèrent pas les données métiers de l’entreprise.
+Dans l’esprit d’une première approche décisionnelle, seul les données métiers sont
+traitées.
+
+56
+
+2-2-2 Organisation des sources données
+
+Les sources de données listées précédemment s’organisent dans l’entreprise,
+Chaque service possède son propre logiciel, celui-ci a besoin de données en entrée
+le service doit donc allé les chercher dans les service concerné. Cette entreprise ne
+possédant pas encore d’ERP les échanges de données se font par fichiers plats
+(extraction du contenu de la base de données d’un autre logiciel) qui sont transmis
+généralement par mail. C’est mode de communication tiré de l’organisation
+organique ou la communication est totalement horizontale. Les informations sont
+demandées au moment où elles sont nécessaires. En somme les flux sont
+totalement réactifs et non proactif, ils se font sur demande.
+En voici la liste non exhaustive :
+
+
+Les commandes et leur payement sont transmise du CRM vers le logiciel de
+comptabilité et à la GPAO.
+
+
+
+La GPAO transmet au WMS les commandes de matières premières ainsi que
+les commandes à honorer.
+
+
+
+Le PLM transmet les nomenclatures à la GPAO ainsi que les procédures de
+fabrication.
+
+
+
+Il transmet au CRM les nouveaux produits et leurs caractéristiques. Le WMS
+transmet au logiciel de comptabilité la valeur du stock.
+
+
+
+La GPAO transmet les valeurs d’achat au logiciel de comptabilité.
+
+
+
+Le logiciel de comptabilité transmet au CRM les paiements des clients (pour
+que le CRM classe les clients)
+
+Cette entreprise migrera certainement dans le futur vers un ERP. On peut alors se
+demander si une démarche BI n’est pas un peu prématurée. Le BI proposer ici a
+pour but d’aider la prise de décision et n’est n aucun cas une solution lourde et
+couteuse comme l’est un ERP. C’est une première approche qui évoluera pour être
+plus complète mais donne déjà au dirigeant une vision de l’état de son entreprise.
+
+57
+
+2-3
+
+Les indicateurs par services
+
+Cette partie va décrire différents indicateurs choisis pour cette entreprise. Ces
+indicateurs sont classiques et récurent. Les dirigeants sont bien entendu libres de
+choisir d’autres indicateurs en fonction de leur métier.
+
+2-3-1 Le service des Ressources Humaines
+
+
+
+Coût humain :
+
+Se calcule en cumulant le coût de la Masse salariale sur une période donnée. Cet
+indicateur va permettre d’appréhender le coût de la masse salariale, et ainsi de
+d’autoriser ou non des embauches.
+
+
+
+Le Taux d’absentéisme :
+
+Nombre d'heures d'absentéisme sur une période donnée divisée par le temps de
+travail total sur cette même période .Il Permet de repérer les problèmes d’ordre social
+dans l’entreprise.
+
+
+
+Evolution du nombre d'accidents du travail :
+
+Cumule du nombre d’accident du travail daté. Donne un indicateur sur le respect
+des normes de sécurité et permet de remettre en question les processus de
+production.
+
+ Salaire moyen :
+Cumule des salaires sur une période divisé par le nombre totale d’employés. Il
+permet de chiffrer le coût de la masse salariale, et de justifier le salaire de base.
+
+58
+
+2-3-2 Le service Commercial / Marketing
+
+
+
+Vente moyenne par client :
+
+Cumule des ventes effectuées pour un client divisé par le nombre de ventes
+rattachés à ce client. Sert à définir la stratégie de vente augmentation du nombre
+de vente ou du volume de chaque vente ciblé par client.
+
+
+
+Cumule des commande par type (ouverte, fermée, annulée) :
+
+Cumule des commandes par type et par période. Implique que les commande
+soient typées et datées.
+
+
+
+Nombre Plaintes clients :
+
+Se calcule cumulant le nombre de plainte client sur une période donnée. Il faut
+donc que les plaintes soient datées. Cet Indicateur permet de mesurer la
+satisfaction client.
+
+ Valeur moyenne d'une commande :
+Pour cet indicateur on divise la valeur totale des commandes parle nombre de
+commandes. Tout comme la Vente moyenne client cet indicateur permet de
+modifier la stratégie de vente.
+
+59
+
+2-3-3 Le service Recherche et Développement
+
+
+
+Ventes liées à de nouveaux produits:
+
+Se calcule par le cumule des ventes liées aux nouveaux produits divisé par le
+cumule totale des ventes. Il permet de voir la part des nouveaux produits par
+rapport aux ventes totales et ainsi mesurer l’impact direct des améliorations sur
+les ventes.
+
+
+
+Délai moyen d’un projet :
+
+Se calcule soustrayant la date de mise en production d’un projet à la date de
+début de projet le tout divisé par le nombre de projets. Cet indicateur a pour
+objectif mesurer la vitesse mise en production de nouvelles innovations.
+
+
+
+Nombre de projets :
+
+Cumule du nombre de projet en cours.
+
+
+
+Investissements par projet :
+
+Cumule des fonds investis par projet. Permet d’avoir un vison des fonds investis
+pour pouvoir comparer avec les ventes des produits issus des innovations.
+
+60
+
+2-3-5 Le service Logistique
+
+
+
+Etat du stock (disponible à la vente, réservé, en attente de réception, en
+attente de fabrication) :
+
+Se calcule en cumulant les quantités par article se sur leur état (réservé,
+disponible à la vente…).
+
+
+
+Nombre de rebuts :
+
+Se calcule en cumulant le nombre de rebuts sur une période donnée. Permet
+d’appréhender l’efficacité de la chaine de production.
+
+
+
+Délais de livraison :
+
+Soustraction de la date de livraison prévue avec la date de livraison effective.
+Permet d’avoir une vision de la qualité de la chaine logistique.
+
+
+
+Nombre de commandes traitées :
+
+Se calcule en cumulant le nombre de commandes traitées sur une période
+donnée. Permet de voir l’efficacité de la préparation des commandes.
+
+61
+
+2-3-6 Le service Financier
+
+
+Factures impayées :
+
+Se calcule en cumulant va valeur des facture impayée sur une période donnée.
+Donne une vision des futures sorties d’agents.
+
+
+
+Délai de paiement des dettes fournisseurs :
+
+Se calcule en faisant la soustraction de la date d’émission de la facture et de la
+date de paiement. La santé financière de l’entreprise peut ainsi être
+appréhendée.
+
+
+
+Coût humain :
+
+Se calcule en cumulant le coût de la Masse salariale sur une période donnée. Cet
+indicateur va permettre d’appréhender le coût de la masse salariale, et ainsi de
+d’autoriser ou non des embauches.
+
+
+
+Valorisation du Stock :
+
+Se calcule en multipliant le nombre de pièces en stock par leur valeur unitaire, en
+fonction de la vision des dirigeants, cette valorisation peut se faire le prix d’achat,
+le prix de vente moyen, le prix de vente le moins élevé…
+
+62
+
+2-3-7 Le service Achats
+
+
+Valeur des achats effectués :
+
+Se calcule en cumulant la valeur des ordres d’achat clôturés sur une période
+donnée. Donne une vision des fonds investis dans les achats passés. Un ordre
+d’achat clôturé est un ordre d’achat reçu.
+
+
+
+Valeur des ordres d’achats planifiés :
+
+Se calcule en cumulant la valeur des ordres d’achats ouverts sur un période
+donnée. Permet de contrôler l’agent investi dans les achats qui ne sont pas
+encore reçu.
+
+
+
+Valeur des ordres d’achats annulés :
+
+Se calcule en cumulant les ordres d’achats annulés sur une période donnée.
+Permet de mieux appréhender les fournisseurs.
+
+
+
+Etat du stock (disponible à la vente, réservé, en attente de réception, en
+attente de fabrication) :
+
+Se calcule en cumulant les quantités par article se sur leur état (réservé,
+disponible à la vente…).
+
+63
+
+3- Les technologies des systèmes décisionnelles
+
+Cette partie va présenter un état des lieux des technologies décisionnelles les plus
+connu. Ces technologies traitent de gros volumes de données, pour ce faire elles ne
+sont pas stockées comme dans les bases de données classiques. On dit qu’elles
+sont dé-normalisées. Le but finale est de présenter des valeurs et des indicateurs
+tirées de ces valeurs, c'est-à-dire d’effectuer des requêtes le plus rapidement
+possible (dans un temps acceptable) sur l’ensemble des données pour que
+l’utilisateur puisse avoir une vision globale.
+
+3-1 La dé-normalisation des données
+Avant de voir les technologies permettant de requêter de gros volumes de données,
+la technologie des bases de données classiques est présentée.
+
+3-1-1 La normalisation
+Au début de l’informatique les capacités de traitement étaient beaucoup plus faibles
+qu’aujourd’hui.
+
+Le coût de stockage était important et capacités de traitements
+
+beaucoup plus faibles. C’est dans cette optique que la normalisation fit son
+apparition. Le but de la normalisation est qu’une donnée ne soit présente qu’une
+seule fois dans le système. Ce qui permet de gagner beaucoup d’espace de
+stockage. Il existe plusieurs formes de normalisations, seule les trois premières sont
+présenter ici : 1FN, 2FN et 3FN (FN pour forme normale). Le but étant de
+comprendre le principe de la normalisation pour comprendre celui de la dénormalisation.
+
+64
+
+
+
+1FN :
+
+« Une relation est en première forme normale si, et seulement si, tout attribut
+contient une valeur atomique (non multiples, non composées) ».
+Par exemple une table
+
+Service-Médecin (Service, médecins). Cette table ne
+
+respecte pas la première forme si dans la colonne médecin il ne peut y
+avoir plusieurs valeurs séparées par des virgules.
+Cette première forme semble relativement évidente.
+
+
+
+2FN :
+
+« Une relation est dite de deuxième forme normale, si :
+- elle est de première forme normale.
+- Un attribut non clé ne dépend pas que d'une partie de la clé. »
+Un exemple simple :
+Pilote (IDPilote, Nom, Licence, DateObtention) n’est pas de deuxième forme
+normale.
+Il faut la décomposé en :
+Pilote(IDPilote,Nom)
+LicencePilote(IDPilote, Licence, DateObtention)
+
+65
+
+
+
+3FN :
+
+« Une relation est dite de troisième forme normale, si :
+- elle est 2ème forme normale.
+- Un attribut non clé ne dépend pas d'un ou plusieurs attributs ne participant pas à
+la clé »
+Par exemple :
+Enseignant (Nom, Bureau, Bâtiment, Discipline, Téléphone) n’est pas de
+troisième forme normale car Bâtiment et Discipline son liés, de même pour
+Bâtiment,
+
+Bureau,
+
+Téléphone.
+
+Pour
+
+cela
+
+il
+
+faut
+
+décomposer
+
+en :
+
+Annuaire (Bureau, Bâtiment, Téléphone); Affectation (Bâtiment, Discipline).
+Enseignant devient : Enseignant (Nom, Bureau, Bâtiment).
+Si on veut simplifier
+
+l’approche de la norme 3NF lie les tables portant les
+
+informations par des tables ne contenant que des clefs.
+
+On se rend vite compte que pour un gros volume de données ces modèles vont
+engendrer de multiple consultation de tables qui vont nuire aux performances des
+requêtes. Le progrès technologique a permis l’augmentation de la capacité de
+stockage. Ainsi pour augmenter les performances le décisionnel dé-normalise les
+données.
+
+3-1-2 La dé-normalisation
+
+Le but de la dé-normalisation est de faciliter la rapidité d’accès aux données lors de
+la consultation. Cela implique contrairement à la normalisation dupliquer l’information
+de cette façon on simplifie les relations et on optimise l’accès aux données. Par
+
+66
+
+contre l’information dupliquée prend beaucoup plus de place. La performance est
+privilégiée face à l’économie de place.
+
+
+
+Le modèle en étoile :
+
+Ce modèle est composé de tables de faits et de table de dimensions. Une table
+de dimension correspondra aux différentes valeurs que peuvent prendre une
+entité. Par exemple, les attributs de l’entité client seront stockés dans une table
+Clients (Id-client, nom, Adresse….). Les tables de faits sont composées de
+l’ensemble des clefs primaires des différentes dimensions ainsi que des valeurs
+étudiées que l’on appel des mesures. Qui peut être par exemple le montant des
+ventes comme dans le schéma suivant
+(http://blog.developpez.com/jmalkovich/p8718/modelisation/modele_en_etoile_ou
+_en_flocons) :
+
+Ainsi on peut avoir accès au montant en fonction des dimensions Clients, Temps, et
+Produits. On réduit la requête SQL à un « Select » et a un « where » en évitant toute
+les jointures nécessaires dans un modèle 3NF par exemple.
+
+67
+
+
+
+Le modèle en flocon de neige :
+
+Ce modèle reprend le même principe que le précédent. Des tables dites de
+dimensions et des tables dites de faits. La différence est que les attributs des
+entités peuvent être contenus dans plusieurs tables reliées par clef. Exemple sur
+le schéma suivant
+(http://blog.developpez.com/jmalkovich/p8718/modelisation/modele_en_etoile_ou
+_en_flocons) :
+
+Ce modèle est aujourd’hui moins utilisé. Son but premier était de limité la taille des
+table de dimensions, mais de nos jour les performances sont suffisantes pour rester
+sur un modèle en étoile.
+
+68
+
+3-2 Les Cubes de données
+
+L’augmentation de la quantité de donnée couplée au besoin de performance donna
+naissance à la technologie OLAP (On-Line Analytical Processing ou traitement
+analytique en ligne en français). Il s’agit de stocker les données dans des base
+multidimensionnelles appelées cube. Attention, le mot cube n’implique pas trois
+dimensions, c’est plus une vue de l’esprit pour comprendre le principe des
+démentions, les cube ont très souvent plus de trois dimensions.
+Il existe plusieurs déclinaisons :
+
+
+
+R-OLAP :
+
+Pour Relational OLAP, ils utilisent le concept relationnel pour stocker les
+données. Ces données sont modélisées dans le format multi dimensionnel en
+étoile ou en flocon vue précédemment. Des requêtes SQL classiques sont
+exécutées sur les tables.
+R-OLAP est plus lent que les autres technologies OLAP. Néanmoins il reste
+relativement simple à mettre en place, il suffit d’une base de données.
+
+
+
+M-OLAP :
+
+Pour Multi dimensional OLAP. Cette technologie bien souvent propriétaire permet
+de charger en mémoire les donné sous forme de tableau. L’accès est donc bien
+plus rapide qu’en utilisant R-OLAP, Ce mode de stockage permet de pré calculer
+les résultats afin d'avoir accès directement à toute donnée.
+M-OLAP est la meilleure solution de type OLAP. L’utilisateur peut naviguer à
+l’intérieur des dimensions pour obtenir son résultat avec un bon temps de
+réponse rendant son utilisation facile et agréable. M-OLAP montre tout de même
+des limites pour de très gros volumes de données dû aux prés calcules. Pour finir
+
+69
+
+le langage des n’est plus du SQL mais le MDX (pour Multidimensional
+Expressions).
+
+
+
+H-OLAP :
+
+Hybrid Olap permet de mélanger les deux solutions précédentes et donc de
+minimiser les défauts de R-OLAP et M-OLAP. R-OLAP les tables de faits et les et
+R-OLAP pour les dimensions.
+
+
+
+In Memory :
+
+Comme son nom l’indique cette base de données est stockée directement dans
+la RAM. Les bases de données classiques elles sont conçues pour stocker les
+données sur un support non-volatile (disque dur). On gagne avec cette
+technologie sur les accès mémoire 1000 fois plus rapides que les accès disque.
+Les temps de traitement eux ne sont pas forcément divisés par 1000 mais sont
+considérablement réduits.
+Cette technologie coûte encore très chère mais représente certainement l’avenir
+du BI.
+Pour l’entreprise lambda précédemment générée, on choisira la technologie M-OLAP
+pour son temps de réponse. De plus cette technologie se démocratise, de plus en
+plus de serveur de base de donnée classique propose cette technologie, comme
+SQL Server de Microsoft qui propose le module Analyses services. Il y a de grandes
+chances pour que cette entreprise soit déjà équipée de cette technologie sans le
+savoir. Il suffira donc de créer une nouvelle base de données du type étoile puis de
+la chargé dans le module M-OLAP de sa base de données.
+
+70
+
+3-3 Architecture décisionnelle
+
+La mise en place d’une solution décisionnelle implique une architecture particulière
+qui s’articule autour de plusieurs composants :
+
+
+
+Les bases données de productions :
+
+Ce sont les bases des logiciels spécifiques vus précédemment, ou dans le
+meilleur des cas celle de l’ERP.
+
+
+
+L’ETL :
+
+ETL signifie Extract Transforme Load. C’est un logiciel/serveur permettant
+d’extraire les données des différentes sources afin de les agrégées dans le DataWarehouse ou entrepôt de données.
+
+
+Le Data-Warehouse :
+
+Le Data-Warehouse ou entrepôt de données est la base de données ou sont
+stocké les données agrégés. L’utilisateur n’a pas accès directement au DataWarehouse.
+
+
+Les Data-Marts :
+
+Les Data-Mart ou magasins de données sont nos cubes. Ils sont orientés sujet
+c’est-à-dire qu’ils sont dédié à un sujet, cube ventes, un cube finance etc...
+Contrairement au Data-Warehouse, les utilisateurs accèdent aux Data-Mart via le
+serveur de rapports.
+
+71
+
+
+
+Le Serveur de rapports :
+
+C’est l’interface souvent web par laquelle les utilisateurs exécutent des requêtes
+sur les cubes. Ils ne les voient pas directement elles sont générés par l’interface.
+Ce serveur propose de mémoriser ses rapports ainsi que de les planifier.
+Généralement il est également possible de créer des tableaux de bords
+permettant d’avoir une vision des indicateurs calculé à partir des données du
+cube. Les tableaux de bords sont généralement dynamiques. Ils permettent à
+l’utilisateur de modifier des paramètres de la requête pour voir l’évolution des
+chiffres (par exemple changer une plage de dates).
+Il faut être conscient que le volume de données dont il est question se chiffre en
+millions de lignes. Les temps de chargement sont donc longs, c'est pourquoi on
+privilégie les extractions hors de période de consultation des données, c'est-àdire la nuit. Les données sont donc celles du jour j-1. Pour améliorer les
+performances de l'ETL il sera judicieux de calculer le delta entre l'extraction en
+cours et la dernière extraction connue de façon à ne pas recharger tout
+l'historique.
+
+
+Schéma classique d’une architecture décisionnelle :
+
+72
+
+L’entreprise lambda reprendra se schéma classique pour plusieurs raisons. Si
+une entreprise extérieure reprend un jour le système elle le comprendra
+facilement. La documentation sur ce type d’architecture est facile a trouvée.
+Les problèmes qui y sont lié ont déjà fait l’objet de réflexion et des solutions
+sont disponibles.
+L’entreprise étant en plein changement, le développement du système se fera
+en interne.
+Le plus gros du travail réside dans l’extraction des données. De nombreux
+outils sur le marché proposent des ETL simple d’utilisation. Ces solutions
+représentent l’extraction la transformation et le chargement des données via
+des flux graphiques.
+Le travail réside dans le fait de retrouver la logique métier des bases de
+données auquel s’ajoute celui de la spécificité de l’entreprise. En effet un
+même logiciel utilisé dans deux entreprises différentes ne permettra pas de
+générer les mêmes indicateurs avec les mêmes flux. C’est un travail
+spécifique. Il faudra gérer les exceptions, les cas d’erreurs humaines. Un
+exemple tout simple est par exemple une date mal renseignée ou les mois et
+les jours sont inversés.
+Une démarche de gestion de projet couplé avec un « pool » d’utilisateurs clefs
+permettra de valider les exceptions, de parer aux cas d’erreurs.
+
+Pour éviter un coût trop important on peut privilégier les outils gratuits.
+Malheureusement, les serveurs M-OLAP ne sont pas gratuits. Néanmoins ils
+sont souvent présent en nativement dans les bases de donnée leader du
+marché, le surcout peut être nul. Il existe un grand nombre d’ETL gratuits avec
+de très bonne performance. Le server exécutant les scripts généré par l’ETL
+n’a pas besoin d’une grande puissance, un serveur basic fera parfaitement
+l’affaire. Pour le serveur de reporting, il en existe que peu de gratuit, on peut
+citer SAIKU qui fonctionne bien mais dont l’administration se fait par des
+fichiers XML ce qui est contraignant.
+Ainsi il est possible d’arriver à une première solution décisionnelle pour un
+coût matériel et logiciel très réduit. Il ne faut cependant pas négliger le coût
+
+73
+
+humain. Un long travail attend la ou les personnes responsables du projet. De
+plus ce coût est incompressible.
+
+74
+
+Conclusion
+
+Une entreprise aujourd’hui doit être consciente de ses force et ses faiblesses
+pour chercher sans cesse à s’améliorer et à croitre. On s’accorde à dire que le but
+d’une entreprise est de faire des bénéfices, sans bénéfices l’entreprise est
+condamnée. L’objectif est donc simplement de survivre, dans cette optique il est bon
+de mettre toutes les chances de son côté, le décisionnel en fait partie. Il permet à
+l’organisation le mettant en place d’augmenter l’information disponible sur ellemême, c’est une forme d’introspection. Le décideur va donc avoir une quantité
+d’information sur l’état de l’entreprise, lui permettant ainsi de prendre la bonne
+décision. Et ceci de la même manière qu’un entraineur et son sportif, par la mesure
+de la performance et l’analyse de celle-ci l’entraineur ajuste les exercices du sportif.
+Afin de bien connaitre le sportif le coach possède des connaissances en anatomie et
+en mécanique du corps humain. Des connaissances de fonctionnement sont
+également nécessaires au dirigeant. Un ensemble de chiffre complexe n'égalera
+jamais une connaissance pointue de son entreprise. Mais Egalement une
+connaissance de son organisation structurelle, c'est pourquoi une partie des théories
+des organisations et leurs différents modèles ont été abordés ici. Il est évident que la
+structure de l'entreprise influence ses données, une organisation divisionnaire
+implique des règles de gestions différentes selon les divisions. Si les divisions sont
+dans des pays différents la gestion des devises. Le décisionnel fera remonter ce
+genre problèmes qui peuvent devenir des casses têtes pour les ingénieurs
+informatiques ainsi que pour les dirigeants. L'organisation de l'entreprise doit être
+adaptée à son activité, c'est pourquoi même si l'entreprise est en mutation le
+décisionnel (et ses informations) peut et doit influencer les changements structurels.
+Les indicateurs sont un autre point abordé, il est nécessaire d'avoir la démarche mais
+également de l'appliquer correctement. En reprenant les comparaisons avec le coach
+sportif, il est facile de se rendre compte que mesurer est à la portée tous. Une des
+différences entre un bon et un mauvais coach et en analogie entre un bon et un
+mauvais décideur sont les mesures. Premièrement leurs intérêts, l'entraineur ne va
+pas chronométrer le temps dans les vestiaires ou celui passé à mettre ses
+75
+
+chaussettes. Le choix des indicateurs est donc essentiel, ils doivent répondre à un
+ou plusieurs objectifs fixés par la direction. Il ne faut jamais oublier que le but du
+décisionnel est de piloté sont activités. Il a été proposé une série d'indicateurs
+simples. Ces indicateurs sont adaptables à la plupart des entreprises pour de point
+de départ à une solution décisionnelle spécifique.
+Afin que dirigeant néophyte (techniquement) puisse discuter avec des experts les
+différents points d'une architecture décisionnelle ont été passés en revu. On peut
+ainsi se rendre compte qu'il existe plusieurs technologies, chacune ayant ses
+avantages et inconvenante. Ces technologies étant connues depuis un certain temps
+elles se démocratisent, le principal goulet d'étranglement temporel d'un projet
+décisionnel est la mise au point des scripts d'extraction à l'aide d'un ETL. Il faut
+retrouver la structure de la base de données et gérer l'ensemble des cas d'erreurs
+pouvant survenir.
+De nouvelles technologies font sans cesse leur apparition, la dernière concernant le
+décisionnel est le « In Mémory ». Ces bases de données étant directement présent
+dans la Ram sont beaucoup plus rapides. On peut se demander si dans l'avenir les
+architectures décisionnelles existeront encore. En effet si les base données avec une
+architecture classique se mettent à avoir des temps de réponse suffisant alors
+pourquoi continuer à déployer ce genre d'architecture.
+Le but étant de piloter, on remarquera que les données étudiées dans ce document
+ne sont que des données internes à l'entreprise. Si l'on souhaite réellement avoir un
+outil pour placer son entreprise dans la meilleure position sur son marché il faut
+analyse le marché et donc intégrer des données extérieures. Ici le choix a été fait de
+laisser au dirigeant le soin de l'analyse du milieu extérieur. De plus il est très difficile
+de généraliser les données externes, car elles dépendent du marché.
+L'intégration des données internes et externes à l'entreprise permet le datamining.
+C'est certainement la prochaine étape de notre entreprise lambda, analysé les
+raisons et les causes c'est-à-dire faire du prévisionnel. Une première piste sera de
+chercher s'il existe une corrélation directe entre les données externe du marché et
+
+76
+
+interne de l'entreprise. Même si le décisionnel se démocratise, les données, les
+analyses et les décisions qui en découlent sont infinies.
+
+77
+
+78
+
+Glossaire
+
+Buisines Intelligence : Nouveau terme pour identifier toute les fonctions se
+rapportant à la décision. Englobe toute la chaine de collecte d’information.
+DataMart : Entrepôt de données orienté sur la problématique d’un service.
+DataMining : Outils d’analyse permettant de mettre en évidence des corrélations
+entre les données.
+DataWarehouse : Entrepôt de données centralisant toutes les données organisées
+par sujet.
+ERP : (Enterprise Resource Planning) Outil principal du système d’information
+couvrant la plupart des besoins fonctionnels informatique d’une entreprise.
+ETL : (Extract Transformation Loading) Outil dédié à l’extraction de données.
+MDX : Langage d’interrogation de bases de données type OLAP.
+OLAP : (On-Line-Analytical Processing) Concept de base données
+multidirectionnelles
+XML : (Extensible Markup Language) Langage d’écriture de données. A la
+particularité de Séparer le texte de la présentation.
+
+79
+
+Bibliographie
+
+
+
+Théorie des organisations, édition DUNOD, Jean-Michel PLANE.
+
+
+
+Les nouveaux tableaux de bord des managers, édition EYROLLES, Alain
+Fernandez
+
+80
+
+English Summary
+
+Today a company has a lot of information on scanned especially its inner
+workings. Invoices, delivery notes, inventory, financial balance, and sometimes when
+it is not outsourced payroll employees. Data need to be historized if we want to
+understand the past to anticipate the future. But they also need to be regularly
+updated to be able to quickly analyze an unplanned evolution of its indicators, such
+as turnover (CA), changing orders, stock, delays in deliveries etc...
+To facilitate the implementation of such a system, this paper aims to provide a basis
+for work and reflection for a company wishing to engage in the decision. For this socalled lambda business will be generated. This company will take into account the
+views of various sociologists who studied human organizations.
+From this company and its services, indicators are proposed to assist the officer or
+officers to drive the business. These indicators provide a working basis for future
+developments of the system. Each business will need specific indicator but almost all
+sectors of common indicators.
+The final section presents the techniques and technology of the decision approach.
+Its purpose is not to make the player (manager or executive) an experienced
+technician. By cons, it seeks to provide the information needed to discuss and
+understand a service provider or a technician.
+A business today must be aware of its strength and its weakness in order to
+constantly to improve and grow. We agree that the purpose of a business is to make
+profits, without profit the company is doomed. The goal is simply to survive, in this
+context it is good to put the odds on his side, the decision in part. It allows the
+organization implementing the increasing information available on itself, it is a form of
+introspection. The decision maker will therefore have a wealth of information on the
+state of the company, allowing it to make the right decision. And this in the same way
+that a coach and athletic, the performance measurement and analysis of this coach
+adjusts sports’ exercises.
+
+81
+
+To know well the sports coach has knowledge of anatomy and mechanics of the
+human body. Knowledge of operation is also needed leader. A complex set of figures
+will never equal a thorough knowledge of his business. But Also a knowledge of its
+structural organization, which is why some of the theories of organizations and
+different models have been discussed here. It is obvious that the structure of the
+company to influence its data, a divisional organization requires different rules of
+managements as divisions. For example it highlights the issue of the currency
+management. The decision will be up such problems can become puzzle for software
+engineers as well as leaders. The business organization must be adapted to its
+business, so even if the company is changing the decision (and information) can and
+should influence the structural changes.
+Indicators are another point raised in this document, it is necessary to have the
+process but also to apply it correctly. Returning to the comparison with the trainer, it
+is easy to realize that the measure is to reach all. One difference between a good
+and a bad coach and analogy between a good and a bad decision maker are
+measurements. First their interests, the coach is not going to measure the time in the
+locker room or the past to put his socks. The choice of indicators is essential, they
+must meet one or more objectives set by management. We must never forget that
+the purpose of the decision is driven activities are. It has been proposed a number of
+simple indicators. These indicators are adaptable to most companies for a starting
+point to a specific BI solution.
+To a neophyte leader (technically) can discuss with experts on the different points of
+business intelligence architecture. And realize that there are several technologies,
+each with its advantages and inconvenient. These technologies are known for some
+time they democratize the main bottleneck of a business intelligence project is the
+development of extraction scripts using an ETL. We need to find the structure of the
+database and manage all cases of errors that can occur.
+New technologies are constantly emerging, the last on is the “In Memory” databases.
+These databases are directly present in RAM is much faster. One may wonder if in
+the future the decision architecture still exists. Indeed, if the data base with classic
+
+82
+
+architecture begin to have sufficient response time so why continue to deploy that
+kind of architecture.
+The goal is to drive, it should be noted that the data examined in this paper are only
+internal data to the company. If you really want to have a tool to put the company in
+the best position in its market analysis should the market and thus integrate external
+data. Here the analysis of the external environment is left to the care of the company
+owner. Moreover it is very difficult to generalize the external data, because they
+depend on the market.
+The integration of internal and external data allows data mining company. This is
+definitely the next step in our company lambda, analyzed the reasons and causes
+that is to say to the forecast. The first track will look if there is a direct correlation
+between the external market data and internal company. Even if the decision is
+democratized, data, analysis and resulting decisions are endless.
+
+83
+
+
