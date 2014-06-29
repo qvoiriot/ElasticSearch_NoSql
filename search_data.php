@@ -11,6 +11,10 @@ $searchParams['body']['query']['match']['content'] =  $get_search;
 
 $results = $client->search($searchParams);
 
-echo json_encode($results);
+function jsonRemoveUnicodeSequences($results) {
+  return preg_replace("/\\\\n/", "<br />", json_encode($results));
+  return preg_replace("/\\\\u([a-f0-9]{4})/e", "iconv('UCS-4LE','UTF-8',pack('V', hexdec('U$1')))", json_encode($results));
+}
 
+print jsonRemoveUnicodeSequences($results);
 ?>

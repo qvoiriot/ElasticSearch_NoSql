@@ -1,0 +1,1027 @@
+[2014-06-16 18:34:20,228][INFO ][node                     ] [Morg] version[1.1.0], pid[4276], build[2181e11/2014-03-25T15:59:51Z]
+[2014-06-16 18:34:20,230][INFO ][node                     ] [Morg] initializing ...
+[2014-06-16 18:34:20,254][INFO ][plugins                  ] [Morg] loaded [], sites []
+[2014-06-16 18:34:23,158][INFO ][node                     ] [Morg] initialized
+[2014-06-16 18:34:23,158][INFO ][node                     ] [Morg] starting ...
+[2014-06-16 18:34:23,303][INFO ][transport                ] [Morg] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.13:9300]}
+[2014-06-16 18:34:26,352][INFO ][cluster.service          ] [Morg] new_master [Morg][NwltBwY3RlGvBgpos6CJtQ][mbp-de-quentin][inet[/192.168.1.13:9300]], reason: zen-disco-join (elected_as_master)
+[2014-06-16 18:34:26,379][INFO ][discovery                ] [Morg] elasticsearch/NwltBwY3RlGvBgpos6CJtQ
+[2014-06-16 18:34:26,396][INFO ][http                     ] [Morg] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.13:9200]}
+[2014-06-16 18:34:27,007][INFO ][gateway                  ] [Morg] recovered [1] indices into cluster_state
+[2014-06-16 18:34:27,008][INFO ][node                     ] [Morg] started
+[2014-06-16 18:36:52,955][INFO ][cluster.metadata         ] [Morg] [epsi] deleting index
+[2014-06-16 18:36:54,505][INFO ][cluster.metadata         ] [Morg] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-16 18:36:54,639][INFO ][cluster.metadata         ] [Morg] [epsi] update_mapping [memories] (dynamic)
+[2014-06-16 18:42:37,015][INFO ][cluster.metadata         ] [Morg] [epsi] deleting index
+[2014-06-16 18:42:54,078][INFO ][cluster.metadata         ] [Morg] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-16 18:42:54,204][INFO ][cluster.metadata         ] [Morg] [epsi] update_mapping [memories] (dynamic)
+[2014-06-16 18:46:36,269][INFO ][cluster.metadata         ] [Morg] [epsi] deleting index
+[2014-06-16 18:46:37,505][INFO ][cluster.metadata         ] [Morg] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-16 18:46:37,593][DEBUG][action.search.type       ] [Morg] All shards failed for phase: [query]
+[2014-06-16 18:46:37,640][INFO ][cluster.metadata         ] [Morg] [epsi] update_mapping [memories] (dynamic)
+[2014-06-16 18:47:04,537][INFO ][cluster.metadata         ] [Morg] [epsi] deleting index
+[2014-06-16 18:47:05,821][INFO ][cluster.metadata         ] [Morg] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-16 18:47:05,930][INFO ][cluster.metadata         ] [Morg] [epsi] update_mapping [memories] (dynamic)
+[2014-06-16 18:47:49,059][INFO ][cluster.metadata         ] [Morg] [epsi] deleting index
+[2014-06-16 18:47:50,779][INFO ][cluster.metadata         ] [Morg] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-16 18:47:50,880][INFO ][cluster.metadata         ] [Morg] [epsi] update_mapping [memories] (dynamic)
+[2014-06-16 18:57:10,377][INFO ][cluster.metadata         ] [Morg] [epsi] deleting index
+[2014-06-16 18:57:11,743][INFO ][cluster.metadata         ] [Morg] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-16 18:57:11,843][INFO ][cluster.metadata         ] [Morg] [epsi] update_mapping [memories] (dynamic)
+[2014-06-16 18:57:23,459][DEBUG][action.search.type       ] [Morg] [epsi][3], node[NwltBwY3RlGvBgpos6CJtQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@51b2f91b]
+org.elasticsearch.search.SearchParseException: [epsi][3]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"match":{"content":"leaute"}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:634)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:507)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:480)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252)
+	at org.elasticsearch.search.action.SearchServiceTransportAction.sendExecuteQuery(SearchServiceTransportAction.java:202)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction.sendExecuteFirstPhase(TransportSearchQueryThenFetchAction.java:80)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:216)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:203)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$2.run(TransportSearchTypeAction.java:186)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: java.lang.NumberFormatException: For input string: "leaute"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:441)
+	at java.lang.Long.parseLong(Long.java:483)
+	at org.elasticsearch.index.mapper.core.NumberFieldMapper.parseLongValue(NumberFieldMapper.java:333)
+	at org.elasticsearch.index.mapper.core.LongFieldMapper.termQuery(LongFieldMapper.java:182)
+	at org.elasticsearch.index.search.MatchQuery.parse(MatchQuery.java:193)
+	at org.elasticsearch.index.query.MatchQueryParser.parse(MatchQueryParser.java:165)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:223)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:330)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:260)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:622)
+	... 11 more
+[2014-06-16 18:57:23,459][DEBUG][action.search.type       ] [Morg] [epsi][0], node[NwltBwY3RlGvBgpos6CJtQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@51b2f91b] lastShard [true]
+org.elasticsearch.search.SearchParseException: [epsi][0]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"match":{"content":"leaute"}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:634)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:507)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:480)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252)
+	at org.elasticsearch.search.action.SearchServiceTransportAction.sendExecuteQuery(SearchServiceTransportAction.java:202)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction.sendExecuteFirstPhase(TransportSearchQueryThenFetchAction.java:80)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:216)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:203)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$2.run(TransportSearchTypeAction.java:186)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: java.lang.NumberFormatException: For input string: "leaute"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:441)
+	at java.lang.Long.parseLong(Long.java:483)
+	at org.elasticsearch.index.mapper.core.NumberFieldMapper.parseLongValue(NumberFieldMapper.java:333)
+	at org.elasticsearch.index.mapper.core.LongFieldMapper.termQuery(LongFieldMapper.java:182)
+	at org.elasticsearch.index.search.MatchQuery.parse(MatchQuery.java:193)
+	at org.elasticsearch.index.query.MatchQueryParser.parse(MatchQueryParser.java:165)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:223)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:330)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:260)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:622)
+	... 11 more
+[2014-06-16 18:57:23,459][DEBUG][action.search.type       ] [Morg] [epsi][4], node[NwltBwY3RlGvBgpos6CJtQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@51b2f91b] lastShard [true]
+org.elasticsearch.search.SearchParseException: [epsi][4]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"match":{"content":"leaute"}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:634)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:507)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:480)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252)
+	at org.elasticsearch.search.action.SearchServiceTransportAction.sendExecuteQuery(SearchServiceTransportAction.java:202)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction.sendExecuteFirstPhase(TransportSearchQueryThenFetchAction.java:80)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:216)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:203)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$2.run(TransportSearchTypeAction.java:186)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: java.lang.NumberFormatException: For input string: "leaute"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:441)
+	at java.lang.Long.parseLong(Long.java:483)
+	at org.elasticsearch.index.mapper.core.NumberFieldMapper.parseLongValue(NumberFieldMapper.java:333)
+	at org.elasticsearch.index.mapper.core.LongFieldMapper.termQuery(LongFieldMapper.java:182)
+	at org.elasticsearch.index.search.MatchQuery.parse(MatchQuery.java:193)
+	at org.elasticsearch.index.query.MatchQueryParser.parse(MatchQueryParser.java:165)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:223)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:330)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:260)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:622)
+	... 11 more
+[2014-06-16 18:57:23,459][DEBUG][action.search.type       ] [Morg] [epsi][2], node[NwltBwY3RlGvBgpos6CJtQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@51b2f91b] lastShard [true]
+org.elasticsearch.search.SearchParseException: [epsi][2]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"match":{"content":"leaute"}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:634)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:507)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:480)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252)
+	at org.elasticsearch.search.action.SearchServiceTransportAction.sendExecuteQuery(SearchServiceTransportAction.java:202)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction.sendExecuteFirstPhase(TransportSearchQueryThenFetchAction.java:80)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:216)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:203)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$2.run(TransportSearchTypeAction.java:186)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: java.lang.NumberFormatException: For input string: "leaute"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:441)
+	at java.lang.Long.parseLong(Long.java:483)
+	at org.elasticsearch.index.mapper.core.NumberFieldMapper.parseLongValue(NumberFieldMapper.java:333)
+	at org.elasticsearch.index.mapper.core.LongFieldMapper.termQuery(LongFieldMapper.java:182)
+	at org.elasticsearch.index.search.MatchQuery.parse(MatchQuery.java:193)
+	at org.elasticsearch.index.query.MatchQueryParser.parse(MatchQueryParser.java:165)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:223)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:330)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:260)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:622)
+	... 11 more
+[2014-06-16 18:57:23,459][DEBUG][action.search.type       ] [Morg] [epsi][1], node[NwltBwY3RlGvBgpos6CJtQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@51b2f91b] lastShard [true]
+org.elasticsearch.search.SearchParseException: [epsi][1]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"match":{"content":"leaute"}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:634)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:507)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:480)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252)
+	at org.elasticsearch.search.action.SearchServiceTransportAction.sendExecuteQuery(SearchServiceTransportAction.java:202)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction.sendExecuteFirstPhase(TransportSearchQueryThenFetchAction.java:80)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:216)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:203)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$2.run(TransportSearchTypeAction.java:186)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: java.lang.NumberFormatException: For input string: "leaute"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:441)
+	at java.lang.Long.parseLong(Long.java:483)
+	at org.elasticsearch.index.mapper.core.NumberFieldMapper.parseLongValue(NumberFieldMapper.java:333)
+	at org.elasticsearch.index.mapper.core.LongFieldMapper.termQuery(LongFieldMapper.java:182)
+	at org.elasticsearch.index.search.MatchQuery.parse(MatchQuery.java:193)
+	at org.elasticsearch.index.query.MatchQueryParser.parse(MatchQueryParser.java:165)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:223)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:330)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:260)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:622)
+	... 11 more
+[2014-06-16 18:57:23,463][DEBUG][action.search.type       ] [Morg] All shards failed for phase: [query]
+[2014-06-16 18:57:39,357][INFO ][cluster.metadata         ] [Morg] [epsi] deleting index
+[2014-06-16 18:57:40,698][INFO ][cluster.metadata         ] [Morg] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-16 18:57:40,794][INFO ][cluster.metadata         ] [Morg] [epsi] update_mapping [memories] (dynamic)
+[2014-06-16 18:59:06,102][INFO ][cluster.metadata         ] [Morg] [epsi] deleting index
+[2014-06-16 18:59:09,223][INFO ][cluster.metadata         ] [Morg] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-16 18:59:09,322][INFO ][cluster.metadata         ] [Morg] [epsi] update_mapping [memories] (dynamic)
+[2014-06-16 18:59:13,616][DEBUG][action.search.type       ] [Morg] [epsi][0], node[NwltBwY3RlGvBgpos6CJtQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@39aabfba] lastShard [true]
+org.elasticsearch.search.SearchParseException: [epsi][0]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"match":{"content":"epsi"}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:634)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:507)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:480)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252)
+	at org.elasticsearch.search.action.SearchServiceTransportAction.sendExecuteQuery(SearchServiceTransportAction.java:202)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction.sendExecuteFirstPhase(TransportSearchQueryThenFetchAction.java:80)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:216)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:203)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$2.run(TransportSearchTypeAction.java:186)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: java.lang.NumberFormatException: For input string: "epsi"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:441)
+	at java.lang.Long.parseLong(Long.java:483)
+	at org.elasticsearch.index.mapper.core.NumberFieldMapper.parseLongValue(NumberFieldMapper.java:333)
+	at org.elasticsearch.index.mapper.core.LongFieldMapper.termQuery(LongFieldMapper.java:182)
+	at org.elasticsearch.index.search.MatchQuery.parse(MatchQuery.java:193)
+	at org.elasticsearch.index.query.MatchQueryParser.parse(MatchQueryParser.java:165)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:223)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:330)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:260)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:622)
+	... 11 more
+[2014-06-16 18:59:13,616][DEBUG][action.search.type       ] [Morg] [epsi][3], node[NwltBwY3RlGvBgpos6CJtQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@39aabfba]
+org.elasticsearch.search.SearchParseException: [epsi][3]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"match":{"content":"epsi"}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:634)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:507)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:480)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252)
+	at org.elasticsearch.search.action.SearchServiceTransportAction.sendExecuteQuery(SearchServiceTransportAction.java:202)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction.sendExecuteFirstPhase(TransportSearchQueryThenFetchAction.java:80)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:216)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:203)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$2.run(TransportSearchTypeAction.java:186)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: java.lang.NumberFormatException: For input string: "epsi"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:441)
+	at java.lang.Long.parseLong(Long.java:483)
+	at org.elasticsearch.index.mapper.core.NumberFieldMapper.parseLongValue(NumberFieldMapper.java:333)
+	at org.elasticsearch.index.mapper.core.LongFieldMapper.termQuery(LongFieldMapper.java:182)
+	at org.elasticsearch.index.search.MatchQuery.parse(MatchQuery.java:193)
+	at org.elasticsearch.index.query.MatchQueryParser.parse(MatchQueryParser.java:165)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:223)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:330)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:260)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:622)
+	... 11 more
+[2014-06-16 18:59:13,616][DEBUG][action.search.type       ] [Morg] [epsi][4], node[NwltBwY3RlGvBgpos6CJtQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@39aabfba] lastShard [true]
+org.elasticsearch.search.SearchParseException: [epsi][4]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"match":{"content":"epsi"}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:634)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:507)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:480)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252)
+	at org.elasticsearch.search.action.SearchServiceTransportAction.sendExecuteQuery(SearchServiceTransportAction.java:202)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction.sendExecuteFirstPhase(TransportSearchQueryThenFetchAction.java:80)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:216)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:203)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$2.run(TransportSearchTypeAction.java:186)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: java.lang.NumberFormatException: For input string: "epsi"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:441)
+	at java.lang.Long.parseLong(Long.java:483)
+	at org.elasticsearch.index.mapper.core.NumberFieldMapper.parseLongValue(NumberFieldMapper.java:333)
+	at org.elasticsearch.index.mapper.core.LongFieldMapper.termQuery(LongFieldMapper.java:182)
+	at org.elasticsearch.index.search.MatchQuery.parse(MatchQuery.java:193)
+	at org.elasticsearch.index.query.MatchQueryParser.parse(MatchQueryParser.java:165)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:223)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:330)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:260)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:622)
+	... 11 more
+[2014-06-16 18:59:13,616][DEBUG][action.search.type       ] [Morg] [epsi][1], node[NwltBwY3RlGvBgpos6CJtQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@39aabfba] lastShard [true]
+org.elasticsearch.search.SearchParseException: [epsi][1]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"match":{"content":"epsi"}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:634)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:507)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:480)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252)
+	at org.elasticsearch.search.action.SearchServiceTransportAction.sendExecuteQuery(SearchServiceTransportAction.java:202)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction.sendExecuteFirstPhase(TransportSearchQueryThenFetchAction.java:80)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:216)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:203)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$2.run(TransportSearchTypeAction.java:186)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: java.lang.NumberFormatException: For input string: "epsi"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:441)
+	at java.lang.Long.parseLong(Long.java:483)
+	at org.elasticsearch.index.mapper.core.NumberFieldMapper.parseLongValue(NumberFieldMapper.java:333)
+	at org.elasticsearch.index.mapper.core.LongFieldMapper.termQuery(LongFieldMapper.java:182)
+	at org.elasticsearch.index.search.MatchQuery.parse(MatchQuery.java:193)
+	at org.elasticsearch.index.query.MatchQueryParser.parse(MatchQueryParser.java:165)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:223)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:330)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:260)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:622)
+	... 11 more
+[2014-06-16 18:59:13,616][DEBUG][action.search.type       ] [Morg] [epsi][2], node[NwltBwY3RlGvBgpos6CJtQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@39aabfba] lastShard [true]
+org.elasticsearch.search.SearchParseException: [epsi][2]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"match":{"content":"epsi"}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:634)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:507)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:480)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252)
+	at org.elasticsearch.search.action.SearchServiceTransportAction.sendExecuteQuery(SearchServiceTransportAction.java:202)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction.sendExecuteFirstPhase(TransportSearchQueryThenFetchAction.java:80)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:216)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:203)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$2.run(TransportSearchTypeAction.java:186)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: java.lang.NumberFormatException: For input string: "epsi"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:441)
+	at java.lang.Long.parseLong(Long.java:483)
+	at org.elasticsearch.index.mapper.core.NumberFieldMapper.parseLongValue(NumberFieldMapper.java:333)
+	at org.elasticsearch.index.mapper.core.LongFieldMapper.termQuery(LongFieldMapper.java:182)
+	at org.elasticsearch.index.search.MatchQuery.parse(MatchQuery.java:193)
+	at org.elasticsearch.index.query.MatchQueryParser.parse(MatchQueryParser.java:165)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:223)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:330)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:260)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:622)
+	... 11 more
+[2014-06-16 18:59:13,618][DEBUG][action.search.type       ] [Morg] All shards failed for phase: [query]
+[2014-06-16 18:59:37,311][DEBUG][action.search.type       ] [Morg] [epsi][0], node[NwltBwY3RlGvBgpos6CJtQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@5c4ba63b] lastShard [true]
+org.elasticsearch.search.SearchParseException: [epsi][0]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"match":{"content":"EPSI"}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:634)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:507)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:480)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252)
+	at org.elasticsearch.search.action.SearchServiceTransportAction.sendExecuteQuery(SearchServiceTransportAction.java:202)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction.sendExecuteFirstPhase(TransportSearchQueryThenFetchAction.java:80)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:216)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:203)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$2.run(TransportSearchTypeAction.java:186)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: java.lang.NumberFormatException: For input string: "EPSI"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:441)
+	at java.lang.Long.parseLong(Long.java:483)
+	at org.elasticsearch.index.mapper.core.NumberFieldMapper.parseLongValue(NumberFieldMapper.java:333)
+	at org.elasticsearch.index.mapper.core.LongFieldMapper.termQuery(LongFieldMapper.java:182)
+	at org.elasticsearch.index.search.MatchQuery.parse(MatchQuery.java:193)
+	at org.elasticsearch.index.query.MatchQueryParser.parse(MatchQueryParser.java:165)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:223)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:330)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:260)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:622)
+	... 11 more
+[2014-06-16 18:59:37,311][DEBUG][action.search.type       ] [Morg] [epsi][1], node[NwltBwY3RlGvBgpos6CJtQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@5c4ba63b] lastShard [true]
+org.elasticsearch.search.SearchParseException: [epsi][1]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"match":{"content":"EPSI"}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:634)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:507)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:480)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252)
+	at org.elasticsearch.search.action.SearchServiceTransportAction.sendExecuteQuery(SearchServiceTransportAction.java:202)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction.sendExecuteFirstPhase(TransportSearchQueryThenFetchAction.java:80)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:216)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:203)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$2.run(TransportSearchTypeAction.java:186)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: java.lang.NumberFormatException: For input string: "EPSI"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:441)
+	at java.lang.Long.parseLong(Long.java:483)
+	at org.elasticsearch.index.mapper.core.NumberFieldMapper.parseLongValue(NumberFieldMapper.java:333)
+	at org.elasticsearch.index.mapper.core.LongFieldMapper.termQuery(LongFieldMapper.java:182)
+	at org.elasticsearch.index.search.MatchQuery.parse(MatchQuery.java:193)
+	at org.elasticsearch.index.query.MatchQueryParser.parse(MatchQueryParser.java:165)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:223)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:330)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:260)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:622)
+	... 11 more
+[2014-06-16 18:59:37,311][DEBUG][action.search.type       ] [Morg] [epsi][2], node[NwltBwY3RlGvBgpos6CJtQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@5c4ba63b]
+org.elasticsearch.search.SearchParseException: [epsi][2]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"match":{"content":"EPSI"}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:634)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:507)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:480)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252)
+	at org.elasticsearch.search.action.SearchServiceTransportAction.sendExecuteQuery(SearchServiceTransportAction.java:202)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction.sendExecuteFirstPhase(TransportSearchQueryThenFetchAction.java:80)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:216)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:203)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$2.run(TransportSearchTypeAction.java:186)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: java.lang.NumberFormatException: For input string: "EPSI"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:441)
+	at java.lang.Long.parseLong(Long.java:483)
+	at org.elasticsearch.index.mapper.core.NumberFieldMapper.parseLongValue(NumberFieldMapper.java:333)
+	at org.elasticsearch.index.mapper.core.LongFieldMapper.termQuery(LongFieldMapper.java:182)
+	at org.elasticsearch.index.search.MatchQuery.parse(MatchQuery.java:193)
+	at org.elasticsearch.index.query.MatchQueryParser.parse(MatchQueryParser.java:165)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:223)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:330)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:260)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:622)
+	... 11 more
+[2014-06-16 18:59:37,311][DEBUG][action.search.type       ] [Morg] [epsi][4], node[NwltBwY3RlGvBgpos6CJtQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@5c4ba63b] lastShard [true]
+org.elasticsearch.search.SearchParseException: [epsi][4]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"match":{"content":"EPSI"}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:634)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:507)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:480)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252)
+	at org.elasticsearch.search.action.SearchServiceTransportAction.sendExecuteQuery(SearchServiceTransportAction.java:202)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction.sendExecuteFirstPhase(TransportSearchQueryThenFetchAction.java:80)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:216)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:203)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$2.run(TransportSearchTypeAction.java:186)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: java.lang.NumberFormatException: For input string: "EPSI"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:441)
+	at java.lang.Long.parseLong(Long.java:483)
+	at org.elasticsearch.index.mapper.core.NumberFieldMapper.parseLongValue(NumberFieldMapper.java:333)
+	at org.elasticsearch.index.mapper.core.LongFieldMapper.termQuery(LongFieldMapper.java:182)
+	at org.elasticsearch.index.search.MatchQuery.parse(MatchQuery.java:193)
+	at org.elasticsearch.index.query.MatchQueryParser.parse(MatchQueryParser.java:165)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:223)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:330)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:260)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:622)
+	... 11 more
+[2014-06-16 18:59:37,311][DEBUG][action.search.type       ] [Morg] [epsi][3], node[NwltBwY3RlGvBgpos6CJtQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@5c4ba63b] lastShard [true]
+org.elasticsearch.search.SearchParseException: [epsi][3]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"match":{"content":"EPSI"}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:634)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:507)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:480)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252)
+	at org.elasticsearch.search.action.SearchServiceTransportAction.sendExecuteQuery(SearchServiceTransportAction.java:202)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction.sendExecuteFirstPhase(TransportSearchQueryThenFetchAction.java:80)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:216)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:203)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$2.run(TransportSearchTypeAction.java:186)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: java.lang.NumberFormatException: For input string: "EPSI"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:441)
+	at java.lang.Long.parseLong(Long.java:483)
+	at org.elasticsearch.index.mapper.core.NumberFieldMapper.parseLongValue(NumberFieldMapper.java:333)
+	at org.elasticsearch.index.mapper.core.LongFieldMapper.termQuery(LongFieldMapper.java:182)
+	at org.elasticsearch.index.search.MatchQuery.parse(MatchQuery.java:193)
+	at org.elasticsearch.index.query.MatchQueryParser.parse(MatchQueryParser.java:165)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:223)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:330)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:260)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:622)
+	... 11 more
+[2014-06-16 18:59:37,314][DEBUG][action.search.type       ] [Morg] All shards failed for phase: [query]
+[2014-06-16 19:00:35,019][INFO ][cluster.metadata         ] [Morg] [epsi] deleting index
+[2014-06-16 19:00:38,813][INFO ][cluster.metadata         ] [Morg] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-16 19:00:38,889][INFO ][cluster.metadata         ] [Morg] [epsi] update_mapping [memories] (dynamic)
+[2014-06-16 19:02:35,342][DEBUG][action.search.type       ] [Morg] [epsi][1], node[NwltBwY3RlGvBgpos6CJtQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@27df34b4] lastShard [true]
+org.elasticsearch.search.SearchParseException: [epsi][1]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"match":"EPSI"}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:634)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:507)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:480)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252)
+	at org.elasticsearch.search.action.SearchServiceTransportAction.sendExecuteQuery(SearchServiceTransportAction.java:202)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction.sendExecuteFirstPhase(TransportSearchQueryThenFetchAction.java:80)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:216)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:203)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$2.run(TransportSearchTypeAction.java:186)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [epsi] [_na] query malformed, no field after start_object
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:216)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:330)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:260)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:622)
+	... 11 more
+[2014-06-16 19:02:35,342][DEBUG][action.search.type       ] [Morg] [epsi][4], node[NwltBwY3RlGvBgpos6CJtQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@27df34b4]
+org.elasticsearch.search.SearchParseException: [epsi][4]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"match":"EPSI"}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:634)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:507)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:480)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252)
+	at org.elasticsearch.search.action.SearchServiceTransportAction.sendExecuteQuery(SearchServiceTransportAction.java:202)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction.sendExecuteFirstPhase(TransportSearchQueryThenFetchAction.java:80)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:216)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:203)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$2.run(TransportSearchTypeAction.java:186)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [epsi] [_na] query malformed, no field after start_object
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:216)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:330)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:260)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:622)
+	... 11 more
+[2014-06-16 19:02:35,342][DEBUG][action.search.type       ] [Morg] [epsi][3], node[NwltBwY3RlGvBgpos6CJtQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@27df34b4] lastShard [true]
+org.elasticsearch.search.SearchParseException: [epsi][3]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"match":"EPSI"}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:634)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:507)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:480)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252)
+	at org.elasticsearch.search.action.SearchServiceTransportAction.sendExecuteQuery(SearchServiceTransportAction.java:202)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction.sendExecuteFirstPhase(TransportSearchQueryThenFetchAction.java:80)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:216)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:203)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$2.run(TransportSearchTypeAction.java:186)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [epsi] [_na] query malformed, no field after start_object
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:216)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:330)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:260)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:622)
+	... 11 more
+[2014-06-16 19:02:35,342][DEBUG][action.search.type       ] [Morg] [epsi][2], node[NwltBwY3RlGvBgpos6CJtQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@27df34b4] lastShard [true]
+org.elasticsearch.search.SearchParseException: [epsi][2]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"match":"EPSI"}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:634)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:507)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:480)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252)
+	at org.elasticsearch.search.action.SearchServiceTransportAction.sendExecuteQuery(SearchServiceTransportAction.java:202)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction.sendExecuteFirstPhase(TransportSearchQueryThenFetchAction.java:80)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:216)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:203)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$2.run(TransportSearchTypeAction.java:186)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [epsi] [_na] query malformed, no field after start_object
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:216)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:330)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:260)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:622)
+	... 11 more
+[2014-06-16 19:02:35,342][DEBUG][action.search.type       ] [Morg] [epsi][0], node[NwltBwY3RlGvBgpos6CJtQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@27df34b4] lastShard [true]
+org.elasticsearch.search.SearchParseException: [epsi][0]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"match":"EPSI"}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:634)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:507)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:480)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252)
+	at org.elasticsearch.search.action.SearchServiceTransportAction.sendExecuteQuery(SearchServiceTransportAction.java:202)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction.sendExecuteFirstPhase(TransportSearchQueryThenFetchAction.java:80)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:216)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:203)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$2.run(TransportSearchTypeAction.java:186)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [epsi] [_na] query malformed, no field after start_object
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:216)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:330)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:260)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:622)
+	... 11 more
+[2014-06-16 19:02:35,344][DEBUG][action.search.type       ] [Morg] All shards failed for phase: [query]
+[2014-06-16 19:13:01,028][DEBUG][action.search.type       ] [Morg] [epsi][0], node[NwltBwY3RlGvBgpos6CJtQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@36049b80] lastShard [true]
+org.elasticsearch.search.SearchParseException: [epsi][0]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"match":"EPSI"}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:634)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:507)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:480)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252)
+	at org.elasticsearch.search.action.SearchServiceTransportAction.sendExecuteQuery(SearchServiceTransportAction.java:202)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction.sendExecuteFirstPhase(TransportSearchQueryThenFetchAction.java:80)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:216)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:203)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$2.run(TransportSearchTypeAction.java:186)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [epsi] [_na] query malformed, no field after start_object
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:216)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:330)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:260)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:622)
+	... 11 more
+[2014-06-16 19:13:01,028][DEBUG][action.search.type       ] [Morg] [epsi][4], node[NwltBwY3RlGvBgpos6CJtQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@36049b80] lastShard [true]
+org.elasticsearch.search.SearchParseException: [epsi][4]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"match":"EPSI"}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:634)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:507)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:480)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252)
+	at org.elasticsearch.search.action.SearchServiceTransportAction.sendExecuteQuery(SearchServiceTransportAction.java:202)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction.sendExecuteFirstPhase(TransportSearchQueryThenFetchAction.java:80)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:216)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:203)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$2.run(TransportSearchTypeAction.java:186)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [epsi] [_na] query malformed, no field after start_object
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:216)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:330)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:260)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:622)
+	... 11 more
+[2014-06-16 19:13:01,028][DEBUG][action.search.type       ] [Morg] [epsi][1], node[NwltBwY3RlGvBgpos6CJtQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@36049b80] lastShard [true]
+org.elasticsearch.search.SearchParseException: [epsi][1]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"match":"EPSI"}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:634)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:507)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:480)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252)
+	at org.elasticsearch.search.action.SearchServiceTransportAction.sendExecuteQuery(SearchServiceTransportAction.java:202)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction.sendExecuteFirstPhase(TransportSearchQueryThenFetchAction.java:80)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:216)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:203)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$2.run(TransportSearchTypeAction.java:186)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [epsi] [_na] query malformed, no field after start_object
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:216)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:330)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:260)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:622)
+	... 11 more
+[2014-06-16 19:13:01,028][DEBUG][action.search.type       ] [Morg] [epsi][2], node[NwltBwY3RlGvBgpos6CJtQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@36049b80]
+org.elasticsearch.search.SearchParseException: [epsi][2]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"match":"EPSI"}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:634)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:507)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:480)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252)
+	at org.elasticsearch.search.action.SearchServiceTransportAction.sendExecuteQuery(SearchServiceTransportAction.java:202)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction.sendExecuteFirstPhase(TransportSearchQueryThenFetchAction.java:80)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:216)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:203)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$2.run(TransportSearchTypeAction.java:186)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [epsi] [_na] query malformed, no field after start_object
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:216)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:330)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:260)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:622)
+	... 11 more
+[2014-06-16 19:13:01,028][DEBUG][action.search.type       ] [Morg] [epsi][3], node[NwltBwY3RlGvBgpos6CJtQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@36049b80] lastShard [true]
+org.elasticsearch.search.SearchParseException: [epsi][3]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"match":"EPSI"}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:634)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:507)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:480)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252)
+	at org.elasticsearch.search.action.SearchServiceTransportAction.sendExecuteQuery(SearchServiceTransportAction.java:202)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction.sendExecuteFirstPhase(TransportSearchQueryThenFetchAction.java:80)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:216)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:203)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$2.run(TransportSearchTypeAction.java:186)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [epsi] [_na] query malformed, no field after start_object
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:216)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:330)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:260)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:622)
+	... 11 more
+[2014-06-16 19:13:01,032][DEBUG][action.search.type       ] [Morg] All shards failed for phase: [query]
+[2014-06-16 19:13:02,849][DEBUG][action.search.type       ] [Morg] [epsi][3], node[NwltBwY3RlGvBgpos6CJtQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@7d721f3] lastShard [true]
+org.elasticsearch.search.SearchParseException: [epsi][3]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"match":"EPSI"}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:634)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:507)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:480)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252)
+	at org.elasticsearch.search.action.SearchServiceTransportAction.sendExecuteQuery(SearchServiceTransportAction.java:202)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction.sendExecuteFirstPhase(TransportSearchQueryThenFetchAction.java:80)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:216)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:203)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$2.run(TransportSearchTypeAction.java:186)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [epsi] [_na] query malformed, no field after start_object
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:216)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:330)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:260)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:622)
+	... 11 more
+[2014-06-16 19:13:02,849][DEBUG][action.search.type       ] [Morg] [epsi][0], node[NwltBwY3RlGvBgpos6CJtQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@7d721f3] lastShard [true]
+org.elasticsearch.search.SearchParseException: [epsi][0]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"match":"EPSI"}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:634)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:507)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:480)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252)
+	at org.elasticsearch.search.action.SearchServiceTransportAction.sendExecuteQuery(SearchServiceTransportAction.java:202)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction.sendExecuteFirstPhase(TransportSearchQueryThenFetchAction.java:80)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:216)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:203)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$2.run(TransportSearchTypeAction.java:186)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [epsi] [_na] query malformed, no field after start_object
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:216)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:330)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:260)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:622)
+	... 11 more
+[2014-06-16 19:13:02,849][DEBUG][action.search.type       ] [Morg] [epsi][2], node[NwltBwY3RlGvBgpos6CJtQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@7d721f3]
+org.elasticsearch.search.SearchParseException: [epsi][2]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"match":"EPSI"}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:634)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:507)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:480)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252)
+	at org.elasticsearch.search.action.SearchServiceTransportAction.sendExecuteQuery(SearchServiceTransportAction.java:202)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction.sendExecuteFirstPhase(TransportSearchQueryThenFetchAction.java:80)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:216)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:203)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$2.run(TransportSearchTypeAction.java:186)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [epsi] [_na] query malformed, no field after start_object
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:216)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:330)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:260)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:622)
+	... 11 more
+[2014-06-16 19:13:02,849][DEBUG][action.search.type       ] [Morg] [epsi][4], node[NwltBwY3RlGvBgpos6CJtQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@7d721f3] lastShard [true]
+org.elasticsearch.search.SearchParseException: [epsi][4]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"match":"EPSI"}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:634)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:507)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:480)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252)
+	at org.elasticsearch.search.action.SearchServiceTransportAction.sendExecuteQuery(SearchServiceTransportAction.java:202)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction.sendExecuteFirstPhase(TransportSearchQueryThenFetchAction.java:80)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:216)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:203)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$2.run(TransportSearchTypeAction.java:186)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [epsi] [_na] query malformed, no field after start_object
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:216)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:330)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:260)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:622)
+	... 11 more
+[2014-06-16 19:13:02,849][DEBUG][action.search.type       ] [Morg] [epsi][1], node[NwltBwY3RlGvBgpos6CJtQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@7d721f3] lastShard [true]
+org.elasticsearch.search.SearchParseException: [epsi][1]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"match":"EPSI"}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:634)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:507)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:480)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252)
+	at org.elasticsearch.search.action.SearchServiceTransportAction.sendExecuteQuery(SearchServiceTransportAction.java:202)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction.sendExecuteFirstPhase(TransportSearchQueryThenFetchAction.java:80)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:216)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:203)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$2.run(TransportSearchTypeAction.java:186)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [epsi] [_na] query malformed, no field after start_object
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:216)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:330)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:260)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:622)
+	... 11 more
+[2014-06-16 19:13:02,852][DEBUG][action.search.type       ] [Morg] All shards failed for phase: [query]
+[2014-06-16 19:13:47,801][INFO ][cluster.metadata         ] [Morg] [epsi] deleting index
+[2014-06-16 19:13:51,978][INFO ][cluster.metadata         ] [Morg] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-16 19:13:52,065][INFO ][cluster.metadata         ] [Morg] [epsi] update_mapping [memories] (dynamic)
+[2014-06-16 19:13:57,877][DEBUG][action.search.type       ] [Morg] [epsi][2], node[NwltBwY3RlGvBgpos6CJtQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@5108c21a] lastShard [true]
+org.elasticsearch.search.SearchParseException: [epsi][2]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"match":{"first_name":"EPSI"}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:634)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:507)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:480)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252)
+	at org.elasticsearch.search.action.SearchServiceTransportAction.sendExecuteQuery(SearchServiceTransportAction.java:202)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction.sendExecuteFirstPhase(TransportSearchQueryThenFetchAction.java:80)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:216)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:203)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$2.run(TransportSearchTypeAction.java:186)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: java.lang.NumberFormatException: For input string: "EPSI"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:441)
+	at java.lang.Long.parseLong(Long.java:483)
+	at org.elasticsearch.index.mapper.core.NumberFieldMapper.parseLongValue(NumberFieldMapper.java:333)
+	at org.elasticsearch.index.mapper.core.LongFieldMapper.termQuery(LongFieldMapper.java:182)
+	at org.elasticsearch.index.search.MatchQuery.parse(MatchQuery.java:193)
+	at org.elasticsearch.index.query.MatchQueryParser.parse(MatchQueryParser.java:165)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:223)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:330)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:260)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:622)
+	... 11 more
+[2014-06-16 19:13:57,877][DEBUG][action.search.type       ] [Morg] [epsi][0], node[NwltBwY3RlGvBgpos6CJtQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@5108c21a]
+org.elasticsearch.search.SearchParseException: [epsi][0]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"match":{"first_name":"EPSI"}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:634)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:507)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:480)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252)
+	at org.elasticsearch.search.action.SearchServiceTransportAction.sendExecuteQuery(SearchServiceTransportAction.java:202)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction.sendExecuteFirstPhase(TransportSearchQueryThenFetchAction.java:80)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:216)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:203)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$2.run(TransportSearchTypeAction.java:186)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: java.lang.NumberFormatException: For input string: "EPSI"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:441)
+	at java.lang.Long.parseLong(Long.java:483)
+	at org.elasticsearch.index.mapper.core.NumberFieldMapper.parseLongValue(NumberFieldMapper.java:333)
+	at org.elasticsearch.index.mapper.core.LongFieldMapper.termQuery(LongFieldMapper.java:182)
+	at org.elasticsearch.index.search.MatchQuery.parse(MatchQuery.java:193)
+	at org.elasticsearch.index.query.MatchQueryParser.parse(MatchQueryParser.java:165)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:223)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:330)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:260)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:622)
+	... 11 more
+[2014-06-16 19:13:57,877][DEBUG][action.search.type       ] [Morg] [epsi][4], node[NwltBwY3RlGvBgpos6CJtQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@5108c21a] lastShard [true]
+org.elasticsearch.search.SearchParseException: [epsi][4]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"match":{"first_name":"EPSI"}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:634)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:507)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:480)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252)
+	at org.elasticsearch.search.action.SearchServiceTransportAction.sendExecuteQuery(SearchServiceTransportAction.java:202)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction.sendExecuteFirstPhase(TransportSearchQueryThenFetchAction.java:80)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:216)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:203)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$2.run(TransportSearchTypeAction.java:186)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: java.lang.NumberFormatException: For input string: "EPSI"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:441)
+	at java.lang.Long.parseLong(Long.java:483)
+	at org.elasticsearch.index.mapper.core.NumberFieldMapper.parseLongValue(NumberFieldMapper.java:333)
+	at org.elasticsearch.index.mapper.core.LongFieldMapper.termQuery(LongFieldMapper.java:182)
+	at org.elasticsearch.index.search.MatchQuery.parse(MatchQuery.java:193)
+	at org.elasticsearch.index.query.MatchQueryParser.parse(MatchQueryParser.java:165)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:223)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:330)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:260)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:622)
+	... 11 more
+[2014-06-16 19:13:57,877][DEBUG][action.search.type       ] [Morg] [epsi][3], node[NwltBwY3RlGvBgpos6CJtQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@5108c21a] lastShard [true]
+org.elasticsearch.search.SearchParseException: [epsi][3]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"match":{"first_name":"EPSI"}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:634)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:507)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:480)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252)
+	at org.elasticsearch.search.action.SearchServiceTransportAction.sendExecuteQuery(SearchServiceTransportAction.java:202)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction.sendExecuteFirstPhase(TransportSearchQueryThenFetchAction.java:80)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:216)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:203)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$2.run(TransportSearchTypeAction.java:186)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: java.lang.NumberFormatException: For input string: "EPSI"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:441)
+	at java.lang.Long.parseLong(Long.java:483)
+	at org.elasticsearch.index.mapper.core.NumberFieldMapper.parseLongValue(NumberFieldMapper.java:333)
+	at org.elasticsearch.index.mapper.core.LongFieldMapper.termQuery(LongFieldMapper.java:182)
+	at org.elasticsearch.index.search.MatchQuery.parse(MatchQuery.java:193)
+	at org.elasticsearch.index.query.MatchQueryParser.parse(MatchQueryParser.java:165)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:223)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:330)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:260)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:622)
+	... 11 more
+[2014-06-16 19:13:57,877][DEBUG][action.search.type       ] [Morg] [epsi][1], node[NwltBwY3RlGvBgpos6CJtQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@5108c21a] lastShard [true]
+org.elasticsearch.search.SearchParseException: [epsi][1]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"match":{"first_name":"EPSI"}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:634)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:507)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:480)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252)
+	at org.elasticsearch.search.action.SearchServiceTransportAction.sendExecuteQuery(SearchServiceTransportAction.java:202)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction.sendExecuteFirstPhase(TransportSearchQueryThenFetchAction.java:80)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:216)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:203)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$2.run(TransportSearchTypeAction.java:186)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: java.lang.NumberFormatException: For input string: "EPSI"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:441)
+	at java.lang.Long.parseLong(Long.java:483)
+	at org.elasticsearch.index.mapper.core.NumberFieldMapper.parseLongValue(NumberFieldMapper.java:333)
+	at org.elasticsearch.index.mapper.core.LongFieldMapper.termQuery(LongFieldMapper.java:182)
+	at org.elasticsearch.index.search.MatchQuery.parse(MatchQuery.java:193)
+	at org.elasticsearch.index.query.MatchQueryParser.parse(MatchQueryParser.java:165)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:223)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:330)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:260)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:622)
+	... 11 more
+[2014-06-16 19:13:57,879][DEBUG][action.search.type       ] [Morg] All shards failed for phase: [query]
+[2014-06-16 19:17:36,245][INFO ][cluster.metadata         ] [Morg] [epsi] deleting index
+[2014-06-16 19:17:43,847][INFO ][cluster.metadata         ] [Morg] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-16 19:17:43,952][INFO ][cluster.metadata         ] [Morg] [epsi] update_mapping [memories] (dynamic)
+[2014-06-16 19:18:31,350][INFO ][cluster.metadata         ] [Morg] [epsi] deleting index
+[2014-06-16 19:18:36,544][INFO ][cluster.metadata         ] [Morg] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-16 19:18:36,623][INFO ][cluster.metadata         ] [Morg] [epsi] update_mapping [memories] (dynamic)
+[2014-06-16 19:29:29,032][INFO ][node                     ] [Morg] stopping ...
+[2014-06-16 19:29:29,058][INFO ][node                     ] [Morg] stopped
+[2014-06-16 19:29:29,059][INFO ][node                     ] [Morg] closing ...
+[2014-06-16 19:29:29,064][INFO ][node                     ] [Morg] closed
+[2014-06-24 20:37:50,177][INFO ][node                     ] [Overmind] version[1.1.0], pid[4241], build[2181e11/2014-03-25T15:59:51Z]
+[2014-06-24 20:37:50,177][INFO ][node                     ] [Overmind] initializing ...
+[2014-06-24 20:37:50,197][INFO ][plugins                  ] [Overmind] loaded [], sites []
+[2014-06-24 20:37:52,756][INFO ][node                     ] [Overmind] initialized
+[2014-06-24 20:37:52,756][INFO ][node                     ] [Overmind] starting ...
+[2014-06-24 20:37:52,859][INFO ][transport                ] [Overmind] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.13:9300]}
+[2014-06-24 20:37:55,895][INFO ][cluster.service          ] [Overmind] new_master [Overmind][OP8Q1BhhTrST47qfFvnKhA][mbp-de-quentin.home][inet[/192.168.1.13:9300]], reason: zen-disco-join (elected_as_master)
+[2014-06-24 20:37:55,923][INFO ][discovery                ] [Overmind] elasticsearch/OP8Q1BhhTrST47qfFvnKhA
+[2014-06-24 20:37:55,941][INFO ][http                     ] [Overmind] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.13:9200]}
+[2014-06-24 20:37:56,477][INFO ][gateway                  ] [Overmind] recovered [1] indices into cluster_state
+[2014-06-24 20:37:56,478][INFO ][node                     ] [Overmind] started
+[2014-06-24 20:38:25,886][INFO ][cluster.metadata         ] [Overmind] [epsi] deleting index
+[2014-06-24 20:38:27,975][INFO ][cluster.metadata         ] [Overmind] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-24 20:38:28,117][INFO ][cluster.metadata         ] [Overmind] [epsi] update_mapping [memories] (dynamic)
+[2014-06-24 20:44:16,271][INFO ][cluster.metadata         ] [Overmind] [epsi] deleting index
+[2014-06-24 20:44:16,406][INFO ][cluster.metadata         ] [Overmind] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-24 20:44:16,568][INFO ][cluster.metadata         ] [Overmind] [epsi] update_mapping [memories] (dynamic)
+[2014-06-24 20:44:19,255][INFO ][cluster.metadata         ] [Overmind] [epsi] deleting index
+[2014-06-24 20:44:22,416][INFO ][cluster.metadata         ] [Overmind] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-24 20:44:22,547][INFO ][cluster.metadata         ] [Overmind] [epsi] update_mapping [memories] (dynamic)
+[2014-06-24 20:57:31,117][INFO ][cluster.metadata         ] [Overmind] [epsi] deleting index
+[2014-06-24 20:57:33,373][INFO ][cluster.metadata         ] [Overmind] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-24 20:57:33,476][INFO ][cluster.metadata         ] [Overmind] [epsi] update_mapping [memories] (dynamic)
+[2014-06-24 20:58:49,379][INFO ][cluster.metadata         ] [Overmind] [epsi] deleting index
+[2014-06-24 20:58:50,001][INFO ][cluster.metadata         ] [Overmind] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-24 20:58:50,117][INFO ][cluster.metadata         ] [Overmind] [epsi] update_mapping [memories] (dynamic)
+[2014-06-24 20:59:05,513][INFO ][cluster.metadata         ] [Overmind] [epsi] deleting index
+[2014-06-24 21:01:37,448][INFO ][cluster.metadata         ] [Overmind] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-24 21:01:37,550][INFO ][cluster.metadata         ] [Overmind] [epsi] update_mapping [memories] (dynamic)
+[2014-06-24 21:01:58,214][INFO ][cluster.metadata         ] [Overmind] [epsi] deleting index
+[2014-06-24 21:02:00,056][INFO ][cluster.metadata         ] [Overmind] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-24 21:02:00,156][INFO ][cluster.metadata         ] [Overmind] [epsi] update_mapping [memories] (dynamic)
+[2014-06-24 21:10:02,545][INFO ][cluster.metadata         ] [Overmind] [epsi] deleting index
+[2014-06-24 21:10:03,586][INFO ][cluster.metadata         ] [Overmind] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-24 21:10:03,687][INFO ][cluster.metadata         ] [Overmind] [epsi] update_mapping [memories] (dynamic)
+[2014-06-24 21:16:50,153][INFO ][cluster.metadata         ] [Overmind] [epsi] deleting index
+[2014-06-24 21:16:50,612][INFO ][cluster.metadata         ] [Overmind] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-24 21:16:50,704][INFO ][cluster.metadata         ] [Overmind] [epsi] update_mapping [memories] (dynamic)
+[2014-06-24 21:37:05,416][INFO ][cluster.metadata         ] [Overmind] [epsi] deleting index
+[2014-06-24 21:37:07,079][INFO ][cluster.metadata         ] [Overmind] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-24 21:37:07,163][INFO ][cluster.metadata         ] [Overmind] [epsi] update_mapping [memories] (dynamic)
+[2014-06-24 21:44:50,950][INFO ][cluster.metadata         ] [Overmind] [epsi] deleting index
+[2014-06-24 21:44:53,192][INFO ][cluster.metadata         ] [Overmind] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-24 21:44:53,282][INFO ][cluster.metadata         ] [Overmind] [epsi] update_mapping [memories] (dynamic)
+[2014-06-24 21:46:00,232][INFO ][cluster.metadata         ] [Overmind] [epsi] deleting index
+[2014-06-24 21:46:01,804][INFO ][cluster.metadata         ] [Overmind] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-24 21:46:01,888][INFO ][cluster.metadata         ] [Overmind] [epsi] update_mapping [memories] (dynamic)
+[2014-06-24 21:48:14,732][INFO ][cluster.metadata         ] [Overmind] [epsi] deleting index
+[2014-06-24 21:48:16,052][INFO ][cluster.metadata         ] [Overmind] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-24 21:48:16,139][INFO ][cluster.metadata         ] [Overmind] [epsi] update_mapping [memories] (dynamic)
+[2014-06-24 21:52:04,491][INFO ][cluster.metadata         ] [Overmind] [epsi] deleting index
+[2014-06-24 21:52:06,096][INFO ][cluster.metadata         ] [Overmind] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-24 21:52:06,184][INFO ][cluster.metadata         ] [Overmind] [epsi] update_mapping [memories] (dynamic)
+[2014-06-24 21:59:11,655][INFO ][cluster.metadata         ] [Overmind] [epsi] deleting index
+[2014-06-24 21:59:13,577][INFO ][cluster.metadata         ] [Overmind] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-24 21:59:13,660][INFO ][cluster.metadata         ] [Overmind] [epsi] update_mapping [memories] (dynamic)
+[2014-06-24 22:02:37,794][INFO ][cluster.metadata         ] [Overmind] [epsi] deleting index
+[2014-06-24 22:02:40,287][INFO ][cluster.metadata         ] [Overmind] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-24 22:02:40,374][INFO ][cluster.metadata         ] [Overmind] [epsi] update_mapping [memories] (dynamic)
+[2014-06-24 22:04:33,498][INFO ][cluster.metadata         ] [Overmind] [epsi] deleting index
+[2014-06-24 22:04:34,964][INFO ][cluster.metadata         ] [Overmind] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-24 22:04:35,052][INFO ][cluster.metadata         ] [Overmind] [epsi] update_mapping [memories] (dynamic)
+[2014-06-24 22:05:43,110][INFO ][cluster.metadata         ] [Overmind] [epsi] deleting index
+[2014-06-24 22:05:44,505][INFO ][cluster.metadata         ] [Overmind] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-24 22:05:44,584][INFO ][cluster.metadata         ] [Overmind] [epsi] update_mapping [memories] (dynamic)
+[2014-06-24 22:06:06,474][INFO ][cluster.metadata         ] [Overmind] [epsi] deleting index
+[2014-06-24 22:06:08,704][INFO ][cluster.metadata         ] [Overmind] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-24 22:06:08,804][INFO ][cluster.metadata         ] [Overmind] [epsi] update_mapping [memories] (dynamic)
+[2014-06-24 22:07:09,749][INFO ][cluster.metadata         ] [Overmind] [epsi] deleting index
+[2014-06-24 22:07:11,377][INFO ][cluster.metadata         ] [Overmind] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-24 22:07:11,467][INFO ][cluster.metadata         ] [Overmind] [epsi] update_mapping [memories] (dynamic)
+[2014-06-24 22:09:10,794][INFO ][cluster.metadata         ] [Overmind] [epsi] deleting index
+[2014-06-24 22:09:12,747][INFO ][cluster.metadata         ] [Overmind] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-24 22:09:12,837][INFO ][cluster.metadata         ] [Overmind] [epsi] update_mapping [memories] (dynamic)
+[2014-06-24 22:16:52,895][INFO ][cluster.metadata         ] [Overmind] [epsi] deleting index
+[2014-06-24 22:17:12,968][INFO ][cluster.metadata         ] [Overmind] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-24 22:17:13,062][INFO ][cluster.metadata         ] [Overmind] [epsi] update_mapping [memories] (dynamic)
+[2014-06-24 22:18:42,744][INFO ][cluster.metadata         ] [Overmind] [epsi] deleting index
+[2014-06-24 22:18:44,145][INFO ][cluster.metadata         ] [Overmind] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-24 22:18:44,229][INFO ][cluster.metadata         ] [Overmind] [epsi] update_mapping [memories] (dynamic)
+[2014-06-24 22:19:25,598][INFO ][cluster.metadata         ] [Overmind] [epsi] deleting index
+[2014-06-24 22:19:29,323][INFO ][cluster.metadata         ] [Overmind] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-24 22:19:29,408][INFO ][cluster.metadata         ] [Overmind] [epsi] update_mapping [memories] (dynamic)
+[2014-06-24 22:21:02,070][INFO ][cluster.metadata         ] [Overmind] [epsi] deleting index
+[2014-06-24 22:21:09,583][INFO ][cluster.metadata         ] [Overmind] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-24 22:21:09,674][INFO ][cluster.metadata         ] [Overmind] [epsi] update_mapping [memories] (dynamic)
+[2014-06-24 22:21:36,901][INFO ][cluster.metadata         ] [Overmind] [epsi] deleting index
+[2014-06-24 22:21:42,967][INFO ][cluster.metadata         ] [Overmind] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-06-24 22:21:43,056][INFO ][cluster.metadata         ] [Overmind] [epsi] update_mapping [memories] (dynamic)
+[2014-06-24 22:49:27,497][INFO ][node                     ] [Overmind] stopping ...
+[2014-06-24 22:49:27,519][INFO ][node                     ] [Overmind] stopped
+[2014-06-24 22:49:27,520][INFO ][node                     ] [Overmind] closing ...
+[2014-06-24 22:49:27,524][INFO ][node                     ] [Overmind] closed
