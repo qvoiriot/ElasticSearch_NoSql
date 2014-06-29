@@ -1021,3 +1021,7 @@ Caused by: java.lang.NumberFormatException: For input string: "EPSI"
 [2014-06-24 22:21:36,901][INFO ][cluster.metadata         ] [Overmind] [epsi] deleting index
 [2014-06-24 22:21:42,967][INFO ][cluster.metadata         ] [Overmind] [epsi] creating index, cause [auto(index api)], shards [5]/[1], mappings []
 [2014-06-24 22:21:43,056][INFO ][cluster.metadata         ] [Overmind] [epsi] update_mapping [memories] (dynamic)
+[2014-06-24 22:49:27,497][INFO ][node                     ] [Overmind] stopping ...
+[2014-06-24 22:49:27,519][INFO ][node                     ] [Overmind] stopped
+[2014-06-24 22:49:27,520][INFO ][node                     ] [Overmind] closing ...
+[2014-06-24 22:49:27,524][INFO ][node                     ] [Overmind] closed
